@@ -1,0 +1,22 @@
+
+{
+    "transaction"   : "000341848",
+    "request_type"  : "Doc Del",
+    "delivery_type" : "Ship",
+    "source"        : "Aleph",
+    "title"         : "Radioactive-waste disposal into the sea,",
+    "author"        : "International Atomic Energy Agency.",
+    "enum_chron"    : "",
+    "pages"         : "",
+    "article_title" : "",
+    "article_author": "",
+    "barcode"       : "00000002340750",
+    "isbn"          : "",
+    "issn"          : "",
+    "bib_number"    : "243653",
+    "adm_number"    : "243653",
+    "item_sequence" : "    1.0",
+    "call_number"   : "TD 812 .I61",
+    "send_to"       : "Hesburgh Library",
+    "rush"          : "No" 
+}

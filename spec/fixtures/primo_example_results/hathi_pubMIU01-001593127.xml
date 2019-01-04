@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+              <control>
+                <sourcerecordid>MIU01-001593127</sourcerecordid>
+                <sourceid>hathi_pub</sourceid>
+                <recordid>hathi_pubMIU01-001593127</recordid>
+                <originalsourceid>HATHI</originalsourceid>
+                <ilsapiid>HATHIMIU01-001593127</ilsapiid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>A list of emigrant ministers to America, 1690-1811</title>
+                <creator>Gerald Fothergill</creator>
+                <publisher>London : E. Stock</publisher>
+                <creationdate>1904</creationdate>
+                <format>65 p..</format>
+                <subject>Church of England -- United States -- Clergy</subject>
+                <subject>Clergy -- United States</subject>
+                <language>eng</language>
+                <lds02>hathi_pubMIU01-001593127</lds02>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$D Catalog</backlink>
+                <linktorsrc>$$Uhttp://catalog.hathitrust.org/Record/001593127$$Elinktorsrc_pub</linktorsrc>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktoholdsnotexist>$$Taleph_holdings_not_in_user_institution</linktoholdsnotexist>
+                <linktouc>$$Tworldcat_oclc$$Eworldcat</linktouc>
+                <lln01>$$Tfindit_link</lln01>
+              </links>
+              <search>
+                <creatorcontrib>Gerald  Fothergill</creatorcontrib>
+                <creatorcontrib>Fothergill, G</creatorcontrib>
+                <title>A list of emigrant ministers to America, 1690-1811 /</title>
+                <subject>Church of England United States Clergy.</subject>
+                <subject>Clergy United States.</subject>
+                <general>E. Stock,</general>
+                <general>(OCoLC)ocm03578014</general>
+                <general>OCoLCocm03578014</general>
+                <general>ocm03578014</general>
+                <general>sdr-wu797244</general>
+                <general>sdrwu797244</general>
+                <general>AllDocuments</general>
+                <sourceid>hathi_pub</sourceid>
+                <recordid>hathi_pubMIU01-001593127</recordid>
+                <recordid>MIU01-001593127</recordid>
+                <creationdate>1904</creationdate>
+                <startdate>19040101</startdate>
+                <enddate>19041231</enddate>
+                <searchscope>hathi_pub</searchscope>
+                <searchscope>MALC</searchscope>
+                <scope>hathi_pub</scope>
+                <scope>MALC</scope>
+                <scope>ebook</scope>
+                <scope>MALCebook</scope>
+                <lsr02>Fothergill A list of emigrant ministers to America 1690 1811</lsr02>
+                <lsr02>A list of emigrant ministers to America 1690 1811 Fothergill</lsr02>
+                <lsr07>Fothergill A list of emigrant ministers to America 1690 1811</lsr07>
+                <lsr07>A list of emigrant ministers to America 1690 1811 Fothergill</lsr07>
+                <lsr06>E. Stock,</lsr06>
+                <lsr08>London :</lsr08>
+              </search>
+              <sort>
+                <title>list of emigrant ministers to America, 1690-1811 /</title>
+                <creationdate>1904</creationdate>
+                <author>Fothergill, Gerald.</author>
+                <lso01>1904</lso01>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1904</creationdate>
+                <topic>Church of England–United States–Clergy</topic>
+                <topic>Clergy–United States</topic>
+                <toplevel>online_resources</toplevel>
+                <prefilter>books</prefilter>
+                <prefilter>print</prefilter>
+                <prefilter>ebook</prefilter>
+                <rsrctype>books</rsrctype>
+                <rsrctype>print</rsrctype>
+                <rsrctype>ebook</rsrctype>
+                <creatorcontrib>Fothergill, G</creatorcontrib>
+                <frbrgroupid>135567060</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>1</t>
+                <c1>04031174</c1>
+                <c3>listofemigrantministca16901811</c3>
+                <f1>04031174</f1>
+                <f5>listofemigrantministca16901811</f5>
+                <f6>1904</f6>
+                <f7>list of emigrant ministers to america 1690 1811</f7>
+                <f9>65 p.</f9>
+                <f10>e stock</f10>
+                <f11>fothergill gerald</f11>
+              </dedup>
+              <frbr>
+                <t>99</t>
+                <k1>$$Kfothergill gerald$$AA</k1>
+                <k3>$$Klist of emigrant ministers to america 1690 1811$$AT</k3>
+              </frbr>
+              <delivery>
+                <institution>MALC</institution>
+                <delcategory>Online Resource</delcategory>
+              </delivery>
+              <enrichment>
+                <classificationlcc>CS61</classificationlcc>
+              </enrichment>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Fothergill</aulast>
+                <aufirst>Gerald</aufirst>
+                <au>Fothergill, Gerald</au>
+                <btitle>A list of emigrant ministers to America, 1690-1811</btitle>
+                <date>1904</date>
+                <risdate>1904.</risdate>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>London</cop>
+                <pub>E. Stock</pub>
+                <oclcid>03578014</oclcid>
+                <lccn>04031174</lccn>
+              </addata>
+              <browse>
+                <author>$$DFothergill, Gerald$$EFothergill, Gerald</author>
+                <title>$$DA list of emigrant ministers to America, 1690-1811$$Elist of emigrant ministers to America, 1690-1811</title>
+                <subject>$$DClergy -- United States$$EClergy United States</subject>
+                <subject>$$DChurch of England -- United States -- Clergy$$EChurch of England United States Clergy</subject>
+                <callnumber>$$INDU$$DCS 61 .F6$$E0cs   00061.f  60000  $$T0</callnumber>
+                <institution>NDU</institution>
+              </browse>
+            </record>

@@ -1,0 +1,11146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bedework>
+  
+
+  <now>
+    
+    <date>20140822</date>
+    <longdate>August 22, 2014</longdate>
+    <shortdate>8/22/14</shortdate>
+    <time>8:36 AM</time>
+    <twodigithour24>08</twodigithour24>
+    <utc>20140822T123632Z</utc>
+    <defaultTzid>America/New_York</defaultTzid>
+
+  </now>
+  
+  <currentdate>
+    <date>20140822</date>
+    <longdate>Friday, August 22, 2014</longdate>
+    <shortdate>8/22/14</shortdate>
+    <monthname>August</monthname>
+  </currentdate>
+  <firstday>
+    <date>20140822</date>
+    <longdate>Friday, August 22, 2014</longdate>
+    <shortdate>8/22/14</shortdate>
+    <monthname>August</monthname>
+  </firstday>
+  <lastday>
+    <date>20140822</date>
+    <longdate>Friday, August 22, 2014</longdate>
+    <shortdate>8/22/14</shortdate>
+    <monthname>August</monthname>
+  </lastday>
+  <previousdate>20140821</previousdate>
+  <nextdate>20140823</nextdate>
+  <periodname>Day</periodname>
+  <multiday>false</multiday>
+  <hour24>false</hour24>
+
+
+  <publicview>true</publicview>
+  <guest>true</guest>
+  
+
+  
+
+  
+
+  <approot>http://bedework2-prod-v.dc.nd.edu:8080/calfeedrsrc.MainCampus</approot>
+  <urlprefix>http://localhost:8080/feeder</urlprefix>
+  <urlpattern>/feeder</urlpattern>
+
+  
+  <personaluri>/ucal</personaluri>
+  <publicuri>/cal</publicuri>
+  <adminuri>/caladmin</adminuri>
+  
+
+  <urlPrefixes>
+    
+
+    
+    <setup>/feeder?b=de</setup>
+
+    <main>
+      <initialise>/feeder/main/initialise.rdo</initialise>
+      <setSelection>/feeder/main/setSelection.do?b=de</setSelection>
+      <setViewPeriod>/feeder/main/setViewPeriod.do?b=de</setViewPeriod>
+      <listEvents>/feeder/main/listEvents.do?b=de</listEvents>
+      <showPage>/feeder/main/showPage.do?b=de</showPage>
+    </main>
+
+    <event>
+      <eventMore>/feeder/event/showEventMore.rdo</eventMore>
+      <eventView>/feeder/event/eventView.do?b=de</eventView>
+      <addEventRef>/feeder/event/addEventRef.do?b=de</addEventRef>
+    </event>
+
+    <calendar>
+      <fetchPublicCalendars>/feeder/calendar/fetchPublicCalendars.do?b=de</fetchPublicCalendars>
+      <fetchCalendars>/feeder/calendar/fetchCalendars.do?b=de</fetchCalendars>
+      <fetchForExport>/feeder/calendar/fetchForExport.do?b=de</fetchForExport>
+    </calendar>
+
+    <search>
+      <search>/feeder/search/search.rdo?b=de</search>
+      <next>/feeder/search/next.do?b=de</next>
+    </search>
+
+    <misc>
+      <export>/feeder/misc/export.gdo?b=de</export>
+      <showPage>/feeder/misc/showPage.rdo?b=de</showPage>
+    </misc>
+
+    <mail>
+      <mailEvent>/feeder/mail/mailEvent.do?b=de</mailEvent>
+    </mail>
+
+    <stats>
+      <stats>/feeder/stats/stats.do?b=de</stats>
+    </stats>
+
+    
+    
+    
+  </urlPrefixes>
+  
+  
+  <groups>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_Architecture</eventOwner>
+        <name>Architecture</name>
+        <description>School of Architecture</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_ArtsandEntertainment</eventOwner>
+        <name>Arts_and_Entertainment</name>
+        <description>Arts and Entertainment.  Visual and performing arts calendar administrative group.</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_ArtsandLetters</eventOwner>
+        <name>Arts_and_Letters</name>
+        <description>College of Arts and Letters calendar administration group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_Athletics</eventOwner>
+        <name>Athletics</name>
+        <description>Varsity Athletics calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_business</eventOwner>
+        <name>Business</name>
+        <description>Mendoza College of Business calendar administration group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_CampusTours</eventOwner>
+        <name>Campus_Tours</name>
+        <description>Campus tours (admissions and visitors' center) calendar administrative group</description>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_CentersandInstitutes</eventOwner>
+        <name>Centers_and_Institutes</name>
+        <description>Centers and Institutes calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_Sustainability</eventOwner>
+        <name>Community_Relations</name>
+        <description>Community Relations</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_Engineering</eventOwner>
+        <name>Engineering</name>
+        <description>College of Engineering calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_FacultyandStaff</eventOwner>
+        <name>Faculty_and_Staff</name>
+        <description>Faculty and Staff calendar administrative group.  (Human Resources or campus-wide)</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_HealthandRecreation</eventOwner>
+        <name>Health_and_Recreation</name>
+        <description>Health and Recreation calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_LawSchool</eventOwner>
+        <name>Law_School</name>
+        <description>Law School calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_Lectures_and_Conferences</eventOwner>
+        <name>Lectures_and_Conferences</name>
+        <description>Lectures and Conferences calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_OfficialAcademicCalendar</eventOwner>
+        <name>Official_Academic_Calendar</name>
+        <description>Registrar's Calendar</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_RelgiousandSpiritual</eventOwner>
+        <name>Religious_and_Spiritual</name>
+        <description>Religious and Spiritual calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_science</eventOwner>
+        <name>Science</name>
+        <description>College of Science calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_calsuite-MainCampus</eventOwner>
+        <name>Service</name>
+        <description>Service calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_StudentLife</eventOwner>
+        <name>Student_Life</name>
+        <description>Student Affairs, SAO and Student Gov't calendar administrative group</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_Sustainability</eventOwner>
+        <name>Sustainability</name>
+        <description>Sustainability</description>
+        
+          <memberof>
+            <name>calsuite-MainCampus</name>
+          </memberof>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/agrp_calsuite-MainCampus</eventOwner>
+        <name>calsuite-MainCampus</name>
+        <description>Group from which the MainCampus calendar suite is hung</description>
+        
+          <memberof>
+            <name>campusAdminGroups</name>
+          </memberof>
+        
+      </group>
+    
+      <group>
+        <eventOwner>/principals/users/public-user</eventOwner>
+        <name>campusAdminGroups</name>
+        <description>Top-level administrative group from which all children inherit administrative access to the public calendar root.  All other admin groups should be descendants of this group to provide default access control.</description>
+        
+      </group>
+    
+  </groups>
+  
+
+  <confirmationid>OYJKR2ZZQ4CPV01I2</confirmationid>
+
+  
+    <appvar>
+      <key>summaryMode</key>
+      <value>details</value>
+
+      
+        
+          
+        
+      
+    </appvar>
+  
+
+  
+
+  
+
+  <schedulingMessages>
+    
+  </schedulingMessages>
+
+  <selectionState>
+    <selectionType>view</selectionType>
+    <collection>
+      
+      
+    </collection>
+    <view>
+      
+        <name>35_All Events</name>
+      
+    </view>
+    <filter/> 
+  </selectionState>
+
+  
+  <views>
+    
+      
+        <view>
+          <name>01_Official Academic Calendar</name>
+        </view>
+      
+        <view>
+          <name>05_Arts and Entertainment</name>
+        </view>
+      
+        <view>
+          <name>05p01_Literary Events</name>
+        </view>
+      
+        <view>
+          <name>05p50_Performing Arts</name>
+        </view>
+      
+        <view>
+          <name>05p99_Visual Arts</name>
+        </view>
+      
+        <view>
+          <name>13_Athletics</name>
+        </view>
+      
+        <view>
+          <name>13p01_Baseball</name>
+        </view>
+      
+        <view>
+          <name>13p02_Football</name>
+        </view>
+      
+        <view>
+          <name>13p03_Hockey</name>
+        </view>
+      
+        <view>
+          <name>13p04_Men's Basketball</name>
+        </view>
+      
+        <view>
+          <name>13p05_Men's Cross Country</name>
+        </view>
+      
+        <view>
+          <name>13p06_Men's Fencing</name>
+        </view>
+      
+        <view>
+          <name>13p07_Men's Golf</name>
+        </view>
+      
+        <view>
+          <name>13p08_Men's Lacrosse</name>
+        </view>
+      
+        <view>
+          <name>13p09_Men's Soccer</name>
+        </view>
+      
+        <view>
+          <name>13p10_Men's Swimming and Diving</name>
+        </view>
+      
+        <view>
+          <name>13p11_Men's Tennis</name>
+        </view>
+      
+        <view>
+          <name>13p12_Men's Track and Field</name>
+        </view>
+      
+        <view>
+          <name>13p50_Softball</name>
+        </view>
+      
+        <view>
+          <name>13p51_Volleyball</name>
+        </view>
+      
+        <view>
+          <name>13p52_Women's Basketball</name>
+        </view>
+      
+        <view>
+          <name>13p53_Women's Cross Country</name>
+        </view>
+      
+        <view>
+          <name>13p54_Women's Fencing</name>
+        </view>
+      
+        <view>
+          <name>13p55_Women's Golf</name>
+        </view>
+      
+        <view>
+          <name>13p56_Women's Lacrosse</name>
+        </view>
+      
+        <view>
+          <name>13p57_Women's Rowing</name>
+        </view>
+      
+        <view>
+          <name>13p58_Women's Soccer</name>
+        </view>
+      
+        <view>
+          <name>13p59_Women's Swimming and Diving</name>
+        </view>
+      
+        <view>
+          <name>13p60_Women's Tennis</name>
+        </view>
+      
+        <view>
+          <name>13p99_Women's Track and Field</name>
+        </view>
+      
+        <view>
+          <name>14_Faculty and Staff</name>
+        </view>
+      
+        <view>
+          <name>15_Health and Recreation</name>
+        </view>
+      
+        <view>
+          <name>20_Lectures and Conferences</name>
+        </view>
+      
+        <view>
+          <name>22_Open to the Public</name>
+        </view>
+      
+        <view>
+          <name>25_Religious and Spiritual</name>
+        </view>
+      
+        <view>
+          <name>27_Service</name>
+        </view>
+      
+        <view>
+          <name>30_Student Life</name>
+        </view>
+      
+        <view>
+          <name>30p01_Career Center</name>
+        </view>
+      
+        <view>
+          <name>30p10_Gender Relations Center</name>
+        </view>
+      
+        <view>
+          <name>30p20_Multicultural Student Programs and Services</name>
+        </view>
+      
+        <view>
+          <name>30p40_Student Activities Office</name>
+        </view>
+      
+        <view>
+          <name>30p41_Other Student Life Departments</name>
+        </view>
+      
+        <view>
+          <name>30p42_Concerts and Comedy</name>
+        </view>
+      
+        <view>
+          <name>30p43_Free Food and Giveaways</name>
+        </view>
+      
+        <view>
+          <name>30p44_Informational Meetings, Fairs, and Openhouses</name>
+        </view>
+      
+        <view>
+          <name>30p45_Lectures and Conferences, Student Life</name>
+        </view>
+      
+        <view>
+          <name>30p46_Movies</name>
+        </view>
+      
+        <view>
+          <name>30p47_Nightclub or Dance</name>
+        </view>
+      
+        <view>
+          <name>30p48_Plays and Other Performances</name>
+        </view>
+      
+        <view>
+          <name>30p49_Recreation, Student Life</name>
+        </view>
+      
+        <view>
+          <name>30p50_Religious and Spiritual, Student Life</name>
+        </view>
+      
+        <view>
+          <name>30p60_Service, Student Life</name>
+        </view>
+      
+        <view>
+          <name>30p65_Student Clubs and Organizations</name>
+        </view>
+      
+        <view>
+          <name>30p99_Trips</name>
+        </view>
+      
+        <view>
+          <name>35_All Events</name>
+        </view>
+      
+        <view>
+          <name>50_Architecture, School of</name>
+        </view>
+      
+        <view>
+          <name>55_Arts and Letters, College of</name>
+        </view>
+      
+        <view>
+          <name>55p01_Africana Studies</name>
+        </view>
+      
+        <view>
+          <name>55p03_American Studies</name>
+        </view>
+      
+        <view>
+          <name>55p05_Anthropology</name>
+        </view>
+      
+        <view>
+          <name>55p07_Art, Art History and Design</name>
+        </view>
+      
+        <view>
+          <name>55p09_Classics</name>
+        </view>
+      
+        <view>
+          <name>55p10_College Seminar</name>
+        </view>
+      
+        <view>
+          <name>55p11_East Asian Languages and Cultures</name>
+        </view>
+      
+        <view>
+          <name>55p13_Economics</name>
+        </view>
+      
+        <view>
+          <name>55p15_English</name>
+        </view>
+      
+        <view>
+          <name>55p17_Film, Television, and Theatre</name>
+        </view>
+      
+        <view>
+          <name>55p18_Gender Studies Program</name>
+        </view>
+      
+        <view>
+          <name>55p19_German and Russian Languages and Literatures</name>
+        </view>
+      
+        <view>
+          <name>55p21_History</name>
+        </view>
+      
+        <view>
+          <name>55p23_Irish Language and Literature</name>
+        </view>
+      
+        <view>
+          <name>55p24_Medieval Studies</name>
+        </view>
+      
+        <view>
+          <name>55p25_Music</name>
+        </view>
+      
+        <view>
+          <name>55p27_Philosophy</name>
+        </view>
+      
+        <view>
+          <name>55p29_Political Science</name>
+        </view>
+      
+        <view>
+          <name>55p31_Program of Liberal Studies</name>
+        </view>
+      
+        <view>
+          <name>55p33_Psychology</name>
+        </view>
+      
+        <view>
+          <name>55p35_Romance Languages and Literatures</name>
+        </view>
+      
+        <view>
+          <name>55p37_Sociology</name>
+        </view>
+      
+        <view>
+          <name>55p39_Theology</name>
+        </view>
+      
+        <view>
+          <name>55p41_University Writing Program</name>
+        </view>
+      
+        <view>
+          <name>55p99_Other Arts and Letters Programs</name>
+        </view>
+      
+        <view>
+          <name>60_Business, Mendoza College</name>
+        </view>
+      
+        <view>
+          <name>60p01_Executive Education</name>
+        </view>
+      
+        <view>
+          <name>60p15_Executive MBA</name>
+        </view>
+      
+        <view>
+          <name>60p25_Graduate Business Alumni</name>
+        </view>
+      
+        <view>
+          <name>60p35_MBA</name>
+        </view>
+      
+        <view>
+          <name>60p80_Other Mendoza Business Events</name>
+        </view>
+      
+        <view>
+          <name>60p99_Undergraduate Business</name>
+        </view>
+      
+        <view>
+          <name>65_Engineering, College of</name>
+        </view>
+      
+        <view>
+          <name>65p01_Aerospace and Mechanical Engineering</name>
+        </view>
+      
+        <view>
+          <name>65p20_Chemical and Biomolecular Engineering</name>
+        </view>
+      
+        <view>
+          <name>65p30_Civil Engineering and Geological Sciences</name>
+        </view>
+      
+        <view>
+          <name>65p40_Computer Science and Engineering</name>
+        </view>
+      
+        <view>
+          <name>65p50_Electrical Engineering</name>
+        </view>
+      
+        <view>
+          <name>65p99_Other Engineering Programs</name>
+        </view>
+      
+        <view>
+          <name>68_Graduate School</name>
+        </view>
+      
+        <view>
+          <name>69_Hesburgh Libraries</name>
+        </view>
+      
+        <view>
+          <name>70_Law School</name>
+        </view>
+      
+        <view>
+          <name>80_Science, College of</name>
+        </view>
+      
+        <view>
+          <name>80p01_Applied and Computational Mathematics and Statistics</name>
+        </view>
+      
+        <view>
+          <name>80p10_Biological Sciences</name>
+        </view>
+      
+        <view>
+          <name>80p20_Chemistry and Biochemistry</name>
+        </view>
+      
+        <view>
+          <name>80p30_Mathematics</name>
+        </view>
+      
+        <view>
+          <name>80p40_Physics</name>
+        </view>
+      
+        <view>
+          <name>80p99_Other Science Programs</name>
+        </view>
+      
+        <view>
+          <name>99_Centers and Institutes</name>
+        </view>
+      
+        <view>
+          <name>99p01_Alliance for Catholic Education</name>
+        </view>
+      
+        <view>
+          <name>99p02_Center for Civil and Human Rights</name>
+        </view>
+      
+        <view>
+          <name>99p03_Center for Ethics and Culture</name>
+        </view>
+      
+        <view>
+          <name>99p04_Center for Philosophy of Religion</name>
+        </view>
+      
+        <view>
+          <name>99p05_Center for Research Computing</name>
+        </view>
+      
+        <view>
+          <name>99p06_Center for Social Concerns</name>
+        </view>
+      
+        <view>
+          <name>99p08_Center for Social Research</name>
+        </view>
+      
+        <view>
+          <name>99p10_Center for Undergraduate Scholarly Engagement (CUSE)</name>
+        </view>
+      
+        <view>
+          <name>99p13_Cushwa Center for the Study of American Catholicism</name>
+        </view>
+      
+        <view>
+          <name>99p15_Eck Institute for Global Health</name>
+        </view>
+      
+        <view>
+          <name>99p20_Institute for Church Life</name>
+        </view>
+      
+        <view>
+          <name>99p25_Institute for Educational Initiatives</name>
+        </view>
+      
+        <view>
+          <name>99p27_Institute for Flow Physics and Control</name>
+        </view>
+      
+        <view>
+          <name>99p30_Institute for Latino Studies</name>
+        </view>
+      
+        <view>
+          <name>99p33_Institute for Scholarship in the Liberal Arts</name>
+        </view>
+      
+        <view>
+          <name>99p34_Interdisciplinary Center for the Study of Biocomplexity</name>
+        </view>
+      
+        <view>
+          <name>99p35_Joint Institute for Nuclear Astrophysics (JINA)</name>
+        </view>
+      
+        <view>
+          <name>99p37_Kaneb Center for Teaching and Learning</name>
+        </view>
+      
+        <view>
+          <name>99p40_Keck Center For Transgene Research</name>
+        </view>
+      
+        <view>
+          <name>99p45_Kellogg Institute for International Studies</name>
+        </view>
+      
+        <view>
+          <name>99p50_Keough-Naughton Institute for Irish Studies</name>
+        </view>
+      
+        <view>
+          <name>99p55_Kroc Institute for International Peace Studies</name>
+        </view>
+      
+        <view>
+          <name>99p60_Medieval Institute</name>
+        </view>
+      
+        <view>
+          <name>99p65_Nanovic Institute for European Studies</name>
+        </view>
+      
+        <view>
+          <name>99p70_Notre Dame Energy Center</name>
+        </view>
+      
+        <view>
+          <name>99p72_Notre Dame Institute for Advanced Study (NDIAS)</name>
+        </view>
+      
+        <view>
+          <name>99p75_Reilly Center for Science, Technology and Values</name>
+        </view>
+      
+        <view>
+          <name>99p99_Other Centers and Institutes</name>
+        </view>
+      
+    
+  </views>
+
+  
+  <categories>
+    
+      
+        
+
+
+
+<category>
+  
+  <uid>ff808181-1fd73b03-011f-d73b0642-00000001</uid>
+
+  
+  
+    <value>Arts and Entertainment</value>
+
+  
+  
+  
+  
+    <description>Arts and Entertainment</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>ff808181-1fd7389e-011f-d7389f24-0000000e</uid>
+
+  
+  
+    <value>Athletics</value>
+
+  
+  
+  
+  
+    <description>Athletics</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dc68c3f1-00000013</uid>
+
+  
+  
+    <value>Baseball</value>
+
+  
+  
+  
+  
+    <description>Baseball</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2d52efc1-012d-56d17deb-00006c8c</uid>
+
+  
+  
+    <value>Community Relations</value>
+
+  
+  
+  
+  
+    <description>Community Relations</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b3fbae6-012b-457a67aa-000049be</uid>
+
+  
+  
+    <value>Dead events</value>
+
+  
+  
+  
+  
+    <description>Dead events</description>
+
+  
+  
+  <creator>/principals/users/agrp_Engineering</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-380923d5-0138-0b359b19-00002181</uid>
+
+  
+  
+    <value>External Communications feed</value>
+
+  
+  
+  
+  
+    <description>Internal Communications dept feed to nd.edu homepage</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>ff808181-1fd7389e-011f-d7389f8f-00000023</uid>
+
+  
+  
+    <value>Faculty and Staff</value>
+
+  
+  
+  
+  
+    <description>Faculty and Staff</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dc693aca-00000017</uid>
+
+  
+  
+    <value>Football</value>
+
+  
+  
+  
+  
+    <description>Football</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-33a6ae58-0133-a822efd4-0000345c</uid>
+
+  
+  
+    <value>Graduate School</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2aa4b496-012a-a5c183d1-000006e9</uid>
+
+  
+  
+    <value>Health and Recreation</value>
+
+  
+  
+  
+  
+    <description>Health and Recreation</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dca8f804-0000002d</uid>
+
+  
+  
+    <value>Hockey</value>
+
+  
+  
+  
+  
+    <description>Hockey</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-5e72dd35-00001295</uid>
+
+  
+  
+    <value>Law School</value>
+
+  
+  
+  
+  
+    <description>Law School</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a9174807-0000076d</uid>
+
+  
+  
+    <value>Lectures and Conferences</value>
+
+  
+  
+  
+  
+    <description>Lectures and Conferences, Seminars, Colloquia, etc.</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b2f8445-012b-31fc6de8-00006d9d</uid>
+
+  
+  
+    <value>Literary Events</value>
+
+  
+  
+  
+  
+    <description>Poetry readings, book-signings, etc.</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dc68dd9b-00000014</uid>
+
+  
+  
+    <value>Men's Basketball</value>
+
+  
+  
+  
+  
+    <description>Men's Basketball</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dc68f97c-00000015</uid>
+
+  
+  
+    <value>Men's Cross Country</value>
+
+  
+  
+  
+  
+    <description>Men's Cross Country</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dca88449-0000002b</uid>
+
+  
+  
+    <value>Men's Fencing</value>
+
+  
+  
+  
+  
+    <description>Men's Fencing</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dc6966db-00000018</uid>
+
+  
+  
+    <value>Men's Golf</value>
+
+  
+  
+  
+  
+    <description>Men's Golf</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dca8b0bc-0000002c</uid>
+
+  
+  
+    <value>Men's Lacrosse</value>
+
+  
+  
+  
+  
+    <description>Men's Lacrosse</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dca92465-0000002e</uid>
+
+  
+  
+    <value>Men's Soccer</value>
+
+  
+  
+  
+  
+    <description>Men's Soccer</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dca975de-0000002f</uid>
+
+  
+  
+    <value>Men's Swimming and Diving</value>
+
+  
+  
+  
+  
+    <description>Men's Swimming and Diving</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dca9b973-00000030</uid>
+
+  
+  
+    <value>Men's Tennis</value>
+
+  
+  
+  
+  
+    <description>Men's Tennis</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dca9e5f9-00000031</uid>
+
+  
+  
+    <value>Men's Track and Field</value>
+
+  
+  
+  
+  
+    <description>Men's Track and Field</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-3151158e-0131-5340162e-000028b7</uid>
+
+  
+  
+    <value>Open to the Public</value>
+
+  
+  
+  
+  
+    <description>Open to the Public</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a034e8-0000501d</uid>
+
+  
+  
+    <value>org/AcademicClubs</value>
+
+  
+  
+  
+  
+    <description>Academic Clubs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c044c0-00000d78</uid>
+
+  
+  
+    <value>org/Accountancy</value>
+
+  
+  
+  
+  
+    <description>Accountancy</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c17a3c-00000d7b</uid>
+
+  
+  
+    <value>org/AerospaceAndMechanicalEngineering</value>
+
+  
+  
+  
+  
+    <description>Aerospace and Mechanical Engineering</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14728a45-00000d42</uid>
+
+  
+  
+    <value>org/AfricanaStudies</value>
+
+  
+  
+  
+  
+    <description>Africana Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-35e77647-0135-e8b2f7f4-00007575</uid>
+
+  
+  
+    <value>org/AllianceForCatholicEducation</value>
+
+  
+  
+  
+  
+    <description>Alliance for Catholic Education</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14b4c1f6-00000d61</uid>
+
+  
+  
+    <value>org/AmericanStudies</value>
+
+  
+  
+  
+  
+    <description>American Studies</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14b61ff5-00000d63</uid>
+
+  
+  
+    <value>org/Anthropology</value>
+
+  
+  
+  
+  
+    <description>Anthropology</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2acaf35d-012a-da9a3e76-00004582</uid>
+
+  
+  
+    <value>org/AppliedAndComputationalMathematicsAndStatistics</value>
+
+  
+  
+  
+  
+    <description>Applied and Computational Mathematics and Statistics</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a91c9b7d-00000771</uid>
+
+  
+  
+    <value>org/Architecture</value>
+
+  
+  
+  
+  
+    <description>School of Architecture</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14b6ac14-00000d64</uid>
+
+  
+  
+    <value>org/ArtArtHistoryAndDesign</value>
+
+  
+  
+  
+  
+    <description>Art, Art History and Design</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a91cdfb9-00000772</uid>
+
+  
+  
+    <value>org/ArtsAndLetters</value>
+
+  
+  
+  
+  
+    <description>College of Arts and Letters</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a00637-0000501c</uid>
+
+  
+  
+    <value>org/AthleticClubs</value>
+
+  
+  
+  
+  
+    <description>Athletic Clubs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c499c6-00000d81</uid>
+
+  
+  
+    <value>org/BiologicalSciences</value>
+
+  
+  
+  
+  
+    <description>Biological Sciences</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a91d187e-00000773</uid>
+
+  
+  
+    <value>org/Business</value>
+
+  
+  
+  
+  
+    <description>Mendoza College of Business</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-695720e4-00004ef6</uid>
+
+  
+  
+    <value>org/CareerCenter</value>
+
+  
+  
+  
+  
+    <description>Career Center</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-40abeb03-0140-ac2c9f9b-00002c34</uid>
+
+  
+  
+    <value>org/CenterForCivilAndHumanRights</value>
+
+  
+  
+  
+  
+    <description>Center for Civil and Human Rights</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15bd31d2-0000158f</uid>
+
+  
+  
+    <value>org/CenterForEthicsAndCulture</value>
+
+  
+  
+  
+  
+    <description>Center for Ethics and Culture</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b3548c8-012b-35ad20a2-00002418</uid>
+
+  
+  
+    <value>org/CenterForPhilosophyOfReligion</value>
+
+  
+  
+  
+  
+    <description>Center for Philosophy of Religion</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-3243207f-0132-452d7af9-00004c58</uid>
+
+  
+  
+    <value>org/CenterForResearchComputing</value>
+
+  
+  
+  
+  
+    <description>Center for Research Computing</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15be5086-00001590</uid>
+
+  
+  
+    <value>org/CenterForSocialConcerns</value>
+
+  
+  
+  
+  
+    <description>Center for Social Concerns</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-4132d245-0141-4b654585-000030c8</uid>
+
+  
+  
+    <value>org/CenterForSocialResearch</value>
+
+  
+  
+  
+  
+    <description>Center for Social Research</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2e1fce2a-012e-25a4a500-00006b5e</uid>
+
+  
+  
+    <value>org/CenterForUndergraduateScholarlyEngagement</value>
+
+  
+  
+  
+  
+    <description>Center For Undergraduate Scholarly Engagement</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-1617372e-000015ec</uid>
+
+  
+  
+    <value>org/CentersAndInstitutes</value>
+
+  
+  
+  
+  
+    <description>Centers and Institutes</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c1c7fa-00000d7c</uid>
+
+  
+  
+    <value>org/ChemicalAndBiomolecularEngineering</value>
+
+  
+  
+  
+  
+    <description>Chemical and Biomolecular Engineering</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c4c406-00000d82</uid>
+
+  
+  
+    <value>org/ChemistryAndBiochemistry</value>
+
+  
+  
+  
+  
+    <description>Chemistry and Biochemistry</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c27ae5-00000d7d</uid>
+
+  
+  
+    <value>org/CivilAndEnvironmentalEngineeringAndEarthSciences</value>
+
+  
+  
+  
+  
+    <description>Civil and Environmental Engineering and Earth Sciences</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14b72cdd-00000d65</uid>
+
+  
+  
+    <value>org/Classics</value>
+
+  
+  
+  
+  
+    <description>Classics</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2d52efc1-012d-9b0e67e3-0000314d</uid>
+
+  
+  
+    <value>org/CollegeSeminar</value>
+
+  
+  
+  
+  
+    <description>College Seminar (Arts &amp; Letters)</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c3008b-00000d7e</uid>
+
+  
+  
+    <value>org/ComputerScienceAndEngineering</value>
+
+  
+  
+  
+  
+    <description>Computer Science and Engineering</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69c5b1e3-00005048</uid>
+
+  
+  
+    <value>org/ConcertsAndComedy</value>
+
+  
+  
+  
+  
+    <description>Concerts and Comedy</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a07438-0000501e</uid>
+
+  
+  
+    <value>org/CulturalClubs</value>
+
+  
+  
+  
+  
+    <description>Cultural Clubs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15bed5d5-00001591</uid>
+
+  
+  
+    <value>org/CushwaCenterForTheStudyOfAmericanCatholicism</value>
+
+  
+  
+  
+  
+    <description>Cushwa Center for the Study of American Catholicism</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14b7b1ed-00000d66</uid>
+
+  
+  
+    <value>org/EastAsianLanguagesAndCultures</value>
+
+  
+  
+  
+  
+    <description>East Asian Languages and Cultures</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15bf9269-00001592</uid>
+
+  
+  
+    <value>org/EckInstituteForGlobalHealth</value>
+
+  
+  
+  
+  
+    <description>Eck Institute for Global Health</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14b8ce52-00000d67</uid>
+
+  
+  
+    <value>org/Economics</value>
+
+  
+  
+  
+  
+    <description>Economics</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c3624a-00000d80</uid>
+
+  
+  
+    <value>org/ElectricalEngineering</value>
+
+  
+  
+  
+  
+    <description>Electrical Engineering</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-1489963a-00000d54</uid>
+
+  
+  
+    <value>org/Engineering</value>
+
+  
+  
+  
+  
+    <description>College of Engineering</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14b9070c-00000d68</uid>
+
+  
+  
+    <value>org/English</value>
+
+  
+  
+  
+  
+    <description>English</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2bcb59a3-012b-d0c7c5b2-00004320</uid>
+
+  
+  
+    <value>org/ExecutiveEducation</value>
+
+  
+  
+  
+  
+    <description>Executive Education</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2bcb59a3-012b-d0c783a4-000042d1</uid>
+
+  
+  
+    <value>org/ExecutiveMBA</value>
+
+  
+  
+  
+  
+    <description>Executive MBA</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14b95df4-00000d69</uid>
+
+  
+  
+    <value>org/FilmTelevisionAndTheatre</value>
+
+  
+  
+  
+  
+    <description>Film, Television, and Theatre</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14bfb825-00000d77</uid>
+
+  
+  
+    <value>org/Finance</value>
+
+  
+  
+  
+  
+    <description>Finance</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69c673ca-00005049</uid>
+
+  
+  
+    <value>org/FreeFoodAndGiveaways</value>
+
+  
+  
+  
+  
+    <description>Free Food and Giveaways</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-697dec39-00004fb1</uid>
+
+  
+  
+    <value>org/GenderRelationsCenter</value>
+
+  
+  
+  
+  
+    <description>Gender Relations Center</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2c2be983-012c-364d6c57-000065ed</uid>
+
+  
+  
+    <value>org/GenderStudiesProgram</value>
+
+  
+  
+  
+  
+    <description>Gender Studies Program</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14ba08a8-00000d6a</uid>
+
+  
+  
+    <value>org/GermanAndRussianLanguagesAndLiteratures</value>
+
+  
+  
+  
+  
+    <description>German and Russian Languages and Literatures</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2bcb59a3-012b-d0c8222b-00004425</uid>
+
+  
+  
+    <value>org/GraduateBusinessAlumni</value>
+
+  
+  
+  
+  
+    <description>Graduate Business Alumni</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a0ae27-0000501f</uid>
+
+  
+  
+    <value>org/GraduateLawMBAClubs</value>
+
+  
+  
+  
+  
+    <description>Graduate, Law, MBA Clubs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-149168e0-00000d58</uid>
+
+  
+  
+    <value>org/GraduateSchool</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-3af939f2-013a-fae25787-00001f31</uid>
+
+  
+  
+    <value>org/HesburghLibraries</value>
+
+  
+  
+  
+  
+    <description>Hesburgh Libraries</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14ba8305-00000d6c</uid>
+
+  
+  
+    <value>org/History</value>
+
+  
+  
+  
+  
+    <description>History</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69c6c4af-0000504a</uid>
+
+  
+  
+    <value>org/InformationalMeetingsFairsAndOpenhouses</value>
+
+  
+  
+  
+  
+    <description>Informational Meetings, Fairs, and Openhouses</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c02fe1-00001593</uid>
+
+  
+  
+    <value>org/InstituteForChurchLife</value>
+
+  
+  
+  
+  
+    <description>Institute for Church Life</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c0a095-00001594</uid>
+
+  
+  
+    <value>org/InstituteForEducationalInitiatives</value>
+
+  
+  
+  
+  
+    <description>Institute for Educational Initiatives</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2af8a1b3-012a-fc12116e-000017c6</uid>
+
+  
+  
+    <value>org/InstituteForFlowPhysicsAndControl</value>
+
+  
+  
+  
+  
+    <description>Institute for Flow Physics and Control</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c12798-00001595</uid>
+
+  
+  
+    <value>org/InstituteForLatinoStudies</value>
+
+  
+  
+  
+  
+    <description>Institute for Latino Studies</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-6985bd56-00005698</uid>
+
+  
+  
+    <value>org/InstituteForScholarshipInTheLiberalArts</value>
+
+  
+  
+  
+  
+    <description>Institute for Scholarship in the Liberal Arts</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-30695757-0130-6a76b61c-00006bee</uid>
+
+  
+  
+    <value>org/InterdisciplinaryCenterForTheStudyOfBiocomplexity</value>
+
+  
+  
+  
+  
+    <description>Interdisciplinary Center for the Study of Biocomplexity</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14bae30c-00000d6d</uid>
+
+  
+  
+    <value>org/IrishLanguageAndLiterature</value>
+
+  
+  
+  
+  
+    <description>Irish Language and Literature</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c17e47-00001596</uid>
+
+  
+  
+    <value>org/JointInstituteForNuclearAstrophysics(JINA)</value>
+
+  
+  
+  
+  
+    <description>Joint Institute for Nuclear Astrophysics (JINA)</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2acaf35d-012a-d4bf6989-00002116</uid>
+
+  
+  
+    <value>org/KanebCenterForTeachingAndLearning</value>
+
+  
+  
+  
+  
+    <description>Kaneb Center for Teaching and Learning</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c76228-0000159e</uid>
+
+  
+  
+    <value>org/KeckCenterForTransgeneResearch</value>
+
+  
+  
+  
+  
+    <description>Keck Center For Transgene Research</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c4c287-00001598</uid>
+
+  
+  
+    <value>org/KelloggInstituteForInternationalStudies</value>
+
+  
+  
+  
+  
+    <description>Kellogg Institute for International Studies</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c56520-00001599</uid>
+
+  
+  
+    <value>org/KeoughNaughtonInstituteForIrishStudies</value>
+
+  
+  
+  
+  
+    <description>Keough-Naughton Institute for Irish Studies</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c5d394-0000159a</uid>
+
+  
+  
+    <value>org/KrocInstituteForInternationalPeaceStudies</value>
+
+  
+  
+  
+  
+    <description>Kroc Institute for International Peace Studies</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69c7e0ef-0000504b</uid>
+
+  
+  
+    <value>org/LecturesAndConferencesStudentLife</value>
+
+  
+  
+  
+  
+    <description>Lectures and Conferences, Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c0b821-00000d79</uid>
+
+  
+  
+    <value>org/Management</value>
+
+  
+  
+  
+  
+    <description>Management</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c0ebda-00000d7a</uid>
+
+  
+  
+    <value>org/Marketing</value>
+
+  
+  
+  
+  
+    <description>Marketing</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c518c0-00000d83</uid>
+
+  
+  
+    <value>org/Mathematics</value>
+
+  
+  
+  
+  
+    <description>Mathematics</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2bcb59a3-012b-d0c8c57b-0000467a</uid>
+
+  
+  
+    <value>org/MBA</value>
+
+  
+  
+  
+  
+    <description>MBA</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c6162a-0000159b</uid>
+
+  
+  
+    <value>org/MedievalInstitute</value>
+
+  
+  
+  
+  
+    <description>Medieval Institute</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b3548c8-012b-35b6875c-0000278b</uid>
+
+  
+  
+    <value>org/MedievalStudies</value>
+
+  
+  
+  
+  
+    <description>Medieval Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_CentersandInstitutes</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69c9305f-0000504c</uid>
+
+  
+  
+    <value>org/Movies</value>
+
+  
+  
+  
+  
+    <description>Movies, Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69836fdf-00004fb6</uid>
+
+  
+  
+    <value>org/MulticulturalStudentProgramsAndServices</value>
+
+  
+  
+  
+  
+    <description>Multicultural Student Programs and Services</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14bbb934-00000d6e</uid>
+
+  
+  
+    <value>org/Music</value>
+
+  
+  
+  
+  
+    <description>Music, Department of</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c660b0-0000159c</uid>
+
+  
+  
+    <value>org/NanovicInstituteForEuropeanStudies</value>
+
+  
+  
+  
+  
+    <description>Nanovic Institute for European Studies</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-38fb313b-0138-fc6c9990-00003ba1</uid>
+
+  
+  
+    <value>org/NightclubOrDance</value>
+
+  
+  
+  
+  
+    <description>Nightclub or Dance</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c6c255-0000159d</uid>
+
+  
+  
+    <value>org/NotreDameEnergyCenter</value>
+
+  
+  
+  
+  
+    <description>Notre Dame Energy Center</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2ba77b09-012b-abfb3b1f-00007d69</uid>
+
+  
+  
+    <value>org/NotreDameInstituteForAdvancedStudy</value>
+
+  
+  
+  
+  
+    <description>Notre Dame Institute for Advanced Study  (NDIAS)</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2e1fce2a-012e-2fde34cb-0000164a</uid>
+
+  
+  
+    <value>org/OfficeOfResearch</value>
+
+  
+  
+  
+  
+    <description>Office of Research</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2acaf35d-012a-daa230d8-00004586</uid>
+
+  
+  
+    <value>org/OtherArtsAndLettersPrograms</value>
+
+  
+  
+  
+  
+    <description>Other Arts and Letters Programs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a6c78ef-012a-816f868e-00002ec3</uid>
+
+  
+  
+    <value>org/OtherCentersAndInstitutes</value>
+
+  
+  
+  
+  
+    <description>Other Centers and Institutes</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2acaf35d-012a-e9575ebb-000068ce</uid>
+
+  
+  
+    <value>org/OtherEngineeringPrograms</value>
+
+  
+  
+  
+  
+    <description>Other College of Engineering Programs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2acaf35d-012a-e9562713-000068cb</uid>
+
+  
+  
+    <value>org/OtherMendozaBusinessEvents</value>
+
+  
+  
+  
+  
+    <description>Other Mendoza College of Business Events</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2acaf35d-012a-e956dda8-000068cc</uid>
+
+  
+  
+    <value>org/OtherSciencePrograms</value>
+
+  
+  
+  
+  
+    <description>Other College of Science Programs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69c9e5df-0000504d</uid>
+
+  
+  
+    <value>org/OtherSocialPrograms</value>
+
+  
+  
+  
+  
+    <description>Other Social Programs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a126ae-00005020</uid>
+
+  
+  
+    <value>org/PerformingArtsClubs</value>
+
+  
+  
+  
+  
+    <description>Performing Arts Clubs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14bcba21-00000d6f</uid>
+
+  
+  
+    <value>org/Philosophy</value>
+
+  
+  
+  
+  
+    <description>Philosophy</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14c5a34c-00000d84</uid>
+
+  
+  
+    <value>org/Physics</value>
+
+  
+  
+  
+  
+    <description>Physics</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69ca2b01-0000504e</uid>
+
+  
+  
+    <value>org/PlaysAndOtherPerformances</value>
+
+  
+  
+  
+  
+    <description>Plays and Other Performances, Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14bd42be-00000d70</uid>
+
+  
+  
+    <value>org/PoliticalScience</value>
+
+  
+  
+  
+  
+    <description>Political Science</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14bdb6fc-00000d71</uid>
+
+  
+  
+    <value>org/ProgramOfLiberalStudies</value>
+
+  
+  
+  
+  
+    <description>Program of Liberal Studies</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14be1b51-00000d72</uid>
+
+  
+  
+    <value>org/Psychology</value>
+
+  
+  
+  
+  
+    <description>Psychology</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69cba671-00005050</uid>
+
+  
+  
+    <value>org/RecreationStudentLife</value>
+
+  
+  
+  
+  
+    <description>Recreation, Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15c3525a-00001597</uid>
+
+  
+  
+    <value>org/ReillyCenterForScienceTechnologyAndValues</value>
+
+  
+  
+  
+  
+    <description>Reilly Center for Science, Technology and Values</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69cbf7d2-00005051</uid>
+
+  
+  
+    <value>org/ReligiousAndSpiritualStudentLife</value>
+
+  
+  
+  
+  
+    <description>Religious and Spiritual, Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a169d2-00005021</uid>
+
+  
+  
+    <value>org/ReligiousClubs</value>
+
+  
+  
+  
+  
+    <description>Religious Clubs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a1a17d-00005022</uid>
+
+  
+  
+    <value>org/ResidenceHalls</value>
+
+  
+  
+  
+  
+    <description>Residence Halls</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14be9617-00000d73</uid>
+
+  
+  
+    <value>org/RomanceLanguagesAndLiteratures</value>
+
+  
+  
+  
+  
+    <description>Romance Languages and Literatures</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-1488b614-00000d53</uid>
+
+  
+  
+    <value>org/Science</value>
+
+  
+  
+  
+  
+    <description>College of Science</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a1e8c1-00005023</uid>
+
+  
+  
+    <value>org/ServiceClubs</value>
+
+  
+  
+  
+  
+    <description>Service Clubs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a6c78ef-012a-817a1cb0-00002ec6</uid>
+
+  
+  
+    <value>org/ServiceStudentLife</value>
+
+  
+  
+  
+  
+    <description>Service, Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14bf12d0-00000d75</uid>
+
+  
+  
+    <value>org/Sociology</value>
+
+  
+  
+  
+  
+    <description>Sociology</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a20aba-00005024</uid>
+
+  
+  
+    <value>org/SpecialInterestClubs</value>
+
+  
+  
+  
+  
+    <description>Special Interest Clubs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984b00b-00004fb8</uid>
+
+  
+  
+    <value>org/StudentActivitiesOffice</value>
+
+  
+  
+  
+  
+    <description>Student Activities Office</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69854551-00004fb9</uid>
+
+  
+  
+    <value>org/StudentClubsAndOrganizations</value>
+
+  
+  
+  
+  
+    <description>Student Clubs and Organizations</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a24fb9-00005025</uid>
+
+  
+  
+    <value>org/StudentGovernment</value>
+
+  
+  
+  
+  
+    <description>Student Government</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-696e0758-00004efe</uid>
+
+  
+  
+    <value>org/StudentLifeEventTypes</value>
+
+  
+  
+  
+  
+    <description>Student Life Event Types</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69a2b38a-00005026</uid>
+
+  
+  
+    <value>org/StudentMediaGroups</value>
+
+  
+  
+  
+  
+    <description>Student Media Groups</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-38fb313b-0138-fc71d8f5-00003baa</uid>
+
+  
+  
+    <value>org/StudentOrganizations</value>
+
+  
+  
+  
+  
+    <description>Student Organizations</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-38fb313b-0138-fc703e37-00003ba6</uid>
+
+  
+  
+    <value>org/StudentUnionBoard</value>
+
+  
+  
+  
+  
+    <description>Student Union Board (SUB)</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-14bf48e1-00000d76</uid>
+
+  
+  
+    <value>org/Theology</value>
+
+  
+  
+  
+  
+    <description>Theology</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-38fb313b-0138-fc6f502f-00003ba3</uid>
+
+  
+  
+    <value>org/Trips</value>
+
+  
+  
+  
+  
+    <description>Student Trips</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2bcb59a3-012b-d0cc50b0-0000544d</uid>
+
+  
+  
+    <value>org/UndergraduateBusiness</value>
+
+  
+  
+  
+  
+    <description>Undergraduate Business</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2d52efc1-012d-9b123b82-00003733</uid>
+
+  
+  
+    <value>org/UniversityWritingProgram</value>
+
+  
+  
+  
+  
+    <description>University Writing Program (Arts &amp; Letters)</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>ff808181-1fd7389e-011f-d7389f4b-00000018</uid>
+
+  
+  
+    <value>Other Events</value>
+
+  
+  
+  
+  
+    <description>Other Events</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a915b662-00000769</uid>
+
+  
+  
+    <value>Performing Arts</value>
+
+  
+  
+  
+  
+    <description>Performing Arts</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-3af939f2-013a-fadbcd47-00001d90</uid>
+
+  
+  
+    <value>Postdocs</value>
+
+  
+  
+  
+  
+    <description>Postdocs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-ec7554ad-000003ad</uid>
+
+  
+  
+    <value>Privately-sponsored events</value>
+
+  
+  
+  
+  
+    <description>Privately-sponsored events. (Using campus venue only, not sponsored by a univ. dept)</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>ff808181-1fd73b03-011f-d73b071a-0000000f</uid>
+
+  
+  
+    <value>Religious and Spiritual</value>
+
+  
+  
+  
+  
+    <description>Religious and Spiritual</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a92072de-00000775</uid>
+
+  
+  
+    <value>Science</value>
+
+  
+  
+  
+  
+    <description>College of Science</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936a88-2acaf35d-012a-dab58148-00004768</uid>
+
+  
+  
+    <value>Service</value>
+
+  
+  
+  
+  
+    <description>Service</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-3a920377-013a-9321a37a-00006296</uid>
+
+  
+  
+    <value>Snite Museum of Art</value>
+
+  
+  
+  
+  
+    <description>Snite Museum of Art</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcabafc0-00000039</uid>
+
+  
+  
+    <value>Softball</value>
+
+  
+  
+  
+  
+    <description>Softball</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a91772d1-0000076e</uid>
+
+  
+  
+    <value>Student Life</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b45918c-012b-545fb802-00007464</uid>
+
+  
+  
+    <value>Sustainability (Environment)</value>
+
+  
+  
+  
+  
+    <description>Sustainability (Environment)</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>402881e7-25b99d14-0125-b9a50c22-00000002</uid>
+
+  
+  
+    <value>sys/Ongoing</value>
+
+  
+  
+  
+  
+    <description>Ongoing Events</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-3127e2b0-0131-29072e75-00003977</uid>
+
+  
+  
+    <value>Today@ND</value>
+
+  
+  
+  
+  
+    <description>Internal communication feed to Today@ND site</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c9360a9-2fd3febe-012f-d58300cb-0000519d</uid>
+
+  
+  
+    <value>Today at ND (Internal use only)</value>
+
+  
+  
+  
+  
+    <description>Internal communication pull to Today@ND website</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a915db11-0000076a</uid>
+
+  
+  
+    <value>Visual Arts</value>
+
+  
+  
+  
+  
+    <description>Visual Arts</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcac9589-0000003d</uid>
+
+  
+  
+    <value>Volleyball</value>
+
+  
+  
+  
+  
+    <description>Volleyball</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dc87ba7a-00000024</uid>
+
+  
+  
+    <value>Women's Basketball</value>
+
+  
+  
+  
+  
+    <description>Women's Basketball</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcaa4ea8-00000033</uid>
+
+  
+  
+    <value>Women's Cross Country</value>
+
+  
+  
+  
+  
+    <description>Women's Cross Country</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcaac2f3-00000034</uid>
+
+  
+  
+    <value>Women's Fencing</value>
+
+  
+  
+  
+  
+    <description>Women's Fencing</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcaaeb6a-00000035</uid>
+
+  
+  
+    <value>Women's Golf</value>
+
+  
+  
+  
+  
+    <description>Women's Golf</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcab0efb-00000036</uid>
+
+  
+  
+    <value>Women's Lacrosse</value>
+
+  
+  
+  
+  
+    <description>Women's Lacrosse</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcab5272-00000037</uid>
+
+  
+  
+    <value>Women's Rowing</value>
+
+  
+  
+  
+  
+    <description>Women's Rowing</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcab8129-00000038</uid>
+
+  
+  
+    <value>Women's Soccer</value>
+
+  
+  
+  
+  
+    <description>Women's Soccer</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcabe3e7-0000003a</uid>
+
+  
+  
+    <value>Women's Swimming and Diving</value>
+
+  
+  
+  
+  
+    <description>Women's Swimming and Diving</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcac1835-0000003b</uid>
+
+  
+  
+    <value>Women's Tennis</value>
+
+  
+  
+  
+  
+    <description>Women's Tennis</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+        
+
+
+
+<category>
+  
+  <uid>2c936ab1-29d6b437-0129-dcac3cc3-0000003c</uid>
+
+  
+  
+    <value>Women's Track and Field</value>
+
+  
+  
+  
+  
+    <description>Women's Track and Field</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+      
+    
+  </categories>
+
+  
+  <filters>
+    
+      
+    
+  </filters>
+
+  
+  <syspars>
+    
+      
+      <userPrincipalRoot>/principals/users</userPrincipalRoot>
+
+      <groupPrincipalRoot>/principals/groups</groupPrincipalRoot>
+
+      <ticketPrincipalRoot>/principals/tickets</ticketPrincipalRoot>
+
+      <resourcePrincipalRoot>/principals/resources</resourcePrincipalRoot>
+
+      <hostPrincipalRoot>/principals/hosts</hostPrincipalRoot>
+
+      <venuePrincipalRoot>/principals/locations</venuePrincipalRoot>
+
+    
+  </syspars>
+
+
+  
+
+
+
+
+
+<page>eventList</page>
+
+
+
+
+
+
+
+
+
+<events>
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140822T040000Z</utcdate>
+      <unformatted>20140822</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>22</day>
+      <dayname>Friday</dayname>
+      <twodigitday>22</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>August 22, 2014</longdate>
+      <shortdate>8/22/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>D</type>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140822T040000Z</utcdate>
+      <unformatted>20140822</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>22</day>
+      <dayname>Friday</dayname>
+      <twodigitday>22</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>August 22, 2014</longdate>
+      <shortdate>8/22/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>62993</id>
+    <guid>CAL-2c9360a9-45dcdcb4-0145-dd34c6f3-00005818calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Orientation and advising for NEW graduate students</summary>
+
+    <color/>
+
+    <link>http://registrar.nd.edu/calendar/index.php?c=001</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Graduate School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/External Communications feed</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-380923d5-0138-0b359b19-00002181</uid>
+
+  
+  
+    <value>External Communications feed</value>
+
+  
+  
+  
+  
+    <description>Internal Communications dept feed to nd.edu homepage</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-149168e0-00000d58</uid>
+
+  
+  
+    <value>org/GraduateSchool</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Orientation and advising for NEW graduate students</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2190</id>
+        <name>Office of the Registrar</name>
+
+        <phone/>
+
+        <email>registrar.1@nd.edu</email>
+
+        <link>http://registrar.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140822T130000Z</utcdate>
+      <unformatted>20140822T090000</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>22</day>
+      <dayname>Friday</dayname>
+      <twodigitday>22</twodigitday>
+      <hour24>9</hour24>
+      <twodigithour24>09</twodigithour24>
+      <hour>9</hour>
+      <twodigithour>09</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>August 22, 2014</longdate>
+      <shortdate>8/22/14</shortdate>
+      <time>9:00 AM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>E</type>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140822T170000Z</utcdate>
+      <unformatted>20140822T130000</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>22</day>
+      <dayname>Friday</dayname>
+      <twodigitday>22</twodigitday>
+      <hour24>13</hour24>
+      <twodigithour24>13</twodigithour24>
+      <hour>1</hour>
+      <twodigithour>01</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>1</ampm>
+      <longdate>August 22, 2014</longdate>
+      <shortdate>8/22/14</shortdate>
+      <time>1:00 PM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>62999</id>
+    <guid>CAL-2c9360a9-45dcdcb4-0145-dd37190b-000058b5calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Undergraduate halls open for FIRST YEAR STUDENTS move-in beginning at 9 a.m.</summary>
+
+    <color/>
+
+    <link>http://housing.nd.edu/</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/External Communications feed</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Today@ND</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-IMAGE>
+            
+            <values>
+              <text>http://www.nd.edu/~theweek/Move_In_road813.jpg</text>
+            </values>
+          </X-BEDEWORK-IMAGE>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-3127e2b0-0131-29072e75-00003977</uid>
+
+  
+  
+    <value>Today@ND</value>
+
+  
+  
+  
+  
+    <description>Internal communication feed to Today@ND site</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-380923d5-0138-0b359b19-00002181</uid>
+
+  
+  
+    <value>External Communications feed</value>
+
+  
+  
+  
+  
+    <description>Internal Communications dept feed to nd.edu homepage</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Undergraduate halls open for FIRST YEAR STUDENTS move-in beginning at 9 a.m.
+
+http://registrar.nd.edu/calendar/</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>15233</id>
+        <name>Office of Housing</name>
+
+        <phone>(574) 631-5878</phone>
+
+        <email>housing@nd.edu</email>
+
+        <link>http://housing.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140823T164500Z</utcdate>
+      <unformatted>20140823T124500</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>23</day>
+      <dayname>Saturday</dayname>
+      <twodigitday>23</twodigitday>
+      <hour24>12</hour24>
+      <twodigithour24>12</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>45</minute>
+      <twodigitminute>45</twodigitminute>
+      <ampm>1</ampm>
+      <longdate>August 23, 2014</longdate>
+      <shortdate>8/23/14</shortdate>
+      <time>12:45 PM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>E</type>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140824T170000Z</utcdate>
+      <unformatted>20140824T130000</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>24</day>
+      <dayname>Sunday</dayname>
+      <twodigitday>24</twodigitday>
+      <hour24>13</hour24>
+      <twodigithour24>13</twodigithour24>
+      <hour>1</hour>
+      <twodigithour>01</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>1</ampm>
+      <longdate>August 24, 2014</longdate>
+      <shortdate>8/24/14</shortdate>
+      <time>1:00 PM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63009</id>
+    <guid>CAL-2c9360a9-45dcdcb4-0145-dd3bc31f-00005f16calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Orientation and advising for FIRST YEAR students</summary>
+
+    <color/>
+
+    <link>http://fys.nd.edu/incoming-students/first-year-orientation/</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-IMAGE>
+            
+            <values>
+              <text>http://orientation.nd.edu/assets/46006/orientation_banner.jpg</text>
+            </values>
+          </X-BEDEWORK-IMAGE>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Orientation is mandatory for all first-year students.  First-Year Orientation Weekend is held each fall to introduce parents and new students to campus life and to help them become more familiar with the University of Notre Dame.   
+
+Updated information for the Class of 2018 will be posted periodically until May 15, 2014. Please check the website (http://orientation.nd.edu/) frequently for the latest information.
+
+Fall semester schedule:  http://registrar.nd.edu/calendar/</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2244</id>
+        <name>First Year of Studies</name>
+
+        <phone>(574) 631-6030</phone>
+
+        <email>fys@nd.edu</email>
+
+        <link>http://fys.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140824T130000Z</utcdate>
+      <unformatted>20140824T090000</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>24</day>
+      <dayname>Sunday</dayname>
+      <twodigitday>24</twodigitday>
+      <hour24>9</hour24>
+      <twodigithour24>09</twodigithour24>
+      <hour>9</hour>
+      <twodigithour>09</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>August 24, 2014</longdate>
+      <shortdate>8/24/14</shortdate>
+      <time>9:00 AM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>N</type>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140824T130000Z</utcdate>
+      <unformatted>20140824T090000</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>24</day>
+      <dayname>Sunday</dayname>
+      <twodigitday>24</twodigitday>
+      <hour24>9</hour24>
+      <twodigithour24>09</twodigithour24>
+      <hour>9</hour>
+      <twodigithour>09</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>August 24, 2014</longdate>
+      <shortdate>8/24/14</shortdate>
+      <time>9:00 AM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63015</id>
+    <guid>CAL-2c9360a9-45dcdcb4-0145-dd3f5b41-000060d8calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Undergraduate halls open for UPPERCLASSMEN move-in beginning at 9 a.m.</summary>
+
+    <color/>
+
+    <link>http://housing.nd.edu/</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Today@ND</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-IMAGE>
+            
+            <values>
+              <text>http://housing.nd.edu/assets/52755/original/morrissey.jpg</text>
+            </values>
+          </X-BEDEWORK-IMAGE>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-3127e2b0-0131-29072e75-00003977</uid>
+
+  
+  
+    <value>Today@ND</value>
+
+  
+  
+  
+  
+    <description>Internal communication feed to Today@ND site</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Undergraduate halls open for UPPERCLASSMEN move-in beginning at 9 a.m.
+
+http://registrar.nd.edu/calendar/</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>15233</id>
+        <name>Office of Housing</name>
+
+        <phone>(574) 631-5878</phone>
+
+        <email>housing@nd.edu</email>
+
+        <link>http://housing.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140826T213000Z</utcdate>
+      <unformatted>20140826T173000</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>26</day>
+      <dayname>Tuesday</dayname>
+      <twodigitday>26</twodigitday>
+      <hour24>17</hour24>
+      <twodigithour24>17</twodigithour24>
+      <hour>5</hour>
+      <twodigithour>05</twodigithour>
+      <minute>30</minute>
+      <twodigitminute>30</twodigitminute>
+      <ampm>1</ampm>
+      <longdate>August 26, 2014</longdate>
+      <shortdate>8/26/14</shortdate>
+      <time>5:30 PM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>E</type>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140827T011500Z</utcdate>
+      <unformatted>20140826T211500</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>8</month>
+      <twodigitmonth>08</twodigitmonth>
+      <monthname>August</monthname>
+      <day>26</day>
+      <dayname>Tuesday</dayname>
+      <twodigitday>26</twodigitday>
+      <hour24>21</hour24>
+      <twodigithour24>21</twodigithour24>
+      <hour>9</hour>
+      <twodigithour>09</twodigithour>
+      <minute>15</minute>
+      <twodigitminute>15</twodigitminute>
+      <ampm>1</ampm>
+      <longdate>August 26, 2014</longdate>
+      <shortdate>8/26/14</shortdate>
+      <time>9:15 PM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63027</id>
+    <guid>CAL-2c9360a9-45dcdcb4-0145-dd510f91-00000014calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>2014-15 Academic Year Opening Mass and Picnic</summary>
+
+    <color/>
+
+    <link>http://www.nd.edu/~theweek/OpeningMass&amp;Picnic14.pdf</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Religious and Spiritual</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Religious and Spiritual, Student Life</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Faculty and Staff</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Today@ND</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Recreation, Student Life</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Health n Recreation</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Health and Recreation</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Graduate School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Law School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Postdocs</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-IMAGE>
+            
+            <values>
+              <text>http://www.nd.edu/~theweek/Opening_Mass_13.jpg</text>
+            </values>
+          </X-BEDEWORK-IMAGE>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29d6b437-0129-ebd3092c-00000162</uid>
+        <address>Joyce Center</address>
+
+        <link>http://map.nd.edu/#/placemarks/1083/zoom/16/lat/41.6983825/lon/-86.231298</link>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-3127e2b0-0131-29072e75-00003977</uid>
+
+  
+  
+    <value>Today@ND</value>
+
+  
+  
+  
+  
+    <description>Internal communication feed to Today@ND site</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-3af939f2-013a-fadbcd47-00001d90</uid>
+
+  
+  
+    <value>Postdocs</value>
+
+  
+  
+  
+  
+    <description>Postdocs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-5e72dd35-00001295</uid>
+
+  
+  
+    <value>Law School</value>
+
+  
+  
+  
+  
+    <description>Law School</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-69cba671-00005050</uid>
+
+  
+  
+    <value>org/RecreationStudentLife</value>
+
+  
+  
+  
+  
+    <description>Recreation, Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2aa4b496-012a-a5c183d1-000006e9</uid>
+
+  
+  
+    <value>Health and Recreation</value>
+
+  
+  
+  
+  
+    <description>Health and Recreation</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-149168e0-00000d58</uid>
+
+  
+  
+    <value>org/GraduateSchool</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>ff808181-1fd7389e-011f-d7389f8f-00000023</uid>
+
+  
+  
+    <value>Faculty and Staff</value>
+
+  
+  
+  
+  
+    <description>Faculty and Staff</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>ff808181-1fd73b03-011f-d73b071a-0000000f</uid>
+
+  
+  
+    <value>Religious and Spiritual</value>
+
+  
+  
+  
+  
+    <description>Religious and Spiritual</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>All students, faculty, staff, and families are cordially invited.
+
+Mass will begin at 5:30 p.m. in the Joyce Center's Purcell Pavilion, with a procession of faculty and student leaders beginning from the North Dome at 5:20 p.m.
+
+Enjoy a picnic, family fun, and music immediately after Mass on DeBartolo Quad. 
+
+Picnic dinner will be served until 8:15 p.m.
+University shuttles will be available from the West Stadium Circle to the Library and Bulla parking lots from 7:15 to 9:15 p.m. 
+
+Dining halls will be closed for the occasion.</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2148</id>
+        <name>Office of the President</name>
+
+        <phone/>
+
+        <email/>
+
+        <link>http://president.nd.edu/</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140901T040000Z</utcdate>
+      <unformatted>20140901</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>9</month>
+      <twodigitmonth>09</twodigitmonth>
+      <monthname>September</monthname>
+      <day>1</day>
+      <dayname>Monday</dayname>
+      <twodigitday>01</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>September 1, 2014</longdate>
+      <shortdate>9/1/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>D</type>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20140901T040000Z</utcdate>
+      <unformatted>20140901</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>9</month>
+      <twodigitmonth>09</twodigitmonth>
+      <monthname>September</monthname>
+      <day>1</day>
+      <dayname>Monday</dayname>
+      <twodigitday>01</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>September 1, 2014</longdate>
+      <shortdate>9/1/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63036</id>
+    <guid>CAL-2c9360a9-45e03995-0145-e25114ee-00007e50calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>National Holiday: Labor Day - Classes are in session</summary>
+
+    <color/>
+
+    <link>http://hr.nd.edu/nd-faculty-staff/faqs/top-5-faq-answers/#five</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Faculty and Staff</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Today@ND</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-3127e2b0-0131-29072e75-00003977</uid>
+
+  
+  
+    <value>Today@ND</value>
+
+  
+  
+  
+  
+    <description>Internal communication feed to Today@ND site</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>ff808181-1fd7389e-011f-d7389f8f-00000023</uid>
+
+  
+  
+    <value>Faculty and Staff</value>
+
+  
+  
+  
+  
+    <description>Faculty and Staff</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Administrative offices are closed today.</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2216</id>
+        <name>Office of Human Resources</name>
+
+        <phone>(574) 631-5900</phone>
+
+        <email>askhr@nd.edu</email>
+
+        <link>http://hr.nd.edu/</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141018T040000Z</utcdate>
+      <unformatted>20141018</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>10</month>
+      <twodigitmonth>10</twodigitmonth>
+      <monthname>October</monthname>
+      <day>18</day>
+      <dayname>Saturday</dayname>
+      <twodigitday>18</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>October 18, 2014</longdate>
+      <shortdate>10/18/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>E</type>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141026T040000Z</utcdate>
+      <unformatted>20141026</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>10</month>
+      <twodigitmonth>10</twodigitmonth>
+      <monthname>October</monthname>
+      <day>26</day>
+      <dayname>Sunday</dayname>
+      <twodigitday>26</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>October 26, 2014</longdate>
+      <shortdate>10/26/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63039</id>
+    <guid>CAL-2c9360a9-45e03995-0145-e2556b6c-0000001dcalendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Fall Mid-Term Break</summary>
+
+    <color/>
+
+    <link>http://registrar.nd.edu/calendar/index.php?c=001</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Graduate School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Law School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Postdocs</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-3af939f2-013a-fadbcd47-00001d90</uid>
+
+  
+  
+    <value>Postdocs</value>
+
+  
+  
+  
+  
+    <description>Postdocs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-5e72dd35-00001295</uid>
+
+  
+  
+    <value>Law School</value>
+
+  
+  
+  
+  
+    <description>Law School</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-149168e0-00000d58</uid>
+
+  
+  
+    <value>org/GraduateSchool</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>No classes in session.</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2190</id>
+        <name>Office of the Registrar</name>
+
+        <phone/>
+
+        <email>registrar.1@nd.edu</email>
+
+        <link>http://registrar.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141126T050000Z</utcdate>
+      <unformatted>20141126</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>11</month>
+      <twodigitmonth>11</twodigitmonth>
+      <monthname>November</monthname>
+      <day>26</day>
+      <dayname>Wednesday</dayname>
+      <twodigitday>26</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>November 26, 2014</longdate>
+      <shortdate>11/26/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>E</type>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141130T050000Z</utcdate>
+      <unformatted>20141130</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>11</month>
+      <twodigitmonth>11</twodigitmonth>
+      <monthname>November</monthname>
+      <day>30</day>
+      <dayname>Sunday</dayname>
+      <twodigitday>30</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>November 30, 2014</longdate>
+      <shortdate>11/30/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63042</id>
+    <guid>CAL-2c9360a9-45e03995-0145-e25ec9e2-000002ffcalendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Thanksgiving Holiday</summary>
+
+    <color/>
+
+    <link>http://registrar.nd.edu/calendar/index.php?c=001</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Faculty and Staff</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/External Communications feed</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Graduate School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Law School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Postdocs</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Today@ND</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-3127e2b0-0131-29072e75-00003977</uid>
+
+  
+  
+    <value>Today@ND</value>
+
+  
+  
+  
+  
+    <description>Internal communication feed to Today@ND site</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-380923d5-0138-0b359b19-00002181</uid>
+
+  
+  
+    <value>External Communications feed</value>
+
+  
+  
+  
+  
+    <description>Internal Communications dept feed to nd.edu homepage</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-3af939f2-013a-fadbcd47-00001d90</uid>
+
+  
+  
+    <value>Postdocs</value>
+
+  
+  
+  
+  
+    <description>Postdocs</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-5e72dd35-00001295</uid>
+
+  
+  
+    <value>Law School</value>
+
+  
+  
+  
+  
+    <description>Law School</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-149168e0-00000d58</uid>
+
+  
+  
+    <value>org/GraduateSchool</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>ff808181-1fd7389e-011f-d7389f8f-00000023</uid>
+
+  
+  
+    <value>Faculty and Staff</value>
+
+  
+  
+  
+  
+    <description>Faculty and Staff</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>No classes in session.
+
+Administrative office open on Wednesday, Nov. 26.</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2190</id>
+        <name>Office of the Registrar</name>
+
+        <phone/>
+
+        <email>registrar.1@nd.edu</email>
+
+        <link>http://registrar.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141211T050000Z</utcdate>
+      <unformatted>20141211</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>12</month>
+      <twodigitmonth>12</twodigitmonth>
+      <monthname>December</monthname>
+      <day>11</day>
+      <dayname>Thursday</dayname>
+      <twodigitday>11</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>December 11, 2014</longdate>
+      <shortdate>12/11/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>D</type>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141211T050000Z</utcdate>
+      <unformatted>20141211</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>12</month>
+      <twodigitmonth>12</twodigitmonth>
+      <monthname>December</monthname>
+      <day>11</day>
+      <dayname>Thursday</dayname>
+      <twodigitday>11</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>December 11, 2014</longdate>
+      <shortdate>12/11/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63045</id>
+    <guid>CAL-2c9360a9-45e03995-0145-e262ac25-00000394calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Last class day</summary>
+
+    <color/>
+
+    <link>http://registrar.nd.edu/calendar/index.php?c=001</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Faculty and Staff</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Graduate School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Law School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-5e72dd35-00001295</uid>
+
+  
+  
+    <value>Law School</value>
+
+  
+  
+  
+  
+    <description>Law School</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-149168e0-00000d58</uid>
+
+  
+  
+    <value>org/GraduateSchool</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>ff808181-1fd7389e-011f-d7389f8f-00000023</uid>
+
+  
+  
+    <value>Faculty and Staff</value>
+
+  
+  
+  
+  
+    <description>Faculty and Staff</description>
+
+  
+  
+  <creator>/principals/users/admin</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Last class day of the semester.</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2190</id>
+        <name>Office of the Registrar</name>
+
+        <phone/>
+
+        <email>registrar.1@nd.edu</email>
+
+        <link>http://registrar.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141212T050000Z</utcdate>
+      <unformatted>20141212</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>12</month>
+      <twodigitmonth>12</twodigitmonth>
+      <monthname>December</monthname>
+      <day>12</day>
+      <dayname>Friday</dayname>
+      <twodigitday>12</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>December 12, 2014</longdate>
+      <shortdate>12/12/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>D</type>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141214T050000Z</utcdate>
+      <unformatted>20141214</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>12</month>
+      <twodigitmonth>12</twodigitmonth>
+      <monthname>December</monthname>
+      <day>14</day>
+      <dayname>Sunday</dayname>
+      <twodigitday>14</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>December 14, 2014</longdate>
+      <shortdate>12/14/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63048</id>
+    <guid>CAL-2c9360a9-45e03995-0145-e2676c90-00000427calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Reading days (no examinations)</summary>
+
+    <color/>
+
+    <link>http://registrar.nd.edu/calendar/index.php?c=001</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Graduate School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Law School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-5e72dd35-00001295</uid>
+
+  
+  
+    <value>Law School</value>
+
+  
+  
+  
+  
+    <description>Law School</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-149168e0-00000d58</uid>
+
+  
+  
+    <value>org/GraduateSchool</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>No examinations</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2190</id>
+        <name>Office of the Registrar</name>
+
+        <phone/>
+
+        <email>registrar.1@nd.edu</email>
+
+        <link>http://registrar.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141215T050000Z</utcdate>
+      <unformatted>20141215</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>12</month>
+      <twodigitmonth>12</twodigitmonth>
+      <monthname>December</monthname>
+      <day>15</day>
+      <dayname>Monday</dayname>
+      <twodigitday>15</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>December 15, 2014</longdate>
+      <shortdate>12/15/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>E</type>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141219T050000Z</utcdate>
+      <unformatted>20141219</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>12</month>
+      <twodigitmonth>12</twodigitmonth>
+      <monthname>December</monthname>
+      <day>19</day>
+      <dayname>Friday</dayname>
+      <twodigitday>19</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>December 19, 2014</longdate>
+      <shortdate>12/19/14</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_RelgiousandSpiritual</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63054</id>
+    <guid>CAL-2c9360a9-45e03995-0145-e272bb62-00000f97calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Final examinations</summary>
+
+    <color/>
+
+    <link>http://registrar.nd.edu/calendar/index.php?c=001</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/External Communications feed</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Graduate School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Law School</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Religious_and_Spiritual (agrp_RelgiousandSpiritual)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-380923d5-0138-0b359b19-00002181</uid>
+
+  
+  
+    <value>External Communications feed</value>
+
+  
+  
+  
+  
+    <description>Internal Communications dept feed to nd.edu homepage</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-5e72dd35-00001295</uid>
+
+  
+  
+    <value>Law School</value>
+
+  
+  
+  
+  
+    <description>Law School</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-149168e0-00000d58</uid>
+
+  
+  
+    <value>org/GraduateSchool</value>
+
+  
+  
+  
+  
+    <description>Graduate School</description>
+
+  
+  
+  <creator>/principals/users/jlaiber</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Final exams</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>2190</id>
+        <name>Office of the Registrar</name>
+
+        <phone/>
+
+        <email>registrar.1@nd.edu</email>
+
+        <link>http://registrar.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141220T190000Z</utcdate>
+      <unformatted>20141220T140000</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>12</month>
+      <twodigitmonth>12</twodigitmonth>
+      <monthname>December</monthname>
+      <day>20</day>
+      <dayname>Saturday</dayname>
+      <twodigitday>20</twodigitday>
+      <hour24>14</hour24>
+      <twodigithour24>14</twodigithour24>
+      <hour>2</hour>
+      <twodigithour>02</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>1</ampm>
+      <longdate>December 20, 2014</longdate>
+      <shortdate>12/20/14</shortdate>
+      <time>2:00 PM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>N</type>
+      
+      
+      
+      <allday>false</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20141220T190000Z</utcdate>
+      <unformatted>20141220T140000</unformatted>
+
+      
+
+      <year>2014</year>
+      <fourdigityear>2014</fourdigityear>
+      <month>12</month>
+      <twodigitmonth>12</twodigitmonth>
+      <monthname>December</monthname>
+      <day>20</day>
+      <dayname>Saturday</dayname>
+      <twodigitday>20</twodigitday>
+      <hour24>14</hour24>
+      <twodigithour24>14</twodigithour24>
+      <hour>2</hour>
+      <twodigithour>02</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>1</ampm>
+      <longdate>December 20, 2014</longdate>
+      <shortdate>12/20/14</shortdate>
+      <time>2:00 PM</time>
+      <timezone>
+        <id>America/New_York</id>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_OfficialAcademicCalendar</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>63057</id>
+    <guid>CAL-2c9360a9-45e03995-0145-e2754445-00001028calendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Undergraduate halls close at 2 p.m.</summary>
+
+    <color/>
+
+    <link>http://registrar.nd.edu/calendar/index.php?c=001</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/First Year of Studies</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Student Life/Other Student Life Departments</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Official_Academic_Calendar (agrp_OfficialAcademicCalendar)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c9360a9-2b548ea5-012b-68ce4bd5-000015a6</uid>
+
+  
+  
+    <value>org/FirstYearOfStudies</value>
+
+  
+  
+  
+  
+    <description>First Year of Studies</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a1ab50c-012a-39d3a263-0000495a</uid>
+
+  
+  
+    <value>org/StudentLife</value>
+
+  
+  
+  
+  
+    <description>Student Life</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936a88-2a5cb810-012a-6984412e-00004fb7</uid>
+
+  
+  
+    <value>org/OtherStudentLifeDepartments</value>
+
+  
+  
+  
+  
+    <description>Other Student Life Departments</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Undergraduate halls reopen for the spring semester on Sunday, January 11 at 9 a.m.</description>
+
+    <cost/>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>15233</id>
+        <name>Office of Housing</name>
+
+        <phone>(574) 631-5878</phone>
+
+        <email>housing@nd.edu</email>
+
+        <link>http://housing.nd.edu</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  <event>
+    <entityType>0</entityType>
+    <scheduleMethod>0</scheduleMethod>
+    <start>
+      <noStart>false</noStart>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20150604T040000Z</utcdate>
+      <unformatted>20150604</unformatted>
+
+      
+
+      <year>2015</year>
+      <fourdigityear>2015</fourdigityear>
+      <month>6</month>
+      <twodigitmonth>06</twodigitmonth>
+      <monthname>June</monthname>
+      <day>4</day>
+      <dayname>Thursday</dayname>
+      <twodigitday>04</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>June 4, 2015</longdate>
+      <shortdate>6/4/15</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </start>
+    <end>
+      <type>E</type>
+      
+      
+      
+      <allday>true</allday>
+      <floating>false</floating>
+      <utc>false</utc>
+      <utcdate>20150607T040000Z</utcdate>
+      <unformatted>20150607</unformatted>
+
+      
+
+      <year>2015</year>
+      <fourdigityear>2015</fourdigityear>
+      <month>6</month>
+      <twodigitmonth>06</twodigitmonth>
+      <monthname>June</monthname>
+      <day>7</day>
+      <dayname>Sunday</dayname>
+      <twodigitday>07</twodigitday>
+      <hour24>0</hour24>
+      <twodigithour24>00</twodigithour24>
+      <hour>12</hour>
+      <twodigithour>12</twodigithour>
+      <minute>0</minute>
+      <twodigitminute>00</twodigitminute>
+      <ampm>0</ampm>
+      <longdate>June 7, 2015</longdate>
+      <shortdate>6/7/15</shortdate>
+      <time>12:00 AM</time>
+      <timezone>
+        <id/>
+        <islocal>true</islocal>
+        
+      </timezone>
+
+
+    </end>
+    <creator>/principals/users/agrp_Lectures_and_Conferences</creator>
+
+    <owner>/principals/users/public-user</owner>
+
+
+    <id>10831</id>
+    <guid>CAL-2c9360a9-2d52efc1-012d-95a3aa2f-0000556fcalendar@nd.edu</guid>
+
+    <recurrenceId/>
+
+    <summary>Reunion 2015</summary>
+
+    <color/>
+
+    <link>http://reunion.nd.edu/</link>
+
+    <deleted>false</deleted>
+    <public>true</public>
+    <editable>false</editable>
+    
+    <kind>0</kind>
+    <recurring>false</recurring>
+    <calendar>
+      <name>MainCal</name>
+      <path>/public/cals/MainCal</path>
+      <encodedPath>%2Fpublic%2Fcals%2FMainCal</encodedPath>
+      <ownerHref>/principals/users/public-user</ownerHref>
+      <calType>1</calType>
+      <calendarCollection>true</calendarCollection>
+      <affectsFreeBusy>false</affectsFreeBusy>
+      <color>null</color>
+      <isTopicalArea>false</isTopicalArea>
+      <display>true</display>
+      <disabled>false</disabled>
+      <lastRefreshStatus/>
+      <lastRefresh/>
+      <open>false</open>
+    </calendar>
+
+    <status>CONFIRMED</status>
+
+
+    <!-- always produce the xproperties, if they exist -->
+    
+      <xproperties>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Official Academic Calendar</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-ALIAS>
+            
+            <values>
+              <text>/user/agrp_calsuite-MainCampus/Lectures and Conferences</text>
+            </values>
+          </X-BEDEWORK-ALIAS>
+        
+          
+          
+          <X-BEDEWORK-IMAGE>
+            
+            <values>
+              <text>http://reunion.nd.edu/s/1210/images/editor/Events/Events_1.jpg</text>
+            </values>
+          </X-BEDEWORK-IMAGE>
+        
+          
+          
+          <X-BEDEWORK-SUBMITTEDBY>
+            
+            <values>
+              <text>jlaiber for Lectures_and_Conferences (agrp_Lectures_and_Conferences)</text>
+            </values>
+          </X-BEDEWORK-SUBMITTEDBY>
+        
+      </xproperties>
+    
+
+    
+
+    
+
+    
+      
+
+
+
+    
+    
+      
+      <location>
+        <uid>2c936ab1-29f1d539-0129-f6630477-000007c9</uid>
+        <address>campus-wide</address>
+
+        <link/>
+
+        
+        <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+      </location>
+    
+    
+    <categories>
+      
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-296b4ad1-0129-a9174807-0000076d</uid>
+
+  
+  
+    <value>Lectures and Conferences</value>
+
+  
+  
+  
+  
+    <description>Lectures and Conferences, Seminars, Colloquia, etc.</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+          
+
+
+
+<category>
+  
+  <uid>2c936ab1-29f6bcb3-012a-15374ec0-00000e64</uid>
+
+  
+  
+    <value>Official Academic Calendar</value>
+
+  
+  
+  
+  
+    <description>Official Academic Calendar</description>
+
+  
+  
+  <creator>/principals/users/agrp_calsuite-MainCampus</creator>
+
+</category>
+
+        
+      
+    </categories>
+    
+
+
+
+
+
+
+    <description>Undergraduate, Law &amp; Graduate Business Classes of:
+
+1965, 1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005, and 2010.  
+50-Year Club (Classes 1934 - 1964)
+
+Featuring:
+    * Class Dinners &amp; Celebrations
+    * Recreational Activities
+    * Bookstore Basketball Tournament
+    * All-Class Mass
+    * Seminars, Open Houses &amp; Tours
+    * Children's Program
+
+Reunion registration brochures will be sent in March 2015.
+If you have questions, email reunion@nd.edu or call 574-631-9029.</description>
+
+    <cost>registration necessary</cost>
+
+    <sequence>0</sequence>
+
+    
+      
+      <contact>
+        <id>4941</id>
+        <name>Alumni Association</name>
+
+        <phone>(574) 631-6000</phone>
+
+        <email>ndalumni@nd.edu</email>
+
+        <link>http://mynotredame.nd.edu/</link>
+
+      </contact>
+    
+
+
+    
+
+    
+
+    
+    
+  </event>
+
+
+
+    
+  
+</events>
+
+
+
+
+
+
+  
+
+  
+  
+
+  <daylabels>
+    
+      <val>1</val>
+    
+      <val>2</val>
+    
+      <val>3</val>
+    
+      <val>4</val>
+    
+      <val>5</val>
+    
+      <val>6</val>
+    
+      <val>7</val>
+    
+      <val>8</val>
+    
+      <val>9</val>
+    
+      <val>10</val>
+    
+      <val>11</val>
+    
+      <val>12</val>
+    
+      <val>13</val>
+    
+      <val>14</val>
+    
+      <val>15</val>
+    
+      <val>16</val>
+    
+      <val>17</val>
+    
+      <val>18</val>
+    
+      <val>19</val>
+    
+      <val>20</val>
+    
+      <val>21</val>
+    
+      <val>22</val>
+    
+      <val>23</val>
+    
+      <val>24</val>
+    
+      <val>25</val>
+    
+      <val>26</val>
+    
+      <val>27</val>
+    
+      <val>28</val>
+    
+      <val>29</val>
+    
+      <val>30</val>
+    
+      <val>31</val>
+    
+  </daylabels>
+  <dayvalues>
+    
+      <val>1</val>
+    
+      <val>2</val>
+    
+      <val>3</val>
+    
+      <val>4</val>
+    
+      <val>5</val>
+    
+      <val>6</val>
+    
+      <val>7</val>
+    
+      <val>8</val>
+    
+      <val>9</val>
+    
+      <val>10</val>
+    
+      <val>11</val>
+    
+      <val>12</val>
+    
+      <val>13</val>
+    
+      <val>14</val>
+    
+      <val>15</val>
+    
+      <val>16</val>
+    
+      <val>17</val>
+    
+      <val>18</val>
+    
+      <val>19</val>
+    
+      <val>20</val>
+    
+      <val>21</val>
+    
+      <val>22</val>
+    
+      <val>23</val>
+    
+      <val>24</val>
+    
+      <val>25</val>
+    
+      <val>26</val>
+    
+      <val>27</val>
+    
+      <val>28</val>
+    
+      <val>29</val>
+    
+      <val>30</val>
+    
+      <val>31</val>
+    
+    <start>22</start>
+  </dayvalues>
+  <daynames>
+    
+      <val>Sunday</val>
+    
+      <val>Monday</val>
+    
+      <val>Tuesday</val>
+    
+      <val>Wednesday</val>
+    
+      <val>Thursday</val>
+    
+      <val>Friday</val>
+    
+      <val>Saturday</val>
+    
+  </daynames>
+  <shortdaynames>
+    
+      <val>Sun</val>
+    
+      <val>Mon</val>
+    
+      <val>Tue</val>
+    
+      <val>Wed</val>
+    
+      <val>Thu</val>
+    
+      <val>Fri</val>
+    
+      <val>Sat</val>
+    
+  </shortdaynames>
+  <recurdayvals>
+    
+      <val>SU</val>
+    
+      <val>MO</val>
+    
+      <val>TU</val>
+    
+      <val>WE</val>
+    
+      <val>TH</val>
+    
+      <val>FR</val>
+    
+      <val>SA</val>
+    
+  </recurdayvals>
+  <monthlabels>
+    
+      <val>Jan</val>
+    
+      <val>Feb</val>
+    
+      <val>Mar</val>
+    
+      <val>Apr</val>
+    
+      <val>May</val>
+    
+      <val>Jun</val>
+    
+      <val>Jul</val>
+    
+      <val>Aug</val>
+    
+      <val>Sep</val>
+    
+      <val>Oct</val>
+    
+      <val>Nov</val>
+    
+      <val>Dec</val>
+    
+  </monthlabels>
+  <monthvalues>
+    
+      <val>1</val>
+    
+      <val>2</val>
+    
+      <val>3</val>
+    
+      <val>4</val>
+    
+      <val>5</val>
+    
+      <val>6</val>
+    
+      <val>7</val>
+    
+      <val>8</val>
+    
+      <val>9</val>
+    
+      <val>10</val>
+    
+      <val>11</val>
+    
+      <val>12</val>
+    
+    <start>8</start>
+  </monthvalues>
+  <yearvalues>
+    
+      <val>2014</val>
+    
+      <val>2015</val>
+    
+      <val>2016</val>
+    
+      <val>2017</val>
+    
+      <val>2018</val>
+    
+      <val>2019</val>
+    
+      <val>2020</val>
+    
+      <val>2021</val>
+    
+      <val>2022</val>
+    
+      <val>2023</val>
+    
+    <start>2014</start>
+  </yearvalues>
+  <hourlabels>
+    
+      <val>1</val>
+    
+      <val>2</val>
+    
+      <val>3</val>
+    
+      <val>4</val>
+    
+      <val>5</val>
+    
+      <val>6</val>
+    
+      <val>7</val>
+    
+      <val>8</val>
+    
+      <val>9</val>
+    
+      <val>10</val>
+    
+      <val>11</val>
+    
+      <val>12</val>
+    
+  </hourlabels>
+  <hourvalues>
+    
+      <val>1</val>
+    
+      <val>2</val>
+    
+      <val>3</val>
+    
+      <val>4</val>
+    
+      <val>5</val>
+    
+      <val>6</val>
+    
+      <val>7</val>
+    
+      <val>8</val>
+    
+      <val>9</val>
+    
+      <val>10</val>
+    
+      <val>11</val>
+    
+      <val>0</val>
+    
+    <start>8</start>
+  </hourvalues>
+  <minvalues>
+    
+      <val>00</val>
+    
+      <val>05</val>
+    
+      <val>10</val>
+    
+      <val>15</val>
+    
+      <val>20</val>
+    
+      <val>25</val>
+    
+      <val>30</val>
+    
+      <val>35</val>
+    
+      <val>40</val>
+    
+      <val>45</val>
+    
+      <val>50</val>
+    
+      <val>55</val>
+    
+    <start>36</start>
+
+  </minvalues>
+  <ampmvalues>
+    
+      <val>am</val>
+    
+      <val>pm</val>
+    
+    <start>am</start>
+  </ampmvalues>
+</bedework>

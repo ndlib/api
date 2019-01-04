@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<get-item-list>
+  <reply-text>ok</reply-text>
+  <reply-code>0000</reply-code>
+  <items>
+    <item href="http://paul.library.nd.edu:1891/rest-dlf/record/NDU01001600269/items/NDU50001600269000010"/>
+    <item href="http://paul.library.nd.edu:1891/rest-dlf/record/NDU01001600269/items/NDU50001600269000020"/>
+    <item href="http://paul.library.nd.edu:1891/rest-dlf/record/NDU01001600269/items/NDU50001600269000030"/>
+  </items>
+</get-item-list>

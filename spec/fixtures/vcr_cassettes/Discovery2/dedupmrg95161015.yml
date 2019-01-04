@@ -1,0 +1,361 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><wsdl:getRecord><request><![CDATA[<fullViewRequest
+        xmlns="http://www.exlibris.com/primo/xsd/wsRequest" xmlns:uic="http://www.exlibris.com/primo/xsd/primoview/uicomponents"><PrimoSearchRequest
+        xmlns="http://www.exlibris.com/primo/xsd/search/request"><QueryTerms><BoolOpeator>AND</BoolOpeator></QueryTerms><StartIndex>1</StartIndex><BulkSize>1</BulkSize><DidUMeanEnabled>false</DidUMeanEnabled></PrimoSearchRequest><institution>NDU</institution><onCampus>true</onCampus><docId>dedupmrg95161015</docId></fullViewRequest>]]></request></wsdl:getRecord></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"getRecord"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '873'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 25 Jun 2014 18:55:10 GMT
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:getRecordResponse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher"><getRecordReturn xsi:type="soapenc:string" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">&lt;SEGMENTS xmlns=&quot;http://www.exlibrisgroup.com/xsd/jaguar/search&quot;&gt;
+          &lt;JAGROOT&gt;
+            &lt;RESULT&gt;
+              &lt;DOCSET TOTALHITS=&quot;1&quot;&gt;
+                &lt;DOC LOCAL=&quot;true&quot;&gt;
+                  &lt;PrimoNMBib xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;
+                    &lt;record&gt;
+                      &lt;control&gt;
+                        &lt;sourcerecordid&gt;$$V002072723$$Ondu_aleph002072723&lt;/sourcerecordid&gt;
+                        &lt;sourcerecordid&gt;$$VMIU01-008634915$$Ohathi_pubMIU01-008634915&lt;/sourcerecordid&gt;
+                        &lt;sourcerecordid&gt;$$VMIU01-000503204$$Ohathi_pubMIU01-000503204&lt;/sourcerecordid&gt;
+                        &lt;sourcerecordid&gt;$$V000555617$$Ondu_aleph000555617&lt;/sourcerecordid&gt;
+                        &lt;sourceid&gt;$$Vndu_aleph$$Ondu_aleph002072723&lt;/sourceid&gt;
+                        &lt;sourceid&gt;$$Vhathi_pub$$Ohathi_pubMIU01-008634915&lt;/sourceid&gt;
+                        &lt;sourceid&gt;$$Vhathi_pub$$Ohathi_pubMIU01-000503204&lt;/sourceid&gt;
+                        &lt;sourceid&gt;$$Vndu_aleph$$Ondu_aleph000555617&lt;/sourceid&gt;
+                        &lt;recordid&gt;dedupmrg95161015&lt;/recordid&gt;
+                        &lt;originalsourceid&gt;$$VNDU01$$Ondu_aleph002072723&lt;/originalsourceid&gt;
+                        &lt;originalsourceid&gt;$$VHATHI$$Ohathi_pubMIU01-008634915&lt;/originalsourceid&gt;
+                        &lt;originalsourceid&gt;$$VHATHI$$Ohathi_pubMIU01-000503204&lt;/originalsourceid&gt;
+                        &lt;originalsourceid&gt;$$VNDU01$$Ondu_aleph000555617&lt;/originalsourceid&gt;
+                        &lt;sourceformat&gt;$$VMARC21$$Ondu_aleph002072723&lt;/sourceformat&gt;
+                        &lt;sourceformat&gt;$$VMARC21$$Ohathi_pubMIU01-008634915&lt;/sourceformat&gt;
+                        &lt;sourceformat&gt;$$VMARC21$$Ohathi_pubMIU01-000503204&lt;/sourceformat&gt;
+                        &lt;sourceformat&gt;$$VMARC21$$Ondu_aleph000555617&lt;/sourceformat&gt;
+                        &lt;sourcesystem&gt;$$VAleph$$Ondu_aleph002072723&lt;/sourcesystem&gt;
+                        &lt;sourcesystem&gt;$$VAleph$$Ohathi_pubMIU01-008634915&lt;/sourcesystem&gt;
+                        &lt;sourcesystem&gt;$$VAleph$$Ohathi_pubMIU01-000503204&lt;/sourcesystem&gt;
+                        &lt;sourcesystem&gt;$$VAleph$$Ondu_aleph000555617&lt;/sourcesystem&gt;
+                        &lt;ilsapiid&gt;$$VNDU01002072723$$Ondu_aleph002072723&lt;/ilsapiid&gt;
+                        &lt;ilsapiid&gt;$$VHATHIMIU01-008634915$$Ohathi_pubMIU01-008634915&lt;/ilsapiid&gt;
+                        &lt;ilsapiid&gt;$$VHATHIMIU01-000503204$$Ohathi_pubMIU01-000503204&lt;/ilsapiid&gt;
+                        &lt;ilsapiid&gt;$$VNDU01000555617$$Ondu_aleph000555617&lt;/ilsapiid&gt;
+                      &lt;/control&gt;
+                      &lt;display&gt;
+                        &lt;type&gt;journal&lt;/type&gt;
+                        &lt;title&gt;The American journal of theology&lt;/title&gt;
+                        &lt;contributor&gt;University of Chicago. Divinity School.&lt;/contributor&gt;
+                        &lt;publisher&gt;Chicago, Ill. : University of Chicago Press&lt;/publisher&gt;
+                        &lt;creationdate&gt;1897-1920&lt;/creationdate&gt;
+                        &lt;format&gt;Quarterly&lt;/format&gt;
+                        &lt;format&gt;Vol. 1, no. 1 (Jan. 1897)-v. 24, no. 4 (Oct. 1920).&lt;/format&gt;
+                        &lt;identifier&gt;$$CISSN $$V2329-0544; $$CISSN $$V1550-3283&lt;/identifier&gt;
+                        &lt;subject&gt;Theology -- Periodicals&lt;/subject&gt;
+                        &lt;language&gt;eng&lt;/language&gt;
+                        &lt;relation&gt;$$Clater_title $$VBiblical world (Online); $$VJournal of religion (Online)&lt;/relation&gt;
+                        &lt;unititle&gt;American journal of theology (Online)&lt;/unititle&gt;
+                        &lt;availlibrary&gt;$$INDU$$LHESB$$1General Collection$$2(BR 1 .A4 )$$Savailable$$34$$40$$5Y$$60$$XNDU50$$YHESB$$ZGEN$$Ondu_aleph000555617&lt;/availlibrary&gt;
+                        &lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;
+                        &lt;availpnx&gt;available&lt;/availpnx&gt;
+                        &lt;lds01&gt;Title from title screen (JSTOR, viewed Oct. 14, 2004).&lt;/lds01&gt;
+                        &lt;lds01&gt;Edited by the Divinity Faculty of the University of Chicago.&lt;/lds01&gt;
+                        &lt;lds01&gt;Merged with: Biblical world, to form: The journal of religion.&lt;/lds01&gt;
+                        &lt;lds01&gt;Title from caption.&lt;/lds01&gt;
+                        &lt;lds01&gt;Index/Finding Aid: &quot;General index&quot;: v. 24, p. 529-629.&lt;/lds01&gt;
+                        &lt;lds01&gt;Merged with: Biblical world, to form: Journal of religion.&lt;/lds01&gt;
+                        &lt;lds02&gt;ndu_aleph002072723&lt;/lds02&gt;
+                        &lt;lds02&gt;hathi_pubMIU01-008634915&lt;/lds02&gt;
+                        &lt;lds02&gt;hathi_pubMIU01-000503204&lt;/lds02&gt;
+                        &lt;lds02&gt;ndu_aleph000555617&lt;/lds02&gt;
+                        &lt;lds21&gt;$$TBiblical world (Online)&lt;/lds21&gt;
+                        &lt;lds21&gt;$$TJournal of religion (Online)&lt;/lds21&gt;
+                        &lt;lds21&gt;$$TBiblical world&lt;/lds21&gt;
+                        &lt;lds21&gt;$$TJournal of religion&lt;/lds21&gt;
+                        &lt;lds31&gt;American journal of theology (Online)&lt;/lds31&gt;
+                      &lt;/display&gt;
+                      &lt;links&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$INDU$$Ondu_aleph002072723&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$Ondu_aleph002072723&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$Ohathi_pubMIU01-008634915&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$Ohathi_pubMIU01-000503204&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$INDU$$Ondu_aleph000555617&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$Ondu_aleph000555617&lt;/linktoholdings&gt;
+                        &lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph002072723&lt;/linktoholdsnotexist&gt;
+                        &lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Ohathi_pubMIU01-008634915&lt;/linktoholdsnotexist&gt;
+                        &lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Ohathi_pubMIU01-000503204&lt;/linktoholdsnotexist&gt;
+                        &lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph000555617&lt;/linktoholdsnotexist&gt;
+                        &lt;backlink&gt;$$V$$Taleph_backlink$$DNotre Dame Catalog [electronic resource].$$Ondu_aleph002072723&lt;/backlink&gt;
+                        &lt;backlink&gt;$$V$$Taleph_backlink$$D Catalog$$Ohathi_pubMIU01-008634915&lt;/backlink&gt;
+                        &lt;backlink&gt;$$V$$Taleph_backlink$$D Catalog$$Ohathi_pubMIU01-000503204&lt;/backlink&gt;
+                        &lt;backlink&gt;$$V$$Taleph_backlink$$DNotre Dame Catalog$$Ondu_aleph000555617&lt;/backlink&gt;
+                        &lt;linktorsrc&gt;&lt;![CDATA[$$V$$Uhttp://findtext.library.nd.edu:8889/ndu%5Flocal?url%5Fver=Z39.88-2004&amp;ctx%5Fver=Z39.88-2004&amp;ctx%5Fen?url%5Fver=Z39.88-2004&amp;ctx%5Fver=Z39.88-2004&amp;ctx%5Fenc=info:ofi/enc:UTF-8&amp;rfr%5Fid=info:sid/sfxit.com:opac%5F856&amp;url%5Fctx%5Ffmt=info:ofi/fmt:kev:mtx:ctx&amp;sfx.ignore%5Fdate%5Fthreshold=1&amp;rft.object%5Fid=111088194460414&amp;svc%5Fval%5Ffmt=info:ofi/fmt:kev:mtx:sch%5Fsvc&amp;$$DNotre Dame Online Access$$Ondu_aleph002072723]]&gt;&lt;/linktorsrc&gt;
+                        &lt;linktorsrc&gt;$$V$$Uhttp://catalog.hathitrust.org/Record/008634915$$Elinktorsrc_pub$$Ohathi_pubMIU01-008634915&lt;/linktorsrc&gt;
+                        &lt;linktorsrc&gt;$$V$$Uhttp://catalog.hathitrust.org/Record/000503204$$Elinktorsrc_pub$$Ohathi_pubMIU01-000503204&lt;/linktorsrc&gt;
+                        &lt;openurl&gt;$$V$$Topenurl_journal$$Ondu_aleph002072723&lt;/openurl&gt;
+                        &lt;openurl&gt;$$V$$Topenurl_journal$$Ohathi_pubMIU01-008634915&lt;/openurl&gt;
+                        &lt;openurl&gt;$$V$$Topenurl_journal$$Ohathi_pubMIU01-000503204&lt;/openurl&gt;
+                        &lt;openurl&gt;$$V$$Topenurl_journal$$Ondu_aleph000555617&lt;/openurl&gt;
+                        &lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ondu_aleph002072723&lt;/openurlfulltext&gt;
+                        &lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ohathi_pubMIU01-008634915&lt;/openurlfulltext&gt;
+                        &lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ohathi_pubMIU01-000503204&lt;/openurlfulltext&gt;
+                        &lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ondu_aleph000555617&lt;/openurlfulltext&gt;
+                        &lt;linktouc&gt;$$Tworldcat_oclc$$Eworldcat&lt;/linktouc&gt;
+                        &lt;linktouc&gt;$$Tworldcat_oclc$$Eworldcat&lt;/linktouc&gt;
+                        &lt;linktouc&gt;$$Tworldcat_oclc$$Eworldcat&lt;/linktouc&gt;
+                        &lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt;
+                        &lt;lln01&gt;$$Tfindit_link$$Ondu_aleph002072723&lt;/lln01&gt;
+                        &lt;lln01&gt;$$Tfindit_link$$Ohathi_pubMIU01-008634915&lt;/lln01&gt;
+                        &lt;lln01&gt;$$Tfindit_link$$Ohathi_pubMIU01-000503204&lt;/lln01&gt;
+                        &lt;lln01&gt;$$Tfindit_link$$Ondu_aleph000555617&lt;/lln01&gt;
+                      &lt;/links&gt;
+                      &lt;search&gt;
+                        &lt;creatorcontrib&gt;University of Chicago. Divinity School.&lt;/creatorcontrib&gt;
+                        &lt;creatorcontrib&gt;Chicago. University. Divinity School&lt;/creatorcontrib&gt;
+                        &lt;title&gt;The American journal of theology&lt;/title&gt;
+                        &lt;subject&gt;Theology Periodicals.&lt;/subject&gt;
+                        &lt;general&gt;University of Chicago Press,&lt;/general&gt;
+                        &lt;general&gt;[electronic resource].&lt;/general&gt;
+                        &lt;general&gt;SFX MARCIt Record&lt;/general&gt;
+                        &lt;general&gt;(SFX)111088194460414&lt;/general&gt;
+                        &lt;general&gt;SFX111088194460414&lt;/general&gt;
+                        &lt;general&gt;111088194460414&lt;/general&gt;
+                        &lt;general&gt;Title from title screen (JSTOR, viewed Oct. 14, 2004).&lt;/general&gt;
+                        &lt;general&gt;Edited by the Divinity Faculty of the University of Chicago.&lt;/general&gt;
+                        &lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt;
+                        &lt;recordid&gt;ndu_aleph002072723&lt;/recordid&gt;
+                        &lt;recordid&gt;002072723&lt;/recordid&gt;
+                        &lt;recordid&gt;2072723&lt;/recordid&gt;
+                        &lt;issn&gt;2329-0544&lt;/issn&gt;
+                        &lt;issn&gt;1550-3283&lt;/issn&gt;
+                        &lt;issn&gt;23290544&lt;/issn&gt;
+                        &lt;issn&gt;15503283&lt;/issn&gt;
+                        &lt;creationdate&gt;1897&lt;/creationdate&gt;
+                        &lt;creationdate&gt;1920&lt;/creationdate&gt;
+                        &lt;startdate&gt;18970101&lt;/startdate&gt;
+                        &lt;enddate&gt;19201231&lt;/enddate&gt;
+                        &lt;addtitle&gt;American journal of theology&lt;/addtitle&gt;
+                        &lt;addtitle&gt;Biblical world (Online)&lt;/addtitle&gt;
+                        &lt;addtitle&gt;Journal of religion (Online)&lt;/addtitle&gt;
+                        &lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+                        &lt;searchscope&gt;NDU&lt;/searchscope&gt;
+                        &lt;scope&gt;LIBNT&lt;/scope&gt;
+                        &lt;scope&gt;ndu_aleph&lt;/scope&gt;
+                        &lt;scope&gt;NDU&lt;/scope&gt;
+                        &lt;alttitle&gt;American journal of theology (Online)&lt;/alttitle&gt;
+                        &lt;lsr01&gt;LIBNT WWW&lt;/lsr01&gt;
+                        &lt;lsr01&gt;LIBNT WWW See Electronic Address&lt;/lsr01&gt;
+                        &lt;lsr02&gt;The American journal of theology&lt;/lsr02&gt;
+                        &lt;lsr04&gt;American journal of theology (Online)&lt;/lsr04&gt;
+                        &lt;lsr07&gt;The American journal of theology&lt;/lsr07&gt;
+                        &lt;lsr06&gt;University of Chicago Press,&lt;/lsr06&gt;
+                        &lt;lsr08&gt;Chicago, Ill. :&lt;/lsr08&gt;
+                        &lt;lsr31&gt;American journal of theology (Online)&lt;/lsr31&gt;
+                        &lt;title&gt;American journal of theology.&lt;/title&gt;
+                        &lt;subject&gt;Theology&lt;/subject&gt;
+                        &lt;general&gt;The University of Chicago Press.&lt;/general&gt;
+                        &lt;general&gt;(WaOLN)Z060000035&lt;/general&gt;
+                        &lt;general&gt;WaOLNZ060000035&lt;/general&gt;
+                        &lt;general&gt;Z060000035&lt;/general&gt;
+                        &lt;general&gt;(OCoLC)7769781&lt;/general&gt;
+                        &lt;general&gt;OCoLC7769781&lt;/general&gt;
+                        &lt;general&gt;7769781&lt;/general&gt;
+                        &lt;general&gt;sdr-nyp.b154651606&lt;/general&gt;
+                        &lt;general&gt;sdrnypb154651606&lt;/general&gt;
+                        &lt;general&gt;AllDocuments&lt;/general&gt;
+                        &lt;sourceid&gt;hathi_pub&lt;/sourceid&gt;
+                        &lt;recordid&gt;hathi_pubMIU01-008634915&lt;/recordid&gt;
+                        &lt;recordid&gt;MIU01-008634915&lt;/recordid&gt;
+                        &lt;searchscope&gt;hathi_pub&lt;/searchscope&gt;
+                        &lt;searchscope&gt;MALC&lt;/searchscope&gt;
+                        &lt;scope&gt;hathi_pub&lt;/scope&gt;
+                        &lt;scope&gt;MALC&lt;/scope&gt;
+                        &lt;lsr02&gt;American journal of theology&lt;/lsr02&gt;
+                        &lt;lsr07&gt;American journal of theology&lt;/lsr07&gt;
+                        &lt;lsr06&gt;The University of Chicago Press.&lt;/lsr06&gt;
+                        &lt;lsr08&gt;Chicago :&lt;/lsr08&gt;
+                        &lt;general&gt;The University of Chicago Press,&lt;/general&gt;
+                        &lt;general&gt;(WaSeSS)ejrnlssj0032370&lt;/general&gt;
+                        &lt;general&gt;WaSeSSejrnlssj0032370&lt;/general&gt;
+                        &lt;general&gt;ejrnlssj0032370&lt;/general&gt;
+                        &lt;general&gt;sdr-inu2127352&lt;/general&gt;
+                        &lt;general&gt;sdrinu2127352&lt;/general&gt;
+                        &lt;general&gt;(OCoLC)ocm01480198&lt;/general&gt;
+                        &lt;general&gt;OCoLCocm01480198&lt;/general&gt;
+                        &lt;general&gt;ocm01480198&lt;/general&gt;
+                        &lt;general&gt;sdr-nrlfGLAD141654-S&lt;/general&gt;
+                        &lt;general&gt;sdrnrlfGLAD141654S&lt;/general&gt;
+                        &lt;general&gt;sdr-njp2714617&lt;/general&gt;
+                        &lt;general&gt;sdrnjp2714617&lt;/general&gt;
+                        &lt;general&gt;sdr-chi1631388&lt;/general&gt;
+                        &lt;general&gt;sdrchi1631388&lt;/general&gt;
+                        &lt;recordid&gt;hathi_pubMIU01-000503204&lt;/recordid&gt;
+                        &lt;recordid&gt;MIU01-000503204&lt;/recordid&gt;
+                        &lt;lsr06&gt;The University of Chicago Press,&lt;/lsr06&gt;
+                        &lt;title&gt;The American journal of theology.&lt;/title&gt;
+                        &lt;description&gt;Vols. 2-6 include &quot;Theological and Semitic literature for 1898-1901, a bibliographical supplement to the American journal of theology and the American journal of Semitic languages and literatures. By W. Muss-Arnolt.&quot; (Separately paged)&lt;/description&gt;
+                        &lt;general&gt;s.n.],&lt;/general&gt;
+                        &lt;general&gt;(OCoLC)01480198&lt;/general&gt;
+                        &lt;general&gt;OCoLC01480198&lt;/general&gt;
+                        &lt;general&gt;01480198&lt;/general&gt;
+                        &lt;general&gt;1480198&lt;/general&gt;
+                        &lt;general&gt;0045046 MULS Ulp No. 0564900001&lt;/general&gt;
+                        &lt;general&gt;0045046 MULS UlpNo0564900001&lt;/general&gt;
+                        &lt;general&gt;045046 MULS Ulp No. 0564900001&lt;/general&gt;
+                        &lt;general&gt;ACK1949&lt;/general&gt;
+                        &lt;general&gt;Title from caption.&lt;/general&gt;
+                        &lt;recordid&gt;ndu_aleph000555617&lt;/recordid&gt;
+                        &lt;recordid&gt;000555617&lt;/recordid&gt;
+                        &lt;recordid&gt;555617&lt;/recordid&gt;
+                        &lt;addtitle&gt;Biblical world&lt;/addtitle&gt;
+                        &lt;addtitle&gt;Journal of religion&lt;/addtitle&gt;
+                        &lt;scope&gt;HESB&lt;/scope&gt;
+                        &lt;lsr01&gt;HESB GEN&lt;/lsr01&gt;
+                        &lt;lsr01&gt;HESB General Collection&lt;/lsr01&gt;
+                        &lt;lsr05&gt;BR 1 .A4&lt;/lsr05&gt;
+                        &lt;lsr05&gt;BR1.A4&lt;/lsr05&gt;
+                        &lt;lsr05&gt;BR1 .A4 :&lt;/lsr05&gt;
+                        &lt;lsr06&gt;s.n.],&lt;/lsr06&gt;
+                        &lt;lsr08&gt;[S.l. :&lt;/lsr08&gt;
+                      &lt;/search&gt;
+                      &lt;sort&gt;
+                        &lt;title&gt;American journal of theology (Online)&lt;/title&gt;
+                        &lt;creationdate&gt;1897&lt;/creationdate&gt;
+                        &lt;author&gt;University of Chicago. Divinity School.&lt;/author&gt;
+                        &lt;lso01&gt;1897&lt;/lso01&gt;
+                      &lt;/sort&gt;
+                      &lt;facets&gt;
+                        &lt;creationdate&gt;1897&lt;/creationdate&gt;
+                        &lt;topic&gt;Theology&#x2013;Periodicals&lt;/topic&gt;
+                        &lt;prefilter&gt;electronic&lt;/prefilter&gt;
+                        &lt;creatorcontrib&gt;University of Chicago. Divinity School&lt;/creatorcontrib&gt;
+                        &lt;library&gt;HESB&lt;/library&gt;
+                        &lt;lfc04&gt;American journal of theology (Online)&lt;/lfc04&gt;
+                        &lt;language&gt;eng&lt;/language&gt;
+                        &lt;topic&gt;Theology&lt;/topic&gt;
+                        &lt;toplevel&gt;online_resources&lt;/toplevel&gt;
+                        &lt;prefilter&gt;journals&lt;/prefilter&gt;
+                        &lt;prefilter&gt;print&lt;/prefilter&gt;
+                        &lt;rsrctype&gt;journals&lt;/rsrctype&gt;
+                        &lt;rsrctype&gt;print&lt;/rsrctype&gt;
+                        &lt;toplevel&gt;available&lt;/toplevel&gt;
+                        &lt;classificationlcc&gt;B - Philosophy. Psychology. Religion&#x2013;Christianity&lt;/classificationlcc&gt;
+                        &lt;frbrgroupid&gt;98386896&lt;/frbrgroupid&gt;
+                        &lt;frbrtype&gt;6&lt;/frbrtype&gt;
+                      &lt;/facets&gt;
+                      &lt;dedup&gt;
+                        &lt;t&gt;2&lt;/t&gt;
+                        &lt;c1&gt;2004237185&lt;/c1&gt;
+                        &lt;c2&gt;2329-0544;1550-3283&lt;/c2&gt;
+                        &lt;c3&gt;americanjournaloftheology&lt;/c3&gt;
+                        &lt;c4&gt;chicago&lt;/c4&gt;
+                        &lt;f3&gt;23290544&lt;/f3&gt;
+                        &lt;f4&gt;15503283&lt;/f4&gt;
+                        &lt;f6&gt;1897&lt;/f6&gt;
+                        &lt;f7&gt;american journal of theology&lt;/f7&gt;
+                        &lt;f8&gt;american journal of theology&lt;/f8&gt;
+                        &lt;f9&gt;ilu&lt;/f9&gt;
+                        &lt;f10&gt;chicago&lt;/f10&gt;
+                        &lt;f11&gt;american journal of theology online&lt;/f11&gt;
+                      &lt;/dedup&gt;
+                      &lt;frbr&gt;
+                        &lt;k2&gt;$$Kamerican journal of theology online$$ATO&lt;/k2&gt;
+                        &lt;t&gt;99&lt;/t&gt;
+                        &lt;k3&gt;$$Kamerican journal of theology$$AT&lt;/k3&gt;
+                      &lt;/frbr&gt;
+                      &lt;delivery&gt;
+                        &lt;institution&gt;$$VNDU$$Ondu_aleph002072723&lt;/institution&gt;
+                        &lt;delcategory&gt;$$VSFX Resource$$Ondu_aleph002072723&lt;/delcategory&gt;
+                        &lt;institution&gt;$$VMALC$$Ohathi_pubMIU01-008634915&lt;/institution&gt;
+                        &lt;delcategory&gt;$$VOnline Resource$$Ohathi_pubMIU01-008634915&lt;/delcategory&gt;
+                        &lt;institution&gt;$$VMALC$$Ohathi_pubMIU01-000503204&lt;/institution&gt;
+                        &lt;delcategory&gt;$$VOnline Resource$$Ohathi_pubMIU01-000503204&lt;/delcategory&gt;
+                        &lt;institution&gt;$$VNDU$$Ondu_aleph000555617&lt;/institution&gt;
+                        &lt;delcategory&gt;$$VPhysical Item$$Ondu_aleph000555617&lt;/delcategory&gt;
+                      &lt;/delivery&gt;
+                      &lt;enrichment&gt;
+                        &lt;classificationlcc&gt;ISSN RECORD&lt;/classificationlcc&gt;
+                      &lt;/enrichment&gt;
+                      &lt;ranking&gt;
+                        &lt;booster1&gt;1&lt;/booster1&gt;
+                        &lt;booster2&gt;1&lt;/booster2&gt;
+                      &lt;/ranking&gt;
+                      &lt;addata&gt;
+                        &lt;jtitle&gt;The American journal of theology&lt;/jtitle&gt;
+                        &lt;date&gt;1897&lt;/date&gt;
+                        &lt;risdate&gt;1897-1920.&lt;/risdate&gt;
+                        &lt;issn&gt;2329-0544&lt;/issn&gt;
+                        &lt;eissn&gt;1550-3283&lt;/eissn&gt;
+                        &lt;cop&gt;Chicago, Ill.&lt;/cop&gt;
+                        &lt;pub&gt;University of Chicago Press&lt;/pub&gt;
+                        &lt;objectid&gt;111088194460414&lt;/objectid&gt;
+                        &lt;lccn&gt;2004237185&lt;/lccn&gt;
+                        &lt;jtitle&gt;American journal of theology.&lt;/jtitle&gt;
+                        &lt;format&gt;journal&lt;/format&gt;
+                        &lt;genre&gt;journal&lt;/genre&gt;
+                        &lt;ristype&gt;JOUR&lt;/ristype&gt;
+                        &lt;cop&gt;Chicago&lt;/cop&gt;
+                        &lt;pub&gt;The University of Chicago Press&lt;/pub&gt;
+                        &lt;oclcid&gt;7769781&lt;/oclcid&gt;
+                        &lt;issn&gt;1550-3283&lt;/issn&gt;
+                        &lt;oclcid&gt;01480198&lt;/oclcid&gt;
+                        &lt;lccn&gt;05030475&lt;/lccn&gt;
+                        &lt;jtitle&gt;The American journal of theology.&lt;/jtitle&gt;
+                        &lt;risdate&gt;1897&lt;/risdate&gt;
+                        &lt;abstract&gt;Vols. 2-6 include &quot;Theological and Semitic literature for 1898-1901, a bibliographical supplement to the American journal of theology and the American journal of Semitic languages and literatures. By W. Muss-Arnolt.&quot; (Separately paged)&lt;/abstract&gt;
+                        &lt;cop&gt;S.l.&lt;/cop&gt;
+                        &lt;pub&gt;s.n.]&lt;/pub&gt;
+                      &lt;/addata&gt;
+                      &lt;browse&gt;
+                        &lt;title&gt;$$DThe American journal of theology$$EAmerican journal of theology$$UNDU&lt;/title&gt;
+                        &lt;title&gt;$$DAmerican journal of theology (Online)$$EAmerican journal of theology (Online)$$UNDU&lt;/title&gt;
+                        &lt;title&gt;$$DAmerican journal of theology$$EAmerican journal of theology$$UNDU&lt;/title&gt;
+                        &lt;subject&gt;$$DTheology -- Periodicals$$ETheology Periodicals$$UNDU&lt;/subject&gt;
+                        &lt;subject&gt;$$DTheology$$ETheology$$UNDU&lt;/subject&gt;
+                        &lt;author&gt;$$DUniversity of Chicago. Divinity School$$EUniversity of Chicago. Divinity School$$UNDU&lt;/author&gt;
+                        &lt;callnumber&gt;$$DBR 1$$E0br   00001$$T0&lt;/callnumber&gt;
+                        &lt;callnumber&gt;$$INDU&lt;/callnumber&gt;
+                        &lt;callnumber&gt;$$INDU$$DBR 1 .A4$$E0br   00001.a  40000  $$T0&lt;/callnumber&gt;
+                        &lt;institution&gt;NDU&lt;/institution&gt;
+                      &lt;/browse&gt;
+                    &lt;/record&gt;
+                  &lt;/PrimoNMBib&gt;
+                &lt;/DOC&gt;
+              &lt;/DOCSET&gt;
+            &lt;/RESULT&gt;
+          &lt;/JAGROOT&gt;
+        &lt;/SEGMENTS&gt;</getRecordReturn></ns1:getRecordResponse></soapenv:Body></soapenv:Envelope>
+    http_version:
+  recorded_at: Wed, 25 Jun 2014 18:55:11 GMT
+recorded_with: VCR 2.4.0

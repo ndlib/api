@@ -1,0 +1,53 @@
+<%= form_for(@service, html: { class: 'form-horizontal' }) do |f| %>
+  <% if @service.errors.any? %>
+    <div class="alert alert-error">
+      <h2><%= pluralize(@service.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+        <% @service.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, nil, { class: 'control-label' } %>
+    <div class="controls">
+      <%= f.text_field(:name) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :code, nil, { class: 'control-label' } %>
+    <div class="controls">
+      <%= f.text_field(:code) %>
+    </div>    
+  </div>
+  <div class="control-group">
+    <%= f.label :path, nil, { class: 'control-label' } %>
+    <div class="controls">
+      <%= f.text_field :path, { hint: 'blah blah' } %>
+    </div>
+    <span style="font-size: 10px; margin-left: 160px; font-style: italic;">The Path may take a "%" as a wild card for the match of the path</span>
+  </div>
+  <div class="control-group">
+    <%= f.label :service_class, nil, { class: 'control-label' } %>
+    <div class="controls">
+      <%=  f.text_field :service_class %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :description, nil, { class: 'control-label' } %>
+    <div class="controls">
+      <%= f.text_area(:description, { rows: 5, style: 'width: 340px; max-width: 340px;' }) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :parameters, nil, { class: 'control-label' } %>
+    <div class="controls">
+      <%= f.text_field(:parameters) %>
+    </div>
+  </div>
+
+  <div class="form-actions"><%= f.submit %></div>
+<% end %>

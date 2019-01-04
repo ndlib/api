@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+              <control>
+                <sourcerecordid>001662607</sourcerecordid>
+                <sourceid>ndu_aleph</sourceid>
+                <recordid>ndu_aleph001662607</recordid>
+                <originalsourceid>NDU01</originalsourceid>
+                <ilsapiid>NDU01001662607</ilsapiid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Qian shi zha ji</title>
+                <creator>Pao Tiao 1603-1669.</creator>
+                <edition>Beijing xin 1 ban..</edition>
+                <publisher>Beijing : Zhonghua shu ju</publisher>
+                <creationdate>1985</creationdate>
+                <format>2, 60 p. ; 19 cm..</format>
+                <subject>Philosophy, Chinese</subject>
+                <language>chi</language>
+                <relation>$$Cseries $$VCong shu ji cheng chu bian ; 0660</relation>
+                <availlibrary>$$INDU$$LHESB$$1General Collection$$2(AC 149 .T882 1985 v.0660 )$$Savailable$$31$$40$$5N$$60$$XNDU50$$YHESB$$ZGEN</availlibrary>
+                <lds01>Reprint.</lds01>
+                <lds02>ndu_aleph001662607</lds02>
+                <lds30>Cong shu ji cheng chu bian ; ~~ 0660</lds30>
+                <availinstitution>$$INDU$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DNotre Dame Catalog</backlink>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings$$INDU</linktoholdings>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktoholdsnotexist>$$Taleph_holdings_not_in_user_institution</linktoholdsnotexist>
+                <linktouc>$$Tworldcat_oclc$$Eworldcat</linktouc>
+                <lln01>$$Tfindit_link</lln01>
+              </links>
+              <search>
+                <creatorcontrib>Pao,  Tiao  1603-1669.</creatorcontrib>
+                <creatorcontrib>Tiao, P</creatorcontrib>
+                <creatorcontrib>Diao Bao zhu.</creatorcontrib>
+                <title>Qian shi zha ji /</title>
+                <subject>Philosophy, Chinese.</subject>
+                <subject>Chinese philosophy</subject>
+                <general>Zhonghua shu ju,</general>
+                <general>(OCoLC)29965956</general>
+                <general>OCoLC29965956</general>
+                <general>29965956</general>
+                <general>AllDocuments</general>
+                <general>Reprint.</general>
+                <sourceid>ndu_aleph</sourceid>
+                <recordid>ndu_aleph001662607</recordid>
+                <recordid>001662607</recordid>
+                <recordid>1662607</recordid>
+                <creationdate>1985</creationdate>
+                <creationdate>1935</creationdate>
+                <startdate>19850101</startdate>
+                <addtitle>Cong shu ji cheng chu bian ; 0660</addtitle>
+                <enddate>19851231</enddate>
+                <searchscope>ndu_aleph</searchscope>
+                <searchscope>NDU</searchscope>
+                <scope>HESB</scope>
+                <scope>ndu_aleph</scope>
+                <scope>NDU</scope>
+                <lsr01>HESB GEN</lsr01>
+                <lsr01>HESB General Collection</lsr01>
+                <lsr02>Tiao Qian shi zha ji</lsr02>
+                <lsr02>Qian shi zha ji Tiao</lsr02>
+                <lsr03>Cong shu ji cheng chu bian ; 0660</lsr03>
+                <lsr07>Tiao Qian shi zha ji</lsr07>
+                <lsr07>Qian shi zha ji Tiao</lsr07>
+                <lsr05>AC 149 .T882 1985 v.0660</lsr05>
+                <lsr05>AC149.T8821985v.0660</lsr05>
+                <lsr05>AC149 .T882 1985 v.0660 :</lsr05>
+                <lsr06>Zhonghua shu ju,</lsr06>
+                <lsr08>Beijing :</lsr08>
+                <lsr09>00000018427211</lsr09>
+                <lsr30>Cong shu ji cheng chu bian ; 0660</lsr30>
+              </search>
+              <sort>
+                <title>Qian shi zha ji /</title>
+                <creationdate>1985</creationdate>
+                <author>Tiao, Pao, 1603-1669.</author>
+                <lso01>1985</lso01>
+                <lso02>AC0 000149 T00 882000 1985 V.0660 -- DLC</lso02>
+              </sort>
+              <facets>
+                <language>chi</language>
+                <creationdate>1985</creationdate>
+                <topic>Philosophy, Chinese</topic>
+                <toplevel>available</toplevel>
+                <prefilter>books</prefilter>
+                <prefilter>print</prefilter>
+                <rsrctype>books</rsrctype>
+                <rsrctype>print</rsrctype>
+                <creatorcontrib>Tiao, P</creatorcontrib>
+                <library>HESB</library>
+                <lfc03>Cong shu ji cheng chu bian</lfc03>
+                <classificationlcc>A - General works.–Collections. Series. Collected works–Collections of monographs, essays, etc.–Other languages</classificationlcc>
+                <frbrgroupid>167946030</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>1</t>
+                <c3>qianshizhaji</c3>
+                <c4>1985</c4>
+                <f5>qianshizhaji</f5>
+                <f6>1985</f6>
+                <f7>qian shi zha ji</f7>
+                <f8>cc</f8>
+                <f9>2, 60 p. ;</f9>
+                <f10>zhonghua shu ju</f10>
+                <f11>tiao pao 1603 1669</f11>
+              </dedup>
+              <frbr>
+                <t>99</t>
+                <k1>$$Ktiao pao 1603 1669$$AA</k1>
+                <k3>$$Kqian shi zha ji$$AT</k3>
+              </frbr>
+              <delivery>
+                <institution>NDU</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <enrichment>
+                <classificationlcc>AC 149</classificationlcc>
+              </enrichment>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Tiao</aulast>
+                <aufirst>Pao,</aufirst>
+                <au>Tiao, Pao</au>
+                <btitle>Qian shi zha ji</btitle>
+                <seriestitle>Cong shu ji cheng chu bian ; 0660</seriestitle>
+                <date>1985</date>
+                <risdate>1985.</risdate>
+                <ristype>BOOK</ristype>
+                <cop>Beijing</cop>
+                <pub>Zhonghua shu ju</pub>
+                <oclcid>29965956</oclcid>
+                <format>book</format>
+              </addata>
+              <browse>
+                <author>$$DTiao, Pao, 1603-1669$$ETiao, Pao, 1603-1669</author>
+                <title>$$DQian shi zha ji$$EQian shi zha ji</title>
+                <title>$$DCong shu ji cheng chu bian [series]$$ECong shu ji cheng chu bian [series]</title>
+                <subject>$$DPhilosophy, Chinese$$EPhilosophy, Chinese</subject>
+                <callnumber>$$INDU$$DAC 149 .T882 1985 v.0660$$E0ac   00149.t  88200  1985 v.0660 $$T0</callnumber>
+                <institution>NDU</institution>
+              </browse>
+            </record>

@@ -1,0 +1,14 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  institutions:
+    ndu: University of Notre Dame
+    smc: Saint Mary's College
+    hcc: Holy Cross College
+    bci: Bethel College
+    ndlaw: Notre Dame Law School
+    primo_central: Primo Central
+    hathi: HathiTrust
+    crl: Center for Research Libraries

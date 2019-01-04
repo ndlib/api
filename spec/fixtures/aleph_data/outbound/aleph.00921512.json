@@ -1,0 +1,22 @@
+
+{
+    "transaction"   : "000341845",
+    "request_type"  : "Doc Del",
+    "delivery_type" : "Ship",
+    "source"        : "Aleph",
+    "title"         : "Modern food microbiology / James M. Jay.",
+    "author"        : "Jay, James M. (James Monroe), 1927-",
+    "enum_chron"    : "",
+    "pages"         : "",
+    "article_title" : "",
+    "article_author": "",
+    "barcode"       : "00000005773841",
+    "isbn"          : "0442244452",
+    "issn"          : "",
+    "bib_number"    : "634825",
+    "adm_number"    : "634825",
+    "item_sequence" : "    1.0",
+    "call_number"   : "QR 115 .J3 1986",
+    "send_to"       : "Hesburgh Library",
+    "rush"          : "No" 
+}

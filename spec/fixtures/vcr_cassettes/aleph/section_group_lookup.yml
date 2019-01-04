@@ -1,0 +1,149 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:8983/solr/api/select?wt=json
+    body:
+      encoding: US-ASCII
+      string: fq=type%3AResource%5C%3A%5C%3ACourse%5C%3A%5C%3ACourse&fq=term_prefix_ss%3A201310&fq=alpha_prefix_ss%3AIIPS&fq=number_is%3A60219&start=0&rows=30&q=*%3A*
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '681'
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "responseHeader":{
+            "status":0,
+            "QTime":506},
+          "response":{"numFound":1,"start":0,"docs":[
+              {
+                "id":"Resource::Course::Course 201310_IIPS_60219",
+                "type":"Resource::Course::Course",
+                "class_name":"Resource::Course::Course",
+                "term_prefix_ss":"201310",
+                "alpha_prefix_ss":"IIPS",
+                "number_is":60219,
+                "instructors_sms":["201310_everdeja"],
+                "section_groups_sms":["201310_16203"],
+                "supersections_sms":["FA13-IIPS-60219-SSPQ"],
+                "course_title_texts":"Modern Genocide",
+                "combined_texts":"Modern Genocide 201310 IIPS 60219 Ernesto Verdeja",
+                "_version_":"1620213144122032133"}]
+          }}
+    http_version: 
+  recorded_at: Wed, 19 Dec 2018 13:30:30 GMT
+- request:
+    method: post
+    uri: http://localhost:8983/solr/api/select?wt=json
+    body:
+      encoding: US-ASCII
+      string: fq=type%3AResource%5C%3A%5C%3ACourse%5C%3A%5C%3ASectionGroup&fq=section_group_id_ss%3A201310_16203&start=0&rows=30&q=*%3A*
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '492'
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "responseHeader":{
+            "status":0,
+            "QTime":9},
+          "response":{"numFound":1,"start":0,"docs":[
+              {
+                "id":"Resource::Course::SectionGroup 201310_16203",
+                "type":"Resource::Course::SectionGroup",
+                "class_name":"Resource::Course::SectionGroup",
+                "sections_sms":["201310_16203"],
+                "section_group_id_ss":"201310_16203",
+                "crosslist_id_ss":"201310_PQ",
+                "primary_instructor_ss":"everdeja",
+                "_version_":"1620213148754640911"}]
+          }}
+    http_version: 
+  recorded_at: Wed, 19 Dec 2018 13:30:30 GMT
+- request:
+    method: post
+    uri: http://localhost:8983/solr/api/select?wt=json
+    body:
+      encoding: US-ASCII
+      string: fq=type%3AResource%5C%3A%5C%3ACourse%5C%3A%5C%3ASection&fq=section_id_ss%3A201310_16203&start=0&rows=30&q=*%3A*
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '869'
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "responseHeader":{
+            "status":0,
+            "QTime":4},
+          "response":{"numFound":1,"start":0,"docs":[
+              {
+                "id":"Resource::Course::Section 201310_16203",
+                "type":"Resource::Course::Section",
+                "class_name":"Resource::Course::Section",
+                "section_id_ss":"201310_16203",
+                "instructors_sms":["201310_everdeja"],
+                "course_triple_ss":"201310_IIPS_60219",
+                "term_ss":"201310",
+                "alpha_prefix_ss":"IIPS",
+                "number_is":60219,
+                "section_number_is":1,
+                "crn_ss":"16203",
+                "supersection_id_ss":"FA13-IIPS-60219-SSPQ",
+                "enrollments_sms":["201310_fnunezde",
+                  "201310_jokojie",
+                  "201310_sbosha"],
+                "course_title_texts":"Modern Genocide",
+                "combined_texts":"Modern Genocide 201310 IIPS 60219 Ernesto Verdeja",
+                "_version_":"1620213189498109954"}]
+          }}
+    http_version: 
+  recorded_at: Wed, 19 Dec 2018 13:30:30 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+      <control>
+        <sourcerecordid>277204662</sourcerecordid>
+        <sourceid>gale_ofa</sourceid>
+        <recordid>TN_gale_ofa277204662</recordid>
+        <sourceformat>XML</sourceformat>
+        <sourcesystem>Other</sourcesystem>
+      </control>
+      <display>
+        <type>article</type>
+        <title>Firing on all synapses.(feature articles that have been covered by New Scientist)</title>
+        <ispartof>New Scientist, Nov 12, 2011, Vol.212(2838), p.54(1)</ispartof>
+        <identifier>&lt;b&gt;ISSN: &lt;/b&gt;0262-4079</identifier>
+        <subject>Periodical Articles -- Evaluation</subject>
+        <description>The article presents a brief of the several interesting stories that have been covered by New Scientist in the year 2011.</description>
+        <language>English</language>
+        <source>Cengage Learning, Inc.</source>
+      </display>
+      <links>
+        <openurl>$$Topenurl_article</openurl>
+        <openurlfulltext>$$Topenurlfull_article</openurlfulltext>
+      </links>
+      <search>
+        <scope>gale_onefilea</scope>
+        <scope>gale_onefileg</scope>
+        <scope>bcrc</scope>
+        <title>Firing on all synapses.(feature articles that have been covered by New Scientist)</title>
+        <description>The article presents a brief of the several interesting stories that have been covered by New Scientist in the year 2011.</description>
+        <subject>Periodical articles--Evaluation</subject>
+        <subject>United Kingdom</subject>
+        <subject>4EUUK</subject>
+        <subject>Criticism and interpretation</subject>
+        <subject>New Scientist (Periodical)</subject>
+        <subject>2011 AD</subject>
+        <general>English</general>
+        <general>Reed Business Information Ltd.</general>
+        <general>Cengage Learning, Inc.</general>
+        <sourceid>gale_ofa</sourceid>
+        <recordid>gale_ofa277204662</recordid>
+        <issn>0262-4079</issn>
+        <issn>02624079</issn>
+        <rsrctype>article</rsrctype>
+        <creationdate>2011</creationdate>
+        <recordtype>article</recordtype>
+        <addtitle>New Scientist</addtitle>
+        <searchscope>OneFile</searchscope>
+        <scope>OneFile</scope>
+      </search>
+      <sort>
+        <title>Firing on all synapses.(feature articles that have been covered by New Scientist)</title>
+        <creationdate>20111112</creationdate>
+      </sort>
+      <facets>
+        <frbrgroupid>7509622196063478977</frbrgroupid>
+        <frbrtype>6</frbrtype>
+        <language>eng</language>
+        <creationdate>2011</creationdate>
+        <topic>Periodical Articles–Evaluation</topic>
+        <collection>OneFile (GALE)</collection>
+        <prefilter>articles</prefilter>
+        <rsrctype>articles</rsrctype>
+        <jtitle>New Scientist</jtitle>
+      </facets>
+      <frbr>
+        <t>2</t>
+        <k1>2011</k1>
+        <k2>02624079</k2>
+        <k4>212</k4>
+        <k5>2838</k5>
+        <k6>54</k6>
+        <k7>new scientist</k7>
+        <k8>firing on all synapses</k8>
+        <k9>firingonallsynapses</k9>
+      </frbr>
+      <delivery>
+        <delcategory>Remote Search Resource</delcategory>
+        <fulltext>fulltext</fulltext>
+      </delivery>
+      <ranking>
+        <booster1>1</booster1>
+        <booster2>1</booster2>
+        <pcg_type>aggregator</pcg_type>
+      </ranking>
+      <addata>
+        <atitle>Firing on all synapses.(feature articles that have been covered by New Scientist)</atitle>
+        <jtitle>New Scientist</jtitle>
+        <date>20111112</date>
+        <risdate>20111112</risdate>
+        <volume>212</volume>
+        <issue>2838</issue>
+        <spage>54</spage>
+        <issn>0262-4079</issn>
+        <genre>article</genre>
+        <ristype>JOUR</ristype>
+        <abstract>The article presents a brief of the several interesting stories that have been covered by New Scientist in the year 2011.</abstract>
+        <pub>Reed Business Information Ltd.</pub>
+        <lad01>gale_ofa</lad01>
+      </addata>
+    </record>

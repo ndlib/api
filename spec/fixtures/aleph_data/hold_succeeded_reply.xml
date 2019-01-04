@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<put-rec-hold>
+    <reply-text>ok</reply-text>
+    <reply-code>0000</reply-code>
+    <create-hold>
+        <note type="info">Action Succeeded</note>
+    </create-hold>
+</put-rec-hold>

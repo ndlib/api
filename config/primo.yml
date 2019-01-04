@@ -1,0 +1,16 @@
+test: &test
+  base_url: https://onesearchpprd.library.nd.edu
+  institution: NDU
+
+production: &production
+  base_url: http://onesearch.library.nd.edu
+  institution: NDU
+
+development:
+  <<: *test
+
+pre_production:
+  <<: *test
+
+dm_production:
+  <<: *test

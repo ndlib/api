@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<get-record>
+  <reply-text>ok</reply-text>
+  <reply-code>0000</reply-code>
+  <record>
+    <info type="Items" href="http://paul.library.nd.edu:1891/rest-dlf/record/NDU01001600269/items"/>
+    <info type="Holdings" href="http://paul.library.nd.edu:1891/rest-dlf/record/NDU01001600269/holdings"/>
+    <info type="Filters" href="http://paul.library.nd.edu:1891/rest-dlf/record/NDU01001600269/filters"/>
+    <leader>01241cam  2200349Ia 45e0</leader>
+    <controlfield tag="005">19990202092623.0</controlfield>
+    <controlfield tag="008">981118s1998    sz       b    001 0 gersd</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3894113480 (v.1)</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3894113499 (v.2)</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3894113502 (v.3)</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)40381411</subfield>
+    </datafield>
+    <datafield tag="035" ind1="9" ind2=" ">
+      <subfield code="a">AHF4324</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">OHX</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">OHX</subfield>
+      <subfield code="d">EMT</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">e-gx---</subfield>
+    </datafield>
+    <datafield tag="049" ind1=" " ind2=" ">
+      <subfield code="a">INDU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="1" ind2="4">
+      <subfield code="a">B3185</subfield>
+      <subfield code="b">.B257 1998</subfield>
+    </datafield>
+    <datafield tag="072" ind1=" " ind2="7">
+      <subfield code="a">BX</subfield>
+      <subfield code="2">lcco</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Balthasar, Hans Urs von,</subfield>
+      <subfield code="d">1905-1988.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Apokalypse der deutschen Seele :</subfield>
+      <subfield code="b">Studien zu einer Lehre von letzten Haltungen /</subfield>
+      <subfield code="c">Hans Urs von Balthasar.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Freiburg :</subfield>
+      <subfield code="b">Johannes Verlag,</subfield>
+      <subfield code="c">1998.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">3 v. ;</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Balthasar, Hans Urs von. Studienausgabe ;</subfield>
+      <subfield code="v">3, no. 1-3</subfield>
+    </datafield>
+    <datafield tag="505" ind1="0" ind2=" ">
+      <subfield code="a">Bd. 1. Der deutsche Idealismus. -- Bd. 2. Im Zeichen Nietzsches. -- Bd. 3. Die Vergöttlichung des Todes.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">First published in 1937-1939.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references and index.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Idealism in literature.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Philosophy, German.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Idealism.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">German literature</subfield>
+      <subfield code="x">History and criticism.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Eschatology.</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+      <subfield code="a">Germany</subfield>
+      <subfield code="x">Intellectual life.</subfield>
+    </datafield>
+    <datafield tag="938" ind1=" " ind2=" ">
+      <subfield code="a">Otto Harrassowitz</subfield>
+      <subfield code="b">HARR</subfield>
+      <subfield code="n">har005053497</subfield>
+      <subfield code="c">73.00 DEM</subfield>
+    </datafield>
+  </record>
+</get-record>

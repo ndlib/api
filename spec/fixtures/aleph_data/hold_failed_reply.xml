@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<put-rec-hold>
+    <create-hold>
+        <note type="error">Client must be on localhost. IP must be 127.0.0.1</note>
+    </create-hold>
+    <reply-text>Failed to create request</reply-text>
+    <reply-code>0025</reply-code>
+</put-rec-hold>

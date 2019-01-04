@@ -1,0 +1,22 @@
+
+{
+    "transaction"   : "00931512",
+    "request_type"  : "Doc Del",
+    "delivery_type" : "Ship",
+    "source"        : "Aleph",
+    "title"         : "Grumbles from the grave / Robert A. Heinlein ; edited by Virginia Heinlein.",
+    "author"        : "Heinlein, Robert A. (Robert Anson), 1907-1988.",
+    "enum_chron"    : "",
+    "pages"         : "",
+    "article_title" : "",
+    "article_author": "",
+    "barcode"       : "00000007298532",
+    "isbn"          : "0345362462",
+    "issn"          : "",
+    "bib_number"    : "803678",
+    "adm_number"    : "803678",
+    "item_sequence" : "    1.0",
+    "call_number"   : "PS 3515 .E288 G7 1990",
+    "send_to"       : "Notre Dame Dept. Delivery",
+    "rush"          : "No" 
+}

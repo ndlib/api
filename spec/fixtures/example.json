@@ -1,0 +1,13 @@
+{
+    outer_concept_1:
+    {
+        inner_concept_1: 'inner 1',
+        inner_concept_2: 'inner 2',
+        inner_concept_3: 'inner 3'
+    },
+    outer_concept_2:
+    {
+        inner_concept_4: 'inner 4',
+        inner_concept_5: 'inner 5'
+    }
+}

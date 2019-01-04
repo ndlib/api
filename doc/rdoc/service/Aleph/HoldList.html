@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Aleph::HoldList - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/service/aleph/hold_list.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    <!-- Included Modules -->
+<nav id="includes-section" class="section">
+  <h3 class="section-header">Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">Virtus</span>
+  
+  
+  
+    <li><span class="include">ActiveModel::Conversion</span>
+  
+  
+  
+    <li><span class="include">ActiveModel::Validations</span>
+  
+  
+  </ul>
+</nav>
+
+    <!-- Extension Modules -->
+<nav id="extends-section" class="section">
+  <h3 class="section-header">Extended With Modules</h3>
+
+  <ul class="link-list">
+    
+  
+    <li><span class="extend">ActiveModel::Naming</span>
+  
+  
+  </ul>
+</nav>
+
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-available_for_hold-3F">#available_for_hold?</a>
+    
+    <li ><a href="#method-i-build_hold_items">#build_hold_items</a>
+    
+    <li ><a href="#method-i-build_institutional_list">#build_institutional_list</a>
+    
+    <li ><a href="#method-i-build_request_path">#build_request_path</a>
+    
+    <li ><a href="#method-i-filter_unique_items">#filter_unique_items</a>
+    
+    <li ><a href="#method-i-generate_key">#generate_key</a>
+    
+    <li ><a href="#method-i-parse_id">#parse_id</a>
+    
+    <li ><a href="#method-i-populate_raw_item_list">#populate_raw_item_list</a>
+    
+    <li ><a href="#method-i-rest_api">#rest_api</a>
+    
+    <li ><a href="#method-i-retrieve_item">#retrieve_item</a>
+    
+    <li ><a href="#method-i-retrieve_list">#retrieve_list</a>
+    
+    <li ><a href="#method-i-unique_item_hash">#unique_item_hash</a>
+    
+    <li ><a href="#method-i-unique_items">#unique_items</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Aleph.html">Aleph</a>
+  
+    <li><a href="../Aleph/HoldItem.html">Aleph::HoldItem</a>
+  
+    <li><a href="../Aleph/HoldList.html">Aleph::HoldList</a>
+  
+    <li><a href="../Aleph/HoldRequest.html">Aleph::HoldRequest</a>
+  
+    <li><a href="../Aleph/REST.html">Aleph::REST</a>
+  
+    <li><a href="../Aleph/REST/Connection.html">Aleph::REST::Connection</a>
+  
+    <li><a href="../Aleph/REST/Connection/Error.html">Aleph::REST::Connection::Error</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Aleph::HoldList</h1>
+
+  <div id="description" class="description">
+    
+<p>Representation of an <a href="../Aleph.html">Aleph</a> hold item</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(system_ids = [], p_id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">system_ids</span> = [], <span class="ruby-identifier">p_id</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">patron_id</span> = <span class="ruby-identifier">p_id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">system_id_list</span> = <span class="ruby-identifier">system_ids</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">cache_key</span> = <span class="ruby-identifier">generate_key</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">raw_item_list</span> = {}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-populate_raw_item_list" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">populate_raw_item_list</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="populate_raw_item_list-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">populate_raw_item_list</span>
+  <span class="ruby-identifier">system_id_list</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">raw_sys_id</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">rest_api</span>.<span class="ruby-identifier">path</span> = <span class="ruby-identifier">build_request_path</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">parse_id</span>(<span class="ruby-identifier">raw_sys_id</span>))
+    <span class="ruby-identifier">raw_list</span> = <span class="ruby-identifier">retrieve_list</span>
+    <span class="ruby-identifier">hold_list</span> = <span class="ruby-identifier">build_hold_items</span>(<span class="ruby-identifier">raw_list</span>.<span class="ruby-identifier">hold</span>.<span class="ruby-identifier">institution</span>.<span class="ruby-identifier">group</span>)
+    <span class="ruby-keyword">next</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">available_for_hold?</span>(<span class="ruby-identifier">raw_list</span>)
+    <span class="ruby-identifier">build_institutional_list</span>(<span class="ruby-identifier">raw_sys_id</span>, <span class="ruby-identifier">hold_list</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- populate_raw_item_list-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- populate_raw_item_list-method -->
+
+    
+      <div id="method-i-unique_items" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">unique_items</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="unique_items-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">unique_items</span>
+  <span class="ruby-ivar">@unique_items</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">filter_unique_items</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- unique_items-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- unique_items-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+     <section id="private-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Private Instance Methods</h3>
+
+    
+      <div id="method-i-available_for_hold-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">available_for_hold?</span><span
+            class="method-args">(hold_list)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="available_for_hold-3F-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 112</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">available_for_hold?</span>(<span class="ruby-identifier">hold_list</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">hold_list</span>.<span class="ruby-identifier">hold</span>.<span class="ruby-identifier">allowed</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;Y&#39;</span>
+    <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- available_for_hold-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- available_for_hold-3F-method -->
+
+    
+      <div id="method-i-build_hold_items" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">build_hold_items</span><span
+            class="method-args">(raw_hold_list)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="build_hold_items-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 65</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">build_hold_items</span>(<span class="ruby-identifier">raw_hold_list</span>)
+  <span class="ruby-identifier">processed_list</span> = []
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">raw_hold_list</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Array</span>)
+    <span class="ruby-identifier">raw_hold_list</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">processed_list</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">Aleph</span><span class="ruby-operator">::</span><span class="ruby-constant">HoldItem</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">retrieve_item</span>(<span class="ruby-identifier">item</span>)))
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">processed_list</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">Aleph</span><span class="ruby-operator">::</span><span class="ruby-constant">HoldItem</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">retrieve_item</span>(<span class="ruby-identifier">raw_hold_list</span>)))
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">processed_list</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- build_hold_items-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- build_hold_items-method -->
+
+    
+      <div id="method-i-build_institutional_list" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">build_institutional_list</span><span
+            class="method-args">(raw_sys_id, hold_list)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="build_institutional_list-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 77</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">build_institutional_list</span>(<span class="ruby-identifier">raw_sys_id</span>, <span class="ruby-identifier">hold_list</span>)
+  <span class="ruby-identifier">current_key</span> = <span class="ruby-identifier">parse_id</span>(<span class="ruby-identifier">raw_sys_id</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_sym</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">raw_item_list</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-identifier">current_key</span>)
+    <span class="ruby-identifier">current_hold_list</span> = <span class="ruby-identifier">raw_item_list</span>[<span class="ruby-identifier">current_key</span>]
+    <span class="ruby-identifier">combined_hold_list</span> = <span class="ruby-identifier">current_hold_list</span>.<span class="ruby-identifier">concat</span>(<span class="ruby-identifier">hold_list</span>)
+    <span class="ruby-identifier">raw_item_list</span>[<span class="ruby-identifier">current_key</span>] = <span class="ruby-identifier">combined_hold_list</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raw_item_list</span>[<span class="ruby-identifier">parse_id</span>(<span class="ruby-identifier">raw_sys_id</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_sym</span>] = <span class="ruby-identifier">hold_list</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- build_institutional_list-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- build_institutional_list-method -->
+
+    
+      <div id="method-i-build_request_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">build_request_path</span><span
+            class="method-args">(institution_id, system_id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="build_request_path-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 55</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">build_request_path</span>(<span class="ruby-identifier">institution_id</span>, <span class="ruby-identifier">system_id</span>)
+  <span class="ruby-identifier">raw_uri</span> = <span class="ruby-node">&quot;rest-dlf/patron/#{patron_id}/record/###INST######ID###/holds&quot;</span>
+  <span class="ruby-identifier">raw_uri</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-node">/###INST###/</span>, <span class="ruby-identifier">institution_id</span>.<span class="ruby-identifier">upcase</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;01&#39;</span>)
+  <span class="ruby-identifier">raw_uri</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-node">/###ID###/</span>, <span class="ruby-identifier">format</span>(<span class="ruby-string">&#39;%09d&#39;</span>, <span class="ruby-identifier">system_id</span>.<span class="ruby-identifier">to_i</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- build_request_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- build_request_path-method -->
+
+    
+      <div id="method-i-filter_unique_items" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">filter_unique_items</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="filter_unique_items-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 88</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">filter_unique_items</span>
+  <span class="ruby-identifier">merged_list</span> = {}
+  <span class="ruby-identifier">raw_item_list</span>.<span class="ruby-identifier">each_key</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">inst_code</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">raw_item_list</span>[<span class="ruby-identifier">inst_code</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">item_enumeration</span> = <span class="ruby-identifier">item</span>.<span class="ruby-identifier">item_number</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">item_number</span> <span class="ruby-operator">:</span> <span class="ruby-string">&#39;single_volume&#39;</span>
+      <span class="ruby-identifier">merged_list</span>[<span class="ruby-identifier">item_enumeration</span>] = <span class="ruby-identifier">unique_item_hash</span>(<span class="ruby-identifier">item</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">merged_list</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- filter_unique_items-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- filter_unique_items-method -->
+
+    
+      <div id="method-i-generate_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">generate_key</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="generate_key-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generate_key</span>
+  <span class="ruby-identifier">patron_id</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;-&#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">system_id_list</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39;-&#39;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- generate_key-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- generate_key-method -->
+
+    
+      <div id="method-i-parse_id" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parse_id</span><span
+            class="method-args">(raw_sys_id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="parse_id-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 50</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">parse_id</span>(<span class="ruby-identifier">raw_sys_id</span>)
+  <span class="ruby-identifier">raw_sys_id</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/(\w{3})_aleph(\d+)/</span>
+  [<span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>[<span class="ruby-value">1</span>], <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>[<span class="ruby-value">2</span>]]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- parse_id-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- parse_id-method -->
+
+    
+      <div id="method-i-rest_api" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">rest_api</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="rest_api-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">rest_api</span>
+  <span class="ruby-ivar">@rest_api</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Aleph</span><span class="ruby-operator">::</span><span class="ruby-constant">REST</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- rest_api-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- rest_api-method -->
+
+    
+      <div id="method-i-retrieve_item" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">retrieve_item</span><span
+            class="method-args">(item)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="retrieve_item-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 107</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">retrieve_item</span>(<span class="ruby-identifier">item</span>)
+  <span class="ruby-identifier">rest_api</span>.<span class="ruby-identifier">path</span> = <span class="ruby-identifier">item</span>.<span class="ruby-identifier">href</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp">/holds/</span>, <span class="ruby-string">&#39;items&#39;</span>)
+  <span class="ruby-identifier">rest_api</span>.<span class="ruby-identifier">transact</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- retrieve_item-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- retrieve_item-method -->
+
+    
+      <div id="method-i-retrieve_list" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">retrieve_list</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="retrieve_list-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 61</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">retrieve_list</span>
+  <span class="ruby-identifier">rest_api</span>.<span class="ruby-identifier">transact</span>.<span class="ruby-identifier">hold_grp_list</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- retrieve_list-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- retrieve_list-method -->
+
+    
+      <div id="method-i-unique_item_hash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">unique_item_hash</span><span
+            class="method-args">(item)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="unique_item_hash-source">
+            <pre><span class="ruby-comment"># File app/service/aleph/hold_list.rb, line 99</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">unique_item_hash</span>(<span class="ruby-identifier">item</span>)
+  {
+    <span class="ruby-identifier">description</span><span class="ruby-operator">:</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">item_description</span>,
+    <span class="ruby-identifier">enumeration</span><span class="ruby-operator">:</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">item_number</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">item_number</span> <span class="ruby-operator">:</span> <span class="ruby-string">&#39;1&#39;</span>,
+    <span class="ruby-identifier">sort_order</span><span class="ruby-operator">:</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">item_number</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">item_number</span> <span class="ruby-operator">:</span> <span class="ruby-string">&#39;1&#39;</span>
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- unique_item_hash-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- unique_item_hash-method -->
+
+    
+    </section><!-- private-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

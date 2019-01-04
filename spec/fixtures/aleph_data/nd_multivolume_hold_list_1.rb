@@ -1,0 +1,1 @@
+{"hold_grp_list"=>{"reply_text"=>"ok", "reply_code"=>"0000", "hold"=>{"institution"=>{"inst_name"=>"University of Notre Dame", "group"=>{"href"=>"http://paul.library.nd.edu:1891/rest-dlf/patron/BLD1231364/record/NDU01001526576/holds/NDU50001526576000010"}, "code"=>"NDU50"}, "allowed"=>"Y"}}}

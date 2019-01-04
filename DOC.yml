@@ -1,0 +1,37 @@
+id: api
+name: Api
+owner: jhartzle
+developers:
+  - jhartzle
+  - rfox2
+purpose: >
+  To provide a common api/interface that we can access to access library resources.  It is intended to protect us from having to access the
+  indivudual vended datasources.
+audience: >
+  Library developers and applications.  Other campus developers.
+dependencies:
+  - mysql
+  - primo
+  - solr
+  - datamart
+  - memcached
+  - banner
+  - assets
+  - cas
+hosts:
+  - api.library.nd.edu
+  - apipprd.library.nd.edu
+urls:
+  - https://api.library.nd.edu
+  - https://apipprd.library.nd.edu
+  - http://jenkins.library.nd.edu/jenkins
+setup: >
+  Check out the repo.  rake db:create; rake db:migrate; rake db:test:prepare; rake db:seed; 
+  You may wish to install memcached or solr to do testing.
+deploy: >
+  Login in to jenkins and run the api project.
+notes:
+last_review:
+  date: 2019-01-03
+reviewer: rfox2
+

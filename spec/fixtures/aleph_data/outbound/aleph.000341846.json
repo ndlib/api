@@ -1,0 +1,22 @@
+
+{
+    "transaction"   : "000341846",
+    "request_type"  : "Doc Del",
+    "delivery_type" : "Ship",
+    "source"        : "Aleph",
+    "title"         : "Notes on nonlinear systems, by J. K. Aggarwal.",
+    "author"        : "Aggarwal, J. K. (Jagdishkumar Keshoram), 1936-",
+    "enum_chron"    : "",
+    "pages"         : "",
+    "article_title" : "",
+    "article_author": "",
+    "barcode"       : "00000002533123",
+    "isbn"          : "",
+    "issn"          : "",
+    "bib_number"    : "263239",
+    "adm_number"    : "263239",
+    "item_sequence" : "    1.0",
+    "call_number"   : "QA 402 .A34",
+    "send_to"       : "Notre Dame Dept. Delivery",
+    "rush"          : "No" 
+}

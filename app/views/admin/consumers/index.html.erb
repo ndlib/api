@@ -1,0 +1,23 @@
+<h2>Consumers</h2>
+
+<table style="margin: 20px 0px 20px 0px;" class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Token</th>
+    <th>Services</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @consumers.each do |consumer| %>
+    <tr>
+      <td><%= h consumer.name %></td>
+      <td><%= h consumer.authentication_token %></td>
+      <td><%= raw consumer.services.collect { | s | s.name }.join("<br />") %></td>
+      <td><%= link_to 'Edit', edit_admin_consumer_path(consumer) %></td>
+      <td><%= link_to 'Destroy', consumer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<div class="form-actions"><%= link_to 'New Consumer', new_admin_consumer_path, :class => "btn" %></div>

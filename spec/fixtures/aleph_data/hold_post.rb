@@ -1,0 +1,1 @@
+{"hold_request_parameters"=>{"pickup_location"=>"HESB", "last_interest_date"=>"20140530", "start_interest_date"=>"20140515", "sub_author"=>"Additional Author Information", "sub_title"=>"Additional Title Information", "pages"=>"Addtional Pages Information", "note_1"=>"Additional Note", "note_2"=>"Addtional Note", "rush"=>"N"}}

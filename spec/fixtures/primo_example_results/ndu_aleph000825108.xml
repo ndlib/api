@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+              <control>
+                <sourcerecordid>000825108</sourcerecordid>
+                <sourceid>ndu_aleph</sourceid>
+                <recordid>ndu_aleph000825108</recordid>
+                <originalsourceid>NDU01</originalsourceid>
+                <ilsapiid>NDU01000825108</ilsapiid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>The test.</title>
+                <creator>Pierre Boulle 1912-1994.</creator>
+                <publisher>New York, Vanguard Press</publisher>
+                <creationdate>1957</creationdate>
+                <format>216 p. 21 cm..</format>
+                <language>eng;fre</language>
+                <availlibrary>$$INDU$$LHESB$$1General Collection$$2(PQ 2603 .O754 E6713 1957 )$$Savailable$$31$$40$$5N$$60$$XNDU50$$YHESB$$ZGEN</availlibrary>
+                <lds01>Translation of L'épreuve des hommes blancs.</lds01>
+                <lds02>ndu_aleph000825108</lds02>
+                <availinstitution>$$INDU$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DNotre Dame Catalog</backlink>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings$$INDU</linktoholdings>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktoholdsnotexist>$$Taleph_holdings_not_in_user_institution</linktoholdsnotexist>
+                <linktouc>$$Tworldcat_oclc$$Eworldcat</linktouc>
+                <lln01>$$Tfindit_link</lln01>
+              </links>
+              <search>
+                <creatorcontrib>Pierre,  Boulle  1912-1994.</creatorcontrib>
+                <creatorcontrib>Boulle, P</creatorcontrib>
+                <creatorcontrib>Translated by Xan Fielding.</creatorcontrib>
+                <creatorcontrib>Bull', P'er, 1912-1994</creatorcontrib>
+                <creatorcontrib>Bul', P'er, 1912-1994</creatorcontrib>
+                <title>The test.</title>
+                <general>Vanguard Press</general>
+                <general>(OCoLC)01580612</general>
+                <general>OCoLC01580612</general>
+                <general>01580612</general>
+                <general>1580612</general>
+                <general>ADT2503</general>
+                <general>AllDocuments</general>
+                <general>Translation of L'épreuve des hommes blancs.</general>
+                <sourceid>ndu_aleph</sourceid>
+                <recordid>ndu_aleph000825108</recordid>
+                <recordid>000825108</recordid>
+                <recordid>825108</recordid>
+                <creationdate>1957</creationdate>
+                <startdate>19570101</startdate>
+                <enddate>19571231</enddate>
+                <searchscope>ndu_aleph</searchscope>
+                <searchscope>NDU</searchscope>
+                <scope>HESB</scope>
+                <scope>ndu_aleph</scope>
+                <scope>NDU</scope>
+                <lsr01>HESB GEN</lsr01>
+                <lsr01>HESB General Collection</lsr01>
+                <lsr02>Boulle The test</lsr02>
+                <lsr02>The test Boulle</lsr02>
+                <lsr07>Boulle The test</lsr07>
+                <lsr07>The test Boulle</lsr07>
+                <lsr05>PQ 2603 .O754 E6713 1957</lsr05>
+                <lsr05>PQ2603.O754E67131957</lsr05>
+                <lsr05>PQ2603 .O754 E6713 1957 :</lsr05>
+                <lsr06>Vanguard Press</lsr06>
+                <lsr08>New York,</lsr08>
+              </search>
+              <sort>
+                <title>test.</title>
+                <creationdate>1957</creationdate>
+                <author>Boulle, Pierre, 1912-1994.</author>
+                <lso01>1957</lso01>
+                <lso02>PQ0 002603 O00 754000 E00 671300 1957 -- DLC</lso02>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1957</creationdate>
+                <toplevel>available</toplevel>
+                <prefilter>books</prefilter>
+                <prefilter>print</prefilter>
+                <rsrctype>books</rsrctype>
+                <rsrctype>print</rsrctype>
+                <creatorcontrib>Boulle, P</creatorcontrib>
+                <library>HESB</library>
+                <classificationlcc>P - Language and literature.–French literature</classificationlcc>
+                <frbrgroupid>155108630</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>1</t>
+                <c1>57012252</c1>
+                <c3>test</c3>
+                <c4>1957</c4>
+                <f1>57012252</f1>
+                <f5>test</f5>
+                <f6>1957</f6>
+                <f7>test</f7>
+                <f8>nyu</f8>
+                <f9>216 p.</f9>
+                <f10>vanguard press</f10>
+                <f11>boulle pierre 1912 1994</f11>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kboulle pierre 1912 1994$$AA</k1>
+                <k3>$$Ktest$$AT</k3>
+              </frbr>
+              <delivery>
+                <institution>NDU</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <enrichment>
+                <classificationlcc>PQ 2603 .O754 E6713 1957</classificationlcc>
+              </enrichment>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Boulle</aulast>
+                <aufirst>Pierre,</aufirst>
+                <au>Boulle, Pierre</au>
+                <btitle>The test.</btitle>
+                <date>1957</date>
+                <risdate>[1957]</risdate>
+                <ristype>BOOK</ristype>
+                <cop>New York</cop>
+                <pub>Vanguard Press</pub>
+                <oclcid>01580612</oclcid>
+                <lccn>57012252</lccn>
+                <format>book</format>
+              </addata>
+              <browse>
+                <author>$$DBoulle, Pierre, 1912-1994$$EBoulle, Pierre, 1912-1994</author>
+                <title>$$DThe test$$Etest</title>
+                <callnumber>$$INDU$$DPZ 4 .B764 Te$$E0pz   00004.b  76400  te $$T0</callnumber>
+                <institution>NDU</institution>
+              </browse>
+            </record>

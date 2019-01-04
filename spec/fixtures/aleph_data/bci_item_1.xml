@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item-serv>
+  <reply-text>ok</reply-text>
+  <reply-code>0000</reply-code>
+  <item>
+    <z30-sub-library-code>BCI</z30-sub-library-code>
+    <z30-item-process-status-code/>
+    <z30-item-status-code>10</z30-item-status-code>
+    <z30-collection-code>MAIN</z30-collection-code>
+    <queue/>
+    <z30>
+      <translate-change-active-library>BCI50</translate-change-active-library>
+      <z30-doc-number>000005814</z30-doc-number>
+      <z30-item-sequence>    1.0</z30-item-sequence>
+      <z30-barcode>08000001622036</z30-barcode>
+      <z30-sub-library>Bethel College</z30-sub-library>
+      <z30-material>Book</z30-material>
+      <z30-item-status>Regular</z30-item-status>
+      <z30-open-date>19940405</z30-open-date>
+      <z30-update-date>20080207</z30-update-date>
+      <z30-cataloger>AMSTUTZT</z30-cataloger>
+      <z30-date-last-return>20011001</z30-date-last-return>
+      <z30-hour-last-return>1857</z30-hour-last-return>
+      <z30-ip-last-return/>
+      <z30-no-loans>013</z30-no-loans>
+      <z30-alpha>L</z30-alpha>
+      <z30-collection>Main Collection</z30-collection>
+      <z30-call-no-type>0</z30-call-no-type>
+      <z30-call-no>BF 1573 .A2 B8</z30-call-no>
+      <z30-call-no-key>0 bf#1573 a2 b8</z30-call-no-key>
+      <z30-call-no-2-type/>
+      <z30-call-no-2/>
+      <z30-call-no-2-key/>
+      <z30-description/>
+      <z30-note-opac/>
+      <z30-note-circulation/>
+      <z30-note-internal/>
+      <z30-order-number/>
+      <z30-inventory-number>AAA6819</z30-inventory-number>
+      <z30-inventory-number-date>20020723</z30-inventory-number-date>
+      <z30-last-shelf-report-date>00000000</z30-last-shelf-report-date>
+      <z30-price>00000</z30-price>
+      <z30-shelf-report-number/>
+      <z30-on-shelf-date>00000000</z30-on-shelf-date>
+      <z30-on-shelf-seq>000000</z30-on-shelf-seq>
+      <z30-doc-number-2>000000000</z30-doc-number-2>
+      <z30-schedule-sequence-2>00000</z30-schedule-sequence-2>
+      <z30-copy-sequence-2>00000</z30-copy-sequence-2>
+      <z30-vendor-code/>
+      <z30-invoice-number/>
+      <z30-line-number>00000</z30-line-number>
+      <z30-pages/>
+      <z30-issue-date>00000000</z30-issue-date>
+      <z30-expected-arrival-date>00000000</z30-expected-arrival-date>
+      <z30-arrival-date>00000000</z30-arrival-date>
+      <z30-item-statistic/>
+      <z30-item-process-status/>
+      <z30-copy-id>0</z30-copy-id>
+      <z30-hol-doc-number>000005919</z30-hol-doc-number>
+      <z30-temp-location>No</z30-temp-location>
+      <z30-enumeration-a/>
+      <z30-enumeration-b/>
+      <z30-enumeration-c/>
+      <z30-enumeration-d/>
+      <z30-enumeration-e/>
+      <z30-enumeration-f/>
+      <z30-enumeration-g/>
+      <z30-enumeration-h/>
+      <z30-chronological-i/>
+      <z30-chronological-j/>
+      <z30-chronological-k/>
+      <z30-chronological-l/>
+      <z30-chronological-m/>
+      <z30-supp-index-o/>
+      <z30-85x-type/>
+      <z30-depository-id/>
+      <z30-linking-number>000000000</z30-linking-number>
+      <z30-gap-indicator/>
+      <z30-maintenance-count>000</z30-maintenance-count>
+      <z30-process-status-date>00000000</z30-process-status-date>
+    </z30>
+    <z13>
+      <translate-change-active-library>BCI50</translate-change-active-library>
+      <z13-doc-number>000005814</z13-doc-number>
+      <z13-year>1914</z13-year>
+      <z13-open-date>20061212</z13-open-date>
+      <z13-update-date>20100817</z13-update-date>
+      <z13-call-no-key/>
+      <z13-call-no-code>LOC0</z13-call-no-code>
+      <z13-call-no>BCI MAIN BF 1573 .A2 B8</z13-call-no>
+      <z13-author-code>1001</z13-author-code>
+      <z13-author>Burr, George Lincoln, 1857-1938.</z13-author>
+      <z13-title-code>24510</z13-title-code>
+      <z13-title>Narratives of the witchcraft cases, 1648-1706, ed. by George Lincoln Burr ... with three facsimiles.</z13-title>
+      <z13-imprint-code>260</z13-imprint-code>
+      <z13-imprint>New York, C. Scribner's Sons, 1914.</z13-imprint>
+      <z13-isbn-issn-code>SYS</z13-isbn-issn-code>
+      <z13-isbn-issn>000005814</z13-isbn-issn>
+    </z13>
+    <info type="HoldRequest" href="http://paul.library.nd.edu:1891/rest-dlf/patron/BLD1231364/record/BCI010000058148/items/BCI50000005814000010/hold" allowed="Y">
+      <hold allowed="Y">
+        <pickup-locations usage="Mandatory">
+          <pickup-location code="BCI">Bethel College</pickup-location>
+          <pickup-location code="HCC_B">Holy Cross (allow extra time)</pickup-location>
+          <pickup-location code="NDU_B">Hesburgh (allow extra time)</pickup-location>
+          <pickup-location code="SMC_B">Saint Mary's(allow extra time)</pickup-location>
+        </pickup-locations>
+        <note type="info">Item is in the closed stacks.</note>
+        <note type="info">Item status: Regular (10) Call number: BF 1573 .A2 B8,</note>
+        <last-interest-date usage="Optional">20141227</last-interest-date>
+        <start-interest-date usage="Optional"/>
+        <sub-author usage="Optional" max_len="50"/>
+        <sub-title usage="Optional" max_len="100"/>
+        <pages usage="Optional" max_len="30"/>
+        <note-1 usage="Optional" max_len="50"/>
+        <note-2 usage="Optional" max_len="50"/>
+        <rush usage="Optional"/>
+      </hold>
+    </info>
+    <info type="ShortLoan" href="http://paul.library.nd.edu:1891/rest-dlf/patron/BLD1231364/record/BCI010000058148/items/BCI50000005814000010/shortLoan" allowed="N">
+      <note type="error">The item has no short loan schedule</note>
+    </info>
+    <info type="PhotocopyRequest" allowed="N">
+      <note type="error">Item cannot be photocopied (tab15).</note>
+      <adm-library>BCI50</adm-library>
+      <adm-doc-number>000005814</adm-doc-number>
+      <item-sequence>000010</item-sequence>
+    </info>
+    <info type="BookingRequest" allowed="N">
+      <note type="error">Item cannot be booked (tab15).</note>
+      <adm-library>BCI50</adm-library>
+      <adm-doc-number>000005814</adm-doc-number>
+      <item-sequence>000010</item-sequence>
+      <exact-item>Y</exact-item>
+    </info>
+  </item>
+</item-serv>

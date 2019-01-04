@@ -1,0 +1,1 @@
+{"hold_grp_list"=>{"reply_text"=>"ok", "reply_code"=>"0000", "hold"=>{"institution"=>{"inst_name"=>"Bethel College", "group"=>{"href"=>"http://paul.library.nd.edu:1891/rest-dlf/patron/BLD1231364/record/BCI010000058148/holds/BCI50000005814000010"}, "code"=>"BCI50"}, "allowed"=>"Y"}}}

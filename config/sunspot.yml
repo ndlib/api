@@ -1,0 +1,58 @@
+pre_production:
+  solr:
+    hostname: localhost
+    port: 8080
+    log_level: WARNING
+    path: /solr/api
+    read_timeout: 800
+    open_timeout: 200
+
+production:
+  solr:
+    hostname: localhost
+    port: 8080
+    log_level: WARNING
+    path: /solr/api
+    read_timeout: 800
+    open_timeout: 200
+
+development:
+  solr:
+    hostname: localhost
+    port: 8983
+    path: /solr/api
+    log_level: WARNING
+    read_timeout: 800
+    open_timeout: 200
+
+test:
+  solr:
+    hostname: localhost
+    port: 8983
+    path: /solr/api
+    log_level: WARNING
+
+# archive_production:
+#   solr:
+#     hostname: solr41prod.library.nd.edu
+#     port: 8080
+#     log_level: WARNING
+#     path: /solr/banner_archive
+#     read_timeout: 2
+#     open_timeout: 0.5
+#
+# archive_pre_production:
+#   solr:
+#     hostname: solr41pprd.library.nd.edu
+#     port: 8080
+#     log_level: WARNING
+#     path: /solr/banner_archive
+#     read_timeout: 2
+#     open_timeout: 0.5
+#
+# archive_development:
+#   solr:
+#     hostname: localhost
+#     port: 8080
+#     path: /solr/banner_archive
+#     log_level: WARNING

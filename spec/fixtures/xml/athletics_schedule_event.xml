@@ -1,0 +1,46 @@
+<event id="1579221">
+  <audio_archive_url />
+  <audio_current_url />
+  <audio_description />
+  <audio_live_url />
+  <date_secs_01011990>746811000</date_secs_01011990>
+  <event_date>08/31/2013</event_date>
+  <event_date_ovride />
+  <event_type>event</event_type>
+  <extra_info />
+  <fo_abbr>nd</fo_abbr>
+  <home>nd</home>
+  <home_visitor>H</home_visitor>
+  <livestats_OAS_FANSlive_title><![CDATA[Gametracker]]></livestats_OAS_FANSlive_title>
+  <livestats_OAS_FANSlive_url><![CDATA[http://www.und.com/gametracker/launch/?event=1167057&school=nd&sport=mfootbl&]]></livestats_OAS_FANSlive_url>
+  <livestats_other_title />
+  <livestats_other_url />
+  <location><![CDATA[Notre Dame, Ind.]]></location>
+  <notes />
+  <opponent><![CDATA[Temple]]></opponent>
+  <opponent_fo_abbr>tem</opponent_fo_abbr>
+  <outcome_score />
+  <quotes />
+  <radio />
+  <recap />
+  <sched_opp><![CDATA[Temple]]></sched_opp>
+  <school><![CDATA[NOTRE DAME]]></school>
+  <school_fo_abbr>nd</school_fo_abbr>
+  <score_opp />
+  <special />
+  <sport>m-footbl</sport>
+  <sport_abbr_name>FB</sport_abbr_name>
+  <sport_fullname><![CDATA[Football]]></sport_fullname>
+  <sport_shortname><![CDATA[Football]]></sport_shortname>
+  <stats />
+  <time><![CDATA[3:30 PM]]></time>
+  <time_zone>ET</time_zone>
+  <tv>NBC</tv>
+  <venue>H</venue>
+  <video_archive_url />
+  <video_current_url />
+  <video_description />
+  <video_live_url />
+  <visitor>tem</visitor>
+  <year>2013</year>
+</event>

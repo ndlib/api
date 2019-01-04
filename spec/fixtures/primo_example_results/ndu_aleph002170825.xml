@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+  <control>
+    <sourcerecordid>$$V002170825$$Ondu_aleph002170825</sourcerecordid>
+    <sourcerecordid>$$V000674056$$Ondu_aleph000674056</sourcerecordid>
+    <sourcerecordid>$$V.b18599291$$Ondlaw_iii.b18599291</sourcerecordid>
+    <sourcerecordid>$$VMIU01-004528545$$Ohathi_pubMIU01-004528545</sourcerecordid>
+    <sourceid>$$Vndu_aleph$$Ondu_aleph002170825</sourceid>
+    <sourceid>$$Vndu_aleph$$Ondu_aleph000674056</sourceid>
+    <sourceid>$$Vndlaw_iii$$Ondlaw_iii.b18599291</sourceid>
+    <sourceid>$$Vhathi_pub$$Ohathi_pubMIU01-004528545</sourceid>
+    <recordid>dedupmrg74253257</recordid>
+    <originalsourceid>$$VNDU01$$Ondu_aleph002170825</originalsourceid>
+    <originalsourceid>$$VNDU01$$Ondu_aleph000674056</originalsourceid>
+    <originalsourceid>$$VXNDA$$Ondlaw_iii.b18599291</originalsourceid>
+    <originalsourceid>$$VHATHI$$Ohathi_pubMIU01-004528545</originalsourceid>
+    <addsrcrecordid>$$Vb1859929$$Ondlaw_iii.b18599291</addsrcrecordid>
+    <sourceformat>$$VMARC21$$Ondu_aleph002170825</sourceformat>
+    <sourceformat>$$VMARC21$$Ondu_aleph000674056</sourceformat>
+    <sourceformat>$$VMARC Exchange$$Ondlaw_iii.b18599291</sourceformat>
+    <sourceformat>$$VMARC21$$Ohathi_pubMIU01-004528545</sourceformat>
+    <sourcesystem>$$VAleph$$Ondu_aleph002170825</sourcesystem>
+    <sourcesystem>$$VAleph$$Ondu_aleph000674056</sourcesystem>
+    <sourcesystem>$$VOther$$Ondlaw_iii.b18599291</sourcesystem>
+    <sourcesystem>$$VAleph$$Ohathi_pubMIU01-004528545</sourcesystem>
+    <ilsapiid>$$VNDU01002170825$$Ondu_aleph002170825</ilsapiid>
+    <ilsapiid>$$VNDU01000674056$$Ondu_aleph000674056</ilsapiid>
+    <ilsapiid>$$VHATHIMIU01-004528545$$Ohathi_pubMIU01-004528545</ilsapiid>
+  </control>
+  <display>
+    <type>journal</type>
+    <title>New scientist</title>
+    <publisher>London : New Science Publications</publisher>
+    <creationdate>1971</creationdate>
+    <format>Weekly</format>
+    <format>Began with: V. 52, no. 772 (Dec. 2, 1971) issue.</format>
+    <identifier>$$CISSN $$V0262-4079 0028-6664</identifier>
+    <subject>Science -- Periodicals</subject>
+    <subject>Technology -- Periodicals</subject>
+    <language>eng</language>
+    <relation>$$Cearlier_title $$VNew scientist and science journal</relation>
+    <unititle>New scientist (1971 : Online)</unititle>
+    <source>$$Vndlaw_iii$$Ondlaw_iii.b18599291</source>
+    <availlibrary>$$INDU$$LCHEMP$$1New Book Area$$2(Q 1 .N532 )$$Scheck_holdings$$5Y$$XNDU50$$YCHEMP$$ZNEW$$Ondu_aleph000674056</availlibrary>
+    <availlibrary>$$INDU$$LHESB$$1General Collection$$2(Q 1 .N532 )$$Savailable$$3150$$40$$5Y$$627$$XNDU50$$YHESB$$ZGEN$$Ondu_aleph000674056</availlibrary>
+    <availlibrary>$$INDLAW$$LNDLAW$$1General Collection$$2(Internet )$$Scheck_holdings$$Ondlaw_iii.b18599291</availlibrary>
+    <availinstitution>$$INDU$$Savailable</availinstitution>
+    <availinstitution>$$INDLAW$$Scheck_holdings</availinstitution>
+    <availpnx>available</availpnx>
+    <lds01>Published by IPC Magazines, <May/>25, 1991-&gt;</lds01>
+    <lds01>SFX MARCIt Record</lds01>
+    <lds01>Published by IPC Magazines, <May/>25, 1991-&gt;</lds01>
+    <lds01>Published: England : Reed Business Information Ltd., 2004-&gt;</lds01>
+    <lds01>Description based on: Vol. 52, no. 773 (Dec. 9, 1971); title from cover.</lds01>
+    <lds01>Issue for Sept. 4, 2004 mismarked vol. 182 but constitutes v. 183.</lds01>
+    <lds01>Published by IPC Magazines, lt;May 25, 1991-gt;</lds01>
+    <lds02>ndu_aleph002170825</lds02>
+    <lds02>ndu_aleph000674056</lds02>
+    <lds02>ndlaw_iii.b18599291</lds02>
+    <lds02>hathi_pubMIU01-004528545</lds02>
+    <lds31>New scientist (1971 : Online)</lds31>
+    <lds31>New scientist (1971)</lds31>
+  </display>
+  <links>
+    <linktoholdings>$$V$$Taleph_holdings$$Ondu_aleph002170825</linktoholdings>
+    <linktoholdings>$$V$$Taleph_holdings$$INDU$$Ondu_aleph000674056</linktoholdings>
+    <linktoholdings>$$V$$Taleph_holdings$$Ondu_aleph000674056</linktoholdings>
+    <linktoholdings>$$V$$Tlaw_holdings$$INDLAW$$Ondlaw_iii.b18599291</linktoholdings>
+    <linktoholdings>$$V$$Taleph_holdings$$Ohathi_pubMIU01-004528545</linktoholdings>
+    <linktoholdsnotexist>$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph002170825</linktoholdsnotexist>
+    <linktoholdsnotexist>$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph000674056</linktoholdsnotexist>
+    <linktoholdsnotexist>$$V$$Tlaw_holdings_not_in_user_institution$$Ondlaw_iii.b18599291</linktoholdsnotexist>
+    <linktoholdsnotexist>$$V$$Taleph_holdings_not_in_user_institution$$Ohathi_pubMIU01-004528545</linktoholdsnotexist>
+    <backlink>$$V$$Taleph_backlink$$DNotre Dame Catalog [electronic resource].$$Ondu_aleph002170825</backlink>
+    <backlink>$$V$$Taleph_backlink$$DNotre Dame Catalog$$Ondu_aleph000674056</backlink>
+    <backlink>$$V$$Tlaw_backlink$$Ebacklink_ndl$$Ondlaw_iii.b18599291</backlink>
+    <backlink>$$V$$Taleph_backlink$$D Catalog$$Ohathi_pubMIU01-004528545</backlink>
+    <linktorsrc><![CDATA[$$V$$Uhttp://findtext.library.nd.edu:8889/ndu%5Flocal?url%5Fver=Z39.88-2004&amp;ctx%5Fver=Z39.88-2004&amp;ctx%5Fen?url%5Fver=Z39.88-2004&amp;ctx%5Fver=Z39.88-2004&amp;ctx%5Fenc=info:ofi/enc:UTF-8&amp;rfr%5Fid=info:sid/sfxit.com:opac%5F856&amp;url%5Fctx%5Ffmt=info:ofi/fmt:kev:mtx:ctx&amp;sfx.ignore%5Fdate%5Fthreshold=1&amp;rft.object%5Fid=954925497068&amp;svc%5Fval%5Ffmt=info:ofi/fmt:kev:mtx:sch%5Fsvc&amp;$$DNotre Dame Online Access$$Ondu_aleph002170825]]></linktorsrc>
+    <linktorsrc>$$V$$Elinktorsrc_ndlcat$$Uhttp://innopac.law.nd.edu/record=b1859929$$Ondlaw_iii.b18599291</linktorsrc>
+    <linktorsrc>$$V$$Uhttp://catalog.hathitrust.org/Record/004528545$$Elinktorsrc_pub$$Ohathi_pubMIU01-004528545</linktorsrc>
+    <openurl>$$V$$Topenurl_journal$$Ondu_aleph002170825</openurl>
+    <openurl>$$V$$Topenurl_journal$$Ondu_aleph000674056</openurl>
+    <openurl>$$V$$Topenurl_journal$$Ondlaw_iii.b18599291</openurl>
+    <openurl>$$V$$Topenurl_journal$$Ohathi_pubMIU01-004528545</openurl>
+    <openurlfulltext>$$V$$Topenurlfull_journal$$Ondu_aleph002170825</openurlfulltext>
+    <openurlfulltext>$$V$$Topenurlfull_journal$$Ondu_aleph000674056</openurlfulltext>
+    <openurlfulltext>$$V$$Topenurlfull_journal$$Ondlaw_iii.b18599291</openurlfulltext>
+    <openurlfulltext>$$V$$Topenurlfull_journal$$Ohathi_pubMIU01-004528545</openurlfulltext>
+    <linktouc>$$Tworldcat_oclc$$Eworldcat</linktouc>
+    <linktouc>$$Tworldcat_oclc$$Eworldcat</linktouc>
+    <thumbnail>$$Tgoogle_thumb</thumbnail>
+    <lln01>$$Tfindit_link$$Ondu_aleph002170825</lln01>
+    <lln01>$$Tfindit_link$$Ondu_aleph000674056</lln01>
+    <lln01>$$Tfindit_link$$Ondlaw_iii.b18599291</lln01>
+    <lln01>$$Tfindit_link$$Ohathi_pubMIU01-004528545</lln01>
+  </links>
+  <search>
+    <title>New scientist</title>
+    <subject>Science Periodicals.</subject>
+    <subject>Technology Periodicals.</subject>
+    <general>New Science Publications]</general>
+    <general>[electronic resource].</general>
+    <general>SFX MARCIt Record</general>
+    <general>(SFX)954925497068</general>
+    <general>954925497068</general>
+    <general>AllDocuments</general>
+    <general>Published by IPC Magazines, <May/>25, 1991-&gt;</general>
+    <sourceid>ndu_aleph</sourceid>
+    <recordid>ndu_aleph002170825</recordid>
+    <recordid>002170825</recordid>
+    <recordid>2170825</recordid>
+    <issn>0262-4079 0028-6664</issn>
+    <issn>02624079 00286664</issn>
+    <creationdate>1971</creationdate>
+    <creationdate>9999</creationdate>
+    <startdate>19710101</startdate>
+    <addtitle>New scientist (1971)</addtitle>
+    <addtitle>New scientist and science journal</addtitle>
+    <enddate>99991231</enddate>
+    <searchscope>ndu_aleph</searchscope>
+    <searchscope>NDU</searchscope>
+    <scope>ndu_aleph</scope>
+    <scope>NDU</scope>
+    <alttitle>New scientist (1971 : Online)</alttitle>
+    <lsr02>New scientist</lsr02>
+    <lsr04>New scientist (1971 : Online)</lsr04>
+    <lsr07>New scientist</lsr07>
+    <lsr06>New Science Publications]</lsr06>
+    <lsr08>[London :</lsr08>
+    <lsr31>New scientist (1971 : Online)</lsr31>
+    <title>New scientist.</title>
+    <general>New Science Publications</general>
+    <general>ACX5724</general>
+    <general>(OCoLC)02378350</general>
+    <general>02378350</general>
+    <general>Published: England : Reed Business Information Ltd., 2004-&gt;</general>
+    <general>Description based on: Vol. 52, no. 773 (Dec. 9, 1971); title from cover.</general>
+    <general>Issue for Sept. 4, 2004 mismarked vol. 182 but constitutes v. 183.</general>
+    <recordid>ndu_aleph000674056</recordid>
+    <recordid>000674056</recordid>
+    <recordid>674056</recordid>
+    <issn>0262-4079</issn>
+    <issn>0028-6664</issn>
+    <issn>02624079</issn>
+    <issn>00286664</issn>
+    <addtitle>New scientist CD-ROM</addtitle>
+    <scope>CHEMP</scope>
+    <scope>HESB</scope>
+    <alttitle>New scientist (1971)</alttitle>
+    <lsr01>CHEMP NEW</lsr01>
+    <lsr01>CHEMP New Book Area</lsr01>
+    <lsr01>HESB GEN</lsr01>
+    <lsr01>HESB General Collection</lsr01>
+    <lsr04>New scientist (1971)</lsr04>
+    <lsr05>Q 1 .N532</lsr05>
+    <lsr05>Q1.N532</lsr05>
+    <lsr05>Q</lsr05>
+    <lsr05>Q1 .N532 :1 .N532 :</lsr05>
+    <lsr06>New Science Publications</lsr06>
+    <lsr31>New scientist (1971)</lsr31>
+    <creatorcontrib>EBSCO Publishing (Firm)</creatorcontrib>
+    <subject>Electronic journals.</subject>
+    <general>(WaSeSS)ssj0006080</general>
+    <general>ssj0006080</general>
+    <sourceid>ndlaw_iii</sourceid>
+    <recordid>ndlaw_iii.b18599291</recordid>
+    <recordid>.b18599291</recordid>
+    <issn>1356-1766</issn>
+    <issn>13561766</issn>
+    <addtitle>New scientist. Careers guide</addtitle>
+    <searchscope>ndlaw_iii</searchscope>
+    <searchscope>NDLAW</searchscope>
+    <scope>ndlaw_iii</scope>
+    <scope>NDLAW</scope>
+    <lsr05>Internet</lsr05>
+    <subject>Science periodicals.</subject>
+    <general>New Science Publications,</general>
+    <general>(OCoLC)ocm02378350</general>
+    <general>ocm02378350</general>
+    <general>sdr-ucsc.b22434914</general>
+    <general>sdr-ucsd.b27292290</general>
+    <general>sdr-umdb.b11707987</general>
+    <general>sdr-nwu140653</general>
+    <general>sdr-ucla34553</general>
+    <general>sdr-ucd000787614</general>
+    <sourceid>hathi_pub</sourceid>
+    <recordid>hathi_pubMIU01-004528545</recordid>
+    <recordid>MIU01-004528545</recordid>
+    <searchscope>hathi_pub</searchscope>
+    <searchscope>MALC</searchscope>
+    <scope>hathi_pub</scope>
+    <scope>MALC</scope>
+    <lsr06>New Science Publications,</lsr06>
+  </search>
+  <sort>
+    <title>New scientist (1971 : Online)</title>
+    <creationdate>1971</creationdate>
+    <lso01>1971</lso01>
+  </sort>
+  <facets>
+    <language>eng</language>
+    <creationdate>1971</creationdate>
+    <topic>Science–Periodicals</topic>
+    <topic>Technology–Periodicals</topic>
+    <toplevel>online_resources</toplevel>
+    <prefilter>journals</prefilter>
+    <prefilter>electronic</prefilter>
+    <rsrctype>journals</rsrctype>
+    <lfc04>New scientist (1971 : Online)</lfc04>
+    <classificationlcc>Q - Science.–Science (General)–General</classificationlcc>
+    <toplevel>available</toplevel>
+    <prefilter>print</prefilter>
+    <rsrctype>print</rsrctype>
+    <library>CHEMP</library>
+    <library>HESB</library>
+    <lfc04>New scientist (1971)</lfc04>
+    <creatorcontrib>EBSCO Publishing (Firm)</creatorcontrib>
+    <genre>Periodicals</genre>
+    <genre>Electronic journals</genre>
+    <library>NDLAW</library>
+    <frbrgroupid>76382127</frbrgroupid>
+    <frbrtype>6</frbrtype>
+  </facets>
+  <dedup>
+    <t>2</t>
+    <c1>2010250720</c1>
+    <c2>0262-4079 0028-6664</c2>
+    <c3>newscientist</c3>
+    <c4>london</c4>
+    <f3>02624079</f3>
+    <f4>02624079 00286664</f4>
+    <f6>1971</f6>
+    <f7>new scientist</f7>
+    <f8>new scientist</f8>
+    <f9>enk</f9>
+    <f10>london</f10>
+    <f11>new scientist 1971 online</f11>
+  </dedup>
+  <frbr>
+    <t>1</t>
+    <k2>$$Knew scientist 1971 online$$ATO</k2>
+    <k3>$$Knew scientist$$AT</k3>
+    <k2>$$Knew scientist 1971$$ATO</k2>
+  </frbr>
+  <delivery>
+    <institution>$$VNDU$$Ondu_aleph002170825</institution>
+    <delcategory>$$VSFX Resource$$Ondu_aleph002170825</delcategory>
+    <institution>$$VNDU$$Ondu_aleph000674056</institution>
+    <delcategory>$$VPhysical Item$$Ondu_aleph000674056</delcategory>
+    <institution>$$VNDLAW$$Ondlaw_iii.b18599291</institution>
+    <delcategory>$$VOnline Resource$$Ondlaw_iii.b18599291</delcategory>
+    <institution>$$VMALC$$Ohathi_pubMIU01-004528545</institution>
+    <delcategory>$$VOnline Resource$$Ohathi_pubMIU01-004528545</delcategory>
+  </delivery>
+  <enrichment>
+    <classificationlcc>Q1</classificationlcc>
+  </enrichment>
+  <ranking>
+    <booster1>1</booster1>
+    <booster2>1</booster2>
+  </ranking>
+  <addata>
+    <jtitle>New scientist</jtitle>
+    <date>1971</date>
+    <risdate>1971</risdate>
+    <eissn>0262-4079</eissn>
+    <coden>NWSCAL</coden>
+    <format>journal</format>
+    <genre>journal</genre>
+    <ristype>JOUR</ristype>
+    <cop>London</cop>
+    <pub>New Science Publications]</pub>
+    <objectid>954925497068</objectid>
+    <lccn>2010250720</lccn>
+    <jtitle>New scientist.</jtitle>
+    <stitle>New scientist</stitle>
+    <issn>0262-4079</issn>
+    <eissn>1356-1766</eissn>
+    <pub>New Science Publications</pub>
+    <oclcid>02378350</oclcid>
+    <lccn>82644452</lccn>
+    <issn>1356-1766</issn>
+  </addata>
+  <browse>
+    <title>$$DNew scientist$$ENew scientist$$UNDU</title>
+    <title>$$DNew scientist (1971 : Online)$$ENew scientist (1971 : Online)$$UNDU</title>
+    <title>$$DNew scientist (1971)$$ENew scientist (1971)$$UNDU</title>
+    <subject>$$DScience -- Periodicals$$EScience Periodicals$$UNDU</subject>
+    <subject>$$DTechnology -- Periodicals$$ETechnology Periodicals$$UNDU</subject>
+    <callnumber>$$INDU$$DQ 1 .N52$$E0q    00001.n  52000  $$T0</callnumber>
+    <institution>NDU</institution>
+  </browse>
+</record>

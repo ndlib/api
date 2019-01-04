@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+              <control>
+                <sourcerecordid>$$V002072723$$Ondu_aleph002072723</sourcerecordid>
+                <sourcerecordid>$$VMIU01-008634915$$Ohathi_pubMIU01-008634915</sourcerecordid>
+                <sourcerecordid>$$VMIU01-000503204$$Ohathi_pubMIU01-000503204</sourcerecordid>
+                <sourcerecordid>$$V000555617$$Ondu_aleph000555617</sourcerecordid>
+                <sourceid>$$Vndu_aleph$$Ondu_aleph002072723</sourceid>
+                <sourceid>$$Vhathi_pub$$Ohathi_pubMIU01-008634915</sourceid>
+                <sourceid>$$Vhathi_pub$$Ohathi_pubMIU01-000503204</sourceid>
+                <sourceid>$$Vndu_aleph$$Ondu_aleph000555617</sourceid>
+                <recordid>dedupmrg95161015</recordid>
+                <originalsourceid>$$VNDU01$$Ondu_aleph002072723</originalsourceid>
+                <originalsourceid>$$VHATHI$$Ohathi_pubMIU01-008634915</originalsourceid>
+                <originalsourceid>$$VHATHI$$Ohathi_pubMIU01-000503204</originalsourceid>
+                <originalsourceid>$$VNDU01$$Ondu_aleph000555617</originalsourceid>
+                <sourceformat>$$VMARC21$$Ondu_aleph002072723</sourceformat>
+                <sourceformat>$$VMARC21$$Ohathi_pubMIU01-008634915</sourceformat>
+                <sourceformat>$$VMARC21$$Ohathi_pubMIU01-000503204</sourceformat>
+                <sourceformat>$$VMARC21$$Ondu_aleph000555617</sourceformat>
+                <sourcesystem>$$VAleph$$Ondu_aleph002072723</sourcesystem>
+                <sourcesystem>$$VAleph$$Ohathi_pubMIU01-008634915</sourcesystem>
+                <sourcesystem>$$VAleph$$Ohathi_pubMIU01-000503204</sourcesystem>
+                <sourcesystem>$$VAleph$$Ondu_aleph000555617</sourcesystem>
+                <ilsapiid>$$VNDU01002072723$$Ondu_aleph002072723</ilsapiid>
+                <ilsapiid>$$VHATHIMIU01-008634915$$Ohathi_pubMIU01-008634915</ilsapiid>
+                <ilsapiid>$$VHATHIMIU01-000503204$$Ohathi_pubMIU01-000503204</ilsapiid>
+                <ilsapiid>$$VNDU01000555617$$Ondu_aleph000555617</ilsapiid>
+              </control>
+              <display>
+                <type>journal</type>
+                <title>The American journal of theology</title>
+                <contributor>University of Chicago. Divinity School.</contributor>
+                <publisher>Chicago, Ill. : University of Chicago Press</publisher>
+                <creationdate>1897-1920</creationdate>
+                <format>Quarterly</format>
+                <format>Vol. 1, no. 1 (Jan. 1897)-v. 24, no. 4 (Oct. 1920).</format>
+                <identifier>$$CISSN $$V2329-0544; $$CISSN $$V1550-3283</identifier>
+                <subject>Theology -- Periodicals</subject>
+                <language>eng</language>
+                <relation>$$Clater_title $$VBiblical world (Online); $$VJournal of religion (Online)</relation>
+                <unititle>American journal of theology (Online)</unititle>
+                <availlibrary>$$INDU$$LHESB$$1General Collection$$2(BR 1 .A4 )$$Savailable$$34$$40$$5Y$$60$$XNDU50$$YHESB$$ZGEN$$Ondu_aleph000555617</availlibrary>
+                <availinstitution>$$INDU$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+                <lds01>Title from title screen (JSTOR, viewed Oct. 14, 2004).</lds01>
+                <lds01>Edited by the Divinity Faculty of the University of Chicago.</lds01>
+                <lds01>Merged with: Biblical world, to form: The journal of religion.</lds01>
+                <lds01>Title from caption.</lds01>
+                <lds01>Index/Finding Aid: "General index": v. 24, p. 529-629.</lds01>
+                <lds01>Merged with: Biblical world, to form: Journal of religion.</lds01>
+                <lds02>ndu_aleph002072723</lds02>
+                <lds02>hathi_pubMIU01-008634915</lds02>
+                <lds02>hathi_pubMIU01-000503204</lds02>
+                <lds02>ndu_aleph000555617</lds02>
+                <lds21>$$TBiblical world (Online)</lds21>
+                <lds21>$$TJournal of religion (Online)</lds21>
+                <lds21>$$TBiblical world</lds21>
+                <lds21>$$TJournal of religion</lds21>
+                <lds31>American journal of theology (Online)</lds31>
+              </display>
+              <links>
+                <linktoholdings>$$V$$Taleph_holdings$$INDU$$Ondu_aleph002072723</linktoholdings>
+                <linktoholdings>$$V$$Taleph_holdings$$Ondu_aleph002072723</linktoholdings>
+                <linktoholdings>$$V$$Taleph_holdings$$Ohathi_pubMIU01-008634915</linktoholdings>
+                <linktoholdings>$$V$$Taleph_holdings$$Ohathi_pubMIU01-000503204</linktoholdings>
+                <linktoholdings>$$V$$Taleph_holdings$$INDU$$Ondu_aleph000555617</linktoholdings>
+                <linktoholdings>$$V$$Taleph_holdings$$Ondu_aleph000555617</linktoholdings>
+                <linktoholdsnotexist>$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph002072723</linktoholdsnotexist>
+                <linktoholdsnotexist>$$V$$Taleph_holdings_not_in_user_institution$$Ohathi_pubMIU01-008634915</linktoholdsnotexist>
+                <linktoholdsnotexist>$$V$$Taleph_holdings_not_in_user_institution$$Ohathi_pubMIU01-000503204</linktoholdsnotexist>
+                <linktoholdsnotexist>$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph000555617</linktoholdsnotexist>
+                <backlink>$$V$$Taleph_backlink$$DNotre Dame Catalog [electronic resource].$$Ondu_aleph002072723</backlink>
+                <backlink>$$V$$Taleph_backlink$$D Catalog$$Ohathi_pubMIU01-008634915</backlink>
+                <backlink>$$V$$Taleph_backlink$$D Catalog$$Ohathi_pubMIU01-000503204</backlink>
+                <backlink>$$V$$Taleph_backlink$$DNotre Dame Catalog$$Ondu_aleph000555617</backlink>
+                <linktorsrc><![CDATA[$$V$$Uhttp://findtext.library.nd.edu:8889/ndu%5Flocal?url%5Fver=Z39.88-2004&ctx%5Fver=Z39.88-2004&ctx%5Fen?url%5Fver=Z39.88-2004&ctx%5Fver=Z39.88-2004&ctx%5Fenc=info:ofi/enc:UTF-8&rfr%5Fid=info:sid/sfxit.com:opac%5F856&url%5Fctx%5Ffmt=info:ofi/fmt:kev:mtx:ctx&sfx.ignore%5Fdate%5Fthreshold=1&rft.object%5Fid=111088194460414&svc%5Fval%5Ffmt=info:ofi/fmt:kev:mtx:sch%5Fsvc&$$DNotre Dame Online Access$$Ondu_aleph002072723]]></linktorsrc>
+                <linktorsrc>$$V$$Uhttp://catalog.hathitrust.org/Record/008634915$$Elinktorsrc_pub$$Ohathi_pubMIU01-008634915</linktorsrc>
+                <linktorsrc>$$V$$Uhttp://catalog.hathitrust.org/Record/000503204$$Elinktorsrc_pub$$Ohathi_pubMIU01-000503204</linktorsrc>
+                <openurl>$$V$$Topenurl_journal$$Ondu_aleph002072723</openurl>
+                <openurl>$$V$$Topenurl_journal$$Ohathi_pubMIU01-008634915</openurl>
+                <openurl>$$V$$Topenurl_journal$$Ohathi_pubMIU01-000503204</openurl>
+                <openurl>$$V$$Topenurl_journal$$Ondu_aleph000555617</openurl>
+                <openurlfulltext>$$V$$Topenurlfull_journal$$Ondu_aleph002072723</openurlfulltext>
+                <openurlfulltext>$$V$$Topenurlfull_journal$$Ohathi_pubMIU01-008634915</openurlfulltext>
+                <openurlfulltext>$$V$$Topenurlfull_journal$$Ohathi_pubMIU01-000503204</openurlfulltext>
+                <openurlfulltext>$$V$$Topenurlfull_journal$$Ondu_aleph000555617</openurlfulltext>
+                <linktouc>$$Tworldcat_oclc$$Eworldcat</linktouc>
+                <linktouc>$$Tworldcat_oclc$$Eworldcat</linktouc>
+                <linktouc>$$Tworldcat_oclc$$Eworldcat</linktouc>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <lln01>$$Tfindit_link$$Ondu_aleph002072723</lln01>
+                <lln01>$$Tfindit_link$$Ohathi_pubMIU01-008634915</lln01>
+                <lln01>$$Tfindit_link$$Ohathi_pubMIU01-000503204</lln01>
+                <lln01>$$Tfindit_link$$Ondu_aleph000555617</lln01>
+              </links>
+              <search>
+                <creatorcontrib>University of Chicago. Divinity School.</creatorcontrib>
+                <creatorcontrib>Chicago. University. Divinity School</creatorcontrib>
+                <title>The American journal of theology</title>
+                <subject>Theology Periodicals.</subject>
+                <general>University of Chicago Press,</general>
+                <general>[electronic resource].</general>
+                <general>SFX MARCIt Record</general>
+                <general>(SFX)111088194460414</general>
+                <general>SFX111088194460414</general>
+                <general>111088194460414</general>
+                <general>Title from title screen (JSTOR, viewed Oct. 14, 2004).</general>
+                <general>Edited by the Divinity Faculty of the University of Chicago.</general>
+                <sourceid>ndu_aleph</sourceid>
+                <recordid>ndu_aleph002072723</recordid>
+                <recordid>002072723</recordid>
+                <recordid>2072723</recordid>
+                <issn>2329-0544</issn>
+                <issn>1550-3283</issn>
+                <issn>23290544</issn>
+                <issn>15503283</issn>
+                <creationdate>1897</creationdate>
+                <creationdate>1920</creationdate>
+                <startdate>18970101</startdate>
+                <enddate>19201231</enddate>
+                <addtitle>American journal of theology</addtitle>
+                <addtitle>Biblical world (Online)</addtitle>
+                <addtitle>Journal of religion (Online)</addtitle>
+                <searchscope>ndu_aleph</searchscope>
+                <searchscope>NDU</searchscope>
+                <scope>LIBNT</scope>
+                <scope>ndu_aleph</scope>
+                <scope>NDU</scope>
+                <alttitle>American journal of theology (Online)</alttitle>
+                <lsr01>LIBNT WWW</lsr01>
+                <lsr01>LIBNT WWW See Electronic Address</lsr01>
+                <lsr02>The American journal of theology</lsr02>
+                <lsr04>American journal of theology (Online)</lsr04>
+                <lsr07>The American journal of theology</lsr07>
+                <lsr06>University of Chicago Press,</lsr06>
+                <lsr08>Chicago, Ill. :</lsr08>
+                <lsr31>American journal of theology (Online)</lsr31>
+                <title>American journal of theology.</title>
+                <subject>Theology</subject>
+                <general>The University of Chicago Press.</general>
+                <general>(WaOLN)Z060000035</general>
+                <general>WaOLNZ060000035</general>
+                <general>Z060000035</general>
+                <general>(OCoLC)7769781</general>
+                <general>OCoLC7769781</general>
+                <general>7769781</general>
+                <general>sdr-nyp.b154651606</general>
+                <general>sdrnypb154651606</general>
+                <general>AllDocuments</general>
+                <sourceid>hathi_pub</sourceid>
+                <recordid>hathi_pubMIU01-008634915</recordid>
+                <recordid>MIU01-008634915</recordid>
+                <searchscope>hathi_pub</searchscope>
+                <searchscope>MALC</searchscope>
+                <scope>hathi_pub</scope>
+                <scope>MALC</scope>
+                <lsr02>American journal of theology</lsr02>
+                <lsr07>American journal of theology</lsr07>
+                <lsr06>The University of Chicago Press.</lsr06>
+                <lsr08>Chicago :</lsr08>
+                <general>The University of Chicago Press,</general>
+                <general>(WaSeSS)ejrnlssj0032370</general>
+                <general>WaSeSSejrnlssj0032370</general>
+                <general>ejrnlssj0032370</general>
+                <general>sdr-inu2127352</general>
+                <general>sdrinu2127352</general>
+                <general>(OCoLC)ocm01480198</general>
+                <general>OCoLCocm01480198</general>
+                <general>ocm01480198</general>
+                <general>sdr-nrlfGLAD141654-S</general>
+                <general>sdrnrlfGLAD141654S</general>
+                <general>sdr-njp2714617</general>
+                <general>sdrnjp2714617</general>
+                <general>sdr-chi1631388</general>
+                <general>sdrchi1631388</general>
+                <recordid>hathi_pubMIU01-000503204</recordid>
+                <recordid>MIU01-000503204</recordid>
+                <lsr06>The University of Chicago Press,</lsr06>
+                <title>The American journal of theology.</title>
+                <description>Vols. 2-6 include "Theological and Semitic literature for 1898-1901, a bibliographical supplement to the American journal of theology and the American journal of Semitic languages and literatures. By W. Muss-Arnolt." (Separately paged)</description>
+                <general>s.n.],</general>
+                <general>(OCoLC)01480198</general>
+                <general>OCoLC01480198</general>
+                <general>01480198</general>
+                <general>1480198</general>
+                <general>0045046 MULS Ulp No. 0564900001</general>
+                <general>0045046 MULS UlpNo0564900001</general>
+                <general>045046 MULS Ulp No. 0564900001</general>
+                <general>ACK1949</general>
+                <general>Title from caption.</general>
+                <recordid>ndu_aleph000555617</recordid>
+                <recordid>000555617</recordid>
+                <recordid>555617</recordid>
+                <addtitle>Biblical world</addtitle>
+                <addtitle>Journal of religion</addtitle>
+                <scope>HESB</scope>
+                <lsr01>HESB GEN</lsr01>
+                <lsr01>HESB General Collection</lsr01>
+                <lsr05>BR 1 .A4</lsr05>
+                <lsr05>BR1.A4</lsr05>
+                <lsr05>BR1 .A4 :</lsr05>
+                <lsr06>s.n.],</lsr06>
+                <lsr08>[S.l. :</lsr08>
+              </search>
+              <sort>
+                <title>American journal of theology (Online)</title>
+                <creationdate>1897</creationdate>
+                <author>University of Chicago. Divinity School.</author>
+                <lso01>1897</lso01>
+              </sort>
+              <facets>
+                <creationdate>1897</creationdate>
+                <topic>Theology–Periodicals</topic>
+                <prefilter>electronic</prefilter>
+                <creatorcontrib>University of Chicago. Divinity School</creatorcontrib>
+                <library>HESB</library>
+                <lfc04>American journal of theology (Online)</lfc04>
+                <language>eng</language>
+                <topic>Theology</topic>
+                <toplevel>online_resources</toplevel>
+                <prefilter>journals</prefilter>
+                <prefilter>print</prefilter>
+                <rsrctype>journals</rsrctype>
+                <rsrctype>print</rsrctype>
+                <toplevel>available</toplevel>
+                <classificationlcc>B - Philosophy. Psychology. Religion–Christianity</classificationlcc>
+                <frbrgroupid>98386896</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c1>2004237185</c1>
+                <c2>2329-0544;1550-3283</c2>
+                <c3>americanjournaloftheology</c3>
+                <c4>chicago</c4>
+                <f3>23290544</f3>
+                <f4>15503283</f4>
+                <f6>1897</f6>
+                <f7>american journal of theology</f7>
+                <f8>american journal of theology</f8>
+                <f9>ilu</f9>
+                <f10>chicago</f10>
+                <f11>american journal of theology online</f11>
+              </dedup>
+              <frbr>
+                <k2>$$Kamerican journal of theology online$$ATO</k2>
+                <t>99</t>
+                <k3>$$Kamerican journal of theology$$AT</k3>
+              </frbr>
+              <delivery>
+                <institution>$$VNDU$$Ondu_aleph002072723</institution>
+                <delcategory>$$VSFX Resource$$Ondu_aleph002072723</delcategory>
+                <institution>$$VMALC$$Ohathi_pubMIU01-008634915</institution>
+                <delcategory>$$VOnline Resource$$Ohathi_pubMIU01-008634915</delcategory>
+                <institution>$$VMALC$$Ohathi_pubMIU01-000503204</institution>
+                <delcategory>$$VOnline Resource$$Ohathi_pubMIU01-000503204</delcategory>
+                <institution>$$VNDU$$Ondu_aleph000555617</institution>
+                <delcategory>$$VPhysical Item$$Ondu_aleph000555617</delcategory>
+              </delivery>
+              <enrichment>
+                <classificationlcc>ISSN RECORD</classificationlcc>
+              </enrichment>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <jtitle>The American journal of theology</jtitle>
+                <date>1897</date>
+                <risdate>1897-1920.</risdate>
+                <issn>2329-0544</issn>
+                <eissn>1550-3283</eissn>
+                <cop>Chicago, Ill.</cop>
+                <pub>University of Chicago Press</pub>
+                <objectid>111088194460414</objectid>
+                <lccn>2004237185</lccn>
+                <jtitle>American journal of theology.</jtitle>
+                <format>journal</format>
+                <genre>journal</genre>
+                <ristype>JOUR</ristype>
+                <cop>Chicago</cop>
+                <pub>The University of Chicago Press</pub>
+                <oclcid>7769781</oclcid>
+                <issn>1550-3283</issn>
+                <oclcid>01480198</oclcid>
+                <lccn>05030475</lccn>
+                <jtitle>The American journal of theology.</jtitle>
+                <risdate>1897</risdate>
+                <abstract>Vols. 2-6 include "Theological and Semitic literature for 1898-1901, a bibliographical supplement to the American journal of theology and the American journal of Semitic languages and literatures. By W. Muss-Arnolt." (Separately paged)</abstract>
+                <cop>S.l.</cop>
+                <pub>s.n.]</pub>
+              </addata>
+              <browse>
+                <title>$$DThe American journal of theology$$EAmerican journal of theology$$UNDU</title>
+                <title>$$DAmerican journal of theology (Online)$$EAmerican journal of theology (Online)$$UNDU</title>
+                <title>$$DAmerican journal of theology$$EAmerican journal of theology$$UNDU</title>
+                <subject>$$DTheology -- Periodicals$$ETheology Periodicals$$UNDU</subject>
+                <subject>$$DTheology$$ETheology$$UNDU</subject>
+                <author>$$DUniversity of Chicago. Divinity School$$EUniversity of Chicago. Divinity School$$UNDU</author>
+                <callnumber>$$DBR 1$$E0br   00001$$T0</callnumber>
+                <callnumber>$$INDU</callnumber>
+                <callnumber>$$INDU$$DBR 1 .A4$$E0br   00001.a  40000  $$T0</callnumber>
+                <institution>NDU</institution>
+              </browse>
+            </record>

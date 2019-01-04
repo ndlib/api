@@ -1,0 +1,30 @@
+<h2>Listing services</h2>
+
+<table style="margin: 20px 0px 0px 0px;" class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Class Name</th>
+    <th>Path</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @services.each do |service| %>
+    <tr>
+      <td><%= h service.name %></td>
+      <td><%= h service.code %></td>
+      <td><%= h service.service_class %></td>
+      <td><%= h service.path %></td>
+      <td><%= link_to 'Empty Cache', admin_expire_service_cache_path(service_id: service) %></td>
+      <td><%= link_to 'Edit', edit_admin_service_path(service) %></td>
+      <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<div class="form-actions">
+  <%= link_to 'Expire All Cache', admin_expire_all_cache_path, :class => "btn" %>
+  <%= link_to 'New Service', new_admin_service_path, :class => "btn" %>
+</div>

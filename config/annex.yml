@@ -1,0 +1,19 @@
+test:
+  aleph_inbound_dir: 'spec/fixtures/aleph_data/inbound/'
+  aleph_outbound_dir: 'spec/fixtures/aleph_data/outbound/'
+  aleph_archive_dir: 'spec/fixtures/aleph_data/archive/'
+
+development: &development
+  aleph_inbound_dir: 'aleph_data/inbound/'
+  aleph_outbound_dir: 'aleph_data/outbound/'
+  aleph_archive_dir: 'aleph_data/archive/'
+
+pre_production:
+  aleph_inbound_dir: '/global/data/annex/pprd/inbound/'
+  aleph_outbound_dir: '/global/data/annex/pprd/outbound/'
+  aleph_archive_dir: '/global/data/annex/pprd/archive/'
+
+production:
+  aleph_inbound_dir: '/global/data/annex/prod/inbound/'
+  aleph_outbound_dir: '/global/data/annex/prod/outbound/'
+  aleph_archive_dir: '/global/data/annex/prod/archive/'

@@ -1,0 +1,288 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><wsdl:getRecord><request><![CDATA[<fullViewRequest
+        xmlns="http://www.exlibris.com/primo/xsd/wsRequest" xmlns:uic="http://www.exlibris.com/primo/xsd/primoview/uicomponents"><PrimoSearchRequest
+        xmlns="http://www.exlibris.com/primo/xsd/search/request"><QueryTerms><BoolOpeator>AND</BoolOpeator></QueryTerms><StartIndex>1</StartIndex><BulkSize>10</BulkSize><DidUMeanEnabled>false</DidUMeanEnabled></PrimoSearchRequest><institution>NDU</institution><onCampus>true</onCampus><docId>dedupmrg14385751</docId></fullViewRequest>]]></request></wsdl:getRecord></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"getRecord"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '874'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 25 Jun 2014 18:55:06 GMT
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:getRecordResponse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher"><getRecordReturn xsi:type="soapenc:string" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">&lt;SEGMENTS xmlns=&quot;http://www.exlibrisgroup.com/xsd/jaguar/search&quot;&gt;
+          &lt;JAGROOT&gt;
+            &lt;RESULT&gt;
+              &lt;DOCSET TOTALHITS=&quot;1&quot;&gt;
+                &lt;DOC LOCAL=&quot;true&quot;&gt;
+                  &lt;PrimoNMBib xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;
+                    &lt;record&gt;
+                      &lt;control&gt;
+                        &lt;sourcerecordid&gt;$$V.b10819113$$Ondlaw_iii.b10819113&lt;/sourcerecordid&gt;
+                        &lt;sourcerecordid&gt;$$V000148261$$Osmc_aleph000148261&lt;/sourcerecordid&gt;
+                        &lt;sourcerecordid&gt;$$V001394713$$Ondu_aleph001394713&lt;/sourcerecordid&gt;
+                        &lt;sourceid&gt;$$Vndlaw_iii$$Ondlaw_iii.b10819113&lt;/sourceid&gt;
+                        &lt;sourceid&gt;$$Vsmc_aleph$$Osmc_aleph000148261&lt;/sourceid&gt;
+                        &lt;sourceid&gt;$$Vndu_aleph$$Ondu_aleph001394713&lt;/sourceid&gt;
+                        &lt;recordid&gt;dedupmrg14385751&lt;/recordid&gt;
+                        &lt;originalsourceid&gt;$$VXNDA$$Ondlaw_iii.b10819113&lt;/originalsourceid&gt;
+                        &lt;originalsourceid&gt;$$VSMC01$$Osmc_aleph000148261&lt;/originalsourceid&gt;
+                        &lt;originalsourceid&gt;$$VNDU01$$Ondu_aleph001394713&lt;/originalsourceid&gt;
+                        &lt;addsrcrecordid&gt;$$Vb1081911$$Ondlaw_iii.b10819113&lt;/addsrcrecordid&gt;
+                        &lt;sourceformat&gt;$$VMARC Exchange$$Ondlaw_iii.b10819113&lt;/sourceformat&gt;
+                        &lt;sourceformat&gt;$$VMARC21$$Osmc_aleph000148261&lt;/sourceformat&gt;
+                        &lt;sourceformat&gt;$$VMARC21$$Ondu_aleph001394713&lt;/sourceformat&gt;
+                        &lt;sourcesystem&gt;$$VOther$$Ondlaw_iii.b10819113&lt;/sourcesystem&gt;
+                        &lt;sourcesystem&gt;$$VAleph$$Osmc_aleph000148261&lt;/sourcesystem&gt;
+                        &lt;sourcesystem&gt;$$VAleph$$Ondu_aleph001394713&lt;/sourcesystem&gt;
+                        &lt;ilsapiid&gt;$$VXNDA.b10819113$$Ondlaw_iii.b10819113&lt;/ilsapiid&gt;
+                        &lt;ilsapiid&gt;$$VSMC01000148261$$Osmc_aleph000148261&lt;/ilsapiid&gt;
+                        &lt;ilsapiid&gt;$$VNDU01001394713$$Ondu_aleph001394713&lt;/ilsapiid&gt;
+                      &lt;/control&gt;
+                      &lt;display&gt;
+                        &lt;type&gt;book&lt;/type&gt;
+                        &lt;title&gt;Liberation theologies : the global pursuit of justice&lt;/title&gt;
+                        &lt;creator&gt;Alfred T. Hennelly&lt;/creator&gt;
+                        &lt;publisher&gt;Mystic, Conn. : Twenty-Third Publications&lt;/publisher&gt;
+                        &lt;creationdate&gt;c1995&lt;/creationdate&gt;
+                        &lt;format&gt;382 p. ; 23 cm..&lt;/format&gt;
+                        &lt;identifier&gt;$$CISBN $$V0896226476&lt;/identifier&gt;
+                        &lt;subject&gt;Liberation theology -- History of doctrines&lt;/subject&gt;
+                        &lt;subject&gt;Theologians&lt;/subject&gt;
+                        &lt;language&gt;eng&lt;/language&gt;
+                        &lt;availlibrary&gt;$$INDLAW$$1General Collection$$2(BT83.57 .H515 1995 )$$Scheck_holdings$$Ondlaw_iii.b10819113&lt;/availlibrary&gt;
+                        &lt;availlibrary&gt;$$ISMC$$LSMC$$1General Collection$$2(BT 83.57 .H46 )$$Savailable$$31$$40$$5N$$61$$XSMC50$$YSMC$$ZCOLL$$Osmc_aleph000148261&lt;/availlibrary&gt;
+                        &lt;availlibrary&gt;$$INDU$$LHESB$$1General Collection$$2(BT 83.57 .H515 1995 )$$Savailable$$31$$40$$5N$$620$$XNDU50$$YHESB$$ZGEN$$Ondu_aleph001394713&lt;/availlibrary&gt;
+                        &lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;
+                        &lt;availinstitution&gt;$$INDLAW$$Scheck_holdings&lt;/availinstitution&gt;
+                        &lt;availinstitution&gt;$$ISMC$$Savailable&lt;/availinstitution&gt;
+                        &lt;availpnx&gt;available&lt;/availpnx&gt;
+                        &lt;lds02&gt;ndlaw_iii.b10819113&lt;/lds02&gt;
+                        &lt;lds02&gt;smc_aleph000148261&lt;/lds02&gt;
+                        &lt;lds02&gt;ndu_aleph001394713&lt;/lds02&gt;
+                        &lt;lds06&gt;Alfred T. Hennelly.&lt;/lds06&gt;
+                      &lt;/display&gt;
+                      &lt;links&gt;
+                        &lt;linktoholdings&gt;$$V$$Tlaw_holdings$$INDLAW$$Ondlaw_iii.b10819113&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$ISMC$$Osmc_aleph000148261&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$Osmc_aleph000148261&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$INDU$$Ondu_aleph001394713&lt;/linktoholdings&gt;
+                        &lt;linktoholdings&gt;$$V$$Taleph_holdings$$Ondu_aleph001394713&lt;/linktoholdings&gt;
+                        &lt;linktoholdsnotexist&gt;$$V$$Tlaw_holdings_not_in_user_institution$$Ondlaw_iii.b10819113&lt;/linktoholdsnotexist&gt;
+                        &lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Osmc_aleph000148261&lt;/linktoholdsnotexist&gt;
+                        &lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph001394713&lt;/linktoholdsnotexist&gt;
+                        &lt;backlink&gt;$$V$$Tlaw_backlink$$Ebacklink_ndl$$Ondlaw_iii.b10819113&lt;/backlink&gt;
+                        &lt;backlink&gt;$$V$$Taleph_backlink$$DSaint Mary's Catalog$$Osmc_aleph000148261&lt;/backlink&gt;
+                        &lt;backlink&gt;$$V$$Taleph_backlink$$DNotre Dame Catalog$$Ondu_aleph001394713&lt;/backlink&gt;
+                        &lt;openurl&gt;$$V$$Topenurl_journal$$Ondlaw_iii.b10819113&lt;/openurl&gt;
+                        &lt;openurl&gt;$$V$$Topenurl_journal$$Osmc_aleph000148261&lt;/openurl&gt;
+                        &lt;openurl&gt;$$V$$Topenurl_journal$$Ondu_aleph001394713&lt;/openurl&gt;
+                        &lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ondlaw_iii.b10819113&lt;/openurlfulltext&gt;
+                        &lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Osmc_aleph000148261&lt;/openurlfulltext&gt;
+                        &lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ondu_aleph001394713&lt;/openurlfulltext&gt;
+                        &lt;linktoexcerpt&gt;$$Tsyndetics_excerpt$$Elinktoexcerpt&lt;/linktoexcerpt&gt;
+                        &lt;linktoabstract&gt;$$Tsyndetics_abstract$$Elinktoabstract&lt;/linktoabstract&gt;
+                        &lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt;
+                        &lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt;
+                        &lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt;
+                        &lt;thumbnail&gt;$$Tamazon_thumb&lt;/thumbnail&gt;
+                        &lt;thumbnail&gt;$$Tsyndetics_thumb&lt;/thumbnail&gt;
+                        &lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt;
+                        &lt;lln01&gt;$$Tfindit_link$$Ondlaw_iii.b10819113&lt;/lln01&gt;
+                        &lt;lln01&gt;$$Tfindit_link$$Osmc_aleph000148261&lt;/lln01&gt;
+                        &lt;lln01&gt;$$Tfindit_link$$Ondu_aleph001394713&lt;/lln01&gt;
+                      &lt;/links&gt;
+                      &lt;search&gt;
+                        &lt;creatorcontrib&gt;Alfred T.  Hennelly&lt;/creatorcontrib&gt;
+                        &lt;creatorcontrib&gt;Hennelly, A&lt;/creatorcontrib&gt;
+                        &lt;creatorcontrib&gt;Alfred T. Hennelly.&lt;/creatorcontrib&gt;
+                        &lt;title&gt;Liberation theologies : the global pursuit of justice /&lt;/title&gt;
+                        &lt;subject&gt;Liberation theology History of doctrines.&lt;/subject&gt;
+                        &lt;subject&gt;Theologians.&lt;/subject&gt;
+                        &lt;general&gt;Twenty-Third Publications,&lt;/general&gt;
+                        &lt;general&gt;AllDocuments&lt;/general&gt;
+                        &lt;sourceid&gt;ndlaw_iii&lt;/sourceid&gt;
+                        &lt;recordid&gt;ndlaw_iii.b10819113&lt;/recordid&gt;
+                        &lt;recordid&gt;.b10819113&lt;/recordid&gt;
+                        &lt;isbn&gt;0896226476&lt;/isbn&gt;
+                        &lt;isbn&gt;9780896226470&lt;/isbn&gt;
+                        &lt;creationdate&gt;1995&lt;/creationdate&gt;
+                        &lt;startdate&gt;19950101&lt;/startdate&gt;
+                        &lt;enddate&gt;19951231&lt;/enddate&gt;
+                        &lt;searchscope&gt;ndlaw_iii&lt;/searchscope&gt;
+                        &lt;searchscope&gt;NDLAW&lt;/searchscope&gt;
+                        &lt;scope&gt;ndlaw_iii&lt;/scope&gt;
+                        &lt;scope&gt;NDLAW&lt;/scope&gt;
+                        &lt;lsr02&gt;Hennelly Liberation theologies&lt;/lsr02&gt;
+                        &lt;lsr02&gt;Liberation theologies Hennelly&lt;/lsr02&gt;
+                        &lt;lsr05&gt;BT83.57&lt;/lsr05&gt;
+                        &lt;lsr07&gt;Hennelly Liberation theologies&lt;/lsr07&gt;
+                        &lt;lsr07&gt;Liberation theologies Hennelly&lt;/lsr07&gt;
+                        &lt;lsr06&gt;Twenty-Third Publications,&lt;/lsr06&gt;
+                        &lt;lsr08&gt;Mystic, Conn. :&lt;/lsr08&gt;
+                        &lt;creatorcontrib&gt;Hennelly, Alfred&lt;/creatorcontrib&gt;
+                        &lt;subject&gt;Christian theologians&lt;/subject&gt;
+                        &lt;subject&gt;Theology Biography&lt;/subject&gt;
+                        &lt;general&gt;(OCoLC)33402893&lt;/general&gt;
+                        &lt;general&gt;OCoLC33402893&lt;/general&gt;
+                        &lt;general&gt;33402893&lt;/general&gt;
+                        &lt;sourceid&gt;smc_aleph&lt;/sourceid&gt;
+                        &lt;recordid&gt;smc_aleph000148261&lt;/recordid&gt;
+                        &lt;recordid&gt;000148261&lt;/recordid&gt;
+                        &lt;recordid&gt;148261&lt;/recordid&gt;
+                        &lt;searchscope&gt;smc_aleph&lt;/searchscope&gt;
+                        &lt;searchscope&gt;SMC&lt;/searchscope&gt;
+                        &lt;scope&gt;SMC&lt;/scope&gt;
+                        &lt;scope&gt;smc_aleph&lt;/scope&gt;
+                        &lt;lsr01&gt;SMC COLL&lt;/lsr01&gt;
+                        &lt;lsr01&gt;SMC General Collection&lt;/lsr01&gt;
+                        &lt;lsr05&gt;BT 83.57 .H46&lt;/lsr05&gt;
+                        &lt;lsr05&gt;BT83.57.H46&lt;/lsr05&gt;
+                        &lt;lsr05&gt;BT83.57 .H46 :&lt;/lsr05&gt;
+                        &lt;general&gt;AGJ6937&lt;/general&gt;
+                        &lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt;
+                        &lt;recordid&gt;ndu_aleph001394713&lt;/recordid&gt;
+                        &lt;recordid&gt;001394713&lt;/recordid&gt;
+                        &lt;recordid&gt;1394713&lt;/recordid&gt;
+                        &lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+                        &lt;searchscope&gt;NDU&lt;/searchscope&gt;
+                        &lt;scope&gt;HESB&lt;/scope&gt;
+                        &lt;scope&gt;ndu_aleph&lt;/scope&gt;
+                        &lt;scope&gt;NDU&lt;/scope&gt;
+                        &lt;lsr01&gt;HESB GEN&lt;/lsr01&gt;
+                        &lt;lsr01&gt;HESB General Collection&lt;/lsr01&gt;
+                        &lt;lsr05&gt;BT 83.57 .H515 1995&lt;/lsr05&gt;
+                        &lt;lsr05&gt;BT83.57.H5151995&lt;/lsr05&gt;
+                        &lt;lsr05&gt;BT83.57 .H515 1995 :&lt;/lsr05&gt;
+                      &lt;/search&gt;
+                      &lt;sort&gt;
+                        &lt;title&gt;Liberation theologies : the global pursuit of justice /&lt;/title&gt;
+                        &lt;creationdate&gt;1995&lt;/creationdate&gt;
+                        &lt;author&gt;Hennelly, Alfred T.&lt;/author&gt;
+                        &lt;lso01&gt;1995&lt;/lso01&gt;
+                      &lt;/sort&gt;
+                      &lt;facets&gt;
+                        &lt;language&gt;eng&lt;/language&gt;
+                        &lt;creationdate&gt;1995&lt;/creationdate&gt;
+                        &lt;topic&gt;Liberation theology&#x2013;History of doctrines&lt;/topic&gt;
+                        &lt;topic&gt;Theologians&lt;/topic&gt;
+                        &lt;prefilter&gt;books&lt;/prefilter&gt;
+                        &lt;prefilter&gt;print&lt;/prefilter&gt;
+                        &lt;rsrctype&gt;books&lt;/rsrctype&gt;
+                        &lt;rsrctype&gt;print&lt;/rsrctype&gt;
+                        &lt;creatorcontrib&gt;Hennelly, A&lt;/creatorcontrib&gt;
+                        &lt;library&gt;NDLAW&lt;/library&gt;
+                        &lt;classificationlcc&gt;B - Philosophy. Psychology. Religion&#x2013;Doctrinal Theology&lt;/classificationlcc&gt;
+                        &lt;toplevel&gt;available&lt;/toplevel&gt;
+                        &lt;library&gt;SMC&lt;/library&gt;
+                        &lt;library&gt;HESB&lt;/library&gt;
+                        &lt;frbrgroupid&gt;76722245&lt;/frbrgroupid&gt;
+                        &lt;frbrtype&gt;6&lt;/frbrtype&gt;
+                      &lt;/facets&gt;
+                      &lt;dedup&gt;
+                        &lt;t&gt;1&lt;/t&gt;
+                        &lt;c1&gt;94062051&lt;/c1&gt;
+                        &lt;c2&gt;0896226476&lt;/c2&gt;
+                        &lt;c3&gt;liberationtheologiestofjustice&lt;/c3&gt;
+                        &lt;c4&gt;1995&lt;/c4&gt;
+                        &lt;f1&gt;94062051&lt;/f1&gt;
+                        &lt;f3&gt;0896226476&lt;/f3&gt;
+                        &lt;f5&gt;liberationtheologiestofjustice&lt;/f5&gt;
+                        &lt;f6&gt;1995&lt;/f6&gt;
+                        &lt;f7&gt;liberation theologies the global pursuit of justice&lt;/f7&gt;
+                        &lt;f8&gt;ctu&lt;/f8&gt;
+                        &lt;f9&gt;382 p. ;&lt;/f9&gt;
+                        &lt;f10&gt;twenty third publications&lt;/f10&gt;
+                        &lt;f11&gt;hennelly alfred t&lt;/f11&gt;
+                      &lt;/dedup&gt;
+                      &lt;frbr&gt;
+                        &lt;t&gt;99&lt;/t&gt;
+                        &lt;k1&gt;$$Khennelly alfred t$$AA&lt;/k1&gt;
+                        &lt;k3&gt;$$Kliberation theologies the global pursuit of justice$$AT&lt;/k3&gt;
+                      &lt;/frbr&gt;
+                      &lt;delivery&gt;
+                        &lt;institution&gt;$$VNDLAW$$Ondlaw_iii.b10819113&lt;/institution&gt;
+                        &lt;delcategory&gt;$$VPhysical Item$$Ondlaw_iii.b10819113&lt;/delcategory&gt;
+                        &lt;institution&gt;$$VSMC$$Osmc_aleph000148261&lt;/institution&gt;
+                        &lt;delcategory&gt;$$VPhysical Item$$Osmc_aleph000148261&lt;/delcategory&gt;
+                        &lt;institution&gt;$$VNDU$$Ondu_aleph001394713&lt;/institution&gt;
+                        &lt;delcategory&gt;$$VPhysical Item$$Ondu_aleph001394713&lt;/delcategory&gt;
+                      &lt;/delivery&gt;
+                      &lt;enrichment&gt;
+                        &lt;classificationlcc&gt;BT83.57&lt;/classificationlcc&gt;
+                      &lt;/enrichment&gt;
+                      &lt;ranking&gt;
+                        &lt;booster1&gt;1&lt;/booster1&gt;
+                        &lt;booster2&gt;1&lt;/booster2&gt;
+                      &lt;/ranking&gt;
+                      &lt;addata&gt;
+                        &lt;aulast&gt;Hennelly&lt;/aulast&gt;
+                        &lt;aufirst&gt;Alfred T.&lt;/aufirst&gt;
+                        &lt;au&gt;Hennelly, Alfred T&lt;/au&gt;
+                        &lt;btitle&gt;Liberation theologies : the global pursuit of justice&lt;/btitle&gt;
+                        &lt;date&gt;1995&lt;/date&gt;
+                        &lt;risdate&gt;c1995.&lt;/risdate&gt;
+                        &lt;isbn&gt;0896226476&lt;/isbn&gt;
+                        &lt;format&gt;book&lt;/format&gt;
+                        &lt;genre&gt;book&lt;/genre&gt;
+                        &lt;ristype&gt;BOOK&lt;/ristype&gt;
+                        &lt;notes&gt;Includes bibliographical references (p. 339-375) and index.&lt;/notes&gt;
+                        &lt;cop&gt;Mystic, Conn.&lt;/cop&gt;
+                        &lt;pub&gt;Twenty-Third Publications&lt;/pub&gt;
+                        &lt;lccn&gt;94062051&lt;/lccn&gt;
+                        &lt;notes&gt;Includes bibliographical references and index.&lt;/notes&gt;
+                        &lt;oclcid&gt;33402893&lt;/oclcid&gt;
+                      &lt;/addata&gt;
+                      &lt;browse&gt;
+                        &lt;title&gt;$$DLiberation theologies : the global pursuit of justice$$ELiberation theologies : the global pursuit of justice$$UNDU&lt;/title&gt;
+                        &lt;title&gt;$$DLiberation theologies : the global pursuit of justice$$ELiberation theologies : the global pursuit of justice$$USMC&lt;/title&gt;
+                        &lt;subject&gt;$$DLiberation theology -- History of doctrines$$ELiberation theology History of doctrines$$UNDU&lt;/subject&gt;
+                        &lt;subject&gt;$$DTheologians$$ETheologians$$UNDU&lt;/subject&gt;
+                        &lt;subject&gt;$$DLiberation theology -- History of doctrines$$ELiberation theology History of doctrines$$USMC&lt;/subject&gt;
+                        &lt;subject&gt;$$DTheologians$$ETheologians$$USMC&lt;/subject&gt;
+                        &lt;author&gt;$$DHennelly, Alfred T$$EHennelly, Alfred T$$UNDU&lt;/author&gt;
+                        &lt;author&gt;$$DHennelly, Alfred T$$EHennelly, Alfred T$$USMC&lt;/author&gt;
+                        &lt;callnumber&gt;$$INDU$$DBT 83.57 .H515 1995$$E0bt   0008357000.h  51500  1995 $$T0&lt;/callnumber&gt;
+                        &lt;callnumber&gt;$$ISMC$$DBT 83.57 .H46$$E0bt   0008357000.h  46000  $$T0&lt;/callnumber&gt;
+                        &lt;institution&gt;NDU&lt;/institution&gt;
+                        &lt;institution&gt;SMC&lt;/institution&gt;
+                      &lt;/browse&gt;
+                    &lt;/record&gt;
+                  &lt;/PrimoNMBib&gt;
+                &lt;/DOC&gt;
+              &lt;/DOCSET&gt;
+            &lt;/RESULT&gt;
+          &lt;/JAGROOT&gt;
+        &lt;/SEGMENTS&gt;</getRecordReturn></ns1:getRecordResponse></soapenv:Body></soapenv:Envelope>
+    http_version:
+  recorded_at: Wed, 25 Jun 2014 18:55:07 GMT
+recorded_with: VCR 2.4.0

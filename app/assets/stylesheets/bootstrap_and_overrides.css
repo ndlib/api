@@ -1,0 +1,60 @@
+/*
+  Default bootstrap: =require twitter-bootstrap-static/bootstrap
+  
+
+  Use Font Awesome icons (default)
+  Font Awesome icons: =require twitter-bootstrap-static/fontawesome
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  */
+
+.form-horizontal .help-block {
+  margin-top: 0;
+}
+
+.help-inline, .help-block {
+  font-size: 11px;
+}
+
+ input,
+ textarea,
+ select,
+.uneditable-input {
+  max-width: 210px;
+}
+
+.form-horizontal .control-label {
+  text-align: right;
+}
+
+.form-inline select {
+  width: auto;
+  max-width: auto;
+}
+
+.control-label .popover {
+  text-align: left;
+}
+
+.input-prepend {
+  width: 100%;
+}
+
+#pg-title .btn-group {
+  display: inline-block;
+}
+
+#pg-title .btn-group > .btn {
+  float: none;
+}
+
+#pg-title .pull-right {
+  line-height: 36px;
+}
+
+.dropdown-menu {
+  min-width: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

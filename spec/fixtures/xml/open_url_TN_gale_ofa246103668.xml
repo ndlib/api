@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ctx_obj_set>
+ <ctx_obj identifier="">
+  <ctx_obj_attributes>&lt;perldata&gt;
+ &lt;hash&gt;
+  &lt;item key="@rft.auinit"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.issn"&gt;1539-7505&lt;/item&gt;
+  &lt;item key="ctx_tim"&gt;2014-05-16T09:56:49IST&lt;/item&gt;
+  &lt;item key="_stash"&gt;
+   &lt;hash&gt;
+    &lt;item key="@rft_id"&gt;
+     &lt;array&gt;
+      &lt;item key="0"&gt;info:oai/&lt;/item&gt;
+     &lt;/array&gt;
+    &lt;/item&gt;
+    &lt;item key="@rfr_id"&gt;
+     &lt;array&gt;
+      &lt;item key="0"&gt;info:sid/primo.exlibrisgroup.com:primo3-Article-gale_ofa&lt;/item&gt;
+     &lt;/array&gt;
+    &lt;/item&gt;
+   &lt;/hash&gt;
+  &lt;/item&gt;
+  &lt;item key="ctx_ver"&gt;Z39.88-2004&lt;/item&gt;
+  &lt;item key="rft.year"&gt;2011&lt;/item&gt;
+  &lt;item key="@rfr_id"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;info:sid/primo.exlibrisgroup.com:primo3-Article-gale_ofa&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.place"&gt;San Francisco, Calif.&lt;/item&gt;
+  &lt;item key="@sfx.subcategory"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;Business Management&lt;/item&gt;
+    &lt;item key="1"&gt;Economics&lt;/item&gt;
+    &lt;item key="2"&gt;Industrial Relations Law&lt;/item&gt;
+    &lt;item key="3"&gt;Regional and International Law&lt;/item&gt;
+    &lt;item key="4"&gt;Sociology&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="@rft.auinitm"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="@rft_id"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;info:oai/&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.atitle"&gt;&amp;apos;Voldemort&amp;apos; tries to salve worries over tenure issue.&lt;/item&gt;
+  &lt;item key="sfx.response_type"&gt;multi_obj_detailed_xml&lt;/item&gt;
+  &lt;item key="sfx.ignore_char_set"&gt;1&lt;/item&gt;
+  &lt;item key="req.session_id"&gt;s8AAB35C6-E044-11E3-86E4-C0AA31688834&lt;/item&gt;
+  &lt;item key="ctx_enc"&gt;UTF-8&lt;/item&gt;
+  &lt;item key="url_ver"&gt;Z39.88-2004&lt;/item&gt;
+  &lt;item key="rft.object_type"&gt;JOURNAL&lt;/item&gt;
+  &lt;item key="rft.language"&gt;fre&lt;/item&gt;
+  &lt;item key="rft.object_id"&gt;991042747093176&lt;/item&gt;
+  &lt;item key="sfx.request_id"&gt;3076&lt;/item&gt;
+  &lt;item key="rft.genre"&gt;article&lt;/item&gt;
+  &lt;item key="rft.month"&gt;1&lt;/item&gt;
+  &lt;item key="rft.pub"&gt;ALM Media, Inc.&lt;/item&gt;
+  &lt;item key="rfr.rfr"&gt;primo.exlibrisgroup.com:primo3-Article-gale_ofa&lt;/item&gt;
+  &lt;item key="sfx.gale_docid"&gt;246103668&lt;/item&gt;
+
+  &lt;item key="primo_mobile"&gt;1&lt;/item&gt;
+  &lt;item key="rft.title"&gt;Recorder (San Francisco, Calif.)&lt;/item&gt;
+  &lt;item key="@rft.stitle"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;RECORDER&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="url_ctx_fmt"&gt;infofi/fmt:kev:mtx:ctx&lt;/item&gt;
+  &lt;item key="@rfe_id"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="@rft.aufirst"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="@rft.aulast"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.jtitle"&gt;Recorder (San Francisco, Calif.)&lt;/item&gt;
+  &lt;item key="sfx.sourcename"&gt;PRIMO3&lt;/item&gt;
+  &lt;item key="rft.day"&gt;10&lt;/item&gt;
+  &lt;item key="rft_val_fmt"&gt;&lt;/item&gt;
+  &lt;item key="rft.oai"&gt;&lt;/item&gt;
+  &lt;item key="existing_ts_ids"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;111027614344001&lt;/item&gt;
+    &lt;item key="1"&gt;111026921949001&lt;/item&gt;
+    &lt;item key="2"&gt;111000147718001&lt;/item&gt;
+    &lt;item key="3"&gt;111069357678001&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.date"&gt;20110110&lt;/item&gt;
+  &lt;item key="sfx.sid"&gt;primo.exlibrisgroup.com:primo3-Article-gale_ofa&lt;/item&gt;
+  &lt;item key="@rft.au"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="@sfx.category"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;Business, Economy and Management&lt;/item&gt;
+    &lt;item key="1"&gt;Business, Economy and Management&lt;/item&gt;
+    &lt;item key="2"&gt;Law&lt;/item&gt;
+    &lt;item key="3"&gt;Law&lt;/item&gt;
+    &lt;item key="4"&gt;Social Sciences&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="@rft.auinit1"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft_dat"&gt;&amp;lt;gale_ofa&amp;gt;246103668&amp;lt;/gale_ofa&amp;gt;&amp;lt;grp_id&amp;gt;994910458&amp;lt;/grp_id&amp;gt;&amp;lt;oa&amp;gt;&amp;lt;/oa&amp;gt;&lt;/item&gt;
+ &lt;/hash&gt;
+&lt;/perldata&gt;
+</ctx_obj_attributes>
+  <ctx_obj_targets>
+   <target>
+    <target_name>MESSAGE_NO_FULLTXT</target_name>
+    <target_public_name>No online access. Check below for a print copy, or request through interlibrary loan.</target_public_name>
+    <target_service_id>111026921949001</target_service_id>
+    <service_type>getMessageNoFullTxt</service_type>
+    <parser></parser>
+    <parse_param></parse_param>
+    <proxy>no</proxy>
+    <crossref>no</crossref>
+    <timediff_warning></timediff_warning>
+    <note></note>
+    <authentication></authentication>
+    <char_set></char_set>
+    <displayer></displayer>
+    <target_url></target_url>
+    <is_related>no</is_related>
+    <coverage>
+     <coverage_text>
+      <threshold_text></threshold_text>
+      <embargo_text></embargo_text>
+     </coverage_text>
+    </coverage>
+   </target>
+   <target>
+    <target_name>DOCDEL_ILLIAD</target_name>
+    <target_public_name>Interlibrary Loan/Document Delivery</target_public_name>
+    <target_service_id>111027614344001</target_service_id>
+    <service_type>getDocumentDelivery</service_type>
+    <parser>ILLiad::DDL_LCL</parser>
+    <parse_param>url=https://nd.illiad.oclc.org/illiad/IND/illiad.dll/OpenURL</parse_param>
+    <proxy>yes</proxy>
+    <crossref>yes</crossref>
+    <timediff_warning></timediff_warning>
+    <note></note>
+    <authentication></authentication>
+    <char_set>utf8</char_set>
+    <displayer></displayer>
+    <target_url>https://login.proxy.library.nd.edu/login?url=https://nd.illiad.oclc.org/illiad/IND/illiad.dll/OpenURL?linktype=openurl&amp;rft.issn=1539-7505&amp;rft.atitle='Voldemort'+tries+to+salve+worries+over+tenure+issue.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3A&amp;rft.month=1&amp;rft.genre=article&amp;rft.pub=ALM+Media%2C+Inc.&amp;rft.date=2011&amp;rft.stitle=RECORDER&amp;url_ver=Z39.88-2004&amp;rft.place=San+Francisco%2C+Calif.&amp;rft.title=Recorder+(San+Francisco%2C+Calif.)&amp;rfr_id=info%3Asid%2Fprimo.exlibrisgroup.com%3Aprimo3-Article-gale_ofa(Via+SFX)</target_url>
+    <is_related>no</is_related>
+    <coverage>
+     <coverage_text>
+      <threshold_text></threshold_text>
+      <embargo_text></embargo_text>
+     </coverage_text>
+    </coverage>
+   </target>
+   <target>
+    <target_name>REFWORKS_EXPORT_TOOL</target_name>
+    <target_public_name>RefWorks</target_public_name>
+    <target_service_id>111069357678001</target_service_id>
+    <service_type>getReference</service_type>
+    <parser>REFWORKS::REFWORKS</parser>
+    <parse_param>refworksurl=http://www.refworks.com/express/ExpressImport.asp &amp;providerid =  &amp;shiburl = https://www.refworks.com/RWShibboleth/ShibbolethAuthenticate.asp &amp; exporturl=//cgi/public/refworks.cgi</parse_param>
+    <proxy>no</proxy>
+    <crossref>yes</crossref>
+    <timediff_warning></timediff_warning>
+    <note></note>
+    <authentication></authentication>
+    <char_set>utf8</char_set>
+    <displayer></displayer>
+    <target_url>http://www.refworks.com/express/ExpressImport.asp?filter=RefWorks+Tagged+Format&amp;vendor=SFX&amp;url=%2F%2Fcgi%2Fpublic%2Frefworks.cgi%3FRT%3DJournal%2BArticle%26PB%3DALM%2BMedia%25252C%2BInc.%26PP%3DSan%2BFrancisco%25252C%2BCalif.%26A1%3D%26JF%3DRecorder%2B(San%2BFrancisco%25252C%2BCalif.)%26T1%3D'Voldemort'%2Btries%2Bto%2Bsalve%2Bworries%2Bover%2Btenure%2Bissue.%26YR%3D2011%26SN%3D1539-7505&amp;database=</target_url>
+    <is_related>no</is_related>
+    <coverage>
+     <coverage_text>
+      <threshold_text></threshold_text>
+      <embargo_text></embargo_text>
+     </coverage_text>
+    </coverage>
+   </target>
+   <target>
+    <target_name>LOCAL_FEEDBACK</target_name>
+    <target_public_name>Report Problems</target_public_name>
+    <target_service_id>111000147718001</target_service_id>
+    <service_type>getWebService</service_type>
+    <parser>FEEDBACK::FEEDBACK_2_0</parser>
+    <parse_param>url=https://www.library.nd.edu/eresources/findtext/problem/prompt.cgi</parse_param>
+    <proxy>no</proxy>
+    <crossref>no</crossref>
+    <timediff_warning></timediff_warning>
+    <note></note>
+    <authentication></authentication>
+    <char_set>UTF8</char_set>
+    <displayer></displayer>
+    <target_url>https://www.library.nd.edu/eresources/findtext/problem/prompt.cgi?journal=Recorder%20(San%20Francisco%2C%20Calif.)&amp;articlet='Voldemort'%20tries%20to%20salve%20worries%20over%20tenure%20issue.&amp;year=2011&amp;issn=1539-7505&amp;sid=primo.exlibrisgroup.com:primo3-Article-gale_ofa&amp;ou=http%253A%252F%252Ffindtext%252Elibrary%252End%252Eedu%253A%2538%2538%2538%2539%252Fsfxtst%2534%253Faction%253Dopenurl%2526controller%253Ddiscovery%2532%2525%2532Frecords%2526ctx%255Fenc%253Dinfo%2525%2533Aofi%2525%2532Fenc%2525%2533AUTF%252D%2538%2526ctx%255Ftim%253D%2532%2530%2531%2534%252D%2530%2535%252D%2531%2536T%2530%2539%2525%2533A%2535%2536%2525%2533A%2534%2539IST%2526ctx%255Fver%253DZ%2533%2539%252E%2538%2538%252D%2532%2530%2530%2534%2526format%253Dxml%2526rfr%255Fid%253Dinfo%2525%2533Asid%2525%2532Fprimo%252Eexlibrisgroup%252Ecom%2525%2533Aprimo%2533%252DArticle%252Dgale%255Fofa%2526rft%252Eartnum%253D%2526rft%252Eatitle%253D%2525%2532%2537Voldemort%2525%2532%2537%2525%2532%2530tries%2525%2532%2530to%2525%2532%2530salve%2525%2532%2530worries%2525%2532%2530over%2525%2532%2530tenure%2525%2532%2530issue%252E%2526rft%252Eau%253DKaren%2525%2532%2530Sloan%2525%2532%2530The%2525%2532%2530National%2525%2532%2530Law%2525%2532%2530Journal%2526rft%252Eaucorp%253D%2526rft%252Eauinit%253D%2526rft%252Eauinit%2531%253D%2526rft%252Eauinitm%253D%2526rft%252Eaulast%253D%2526rft%252Eausuffix%253D%2526rft%252Ebtitle%253D%2526rft%252Ecoden%253D%2526rft%252Edate%253D%2532%2530%2531%2531%2530%2531%2531%2530%2526rft%252Eeisbn%253D%2526rft%252Eeissn%253D%2526rft%252Eepage%253D%2526rft%252Egenre%253Darticle%2526rft%252Eisbn%253D%2526rft%252Eissn%253D%2531%2535%2533%2539%252D%2537%2535%2530%2535%2526rft%252Eissue%253D%2526rft%252Ejtitle%253DThe%2525%2532%2530Recorder%2526rft%252Eobject%255Fid%253D%2526rft%252Epages%253D%2526rft%252Epart%253D%2526rft%252Equarter%253D%2526rft%252Esici%253D%2526rft%252Espage%253D%2526rft%252Essn%253D%2526rft%252Evolume%253D%2526rft%255Fdat%253D%2525%2533Cgale%255Fofa%2525%2533E%2532%2534%2536%2531%2530%2533%2536%2536%2538%2525%2533C%2525%2532Fgale%255Fofa%2525%2533E%2525%2533Cgrp%255Fid%2525%2533E%2539%2539%2534%2539%2531%2530%2534%2535%2538%2525%2533C%2525%2532Fgrp%255Fid%2525%2533E%2525%2533Coa%2525%2533E%2525%2533C%2525%2532Foa%2525%2533E%2526rft%255Fid%253Dinfo%2525%2533Aoai%2525%2532F%2526rft%255Fval%255Ffmt%253Dinfo%2525%2533Aofi%2525%2532Ffmt%2525%2533Akev%2525%2533Amtx%2525%2533A%2526sfx%252Eresponse%255Ftype%253Dmulti%255Fobj%255Fdetailed%255Fxml%2526url%255Fctx%255Ffmt%253Dinfofi%2525%2532Ffmt%2525%2533Akev%2525%2533Amtx%2525%2533Actx%2526url%255Fver%253DZ%2533%2539%252E%2538%2538%252D%2532%2530%2530%2534&amp;</target_url>
+    <is_related>no</is_related>
+    <coverage>
+     <coverage_text>
+      <threshold_text></threshold_text>
+      <embargo_text></embargo_text>
+     </coverage_text>
+    </coverage>
+   </target>
+  </ctx_obj_targets>
+ </ctx_obj>
+</ctx_obj_set>

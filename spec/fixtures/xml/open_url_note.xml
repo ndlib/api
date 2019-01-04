@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ctx_obj_set>
+ <ctx_obj identifier="">
+  <ctx_obj_attributes>&lt;perldata&gt;
+ &lt;hash&gt;
+  &lt;item key="@rft.auinit"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;J B&lt;/item&gt;
+    &lt;item key="1"&gt;F&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="sfx.show_availability"&gt;1&lt;/item&gt;
+  &lt;item key="rft.isbn"&gt;0-87071-665-4&lt;/item&gt;
+  &lt;item key="_stash"&gt;
+   &lt;hash&gt;
+    &lt;item key="@rfr_id"&gt;
+     &lt;array&gt;
+      &lt;item key="0"&gt;info:sid/sfxit.com:kbmanager&lt;/item&gt;
+     &lt;/array&gt;
+    &lt;/item&gt;
+   &lt;/hash&gt;
+  &lt;/item&gt;
+  &lt;item key="ctx_ver"&gt;Z39.88-2004&lt;/item&gt;
+  &lt;item key="rft.year"&gt;2012&lt;/item&gt;
+  &lt;item key="rft.eisbn"&gt;0-87071-666-2&lt;/item&gt;
+  &lt;item key="@rfr_id"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;info:sid/sfxit.com:kbmanager&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.eisbn_10"&gt;0-87071-666-2&lt;/item&gt;
+  &lt;item key="rft.eisbn_13"&gt;978-0-87071-666-9&lt;/item&gt;
+  &lt;item key="@rft.auinitm"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;B&lt;/item&gt;
+    &lt;item key="1"&gt;&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="@rft_id"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="sfx.response_type"&gt;multi_obj_detailed_xml&lt;/item&gt;
+  &lt;item key="sfx.ignore_char_set"&gt;1&lt;/item&gt;
+  &lt;item key="req.session_id"&gt;s55E1CE2C-E044-11E3-88A0-AEAA31688834&lt;/item&gt;
+  &lt;item key="ctx_enc"&gt;UTF-8&lt;/item&gt;
+  &lt;item key="url_ver"&gt;Z39.88-2004&lt;/item&gt;
+  &lt;item key="rft.object_type"&gt;BOOK&lt;/item&gt;
+  &lt;item key="rft.isbn_13"&gt;978-0-87071-665-2&lt;/item&gt;
+  &lt;item key="rft.language"&gt;eng&lt;/item&gt;
+  &lt;item key="sfx.has_full_text"&gt;yes&lt;/item&gt;
+  &lt;item key="rft.object_id"&gt;3240000000065598&lt;/item&gt;
+  &lt;item key="sfx.request_id"&gt;3073&lt;/item&gt;
+  &lt;item key="sfx.ignore_date_threshold"&gt;1&lt;/item&gt;
+  &lt;item key="rft.genre"&gt;book&lt;/item&gt;
+  &lt;item key="rft.pub"&gt;Oregon State University Press&lt;/item&gt;
+  &lt;item key="rfr.rfr"&gt;sfxit.com:kbmanager&lt;/item&gt;
+
+  &lt;item key="rft.title"&gt;Multnomah&lt;/item&gt;
+  &lt;item key="url_ctx_fmt"&gt;infofi/fmt:kev:mtx:ctx&lt;/item&gt;
+  &lt;item key="@rfe_id"&gt;
+   &lt;array&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="@rft.aufirst"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;Jewel Beck&lt;/item&gt;
+    &lt;item key="1"&gt;Fred&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.isbn_10"&gt;0-87071-665-4&lt;/item&gt;
+  &lt;item key="@rft.aulast"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;Lansing&lt;/item&gt;
+    &lt;item key="1"&gt;Leeson&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="sfx.sourcename"&gt;KBMANAGER&lt;/item&gt;
+  &lt;item key="existing_ts_ids"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;111027614344001&lt;/item&gt;
+    &lt;item key="1"&gt;111026921949001&lt;/item&gt;
+    &lt;item key="2"&gt;111000147718001&lt;/item&gt;
+    &lt;item key="3"&gt;111069357678001&lt;/item&gt;
+    &lt;item key="4"&gt;14380000000000009&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="sfx.sid"&gt;sfxit.com:kbmanager&lt;/item&gt;
+  &lt;item key="@rft.au"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;Lansing, Jewel Beck&lt;/item&gt;
+    &lt;item key="1"&gt;Leeson, Fred&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.date"&gt;2012&lt;/item&gt;
+  &lt;item key="@rft.auinit1"&gt;
+   &lt;array&gt;
+    &lt;item key="0"&gt;J&lt;/item&gt;
+    &lt;item key="1"&gt;F&lt;/item&gt;
+   &lt;/array&gt;
+  &lt;/item&gt;
+  &lt;item key="rft.btitle"&gt;Multnomah&lt;/item&gt;
+ &lt;/hash&gt;
+&lt;/perldata&gt;
+</ctx_obj_attributes>
+  <ctx_obj_targets>
+   <target>
+    <target_name>Project_Muse_2012_Book_Collection_Test_LCL</target_name>
+    <target_public_name>Project Muse 2012 Book Collection</target_public_name>
+    <target_service_id>14380000000000009</target_service_id>
+    <service_type>getFullTxt</service_type>
+    <parser>Bulk::BKEY</parser>
+    <parse_param>url=http://muse.jhu.edu/books/&amp;bkey=9780870716669</parse_param>
+    <proxy>no</proxy>
+    <crossref>no</crossref>
+    <timediff_warning></timediff_warning>
+    <note>test target, can delete</note>
+    <authentication></authentication>
+    <char_set>iso-8859-1</char_set>
+    <displayer>FT::NO_FILL_IN</displayer>
+    <target_url>http://muse.jhu.edu/books/9780870716669</target_url>
+    <is_related>no</is_related>
+    <coverage>
+     <coverage_text>
+      <threshold_text></threshold_text>
+      <embargo_text></embargo_text>
+     </coverage_text>
+    </coverage>
+   </target>
+   <target>
+    <target_name>REFWORKS_EXPORT_TOOL</target_name>
+    <target_public_name>RefWorks</target_public_name>
+    <target_service_id>111069357678001</target_service_id>
+    <service_type>getReference</service_type>
+    <parser>REFWORKS::REFWORKS</parser>
+    <parse_param>refworksurl=http://www.refworks.com/express/ExpressImport.asp &amp;providerid =  &amp;shiburl = https://www.refworks.com/RWShibboleth/ShibbolethAuthenticate.asp &amp; exporturl=//cgi/public/refworks.cgi</parse_param>
+    <proxy>no</proxy>
+    <crossref>yes</crossref>
+    <timediff_warning></timediff_warning>
+    <note></note>
+    <authentication></authentication>
+    <char_set>utf8</char_set>
+    <displayer></displayer>
+    <target_url>http://www.refworks.com/express/ExpressImport.asp?filter=RefWorks+Tagged+Format&amp;vendor=SFX&amp;url=%2F%2Fcgi%2Fpublic%2Frefworks.cgi%3FRT%3DBook%25252C%2BWhole%26PB%3DOregon%2BState%2BUniversity%2BPress%26A1%3DLansing%25252C%2BJewel%2BBeck%2BLeeson%25252C%2BFred%2B%26T1%3DMultnomah%26YR%3D2012%26SN%3D0-87071-665-4&amp;database=</target_url>
+    <is_related>no</is_related>
+    <coverage>
+     <coverage_text>
+      <threshold_text></threshold_text>
+      <embargo_text></embargo_text>
+     </coverage_text>
+    </coverage>
+   </target>
+   <target>
+    <target_name>LOCAL_FEEDBACK</target_name>
+    <target_public_name>Report Problems</target_public_name>
+    <target_service_id>111000147718001</target_service_id>
+    <service_type>getWebService</service_type>
+    <parser>FEEDBACK::FEEDBACK_2_0</parser>
+    <parse_param>url=https://www.library.nd.edu/eresources/findtext/problem/prompt.cgi</parse_param>
+    <proxy>no</proxy>
+    <crossref>no</crossref>
+    <timediff_warning></timediff_warning>
+    <note></note>
+    <authentication></authentication>
+    <char_set>UTF8</char_set>
+    <displayer></displayer>
+    <target_url>https://www.library.nd.edu/eresources/findtext/problem/prompt.cgi?author=Lansing&amp;bookt=Multnomah&amp;year=2012&amp;isbn=0-87071-665-4&amp;sid=sfxit.com:kbmanager&amp;ou=http%253A%252F%252Ffindtext%252Elibrary%252End%252Eedu%253A%2538%2538%2538%2539%252Fsfxtst%2534%253Faction%253Dopenurl%2526controller%253Ddiscovery%2532%2525%2532Frecords%2526ctx%255Fenc%253Dinfo%2525%2533Aofi%2525%2532Fenc%2525%2533AUTF%252D%2538%2526ctx%255Fver%253DZ%2533%2539%252E%2538%2538%252D%2532%2530%2530%2534%2526format%253Dxml%2526rfr%255Fid%253Dinfo%2525%2533Asid%2525%2532Fsfxit%252Ecom%2525%2533Akbmanager%2526rft%252Eobject%255Fid%253D%2533%2532%2534%2530%2530%2530%2530%2530%2530%2530%2530%2536%2535%2535%2539%2538%2526sfx%252Eignore%255Fdate%255Fthreshold%253D%2531%2526sfx%252Eresponse%255Ftype%253Dmulti%255Fobj%255Fdetailed%255Fxml%2526url%255Fctx%255Ffmt%253Dinfofi%2525%2532Ffmt%2525%2533Akev%2525%2533Amtx%2525%2533Actx%2526url%255Fver%253DZ%2533%2539%252E%2538%2538%252D%2532%2530%2530%2534&amp;</target_url>
+    <is_related>no</is_related>
+    <coverage>
+     <coverage_text>
+      <threshold_text></threshold_text>
+      <embargo_text></embargo_text>
+     </coverage_text>
+    </coverage>
+   </target>
+  </ctx_obj_targets>
+ </ctx_obj>
+</ctx_obj_set>

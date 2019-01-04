@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://alephprod.library.nd.edu:8991/X?library=NDU30&op=circ_status&sys_no=000049115
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - alephprod.library.nd.edu:8991
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 May 2014 18:38:57 GMT
+      Server:
+      - ALEPH/5.20
+      Content-Type:
+      - text/xml
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Expires:
+      - Sat, 01 Jan 2000 01:00:00 GMT
+      Content-Length:
+      - '1370'
+    body:
+      encoding: UTF-8
+      string: "<?xml version = \"1.0\" encoding = \"UTF-8\"?>\n<circ-status>\n<item-data>\n<z30-description></z30-description>\n<loan-status>Non-Circulating</loan-status>\n<due-date></due-date>\n<due-hour></due-hour>\n<sub-library>Tantur
+        Library, Jerusalem</sub-library>\n<collection>General Collection</collection>\n<location>211.6
+        T212s</location>\n<pages></pages>\n<no-requests></no-requests>\n<location-2></location-2>\n<barcode>SS001004527</barcode>\n<opac-note></opac-note>\n</item-data>\n<item-data>\n<z30-description></z30-description>\n<loan-status></loan-status>\n<due-date>May-31-2014</due-date>\n<due-hour>12:00
+        AM</due-hour>\n<sub-library>Hesburgh Library</sub-library>\n<collection>General
+        Collection</collection>\n<location>BL 2747.8 .T39 2007</location>\n<pages></pages>\n<no-requests></no-requests>\n<location-2></location-2>\n<barcode>00000025144254</barcode>\n<opac-note></opac-note>\n</item-data>\n<item-data>\n<z30-description></z30-description>\n<loan-status></loan-status>\n<due-date>May-09-2014</due-date>\n<due-hour>12:00
+        AM</due-hour>\n<sub-library>Hesburgh Library</sub-library>\n<collection>General
+        Collection</collection>\n<location>BL 2747.8 .T39 2007</location>\n<pages></pages>\n<no-requests></no-requests>\n<location-2></location-2>\n<barcode>00000027672401</barcode>\n<opac-note></opac-note>\n</item-data>\n<session-id>69QR4T2BFG5529KPF4QURH28F2E1HJ9VLYICV3FKTJCRBHRBJR</session-id>\n</circ-status>\n "
+    http_version: 
+  recorded_at: Thu, 08 May 2014 18:38:57 GMT
+recorded_with: VCR 2.4.0

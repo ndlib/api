@@ -1,0 +1,1293 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><wsdl:searchBrief><request><![CDATA[<searchRequest
+        xmlns="http://www.exlibris.com/primo/xsd/wsRequest" xmlns:uic="http://www.exlibris.com/primo/xsd/primoview/uicomponents"><PrimoSearchRequest
+        xmlns="http://www.exlibris.com/primo/xsd/search/request"><QueryTerms><BoolOpeator>AND</BoolOpeator><QueryTerm><IndexField>any</IndexField><PrecisionOperator>contains</PrecisionOperator><Value>van
+        gogh</Value></QueryTerm></QueryTerms><StartIndex>1</StartIndex><BulkSize>10</BulkSize><DidUMeanEnabled>false</DidUMeanEnabled><Locations><uic:Location
+        type="local" value="scope:(ndulawrestricted)"/><uic:Location type="local"
+        value="scope:(dtlrestricted)"/><uic:Location type="local" value="scope:(NDU)"/><uic:Location
+        type="local" value="scope:(NDLAW)"/><uic:Location type="local" value="scope:(ndu_digitool)"/></Locations></PrimoSearchRequest><institution>NDU</institution><onCampus>true</onCampus></searchRequest>]]></request></wsdl:searchBrief></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"searchBrief"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '1261'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 25 Jun 2014 18:55:04 GMT
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soapenv:Body><ns1:searchBriefResponse
+        soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:ns1=\"http://onesearchpprd.library.nd.edu/PrimoWebServices/services/searcher\"><searchBriefReturn
+        xsi:type=\"soapenc:string\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">&lt;sear:SEGMENTS
+        xmlns:sear=&quot;http://www.exlibrisgroup.com/xsd/jaguar/search&quot;&gt;&lt;sear:JAGROOT&gt;&lt;sear:RESULT&gt;&lt;sear:QUERYTRANSFORMS/&gt;&lt;sear:FACETLIST
+        ACCURATE_COUNTERS=&quot;true&quot;&gt;&lt;sear:FACET NAME=&quot;creator&quot;
+        COUNT=&quot;20&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;Pickvance, R&quot;
+        VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Hulsker, J&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Luijten, H&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Rijksmuseum
+        Vincent van Gogh&quot; VALUE=&quot;13&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Pialat,
+        M&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Gogh, V&quot;
+        VALUE=&quot;67&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Vellekoop, M&quot;
+        VALUE=&quot;6&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Gogh, T&quot; VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Estienne, C&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Museum of Modern Art (New York, N.Y.)&quot; VALUE=&quot;7&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Heugten, S&quot; VALUE=&quot;7&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Meier-Graefe,
+        J&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Dutronc, J&quot;
+        VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Bakker, N&quot; VALUE=&quot;7&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Jansen, L&quot; VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Van
+        Gogh Museum, Amsterdam&quot; VALUE=&quot;28&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Stolwijk, C&quot; VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Metropolitan Museum of Art (New York, N.Y.)&quot; VALUE=&quot;6&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Thomson, R&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Uhde,
+        W&quot; VALUE=&quot;3&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET NAME=&quot;lcc&quot;
+        COUNT=&quot;4&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;P - Language and literature.&quot;
+        VALUE=&quot;46&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;H - Social sciences.&quot;
+        VALUE=&quot;13&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;D - History (general)
+        and history of europe.&quot; VALUE=&quot;6&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;N - Fine arts.&quot; VALUE=&quot;216&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;local3&quot; COUNT=&quot;13&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;Classici
+        dell'arte&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;World
+        of art&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Literatura
+        brasile&#xF1;a (Havana, Cuba). Cuento&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Taste of our time&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Discovering the nineteenth century&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Seemanns K&#xFC;nstlermappen&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Early English books, 1641-1700&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Contributions to the study of art and architecture&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Van Gogh studies&quot; VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Art &amp;amp; ideas&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;The Taste of our time&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Art classics&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Early English books online&quot; VALUE=&quot;2&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;lang&quot; COUNT=&quot;9&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;und&quot;
+        VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;ger&quot; VALUE=&quot;12&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;ita&quot; VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;dut&quot;
+        VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;por&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;fre&quot; VALUE=&quot;22&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;eng&quot;
+        VALUE=&quot;311&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;iri&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;spa&quot; VALUE=&quot;5&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;rtype&quot; COUNT=&quot;12&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;books&quot;
+        VALUE=&quot;349&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;videotape&quot;
+        VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;other&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;audio&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;scores&quot;
+        VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;laserdisc&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;dvd&quot; VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;videos&quot;
+        VALUE=&quot;9&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Dissertations&quot;
+        VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;government_documents&quot;
+        VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;conference_proceedings&quot;
+        VALUE=&quot;6&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;cd&quot; VALUE=&quot;1&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;topic&quot; COUNT=&quot;20&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;Artists&quot;
+        VALUE=&quot;23&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Impressionism (Art)&quot;
+        VALUE=&quot;18&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Rijksmuseum Vincent
+        van Gogh&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Gogh,
+        Theo van, 1857-1891&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Hague
+        school of painting&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Art
+        dealers&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Painting&quot;
+        VALUE=&quot;17&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Gogh, Vincent van&quot;
+        VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Artists' preparatory
+        studies&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Gauguin,
+        Paul, 1848-1903&quot; VALUE=&quot;17&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Great
+        Britain&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Art,
+        French&quot; VALUE=&quot;6&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Art&quot;
+        VALUE=&quot;24&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Painters&quot; VALUE=&quot;36&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Arles (France)&quot; VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Depressed persons&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Post-impressionism (Art)&quot; VALUE=&quot;14&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Van Gogh Museum, Amsterdam&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Gogh, Vincent van, 1853-1890&quot; VALUE=&quot;159&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Art, European&quot; VALUE=&quot;4&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;tlevel&quot; COUNT=&quot;2&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;online_resources&quot;
+        VALUE=&quot;29&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;available&quot; VALUE=&quot;324&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;pfilter&quot; COUNT=&quot;12&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;books&quot;
+        VALUE=&quot;349&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;videotape&quot;
+        VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;scores&quot; VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;audio&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;laserdisc&quot;
+        VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;dvd&quot; VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;videos&quot; VALUE=&quot;9&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Dissertations&quot;
+        VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;audio_video&quot;
+        VALUE=&quot;10&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;government_documents&quot;
+        VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;electronic&quot; VALUE=&quot;27&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;cd&quot; VALUE=&quot;1&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;creationdate&quot; COUNT=&quot;63&quot;&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;2008&quot; VALUE=&quot;15&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2009&quot;
+        VALUE=&quot;16&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2006&quot; VALUE=&quot;18&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;2007&quot; VALUE=&quot;17&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2004&quot;
+        VALUE=&quot;9&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2005&quot; VALUE=&quot;10&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;2002&quot; VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2003&quot;
+        VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1930&quot; VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1970&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1971&quot;
+        VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1972&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1974&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1976&quot;
+        VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2012&quot; VALUE=&quot;11&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1977&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2011&quot;
+        VALUE=&quot;15&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1978&quot; VALUE=&quot;7&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;2010&quot; VALUE=&quot;16&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2013&quot;
+        VALUE=&quot;12&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2014&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1990&quot; VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1940&quot;
+        VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1982&quot; VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1983&quot; VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1980&quot;
+        VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1981&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1986&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1987&quot;
+        VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1984&quot; VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1985&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1988&quot;
+        VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1989&quot; VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1959&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1958&quot;
+        VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1957&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1956&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1955&quot;
+        VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1953&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1951&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1950&quot;
+        VALUE=&quot;13&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1995&quot; VALUE=&quot;6&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1996&quot; VALUE=&quot;13&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1997&quot;
+        VALUE=&quot;7&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1998&quot; VALUE=&quot;9&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1991&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1992&quot;
+        VALUE=&quot;7&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1993&quot; VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1994&quot; VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1800&quot;
+        VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1999&quot; VALUE=&quot;10&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1700&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1920&quot;
+        VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1967&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1966&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1969&quot;
+        VALUE=&quot;5&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1968&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1963&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1962&quot;
+        VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;1964&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;1961&quot; VALUE=&quot;3&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2001&quot;
+        VALUE=&quot;8&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;2000&quot; VALUE=&quot;14&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;library&quot; COUNT=&quot;5&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;HESB&quot;
+        VALUE=&quot;345&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;ROME&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;BCI&quot; VALUE=&quot;23&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;SMC&quot;
+        VALUE=&quot;36&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;HCC&quot; VALUE=&quot;6&quot;/&gt;&lt;/sear:FACET&gt;&lt;sear:FACET
+        NAME=&quot;local4&quot; COUNT=&quot;20&quot;&gt;&lt;sear:FACET_VALUES KEY=&quot;Brieven
+        and zijn broeder.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Gloire
+        de Van Gogh.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Strijd
+        om de echte Vincent van Gogh.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Brieven aan zijn broeder.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Autre Van Gogh.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;L'Oeuvre de Vincent van Gogh: catalogue raisonn&#xE9;.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Qui &#xE9;tait van Gogh? English&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Van Gogh, le mal aim&#xE9;.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;La vie tragique de Vincent van Gogh.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Academic complete.&quot; VALUE=&quot;14&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Van Gogh en zijn weg. English&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Van Gogh. English&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Van Gogh.&quot; VALUE=&quot;4&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Schetsboeken
+        van Vincent van Gogh.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Vincent van Gogh, tekeningen. English&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Van Gogh aan het werk.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Orelha de Van Gogh.&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Van Gogh, le mal aim&#xE9;. English&quot; VALUE=&quot;1&quot;/&gt;&lt;sear:FACET_VALUES
+        KEY=&quot;Making of the modern world, the Goldsmiths'-Kress library of economic
+        literature.&quot; VALUE=&quot;2&quot;/&gt;&lt;sear:FACET_VALUES KEY=&quot;Vincent
+        van Gogh, s&#xE4;mtliche Gem&#xE4;lde.&quot; VALUE=&quot;1&quot;/&gt;&lt;/sear:FACET&gt;&lt;/sear:FACETLIST&gt;&lt;sear:DOCSET
+        HIT_TIME=&quot;1277&quot; TOTALHITS=&quot;366&quot; FIRSTHIT=&quot;1&quot;
+        LASTHIT=&quot;10&quot; TOTAL_TIME=&quot;1695&quot; IS_LOCAL=&quot;true&quot;&gt;&lt;sear:DOC
+        ID=&quot;986055&quot; RANK=&quot;0.47221607&quot; NO=&quot;1&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n&lt;sourcerecordid&gt;000495163&lt;/sourcerecordid&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph000495163&lt;/recordid&gt;
+        \n&lt;originalsourceid&gt;NDU01&lt;/originalsourceid&gt; \n&lt;ilsapiid&gt;NDU01000495163&lt;/ilsapiid&gt;
+        \n&lt;sourceformat&gt;MARC21&lt;/sourceformat&gt; \n&lt;sourcesystem&gt;Aleph&lt;/sourcesystem&gt;
+        \n&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;book&lt;/type&gt; \n&lt;title&gt;Van
+        Gogh&lt;/title&gt; \n&lt;creator&gt;Jean Leymarie&lt;/creator&gt; \n&lt;edition&gt;New
+        ed..&lt;/edition&gt; \n&lt;publisher&gt;New York : Rizzoli International Publications&lt;/publisher&gt;
+        \n&lt;creationdate&gt;1977&lt;/creationdate&gt; \n&lt;format&gt;210 p. : ill.
+        (some col.) ; 35 cm..&lt;/format&gt; \n&lt;identifier&gt;$$CISBN $$V0847801195
+        :&lt;/identifier&gt; \n&lt;subject&gt;Gogh, Vincent van, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Painters -- Netherlands -- Biography&lt;/subject&gt; \n&lt;language&gt;eng
+        ; fre&lt;/language&gt; \n&lt;relation&gt;$$Cseries $$VDiscovering the nineteenth
+        century&lt;/relation&gt; \n&lt;availlibrary&gt;$$INDU$$LHESB$$1General Collection$$2(ND
+        653 .G7 L463 1977 )$$Savailable$$31$$40$$5N$$64$$XNDU50$$YHESB$$ZGEN&lt;/availlibrary&gt;
+        \n&lt;unititle&gt;Qui &#xE9;tait van Gogh? English&lt;/unititle&gt; \n&lt;lds01&gt;Translation
+        of Qui &#xE9;tait van Gogh?&lt;/lds01&gt; \n&lt;lds01&gt;Includes index.&lt;/lds01&gt;
+        \n&lt;lds02&gt;ndu_aleph000495163&lt;/lds02&gt; \n&lt;lds06&gt;[text by Jean
+        Leymarie ; translated from the French by James Emmons].&lt;/lds06&gt; \n&lt;lds30&gt;Discovering
+        the nineteenth century&lt;/lds30&gt; \n&lt;lds31&gt;Leymarie, Jean. -- Qui
+        &#xE9;tait van Gogh? English&lt;/lds31&gt; \n&lt;/display&gt;\n&lt;links&gt;\n&lt;openurl&gt;$$Topenurl_journal&lt;/openurl&gt;
+        \n&lt;backlink&gt;$$Taleph_backlink$$DNotre Dame Catalog&lt;/backlink&gt;
+        \n&lt;thumbnail&gt;$$Tamazon_thumb&lt;/thumbnail&gt; \n&lt;thumbnail&gt;$$Tsyndetics_thumb&lt;/thumbnail&gt;
+        \n&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt; \n&lt;linktoabstract&gt;$$Tsyndetics_abstract$$Elinktoabstract&lt;/linktoabstract&gt;
+        \n&lt;openurlfulltext&gt;$$Topenurlfull_journal&lt;/openurlfulltext&gt; \n&lt;linktoholdings&gt;$$Taleph_holdings$$INDU&lt;/linktoholdings&gt;
+        \n&lt;linktoholdings&gt;$$Taleph_holdings&lt;/linktoholdings&gt; \n&lt;linktoholdsnotexist&gt;$$Taleph_holdings_not_in_user_institution&lt;/linktoholdsnotexist&gt;
+        \n&lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt; \n&lt;linktoexcerpt&gt;$$Tsyndetics_excerpt$$Elinktoexcerpt&lt;/linktoexcerpt&gt;
+        \n&lt;lln01&gt;$$Tfindit_link&lt;/lln01&gt; \n&lt;/links&gt;\n&lt;search&gt;\n&lt;creatorcontrib&gt;Jean
+        \ Leymarie&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Leymarie, J&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;[text by Jean Leymarie ; translated from the French
+        by James Emmons].&lt;/creatorcontrib&gt; \n&lt;title&gt;Van Gogh /&lt;/title&gt;
+        \n&lt;subject&gt;Gogh, Vincent van, 1853-1890.&lt;/subject&gt; \n&lt;subject&gt;Painters
+        Netherlands Biography.&lt;/subject&gt; \n&lt;subject&gt;Van Gogh, Vincent,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Gogh, Vincent-Willem van, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Van-Gog, Vint&#x361;sent, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan-kao,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan'gao, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Fangu, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fangu,
+        Wensheng, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan-ku, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5D2;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;&lt;/subject&gt; \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5DA;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/subject&gt;
+        \n&lt;subject&gt;&#x30B4;&#x30C3;&#x30DB;, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x68B5;&#x9AD8;, 1853-1890&lt;/subject&gt;
+        \n&lt;general&gt;Rizzoli International Publications,&lt;/general&gt; \n&lt;general&gt;(OCoLC)03748122&lt;/general&gt;
+        \n&lt;general&gt;OCoLC03748122&lt;/general&gt; \n&lt;general&gt;03748122&lt;/general&gt;
+        \n&lt;general&gt;3748122&lt;/general&gt; \n&lt;general&gt;ACD0093&lt;/general&gt;
+        \n&lt;general&gt;AllDocuments&lt;/general&gt; \n&lt;general&gt;Translation
+        of Qui &#xE9;tait van Gogh?&lt;/general&gt; \n&lt;general&gt;Includes index.&lt;/general&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph000495163&lt;/recordid&gt;
+        \n&lt;recordid&gt;000495163&lt;/recordid&gt; \n&lt;recordid&gt;495163&lt;/recordid&gt;
+        \n&lt;isbn&gt;0847801195&lt;/isbn&gt; \n&lt;isbn&gt;9780847801190&lt;/isbn&gt;
+        \n&lt;creationdate&gt;1977&lt;/creationdate&gt; \n&lt;startdate&gt;19770101&lt;/startdate&gt;
+        \n&lt;enddate&gt;19771231&lt;/enddate&gt; \n&lt;addtitle&gt;Discovering the
+        nineteenth century&lt;/addtitle&gt; \n&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+        \n&lt;searchscope&gt;NDU&lt;/searchscope&gt; \n&lt;scope&gt;HESB&lt;/scope&gt;
+        \n&lt;scope&gt;ndu_aleph&lt;/scope&gt; \n&lt;scope&gt;NDU&lt;/scope&gt; \n&lt;alttitle&gt;Qui
+        &#xE9;tait van Gogh? English&lt;/alttitle&gt; \n&lt;lsr01&gt;HESB GEN&lt;/lsr01&gt;
+        \n&lt;lsr01&gt;HESB General Collection&lt;/lsr01&gt; \n&lt;lsr02&gt;Leymarie
+        Van Gogh&lt;/lsr02&gt; \n&lt;lsr02&gt;Van Gogh Leymarie&lt;/lsr02&gt; \n&lt;lsr03&gt;Discovering
+        the nineteenth century&lt;/lsr03&gt; \n&lt;lsr04&gt;Qui &#xE9;tait van Gogh?
+        English&lt;/lsr04&gt; \n&lt;lsr05&gt;ND 653 .G7 L463 1977&lt;/lsr05&gt; \n&lt;lsr05&gt;ND653.G7L4631977&lt;/lsr05&gt;
+        \n&lt;lsr05&gt;ND653 .G7 L463 1977 :&lt;/lsr05&gt; \n&lt;lsr07&gt;Leymarie
+        Van Gogh&lt;/lsr07&gt; \n&lt;lsr07&gt;Van Gogh Leymarie&lt;/lsr07&gt; \n&lt;lsr06&gt;Rizzoli
+        International Publications,&lt;/lsr06&gt; \n&lt;lsr08&gt;New York :&lt;/lsr08&gt;
+        \n&lt;lsr30&gt;Discovering the nineteenth century&lt;/lsr30&gt; \n&lt;lsr31&gt;Leymarie,
+        Jean. Qui &#xE9;tait van Gogh? English&lt;/lsr31&gt; \n&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van
+        Gogh /&lt;/title&gt; \n&lt;creationdate&gt;1977&lt;/creationdate&gt; \n&lt;author&gt;Leymarie,
+        Jean.&lt;/author&gt; \n&lt;lso01&gt;1977&lt;/lso01&gt; \n&lt;/sort&gt;\n&lt;facets&gt;\n&lt;language&gt;eng&lt;/language&gt;
+        \n&lt;creationdate&gt;1977&lt;/creationdate&gt; \n&lt;topic&gt;Gogh, Vincent
+        van, 1853-1890&lt;/topic&gt; \n&lt;topic&gt;Painters&#x2013;Netherlands&#x2013;Biography&lt;/topic&gt;
+        \n&lt;toplevel&gt;available&lt;/toplevel&gt; \n&lt;prefilter&gt;books&lt;/prefilter&gt;
+        \n&lt;prefilter&gt;print&lt;/prefilter&gt; \n&lt;rsrctype&gt;books&lt;/rsrctype&gt;
+        \n&lt;rsrctype&gt;print&lt;/rsrctype&gt; \n&lt;creatorcontrib&gt;Leymarie,
+        J&lt;/creatorcontrib&gt; \n&lt;library&gt;HESB&lt;/library&gt; \n&lt;lfc03&gt;Discovering
+        the nineteenth century&lt;/lfc03&gt; \n&lt;lfc04&gt;Qui &#xE9;tait van Gogh?
+        English&lt;/lfc04&gt; \n&lt;classificationlcc&gt;N - Fine arts.&#x2013;Painting&#x2013;History&lt;/classificationlcc&gt;&lt;frbrgroupid&gt;142921793&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c1&gt;78100029&lt;/c1&gt; \n&lt;c2&gt;0847801195&lt;/c2&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt;
+        \n&lt;c4&gt;1977&lt;/c4&gt; \n&lt;f1&gt;78100029&lt;/f1&gt; \n&lt;f3&gt;0847801195&lt;/f3&gt;
+        \n&lt;f5&gt;vangogh&lt;/f5&gt; \n&lt;f6&gt;1977&lt;/f6&gt; \n&lt;f7&gt;van
+        gogh&lt;/f7&gt; \n&lt;f8&gt;nyu&lt;/f8&gt; \n&lt;f9&gt;210 p. :&lt;/f9&gt;
+        \n&lt;f10&gt;rizzoli international publications&lt;/f10&gt; \n&lt;f11&gt;leymarie
+        jean&lt;/f11&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;\n&lt;t&gt;99&lt;/t&gt; \n&lt;k1&gt;$$Kleymarie
+        jean$$AA&lt;/k1&gt; \n&lt;k3&gt;$$Kqui etait van gogh english$$AT&lt;/k3&gt;
+        \n&lt;k3&gt;$$Kvan gogh$$AT&lt;/k3&gt; \n&lt;/frbr&gt;\n&lt;delivery&gt;\n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;delcategory&gt;Physical Item&lt;/delcategory&gt; \n&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;ND
+        653 .G7&lt;/classificationlcc&gt; \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;\n&lt;aulast&gt;Leymarie&lt;/aulast&gt;
+        \n&lt;aufirst&gt;Jean&lt;/aufirst&gt; \n&lt;au&gt;Leymarie, Jean&lt;/au&gt;
+        \n&lt;btitle&gt;Van Gogh&lt;/btitle&gt; \n&lt;seriestitle&gt;Discovering the
+        nineteenth century&lt;/seriestitle&gt; \n&lt;date&gt;1977&lt;/date&gt; \n&lt;risdate&gt;1977.&lt;/risdate&gt;
+        \n&lt;isbn&gt;0847801195&lt;/isbn&gt; \n&lt;format&gt;book&lt;/format&gt;
+        \n&lt;genre&gt;book&lt;/genre&gt; \n&lt;ristype&gt;BOOK&lt;/ristype&gt; \n&lt;notes&gt;Bibliography:
+        p. 199-[200]&lt;/notes&gt; \n&lt;cop&gt;New York&lt;/cop&gt; \n&lt;pub&gt;Rizzoli
+        International Publications&lt;/pub&gt; \n&lt;oclcid&gt;03748122&lt;/oclcid&gt;
+        \n&lt;lccn&gt;78100029&lt;/lccn&gt; \n&lt;/addata&gt;\n&lt;browse&gt;\n&lt;author&gt;$$DLeymarie,
+        Jean$$ELeymarie, Jean&lt;/author&gt; \n&lt;title&gt;$$DVan Gogh$$EVan Gogh&lt;/title&gt;
+        \n&lt;title&gt;$$DQui &#xE9;tait van Gogh? English$$EQui &#xE9;tait van Gogh?
+        English&lt;/title&gt; \n&lt;title&gt;$$DDiscovering the nineteenth century
+        [series]$$EDiscovering the nineteenth century [series]&lt;/title&gt; \n&lt;subject&gt;$$DPainters
+        -- Netherlands -- Biography$$EPainters Netherlands Biography&lt;/subject&gt;
+        \n&lt;subject&gt;$$DGogh, Vincent van, 1853-1890$$EGogh, Vincent van, 1853-1890&lt;/subject&gt;
+        \n&lt;callnumber&gt;$$INDU$$DND 653 .G7 L463 1977$$END 653 .G7 L463 1977 $$T0&lt;/callnumber&gt;
+        \n&lt;institution&gt;NDU&lt;/institution&gt; \n&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT
+        deliveryCategory=&quot;Physical Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G7 L463
+        1977 )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Leymarie&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Leymarie%2C%20Jean&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0847801195&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000495163&lt;/ndu_aleph&gt;&lt;grp_id&gt;142921793&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://images.amazon.com/images/P/0847801195.01._SSTHUM_.jpg&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://syndetics.com/index.aspx?isbn=0847801195/SC.JPG&amp;amp;client=CLIENT&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:0847801195,OCLC:03748122,LCCN:78100029&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:linktoabstract&gt;http://syndetics.com/index.aspx?isbn=0847801195/SUMMARY.HTML&amp;amp;client=CLIENT&amp;amp;type=rn12&lt;/sear:linktoabstract&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Leymarie&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Leymarie%2C%20Jean&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0847801195&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000495163&lt;/ndu_aleph&gt;&lt;grp_id&gt;142921793&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=isbn%3A0847801195&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;1203540&quot; RANK=&quot;0.4710476&quot; NO=&quot;2&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n&lt;sourcerecordid&gt;000761369&lt;/sourcerecordid&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph000761369&lt;/recordid&gt;
+        \n&lt;originalsourceid&gt;NDU01&lt;/originalsourceid&gt; \n&lt;ilsapiid&gt;NDU01000761369&lt;/ilsapiid&gt;
+        \n&lt;sourceformat&gt;MARC21&lt;/sourceformat&gt; \n&lt;sourcesystem&gt;Aleph&lt;/sourcesystem&gt;
+        \n&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;book&lt;/type&gt; \n&lt;title&gt;Van
+        Gogh&lt;/title&gt; \n&lt;creator&gt;Vincent van Gogh 1853-1890.&lt;/creator&gt;
+        \n&lt;contributor&gt;Alberto Martini&lt;/contributor&gt; \n&lt;edition&gt;1st
+        U.S. ed..&lt;/edition&gt; \n&lt;publisher&gt;New York : Avenel Books : distributed
+        by Crown Publishers&lt;/publisher&gt; \n&lt;creationdate&gt;1978&lt;/creationdate&gt;
+        \n&lt;format&gt;15 p., 63 leaves of plates : ill. (some col.) ; 31 cm..&lt;/format&gt;
+        \n&lt;identifier&gt;$$CISBN $$V0517249537&lt;/identifier&gt; \n&lt;subject&gt;Gogh,
+        Vincent van, 1853-1890&lt;/subject&gt; \n&lt;language&gt;eng;ita&lt;/language&gt;
+        \n&lt;availlibrary&gt;$$INDU$$LHESB$$1General Collection$$2(ND 653 .G7 A4
+        1978 )$$Savailable$$31$$40$$5N$$61$$XNDU50$$YHESB$$ZGEN&lt;/availlibrary&gt;
+        \n&lt;unititle&gt;Van Gogh. English&lt;/unititle&gt; \n&lt;lds02&gt;ndu_aleph000761369&lt;/lds02&gt;
+        \n&lt;lds06&gt;by Alberto Martini.&lt;/lds06&gt; \n&lt;lds31&gt;Gogh, Vincent
+        van, 1853-1890. -- Van Gogh. -- English&lt;/lds31&gt; \n&lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;&lt;availpnx&gt;available&lt;/availpnx&gt;&lt;/display&gt;\n&lt;links&gt;\n&lt;openurl&gt;$$Topenurl_journal&lt;/openurl&gt;
+        \n&lt;backlink&gt;$$Taleph_backlink$$DNotre Dame Catalog&lt;/backlink&gt;
+        \n&lt;thumbnail&gt;$$Tamazon_thumb&lt;/thumbnail&gt; \n&lt;thumbnail&gt;$$Tsyndetics_thumb&lt;/thumbnail&gt;
+        \n&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt; \n&lt;linktoabstract&gt;$$Tsyndetics_abstract$$Elinktoabstract&lt;/linktoabstract&gt;
+        \n&lt;openurlfulltext&gt;$$Topenurlfull_journal&lt;/openurlfulltext&gt; \n&lt;linktoholdings&gt;$$Taleph_holdings$$INDU&lt;/linktoholdings&gt;
+        \n&lt;linktoholdings&gt;$$Taleph_holdings&lt;/linktoholdings&gt; \n&lt;linktoholdsnotexist&gt;$$Taleph_holdings_not_in_user_institution&lt;/linktoholdsnotexist&gt;
+        \n&lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt; \n&lt;linktoexcerpt&gt;$$Tsyndetics_excerpt$$Elinktoexcerpt&lt;/linktoexcerpt&gt;
+        \n&lt;lln01&gt;$$Tfindit_link&lt;/lln01&gt; \n&lt;/links&gt;\n&lt;search&gt;\n&lt;creatorcontrib&gt;Vincent
+        van,  Gogh  1853-1890.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Gogh,
+        V&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;by Alberto Martini.&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Alberto  Martini&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Martini,
+        A&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fan-kao, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Van Gogh, Vincent, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Gogh, Vincent-Willem van, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Van-Gog, Vint&#x361;sent, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Fan'gao, 1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fangu,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fangu, Wensheng,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fan-ku, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;&#x5D2;&#x5D5;&#x5D2;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x5D2;&#x5D5;&#x5DA;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;&#x30B4;&#x30C3;&#x30DB;, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x68B5;&#x9AD8;,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;title&gt;Van Gogh /&lt;/title&gt; \n&lt;subject&gt;Gogh,
+        Vincent van, 1853-1890.&lt;/subject&gt; \n&lt;subject&gt;Van Gogh, Vincent,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Gogh, Vincent-Willem van, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Van-Gog, Vint&#x361;sent, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan-kao,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan'gao, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Fangu, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fangu,
+        Wensheng, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan-ku, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5D2;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;&lt;/subject&gt; \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5DA;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/subject&gt;
+        \n&lt;subject&gt;&#x30B4;&#x30C3;&#x30DB;, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x68B5;&#x9AD8;, 1853-1890&lt;/subject&gt;
+        \n&lt;general&gt;Avenel Books : distributed by Crown Publishers,&lt;/general&gt;
+        \n&lt;general&gt;(OCoLC)03932900&lt;/general&gt; \n&lt;general&gt;OCoLC03932900&lt;/general&gt;
+        \n&lt;general&gt;03932900&lt;/general&gt; \n&lt;general&gt;3932900&lt;/general&gt;
+        \n&lt;general&gt;ADK8476&lt;/general&gt; \n&lt;general&gt;AllDocuments&lt;/general&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph000761369&lt;/recordid&gt;
+        \n&lt;recordid&gt;000761369&lt;/recordid&gt; \n&lt;recordid&gt;761369&lt;/recordid&gt;
+        \n&lt;isbn&gt;0517249537&lt;/isbn&gt; \n&lt;isbn&gt;9780517249536&lt;/isbn&gt;
+        \n&lt;creationdate&gt;1978&lt;/creationdate&gt; \n&lt;startdate&gt;19780101&lt;/startdate&gt;
+        \n&lt;enddate&gt;19781231&lt;/enddate&gt; \n&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+        \n&lt;searchscope&gt;NDU&lt;/searchscope&gt; \n&lt;scope&gt;HESB&lt;/scope&gt;
+        \n&lt;scope&gt;ndu_aleph&lt;/scope&gt; \n&lt;scope&gt;NDU&lt;/scope&gt; \n&lt;alttitle&gt;Van
+        Gogh. English&lt;/alttitle&gt; \n&lt;lsr01&gt;HESB GEN&lt;/lsr01&gt; \n&lt;lsr01&gt;HESB
+        General Collection&lt;/lsr01&gt; \n&lt;lsr02&gt;Gogh Martini Van Gogh&lt;/lsr02&gt;
+        \n&lt;lsr02&gt;Van Gogh Gogh Martini&lt;/lsr02&gt; \n&lt;lsr04&gt;Van Gogh.
+        English&lt;/lsr04&gt; \n&lt;lsr05&gt;ND 653 .G7 A4 1978&lt;/lsr05&gt; \n&lt;lsr05&gt;ND653.G7A41978&lt;/lsr05&gt;
+        \n&lt;lsr05&gt;ND653 .G7 A4 1978 :&lt;/lsr05&gt; \n&lt;lsr07&gt;Gogh Martini
+        Van Gogh&lt;/lsr07&gt; \n&lt;lsr07&gt;Van Gogh Gogh Martini&lt;/lsr07&gt;
+        \n&lt;lsr06&gt;Avenel Books : distributed by Crown Publishers,&lt;/lsr06&gt;
+        \n&lt;lsr08&gt;New York :&lt;/lsr08&gt; \n&lt;lsr31&gt;Gogh, Vincent van,
+        1853-1890. Van Gogh. English&lt;/lsr31&gt; \n&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van
+        Gogh /&lt;/title&gt; \n&lt;creationdate&gt;1978&lt;/creationdate&gt; \n&lt;author&gt;Gogh,
+        Vincent van, 1853-1890.&lt;/author&gt; \n&lt;lso01&gt;1978&lt;/lso01&gt; \n&lt;/sort&gt;\n&lt;facets&gt;\n&lt;language&gt;eng&lt;/language&gt;
+        \n&lt;creationdate&gt;1978&lt;/creationdate&gt; \n&lt;topic&gt;Gogh, Vincent
+        van, 1853-1890&lt;/topic&gt; \n&lt;toplevel&gt;available&lt;/toplevel&gt;
+        \n&lt;prefilter&gt;books&lt;/prefilter&gt; \n&lt;prefilter&gt;print&lt;/prefilter&gt;
+        \n&lt;rsrctype&gt;books&lt;/rsrctype&gt; \n&lt;rsrctype&gt;print&lt;/rsrctype&gt;
+        \n&lt;creatorcontrib&gt;Gogh, V&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Martini,
+        A&lt;/creatorcontrib&gt; \n&lt;library&gt;HESB&lt;/library&gt; \n&lt;lfc04&gt;Van
+        Gogh.&lt;/lfc04&gt; \n&lt;classificationlcc&gt;N - Fine arts.&#x2013;Painting&#x2013;History&lt;/classificationlcc&gt;&lt;frbrgroupid&gt;143085838&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c1&gt;78059677&lt;/c1&gt; \n&lt;c2&gt;0517249537&lt;/c2&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt;
+        \n&lt;c4&gt;1978&lt;/c4&gt; \n&lt;f1&gt;78059677&lt;/f1&gt; \n&lt;f3&gt;0517249537&lt;/f3&gt;
+        \n&lt;f5&gt;vangogh&lt;/f5&gt; \n&lt;f6&gt;1978&lt;/f6&gt; \n&lt;f7&gt;van
+        gogh&lt;/f7&gt; \n&lt;f8&gt;nyu&lt;/f8&gt; \n&lt;f9&gt;15 p., 63 leaves of
+        plates :&lt;/f9&gt; \n&lt;f10&gt;avenel books distributed by crown publishers&lt;/f10&gt;
+        \n&lt;f11&gt;gogh vincent van 1853 1890&lt;/f11&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;\n&lt;t&gt;99&lt;/t&gt;
+        \n&lt;k1&gt;$$Kgogh vincent van 1853 1890$$AA&lt;/k1&gt; \n&lt;k3&gt;$$Kvan
+        gogh english$$AT&lt;/k3&gt; \n&lt;k3&gt;$$Kvan gogh$$AT&lt;/k3&gt; \n&lt;/frbr&gt;\n&lt;delivery&gt;\n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;delcategory&gt;Physical Item&lt;/delcategory&gt; \n&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;ND
+        653 .G7 A4 1978&lt;/classificationlcc&gt; \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;\n&lt;aulast&gt;Gogh&lt;/aulast&gt;
+        \n&lt;aufirst&gt;Vincent van,&lt;/aufirst&gt; \n&lt;au&gt;Gogh, Vincent van&lt;/au&gt;
+        \n&lt;addau&gt;Martini, Alberto&lt;/addau&gt; \n&lt;btitle&gt;Van Gogh&lt;/btitle&gt;
+        \n&lt;date&gt;1978&lt;/date&gt; \n&lt;risdate&gt;1978.&lt;/risdate&gt; \n&lt;isbn&gt;0517249537&lt;/isbn&gt;
+        \n&lt;format&gt;book&lt;/format&gt; \n&lt;genre&gt;book&lt;/genre&gt; \n&lt;ristype&gt;BOOK&lt;/ristype&gt;
+        \n&lt;cop&gt;New York&lt;/cop&gt; \n&lt;pub&gt;Avenel Books : distributed
+        by Crown Publishers&lt;/pub&gt; \n&lt;oclcid&gt;03932900&lt;/oclcid&gt; \n&lt;lccn&gt;78059677&lt;/lccn&gt;
+        \n&lt;/addata&gt;\n&lt;browse&gt;\n&lt;author&gt;$$DGogh, Vincent van, 1853-1890$$EGogh,
+        Vincent van, 1853-1890&lt;/author&gt; \n&lt;author&gt;$$DMartini, Alberto$$EMartini,
+        Alberto&lt;/author&gt; \n&lt;title&gt;$$DVan Gogh$$EVan Gogh&lt;/title&gt;
+        \n&lt;title&gt;$$DVan Gogh. English$$EVan Gogh. English&lt;/title&gt; \n&lt;subject&gt;$$DGogh,
+        Vincent van, 1853-1890$$EGogh, Vincent van, 1853-1890&lt;/subject&gt; \n&lt;callnumber&gt;$$INDU$$DND
+        653 .G7 A4 1978$$E0nd   00653.g  70000  a4 1978 $$T0&lt;/callnumber&gt; \n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT deliveryCategory=&quot;Physical
+        Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G7 A4 1978
+        )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Gogh&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Gogh%2C%20Vincent%20van&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0517249537&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000761369&lt;/ndu_aleph&gt;&lt;grp_id&gt;143085838&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://images.amazon.com/images/P/0517249537.01._SSTHUM_.jpg&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://syndetics.com/index.aspx?isbn=0517249537/SC.JPG&amp;amp;client=CLIENT&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:0517249537,OCLC:03932900,LCCN:78059677&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:linktoabstract&gt;http://syndetics.com/index.aspx?isbn=0517249537/SUMMARY.HTML&amp;amp;client=CLIENT&amp;amp;type=rn12&lt;/sear:linktoabstract&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Gogh&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Gogh%2C%20Vincent%20van&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0517249537&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000761369&lt;/ndu_aleph&gt;&lt;grp_id&gt;143085838&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=isbn%3A0517249537&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;3588658&quot; RANK=&quot;0.3759382&quot; NO=&quot;3&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n&lt;sourcerecordid&gt;000814691&lt;/sourcerecordid&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph000814691&lt;/recordid&gt;
+        \n&lt;originalsourceid&gt;NDU01&lt;/originalsourceid&gt; \n&lt;ilsapiid&gt;NDU01000814691&lt;/ilsapiid&gt;
+        \n&lt;sourceformat&gt;MARC21&lt;/sourceformat&gt; \n&lt;sourcesystem&gt;Aleph&lt;/sourcesystem&gt;
+        \n&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;book&lt;/type&gt; \n&lt;title&gt;Van
+        Gogh&lt;/title&gt; \n&lt;creator&gt;Pascal Bonafoux&lt;/creator&gt; \n&lt;publisher&gt;New
+        York, NY : H. Holt&lt;/publisher&gt; \n&lt;creationdate&gt;1990&lt;/creationdate&gt;
+        \n&lt;format&gt;160 p. : ill. (chiefly col.) ; 33 cm..&lt;/format&gt; \n&lt;identifier&gt;$$CISBN
+        $$V0805013598&lt;/identifier&gt; \n&lt;subject&gt;Gogh, Vincent van, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Painters -- Netherlands -- Biography&lt;/subject&gt; \n&lt;language&gt;eng&lt;/language&gt;
+        \n&lt;availlibrary&gt;$$INDU$$LHESB$$1General Collection$$2(ND 653 .G7 B6613
+        1990 )$$Savailable$$31$$40$$5N$$63$$XNDU50$$YHESB$$ZGEN&lt;/availlibrary&gt;
+        \n&lt;unititle&gt;Van Gogh. English&lt;/unititle&gt; \n&lt;lds02&gt;ndu_aleph000814691&lt;/lds02&gt;
+        \n&lt;lds06&gt;Pascal Bonafoux ; translated by Alexandra Campbell.&lt;/lds06&gt;
+        \n&lt;lds31&gt;Bonafoux, Pascal. -- Van Gogh. -- English&lt;/lds31&gt; \n&lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;&lt;availpnx&gt;available&lt;/availpnx&gt;&lt;/display&gt;\n&lt;links&gt;\n&lt;openurl&gt;$$Topenurl_journal&lt;/openurl&gt;
+        \n&lt;backlink&gt;$$Taleph_backlink$$DNotre Dame Catalog&lt;/backlink&gt;
+        \n&lt;thumbnail&gt;$$Tamazon_thumb&lt;/thumbnail&gt; \n&lt;thumbnail&gt;$$Tsyndetics_thumb&lt;/thumbnail&gt;
+        \n&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt; \n&lt;linktoabstract&gt;$$Tsyndetics_abstract$$Elinktoabstract&lt;/linktoabstract&gt;
+        \n&lt;openurlfulltext&gt;$$Topenurlfull_journal&lt;/openurlfulltext&gt; \n&lt;linktoholdings&gt;$$Taleph_holdings$$INDU&lt;/linktoholdings&gt;
+        \n&lt;linktoholdings&gt;$$Taleph_holdings&lt;/linktoholdings&gt; \n&lt;linktoholdsnotexist&gt;$$Taleph_holdings_not_in_user_institution&lt;/linktoholdsnotexist&gt;
+        \n&lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt; \n&lt;linktoexcerpt&gt;$$Tsyndetics_excerpt$$Elinktoexcerpt&lt;/linktoexcerpt&gt;
+        \n&lt;lln01&gt;$$Tfindit_link&lt;/lln01&gt; \n&lt;/links&gt;\n&lt;search&gt;\n&lt;creatorcontrib&gt;Pascal
+        \ Bonafoux&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Bonafoux, P&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Pascal Bonafoux ; translated by Alexandra Campbell.&lt;/creatorcontrib&gt;
+        \n&lt;title&gt;Van Gogh /&lt;/title&gt; \n&lt;subject&gt;Gogh, Vincent van,
+        1853-1890.&lt;/subject&gt; \n&lt;subject&gt;Painters Netherlands Biography.&lt;/subject&gt;
+        \n&lt;subject&gt;Van Gogh, Vincent, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Gogh,
+        Vincent-Willem van, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Van-Gog, Vint&#x361;sent,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan-kao, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Fan'gao, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fangu,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fangu, Wensheng, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Fan-ku, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5D2;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;&lt;/subject&gt;
+        \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5DA;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/subject&gt; \n&lt;subject&gt;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x68B5;&#x9AD8;, 1853-1890&lt;/subject&gt;
+        \n&lt;general&gt;H. Holt,&lt;/general&gt; \n&lt;general&gt;(OCoLC)21303956&lt;/general&gt;
+        \n&lt;general&gt;OCoLC21303956&lt;/general&gt; \n&lt;general&gt;21303956&lt;/general&gt;
+        \n&lt;general&gt;ADR9625&lt;/general&gt; \n&lt;general&gt;AllDocuments&lt;/general&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph000814691&lt;/recordid&gt;
+        \n&lt;recordid&gt;000814691&lt;/recordid&gt; \n&lt;recordid&gt;814691&lt;/recordid&gt;
+        \n&lt;isbn&gt;0805013598&lt;/isbn&gt; \n&lt;isbn&gt;9780805013597&lt;/isbn&gt;
+        \n&lt;creationdate&gt;1990&lt;/creationdate&gt; \n&lt;startdate&gt;19900101&lt;/startdate&gt;
+        \n&lt;enddate&gt;19901231&lt;/enddate&gt; \n&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+        \n&lt;searchscope&gt;NDU&lt;/searchscope&gt; \n&lt;scope&gt;HESB&lt;/scope&gt;
+        \n&lt;scope&gt;ndu_aleph&lt;/scope&gt; \n&lt;scope&gt;NDU&lt;/scope&gt; \n&lt;alttitle&gt;Van
+        Gogh. English&lt;/alttitle&gt; \n&lt;lsr01&gt;HESB GEN&lt;/lsr01&gt; \n&lt;lsr01&gt;HESB
+        General Collection&lt;/lsr01&gt; \n&lt;lsr02&gt;Bonafoux Van Gogh&lt;/lsr02&gt;
+        \n&lt;lsr02&gt;Van Gogh Bonafoux&lt;/lsr02&gt; \n&lt;lsr04&gt;Van Gogh. English&lt;/lsr04&gt;
+        \n&lt;lsr05&gt;ND 653 .G7 B6613 1990&lt;/lsr05&gt; \n&lt;lsr05&gt;ND653.G7B66131990&lt;/lsr05&gt;
+        \n&lt;lsr05&gt;ND653 .G7 B6613 1990 :&lt;/lsr05&gt; \n&lt;lsr07&gt;Bonafoux
+        Van Gogh&lt;/lsr07&gt; \n&lt;lsr07&gt;Van Gogh Bonafoux&lt;/lsr07&gt; \n&lt;lsr06&gt;H.
+        Holt,&lt;/lsr06&gt; \n&lt;lsr08&gt;New York, NY :&lt;/lsr08&gt; \n&lt;lsr31&gt;Bonafoux,
+        Pascal. Van Gogh. English&lt;/lsr31&gt; \n&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van
+        Gogh /&lt;/title&gt; \n&lt;creationdate&gt;1990&lt;/creationdate&gt; \n&lt;author&gt;Bonafoux,
+        Pascal.&lt;/author&gt; \n&lt;lso01&gt;1990&lt;/lso01&gt; \n&lt;/sort&gt;\n&lt;facets&gt;\n&lt;language&gt;eng&lt;/language&gt;
+        \n&lt;creationdate&gt;1990&lt;/creationdate&gt; \n&lt;topic&gt;Gogh, Vincent
+        van, 1853-1890&lt;/topic&gt; \n&lt;topic&gt;Painters&#x2013;Netherlands&#x2013;Biography&lt;/topic&gt;
+        \n&lt;toplevel&gt;available&lt;/toplevel&gt; \n&lt;prefilter&gt;books&lt;/prefilter&gt;
+        \n&lt;prefilter&gt;print&lt;/prefilter&gt; \n&lt;rsrctype&gt;books&lt;/rsrctype&gt;
+        \n&lt;rsrctype&gt;print&lt;/rsrctype&gt; \n&lt;creatorcontrib&gt;Bonafoux,
+        P&lt;/creatorcontrib&gt; \n&lt;library&gt;HESB&lt;/library&gt; \n&lt;lfc04&gt;Van
+        Gogh.&lt;/lfc04&gt; \n&lt;classificationlcc&gt;N - Fine arts.&#x2013;Painting&#x2013;History&lt;/classificationlcc&gt;&lt;frbrgroupid&gt;143198405&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c1&gt;90055057&lt;/c1&gt; \n&lt;c2&gt;0805013598&lt;/c2&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt;
+        \n&lt;c4&gt;1990&lt;/c4&gt; \n&lt;f1&gt;90055057&lt;/f1&gt; \n&lt;f3&gt;0805013598&lt;/f3&gt;
+        \n&lt;f5&gt;vangogh&lt;/f5&gt; \n&lt;f6&gt;1990&lt;/f6&gt; \n&lt;f7&gt;van
+        gogh&lt;/f7&gt; \n&lt;f8&gt;nyu&lt;/f8&gt; \n&lt;f9&gt;160 p. :&lt;/f9&gt;
+        \n&lt;f10&gt;h holt&lt;/f10&gt; \n&lt;f11&gt;bonafoux pascal&lt;/f11&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;\n&lt;t&gt;99&lt;/t&gt;
+        \n&lt;k1&gt;$$Kbonafoux pascal$$AA&lt;/k1&gt; \n&lt;k3&gt;$$Kvan gogh english$$AT&lt;/k3&gt;
+        \n&lt;k3&gt;$$Kvan gogh$$AT&lt;/k3&gt; \n&lt;/frbr&gt;\n&lt;delivery&gt;\n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;delcategory&gt;Physical Item&lt;/delcategory&gt; \n&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;ND
+        653 .G7 B6613 1990&lt;/classificationlcc&gt; \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;\n&lt;aulast&gt;Bonafoux&lt;/aulast&gt;
+        \n&lt;aufirst&gt;Pascal&lt;/aufirst&gt; \n&lt;au&gt;Bonafoux, Pascal&lt;/au&gt;
+        \n&lt;btitle&gt;Van Gogh&lt;/btitle&gt; \n&lt;date&gt;1990&lt;/date&gt; \n&lt;risdate&gt;1990.&lt;/risdate&gt;
+        \n&lt;isbn&gt;0805013598&lt;/isbn&gt; \n&lt;format&gt;book&lt;/format&gt;
+        \n&lt;genre&gt;book&lt;/genre&gt; \n&lt;ristype&gt;BOOK&lt;/ristype&gt; \n&lt;notes&gt;Includes
+        bibliographical references (p. 160) and index.&lt;/notes&gt; \n&lt;cop&gt;New
+        York, NY&lt;/cop&gt; \n&lt;pub&gt;H. Holt&lt;/pub&gt; \n&lt;oclcid&gt;21303956&lt;/oclcid&gt;
+        \n&lt;lccn&gt;90055057&lt;/lccn&gt; \n&lt;/addata&gt;\n&lt;browse&gt;\n&lt;author&gt;$$DBonafoux,
+        Pascal$$EBonafoux, Pascal&lt;/author&gt; \n&lt;title&gt;$$DVan Gogh$$EVan
+        Gogh&lt;/title&gt; \n&lt;title&gt;$$DVan Gogh. English$$EVan Gogh. English&lt;/title&gt;
+        \n&lt;subject&gt;$$DPainters -- Netherlands -- Biography$$EPainters Netherlands
+        Biography&lt;/subject&gt; \n&lt;subject&gt;$$DGogh, Vincent van, 1853-1890$$EGogh,
+        Vincent van, 1853-1890&lt;/subject&gt; \n&lt;callnumber&gt;$$INDU$$DND 653
+        .G7 B6613 1990$$E0nd   00653.g  70000  b6613 1990 $$T0&lt;/callnumber&gt;
+        \n&lt;institution&gt;NDU&lt;/institution&gt; \n&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT
+        deliveryCategory=&quot;Physical Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G7 B6613
+        1990 )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Bonafoux&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Bonafoux%2C%20Pascal&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0805013598&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000814691&lt;/ndu_aleph&gt;&lt;grp_id&gt;143198405&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://images.amazon.com/images/P/0805013598.01._SSTHUM_.jpg&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://syndetics.com/index.aspx?isbn=0805013598/SC.JPG&amp;amp;client=CLIENT&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:0805013598,OCLC:21303956,LCCN:90055057&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:linktoabstract&gt;http://syndetics.com/index.aspx?isbn=0805013598/SUMMARY.HTML&amp;amp;client=CLIENT&amp;amp;type=rn12&lt;/sear:linktoabstract&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Bonafoux&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Bonafoux%2C%20Pascal&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0805013598&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000814691&lt;/ndu_aleph&gt;&lt;grp_id&gt;143198405&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=isbn%3A0805013598&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;4479076&quot; RANK=&quot;0.37250936&quot; NO=&quot;4&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n
+        \n \n \n \n \n \n \n&lt;sourcerecordid&gt;$$V000014080$$Ohcc_aleph000014080&lt;/sourcerecordid&gt;&lt;sourcerecordid&gt;$$V000158520$$Osmc_aleph000158520&lt;/sourcerecordid&gt;&lt;sourcerecordid&gt;$$V000751798$$Ondu_aleph000751798&lt;/sourcerecordid&gt;&lt;sourceid&gt;$$Vhcc_aleph$$Ohcc_aleph000014080&lt;/sourceid&gt;&lt;sourceid&gt;$$Vsmc_aleph$$Osmc_aleph000158520&lt;/sourceid&gt;&lt;sourceid&gt;$$Vndu_aleph$$Ondu_aleph000751798&lt;/sourceid&gt;&lt;recordid&gt;dedupmrg15048248&lt;/recordid&gt;&lt;originalsourceid&gt;$$VHCC01$$Ohcc_aleph000014080&lt;/originalsourceid&gt;&lt;originalsourceid&gt;$$VSMC01$$Osmc_aleph000158520&lt;/originalsourceid&gt;&lt;originalsourceid&gt;$$VNDU01$$Ondu_aleph000751798&lt;/originalsourceid&gt;&lt;sourceformat&gt;$$VMARC21$$Ohcc_aleph000014080&lt;/sourceformat&gt;&lt;sourceformat&gt;$$VMARC21$$Osmc_aleph000158520&lt;/sourceformat&gt;&lt;sourceformat&gt;$$VMARC21$$Ondu_aleph000751798&lt;/sourceformat&gt;&lt;sourcesystem&gt;$$VAleph$$Ohcc_aleph000014080&lt;/sourcesystem&gt;&lt;sourcesystem&gt;$$VAleph$$Osmc_aleph000158520&lt;/sourcesystem&gt;&lt;sourcesystem&gt;$$VAleph$$Ondu_aleph000751798&lt;/sourcesystem&gt;&lt;ilsapiid&gt;$$VHCC01000014080$$Ohcc_aleph000014080&lt;/ilsapiid&gt;&lt;ilsapiid&gt;$$VSMC01000158520$$Osmc_aleph000158520&lt;/ilsapiid&gt;&lt;ilsapiid&gt;$$VNDU01000751798$$Ondu_aleph000751798&lt;/ilsapiid&gt;&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;book&lt;/type&gt;
+        \n&lt;title&gt;Van Gogh&lt;/title&gt; \n&lt;creator&gt;Melissa A. McQuillan
+        [Melissa Ann]&lt;/creator&gt; \n&lt;contributor&gt;Vincent van Gogh 1853-1890&lt;/contributor&gt;
+        \n&lt;publisher&gt;New York, N.Y. : Thames and Hudson&lt;/publisher&gt; \n&lt;creationdate&gt;1989&lt;/creationdate&gt;
+        \n&lt;format&gt;216 p. : ill. (some col.) ; 21 cm..&lt;/format&gt; \n&lt;identifier&gt;$$CISBN
+        $$V050020232X :&lt;/identifier&gt; \n&lt;subject&gt;Gogh, Vincent van, 1853-1890
+        -- Criticism and interpretation&lt;/subject&gt; \n&lt;subject&gt;Gogh, Vincent
+        van, 1853-1890,&lt;/subject&gt; \n&lt;subject&gt;Dutch paintings Gogh, Vincent
+        van, 1853-1890&lt;/subject&gt; \n&lt;language&gt;eng&lt;/language&gt; \n&lt;relation&gt;$$Cseries
+        $$VWorld of art&lt;/relation&gt; \n \n \n \n \n&lt;availlibrary&gt;$$IHCC$$LHCC$$1General
+        Collection$$2(759.9492 M25v )$$Savailable$$31$$40$$5N$$66$$XHCC50$$YHCC$$ZGEN$$Ohcc_aleph000014080&lt;/availlibrary&gt;&lt;availlibrary&gt;$$ISMC$$LSMC$$1General
+        Collection$$2(ND 653 .G61 M35 )$$Savailable$$31$$40$$5N$$68$$XSMC50$$YSMC$$ZCOLL$$Osmc_aleph000158520&lt;/availlibrary&gt;&lt;availlibrary&gt;$$INDU$$LHESB$$1General
+        Collection$$2(N 6953 .G63 M35 1989 )$$Savailable$$31$$40$$5N$$63$$XNDU50$$YHESB$$ZGEN$$Ondu_aleph000751798&lt;/availlibrary&gt;&lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;&lt;availinstitution&gt;$$ISMC$$Savailable&lt;/availinstitution&gt;&lt;availinstitution&gt;$$IHCC$$Savailable&lt;/availinstitution&gt;&lt;availpnx&gt;available&lt;/availpnx&gt;&lt;lds01&gt;Includes
+        index.&lt;/lds01&gt;&lt;lds02&gt;hcc_aleph000014080&lt;/lds02&gt;&lt;lds02&gt;smc_aleph000158520&lt;/lds02&gt;&lt;lds02&gt;ndu_aleph000751798&lt;/lds02&gt;&lt;lds06&gt;Melissa
+        McQuillan.&lt;/lds06&gt;&lt;lds30&gt;World of art&lt;/lds30&gt;&lt;/display&gt;\n&lt;links&gt;\n
+        \n \n \n \n \n \n \n \n \n \n \n \n \n&lt;linktoholdings&gt;$$V$$Taleph_holdings$$IHCC$$Ohcc_aleph000014080&lt;/linktoholdings&gt;&lt;linktoholdings&gt;$$V$$Taleph_holdings$$Ohcc_aleph000014080&lt;/linktoholdings&gt;&lt;linktoholdings&gt;$$V$$Taleph_holdings$$ISMC$$Osmc_aleph000158520&lt;/linktoholdings&gt;&lt;linktoholdings&gt;$$V$$Taleph_holdings$$Osmc_aleph000158520&lt;/linktoholdings&gt;&lt;linktoholdings&gt;$$V$$Taleph_holdings$$INDU$$Ondu_aleph000751798&lt;/linktoholdings&gt;&lt;linktoholdings&gt;$$V$$Taleph_holdings$$Ondu_aleph000751798&lt;/linktoholdings&gt;&lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Ohcc_aleph000014080&lt;/linktoholdsnotexist&gt;&lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Osmc_aleph000158520&lt;/linktoholdsnotexist&gt;&lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph000751798&lt;/linktoholdsnotexist&gt;&lt;backlink&gt;$$V$$Taleph_backlink$$DHoly
+        Cross Catalog$$Ohcc_aleph000014080&lt;/backlink&gt;&lt;backlink&gt;$$V$$Taleph_backlink$$DSaint
+        Mary's Catalog$$Osmc_aleph000158520&lt;/backlink&gt;&lt;backlink&gt;$$V$$Taleph_backlink$$DNotre
+        Dame Catalog$$Ondu_aleph000751798&lt;/backlink&gt;&lt;openurl&gt;$$V$$Topenurl_journal$$Ohcc_aleph000014080&lt;/openurl&gt;&lt;openurl&gt;$$V$$Topenurl_journal$$Osmc_aleph000158520&lt;/openurl&gt;&lt;openurl&gt;$$V$$Topenurl_journal$$Ondu_aleph000751798&lt;/openurl&gt;&lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ohcc_aleph000014080&lt;/openurlfulltext&gt;&lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Osmc_aleph000158520&lt;/openurlfulltext&gt;&lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ondu_aleph000751798&lt;/openurlfulltext&gt;&lt;linktoexcerpt&gt;$$Tsyndetics_excerpt$$Elinktoexcerpt&lt;/linktoexcerpt&gt;&lt;linktoabstract&gt;$$Tsyndetics_abstract$$Elinktoabstract&lt;/linktoabstract&gt;&lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt;&lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt;&lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt;&lt;thumbnail&gt;$$Tamazon_thumb&lt;/thumbnail&gt;&lt;thumbnail&gt;$$Tsyndetics_thumb&lt;/thumbnail&gt;&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt;&lt;lln01&gt;$$Tfindit_link$$Ohcc_aleph000014080&lt;/lln01&gt;&lt;lln01&gt;$$Tfindit_link$$Osmc_aleph000158520&lt;/lln01&gt;&lt;lln01&gt;$$Tfindit_link$$Ondu_aleph000751798&lt;/lln01&gt;&lt;/links&gt;\n&lt;search&gt;&lt;creatorcontrib&gt;Melissa
+        A.  McQuillan  (Melissa Ann)&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;McQuillan,
+        M&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Melissa McQuillan.&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Vincent
+        van,  Gogh  1853-1890&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Gogh, V&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Van-Gog,
+        Vintsent, 1853-1890&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Van Gogh,
+        Vincent, 1853-1890&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Gogh, Vincent-Willem
+        van, 1853-1890&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Fan-kao, 1853-1890&lt;/creatorcontrib&gt;&lt;title&gt;Van
+        Gogh /&lt;/title&gt;&lt;subject&gt;Gogh, Vincent van, 1853-1890 Criticism
+        and interpretation.&lt;/subject&gt;&lt;subject&gt;Gogh, Vincent van, 1853-1890,&lt;/subject&gt;&lt;subject&gt;Dutch
+        paintings Gogh, Vincent van, 1853-1890&lt;/subject&gt;&lt;subject&gt;Van-Gog,
+        Vintsent, 1853-1890&lt;/subject&gt;&lt;subject&gt;Van Gogh, Vincent, 1853-1890&lt;/subject&gt;&lt;subject&gt;Gogh,
+        Vincent-Willem van, 1853-1890&lt;/subject&gt;&lt;subject&gt;Fan-kao, 1853-1890&lt;/subject&gt;&lt;general&gt;Thames
+        and Hudson,&lt;/general&gt;&lt;general&gt;(OCoLC)19637318&lt;/general&gt;&lt;general&gt;OCoLC19637318&lt;/general&gt;&lt;general&gt;19637318&lt;/general&gt;&lt;general&gt;AAB4330&lt;/general&gt;&lt;general&gt;AllDocuments&lt;/general&gt;&lt;sourceid&gt;hcc_aleph&lt;/sourceid&gt;&lt;recordid&gt;hcc_aleph000014080&lt;/recordid&gt;&lt;recordid&gt;000014080&lt;/recordid&gt;&lt;recordid&gt;14080&lt;/recordid&gt;&lt;isbn&gt;050020232X&lt;/isbn&gt;&lt;isbn&gt;9780500202326&lt;/isbn&gt;&lt;creationdate&gt;1989&lt;/creationdate&gt;&lt;startdate&gt;19890101&lt;/startdate&gt;&lt;enddate&gt;19891231&lt;/enddate&gt;&lt;addtitle&gt;World
+        of art&lt;/addtitle&gt;&lt;searchscope&gt;hcc_aleph&lt;/searchscope&gt;&lt;searchscope&gt;HCC&lt;/searchscope&gt;&lt;scope&gt;HCC&lt;/scope&gt;&lt;scope&gt;hcc_aleph&lt;/scope&gt;&lt;lsr01&gt;HCC
+        GEN&lt;/lsr01&gt;&lt;lsr01&gt;HCC General Collection&lt;/lsr01&gt;&lt;lsr02&gt;McQuillan
+        Gogh Van Gogh&lt;/lsr02&gt;&lt;lsr02&gt;Van Gogh McQuillan Gogh&lt;/lsr02&gt;&lt;lsr03&gt;World
+        of art&lt;/lsr03&gt;&lt;lsr05&gt;759.9492 M25v&lt;/lsr05&gt;&lt;lsr05&gt;759.9492M25v&lt;/lsr05&gt;&lt;lsr05&gt;759759.9492
+        M25v :&lt;/lsr05&gt;&lt;lsr07&gt;McQuillan Gogh Van Gogh&lt;/lsr07&gt;&lt;lsr07&gt;Van
+        Gogh McQuillan Gogh&lt;/lsr07&gt;&lt;lsr06&gt;Thames and Hudson,&lt;/lsr06&gt;&lt;lsr08&gt;New
+        York, N.Y. :&lt;/lsr08&gt;&lt;lsr30&gt;World of art&lt;/lsr30&gt;&lt;creatorcontrib&gt;Fan-ku,
+        1853-1890&lt;/creatorcontrib&gt;&lt;sourceid&gt;smc_aleph&lt;/sourceid&gt;&lt;recordid&gt;smc_aleph000158520&lt;/recordid&gt;&lt;recordid&gt;000158520&lt;/recordid&gt;&lt;recordid&gt;158520&lt;/recordid&gt;&lt;searchscope&gt;smc_aleph&lt;/searchscope&gt;&lt;searchscope&gt;SMC&lt;/searchscope&gt;&lt;scope&gt;SMC&lt;/scope&gt;&lt;scope&gt;smc_aleph&lt;/scope&gt;&lt;lsr01&gt;SMC
+        COLL&lt;/lsr01&gt;&lt;lsr01&gt;SMC General Collection&lt;/lsr01&gt;&lt;lsr05&gt;ND
+        653 .G61 M35&lt;/lsr05&gt;&lt;lsr05&gt;ND653.G61M35&lt;/lsr05&gt;&lt;lsr05&gt;ND653
+        .G61 M35 :&lt;/lsr05&gt;&lt;subject&gt;Gogh, Vincent van, 1853-1890.&lt;/subject&gt;&lt;subject&gt;Van-Gog,
+        Vint&#x361;sent, 1853-1890&lt;/subject&gt;&lt;subject&gt;Fan'gao, 1853-1890&lt;/subject&gt;&lt;subject&gt;Fangu,
+        1853-1890&lt;/subject&gt;&lt;subject&gt;Fangu, Wensheng, 1853-1890&lt;/subject&gt;&lt;subject&gt;Fan-ku,
+        1853-1890&lt;/subject&gt;&lt;subject&gt;&#x5D2;&#x5D5;&#x5D2;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;&lt;/subject&gt;&lt;subject&gt;&#x5D2;&#x5D5;&#x5DA;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/subject&gt;&lt;subject&gt;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt;&lt;subject&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt;&lt;subject&gt;&#x68B5;&#x9AD8;, 1853-1890&lt;/subject&gt;&lt;general&gt;ADJ7918&lt;/general&gt;&lt;general&gt;Includes
+        index.&lt;/general&gt;&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt;&lt;recordid&gt;ndu_aleph000751798&lt;/recordid&gt;&lt;recordid&gt;000751798&lt;/recordid&gt;&lt;recordid&gt;751798&lt;/recordid&gt;&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;&lt;searchscope&gt;NDU&lt;/searchscope&gt;&lt;scope&gt;HESB&lt;/scope&gt;&lt;scope&gt;ndu_aleph&lt;/scope&gt;&lt;scope&gt;NDU&lt;/scope&gt;&lt;lsr01&gt;HESB
+        GEN&lt;/lsr01&gt;&lt;lsr01&gt;HESB General Collection&lt;/lsr01&gt;&lt;lsr02&gt;McQuillan
+        Van Gogh&lt;/lsr02&gt;&lt;lsr02&gt;Van Gogh McQuillan&lt;/lsr02&gt;&lt;lsr05&gt;N
+        6953 .G63 M35 1989&lt;/lsr05&gt;&lt;lsr05&gt;N6953.G63M351989&lt;/lsr05&gt;&lt;lsr05&gt;N6953
+        .G63 M35 1989 :&lt;/lsr05&gt;&lt;lsr07&gt;McQuillan Van Gogh&lt;/lsr07&gt;&lt;lsr07&gt;Van
+        Gogh McQuillan&lt;/lsr07&gt;&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van
+        Gogh /&lt;/title&gt; \n&lt;creationdate&gt;1989&lt;/creationdate&gt; \n&lt;author&gt;McQuillan,
+        Melissa A. (Melissa Ann)&lt;/author&gt; \n&lt;lso01&gt;1989&lt;/lso01&gt;
+        \n&lt;/sort&gt;\n&lt;facets&gt;&lt;language&gt;eng&lt;/language&gt;&lt;creationdate&gt;1989&lt;/creationdate&gt;&lt;topic&gt;Gogh,
+        Vincent van, 1853-1890&#x2013;Criticism and interpretation&lt;/topic&gt;&lt;toplevel&gt;available&lt;/toplevel&gt;&lt;prefilter&gt;books&lt;/prefilter&gt;&lt;prefilter&gt;print&lt;/prefilter&gt;&lt;rsrctype&gt;books&lt;/rsrctype&gt;&lt;rsrctype&gt;print&lt;/rsrctype&gt;&lt;creatorcontrib&gt;McQuillan,
+        M&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Gogh, V&lt;/creatorcontrib&gt;&lt;library&gt;HCC&lt;/library&gt;&lt;lfc03&gt;World
+        of art&lt;/lfc03&gt;&lt;classificationlcc&gt;N - Fine arts.&#x2013;Painting&#x2013;History&lt;/classificationlcc&gt;&lt;library&gt;SMC&lt;/library&gt;&lt;topic&gt;Gogh,
+        Vincent van, 1853-1890&lt;/topic&gt;&lt;library&gt;HESB&lt;/library&gt;&lt;frbrgroupid&gt;76348618&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c1&gt;88050234&lt;/c1&gt; \n&lt;c2&gt;050020232X&lt;/c2&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt;
+        \n&lt;c4&gt;1989&lt;/c4&gt; \n&lt;f1&gt;88050234&lt;/f1&gt; \n&lt;f3&gt;050020232X&lt;/f3&gt;
+        \n&lt;f5&gt;vangogh&lt;/f5&gt; \n&lt;f6&gt;1989&lt;/f6&gt; \n&lt;f7&gt;van
+        gogh&lt;/f7&gt; \n&lt;f8&gt;nyu&lt;/f8&gt; \n&lt;f9&gt;216 p. :&lt;/f9&gt;
+        \n&lt;f10&gt;thames and hudson&lt;/f10&gt; \n&lt;f11&gt;mcquillan melissa
+        a melissa ann&lt;/f11&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;&lt;t&gt;99&lt;/t&gt;&lt;k1&gt;$$Kmcquillan
+        melissa a melissa ann$$AA&lt;/k1&gt;&lt;k3&gt;$$Kvan gogh$$AT&lt;/k3&gt;&lt;/frbr&gt;\n&lt;delivery&gt;&lt;institution&gt;$$VHCC$$Ohcc_aleph000014080&lt;/institution&gt;&lt;delcategory&gt;$$VPhysical
+        Item$$Ohcc_aleph000014080&lt;/delcategory&gt;&lt;institution&gt;$$VSMC$$Osmc_aleph000158520&lt;/institution&gt;&lt;delcategory&gt;$$VPhysical
+        Item$$Osmc_aleph000158520&lt;/delcategory&gt;&lt;institution&gt;$$VNDU$$Ondu_aleph000751798&lt;/institution&gt;&lt;delcategory&gt;$$VPhysical
+        Item$$Ondu_aleph000751798&lt;/delcategory&gt;&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;ND653.G7&lt;/classificationlcc&gt;
+        \n&lt;classificationddc&gt;759.9492&lt;/classificationddc&gt; \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;&lt;aulast&gt;McQuillan&lt;/aulast&gt;&lt;aufirst&gt;Melissa
+        A.&lt;/aufirst&gt;&lt;au&gt;McQuillan, Melissa A&lt;/au&gt;&lt;addau&gt;Gogh,
+        Vincent van&lt;/addau&gt;&lt;btitle&gt;Van Gogh&lt;/btitle&gt;&lt;seriestitle&gt;World
+        of art&lt;/seriestitle&gt;&lt;date&gt;1989&lt;/date&gt;&lt;risdate&gt;1989.&lt;/risdate&gt;&lt;isbn&gt;050020232X&lt;/isbn&gt;&lt;format&gt;book&lt;/format&gt;&lt;genre&gt;book&lt;/genre&gt;&lt;ristype&gt;BOOK&lt;/ristype&gt;&lt;notes&gt;Includes
+        bibliographical references.&lt;/notes&gt;&lt;cop&gt;New York, N.Y.&lt;/cop&gt;&lt;pub&gt;Thames
+        and Hudson&lt;/pub&gt;&lt;oclcid&gt;19637318&lt;/oclcid&gt;&lt;lccn&gt;88050234&lt;/lccn&gt;&lt;notes&gt;Includes
+        bibliographical references (p. 207-208) and indexes.&lt;/notes&gt;&lt;notes&gt;Bibliography:
+        p. 207-208.&lt;/notes&gt;&lt;/addata&gt;\n&lt;browse&gt;\n \n \n \n \n \n
+        \n \n \n&lt;title&gt;$$DVan Gogh$$EVan Gogh$$UHCC&lt;/title&gt;&lt;title&gt;$$DWorld
+        of art [series]$$EWorld of art [series]$$UHCC&lt;/title&gt;&lt;title&gt;$$DVan
+        Gogh$$EVan Gogh$$USMC&lt;/title&gt;&lt;title&gt;$$DWorld of art [series]$$EWorld
+        of art [series]$$USMC&lt;/title&gt;&lt;title&gt;$$DVan Gogh$$EVan Gogh$$UNDU&lt;/title&gt;&lt;title&gt;$$DWorld
+        of art [series]$$EWorld of art [series]$$UNDU&lt;/title&gt;&lt;subject&gt;$$DGogh,
+        Vincent van, 1853-1890 -- Criticism and interpretation$$EGogh, Vincent van,
+        1853-1890 Criticism and interpretation$$UHCC&lt;/subject&gt;&lt;subject&gt;$$DGogh,
+        Vincent van, 1853-1890$$EGogh, Vincent van, 1853-1890$$UHCC&lt;/subject&gt;&lt;subject&gt;$$DGogh,
+        Vincent van, 1853-1890 -- Criticism and interpretation$$EGogh, Vincent van,
+        1853-1890 Criticism and interpretation$$USMC&lt;/subject&gt;&lt;subject&gt;$$DGogh,
+        Vincent van, 1853-1890$$EGogh, Vincent van, 1853-1890$$UNDU&lt;/subject&gt;&lt;author&gt;$$DMcQuillan,
+        Melissa A. (Melissa Ann)$$EMcQuillan, Melissa A. (Melissa Ann)$$UHCC&lt;/author&gt;&lt;author&gt;$$DGogh,
+        Vincent van, 1853-1890$$EGogh, Vincent van, 1853-1890$$UHCC&lt;/author&gt;&lt;author&gt;$$DMcQuillan,
+        Melissa A. (Melissa Ann)$$EMcQuillan, Melissa A. (Melissa Ann)$$USMC&lt;/author&gt;&lt;author&gt;$$DGogh,
+        Vincent van, 1853-1890$$EGogh, Vincent van, 1853-1890$$USMC&lt;/author&gt;&lt;author&gt;$$DMcQuillan,
+        Melissa A. (Melissa Ann)$$EMcQuillan, Melissa A. (Melissa Ann)$$UNDU&lt;/author&gt;&lt;callnumber&gt;$$IHCC$$DND
+        653 .G7 M35 1989$$E0nd   00653.g  70000  m35 1989 $$T0&lt;/callnumber&gt;&lt;callnumber&gt;$$ISMC$$DND
+        653 .G7 M35 1989$$END 653 .G7 M35 1989 $$T0$$DND 653 .G61 M35$$E0nd   00653.g
+        \ 61000  m35 $$T0&lt;/callnumber&gt;&lt;callnumber&gt;$$INDU$$DN 6953 .G63
+        M35 1989$$E0n    06953.g  63000  m35 1989$$T0&lt;/callnumber&gt;&lt;institution&gt;HCC&lt;/institution&gt;&lt;institution&gt;SMC&lt;/institution&gt;&lt;institution&gt;NDU&lt;/institution&gt;&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT
+        deliveryCategory=&quot;Physical Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;HCC&lt;/sear:institution&gt;&lt;sear:library&gt;HCC&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(759.9492 M25v )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;SMC&lt;/sear:institution&gt;&lt;sear:library&gt;SMC&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G61 M35
+        )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(N 6953 .G63 M35
+        1989 )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-hcc_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=McQuillan&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=McQuillan%2C%20Melissa%20A&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=050020232X&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;hcc_aleph&gt;000014080&lt;/hcc_aleph&gt;&lt;grp_id&gt;76348618&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-smc_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=McQuillan&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=McQuillan%2C%20Melissa%20A&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=050020232X&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;smc_aleph&gt;000158520&lt;/smc_aleph&gt;&lt;grp_id&gt;76348618&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=McQuillan&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=McQuillan%2C%20Melissa%20A&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=050020232X&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000751798&lt;/ndu_aleph&gt;&lt;grp_id&gt;76348618&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:backlink/&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://images.amazon.com/images/P/050020232X.01._SSTHUM_.jpg&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://syndetics.com/index.aspx?isbn=050020232X/SC.JPG&amp;amp;client=CLIENT&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:050020232X,OCLC:19637318,LCCN:88050234&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:linktoabstract&gt;http://syndetics.com/index.aspx?isbn=050020232X/SUMMARY.HTML&amp;amp;client=CLIENT&amp;amp;type=rn12&lt;/sear:linktoabstract&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-hcc_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=McQuillan&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=McQuillan%2C%20Melissa%20A&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=050020232X&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;hcc_aleph&gt;000014080&lt;/hcc_aleph&gt;&lt;grp_id&gt;76348618&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-smc_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=McQuillan&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=McQuillan%2C%20Melissa%20A&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=050020232X&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;smc_aleph&gt;000158520&lt;/smc_aleph&gt;&lt;grp_id&gt;76348618&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A03IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=McQuillan&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=McQuillan%2C%20Melissa%20A&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=050020232X&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000751798&lt;/ndu_aleph&gt;&lt;grp_id&gt;76348618&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=isbn%3A050020232X&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;sear:lln01/&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;1768858&quot; RANK=&quot;0.37001407&quot; NO=&quot;5&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n&lt;sourcerecordid&gt;002687265&lt;/sourcerecordid&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph002687265&lt;/recordid&gt;
+        \n&lt;originalsourceid&gt;NDU01&lt;/originalsourceid&gt; \n&lt;ilsapiid&gt;NDU01002687265&lt;/ilsapiid&gt;
+        \n&lt;sourceformat&gt;MARC21&lt;/sourceformat&gt; \n&lt;sourcesystem&gt;Aleph&lt;/sourcesystem&gt;
+        \n&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;book&lt;/type&gt; \n&lt;title&gt;Van
+        Gogh&lt;/title&gt; \n&lt;creator&gt;C. H. Sibert&lt;/creator&gt; \n&lt;contributor&gt;Vincent
+        van Gogh 1853-1890.&lt;/contributor&gt; \n&lt;contributor&gt;Charles Estienne&lt;/contributor&gt;
+        \n&lt;publisher&gt;Geneva : Skira&lt;/publisher&gt; \n&lt;creationdate&gt;1953&lt;/creationdate&gt;
+        \n&lt;format&gt;131 p. : col. ill. ; 18 cm..&lt;/format&gt; \n&lt;subject&gt;Gogh,
+        Vincent van, 1853-1890&lt;/subject&gt; \n&lt;language&gt;eng&lt;/language&gt;
+        \n&lt;relation&gt;$$Cseries $$VTaste of our time.&lt;/relation&gt; \n&lt;availlibrary&gt;$$INDU$$LHESB$$1General
+        Collection$$2(ND 653 .G7 S513 1953 )$$Savailable$$31$$40$$5N$$60$$XNDU50$$YHESB$$ZGEN&lt;/availlibrary&gt;
+        \n&lt;lds01&gt;Ownership History: From the Sergei V. and Marina P. Utechin
+        Collection.&lt;/lds01&gt; \n&lt;lds02&gt;ndu_aleph002687265&lt;/lds02&gt;
+        \n&lt;lds06&gt;text by C.H. Sibert and Charles Estienne ; [translated by S.J.C.
+        Harrison].&lt;/lds06&gt; \n&lt;lds30&gt;Taste of our time.&lt;/lds30&gt; \n&lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;&lt;availpnx&gt;available&lt;/availpnx&gt;&lt;/display&gt;\n&lt;links&gt;\n&lt;openurl&gt;$$Topenurl_journal&lt;/openurl&gt;
+        \n&lt;backlink&gt;$$Taleph_backlink$$DNotre Dame Catalog&lt;/backlink&gt;
+        \n&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt; \n&lt;openurlfulltext&gt;$$Topenurlfull_journal&lt;/openurlfulltext&gt;
+        \n&lt;linktoholdings&gt;$$Taleph_holdings$$INDU&lt;/linktoholdings&gt; \n&lt;linktoholdings&gt;$$Taleph_holdings&lt;/linktoholdings&gt;
+        \n&lt;linktoholdsnotexist&gt;$$Taleph_holdings_not_in_user_institution&lt;/linktoholdsnotexist&gt;
+        \n&lt;linktouc&gt;$$Tworldcat_oclc$$Eworldcat&lt;/linktouc&gt; \n&lt;lln01&gt;$$Tfindit_link&lt;/lln01&gt;
+        \n&lt;/links&gt;\n&lt;search&gt;\n&lt;creatorcontrib&gt;C. H.  Sibert&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Sibert, C&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;text
+        by C.H. Sibert and Charles Estienne ; [translated by S.J.C. Harrison].&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Vincent van,  Gogh  1853-1890.&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Charles,  Estienne&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Gogh,
+        V&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Estienne, C&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Fan-kao, 1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Van
+        Gogh, Vincent, 1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Gogh,
+        Vincent-Willem van, 1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Van-Gog,
+        Vint&#x361;sent, 1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fan'gao,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fangu, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Fangu, Wensheng, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Fan-ku, 1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x5D2;&#x5D5;&#x5D2;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;&#x5D2;&#x5D5;&#x5DA;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x68B5;&#x9AD8;,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;title&gt;Van Gogh /&lt;/title&gt; \n&lt;subject&gt;Gogh,
+        Vincent van, 1853-1890.&lt;/subject&gt; \n&lt;subject&gt;Van Gogh, Vincent,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Gogh, Vincent-Willem van, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Van-Gog, Vint&#x361;sent, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan-kao,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan'gao, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Fangu, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fangu,
+        Wensheng, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan-ku, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5D2;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;&lt;/subject&gt; \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5DA;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/subject&gt;
+        \n&lt;subject&gt;&#x30B4;&#x30C3;&#x30DB;, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x68B5;&#x9AD8;, 1853-1890&lt;/subject&gt;
+        \n&lt;general&gt;Skira,&lt;/general&gt; \n&lt;general&gt;(OCoLC)02226743&lt;/general&gt;
+        \n&lt;general&gt;OCoLC02226743&lt;/general&gt; \n&lt;general&gt;02226743&lt;/general&gt;
+        \n&lt;general&gt;2226743&lt;/general&gt; \n&lt;general&gt;AllDocuments&lt;/general&gt;
+        \n&lt;general&gt;From the Sergei V. and Marina P. Utechin Collection.&lt;/general&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph002687265&lt;/recordid&gt;
+        \n&lt;recordid&gt;002687265&lt;/recordid&gt; \n&lt;recordid&gt;2687265&lt;/recordid&gt;
+        \n&lt;creationdate&gt;1953&lt;/creationdate&gt; \n&lt;startdate&gt;19530101&lt;/startdate&gt;
+        \n&lt;enddate&gt;19531231&lt;/enddate&gt; \n&lt;addtitle&gt;Taste of our time&lt;/addtitle&gt;
+        \n&lt;addtitle&gt;Taste of our time.&lt;/addtitle&gt; \n&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+        \n&lt;searchscope&gt;NDU&lt;/searchscope&gt; \n&lt;scope&gt;HESB&lt;/scope&gt;
+        \n&lt;scope&gt;ndu_aleph&lt;/scope&gt; \n&lt;scope&gt;NDU&lt;/scope&gt; \n&lt;lsr01&gt;HESB
+        GEN&lt;/lsr01&gt; \n&lt;lsr01&gt;HESB General Collection&lt;/lsr01&gt; \n&lt;lsr02&gt;Sibert
+        Gogh Estienne Van Gogh&lt;/lsr02&gt; \n&lt;lsr02&gt;Van Gogh Sibert Gogh Estienne&lt;/lsr02&gt;
+        \n&lt;lsr03&gt;Taste of our time&lt;/lsr03&gt; \n&lt;lsr03&gt;Taste of our
+        time.&lt;/lsr03&gt; \n&lt;lsr05&gt;ND 653 .G7 S513 1953&lt;/lsr05&gt; \n&lt;lsr05&gt;ND653.G7S5131953&lt;/lsr05&gt;
+        \n&lt;lsr05&gt;ND653 .G7 S513 1953 :&lt;/lsr05&gt; \n&lt;lsr07&gt;Sibert Gogh
+        Estienne Van Gogh&lt;/lsr07&gt; \n&lt;lsr07&gt;Van Gogh Sibert Gogh Estienne&lt;/lsr07&gt;
+        \n&lt;lsr06&gt;Skira,&lt;/lsr06&gt; \n&lt;lsr08&gt;Geneva :&lt;/lsr08&gt;
+        \n&lt;lsr30&gt;Taste of our time&lt;/lsr30&gt; \n&lt;lsr30&gt;Taste of our
+        time.&lt;/lsr30&gt; \n&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van Gogh
+        /&lt;/title&gt; \n&lt;creationdate&gt;1953&lt;/creationdate&gt; \n&lt;author&gt;Sibert,
+        C. H.&lt;/author&gt; \n&lt;lso01&gt;1953&lt;/lso01&gt; \n&lt;/sort&gt;\n&lt;facets&gt;\n&lt;language&gt;eng&lt;/language&gt;
+        \n&lt;creationdate&gt;1953&lt;/creationdate&gt; \n&lt;topic&gt;Gogh, Vincent
+        van, 1853-1890&lt;/topic&gt; \n&lt;toplevel&gt;available&lt;/toplevel&gt;
+        \n&lt;prefilter&gt;books&lt;/prefilter&gt; \n&lt;prefilter&gt;print&lt;/prefilter&gt;
+        \n&lt;rsrctype&gt;books&lt;/rsrctype&gt; \n&lt;rsrctype&gt;print&lt;/rsrctype&gt;
+        \n&lt;creatorcontrib&gt;Sibert, C&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Gogh,
+        V&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Estienne, C&lt;/creatorcontrib&gt;
+        \n&lt;library&gt;HESB&lt;/library&gt; \n&lt;lfc03&gt;Taste of our time&lt;/lfc03&gt;
+        \n&lt;classificationlcc&gt;N - Fine arts.&#x2013;Painting&#x2013;History&lt;/classificationlcc&gt;&lt;frbrgroupid&gt;144869402&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c3&gt;vangogh&lt;/c3&gt; \n&lt;c4&gt;1953&lt;/c4&gt; \n&lt;f5&gt;vangogh&lt;/f5&gt;
+        \n&lt;f6&gt;1953&lt;/f6&gt; \n&lt;f7&gt;van gogh&lt;/f7&gt; \n&lt;f8&gt;sz&lt;/f8&gt;
+        \n&lt;f9&gt;131 p. :&lt;/f9&gt; \n&lt;f10&gt;skira&lt;/f10&gt; \n&lt;f11&gt;sibert
+        c h&lt;/f11&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;\n&lt;t&gt;99&lt;/t&gt; \n&lt;k1&gt;$$Ksibert
+        c h$$AA&lt;/k1&gt; \n&lt;k3&gt;$$Kvan gogh$$AT&lt;/k3&gt; \n&lt;/frbr&gt;\n&lt;delivery&gt;\n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;delcategory&gt;Physical Item&lt;/delcategory&gt; \n&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;ND
+        653 .G7&lt;/classificationlcc&gt; \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;\n&lt;aulast&gt;Sibert&lt;/aulast&gt;
+        \n&lt;aufirst&gt;C. H.&lt;/aufirst&gt; \n&lt;au&gt;Sibert, C. H&lt;/au&gt;
+        \n&lt;addau&gt;Gogh, Vincent van&lt;/addau&gt; \n&lt;addau&gt;Estienne, Charles&lt;/addau&gt;
+        \n&lt;btitle&gt;Van Gogh&lt;/btitle&gt; \n&lt;seriestitle&gt;Taste of our
+        time&lt;/seriestitle&gt; \n&lt;date&gt;1953&lt;/date&gt; \n&lt;risdate&gt;1953&lt;/risdate&gt;
+        \n&lt;format&gt;book&lt;/format&gt; \n&lt;genre&gt;book&lt;/genre&gt; \n&lt;ristype&gt;BOOK&lt;/ristype&gt;
+        \n&lt;notes&gt;Includes bibliographical references (p. 121-122) and index.&lt;/notes&gt;
+        \n&lt;cop&gt;Geneva&lt;/cop&gt; \n&lt;pub&gt;Skira&lt;/pub&gt; \n&lt;oclcid&gt;02226743&lt;/oclcid&gt;
+        \n&lt;/addata&gt;\n&lt;browse&gt;\n&lt;author&gt;$$DSibert, C. H$$ESibert,
+        C. H&lt;/author&gt; \n&lt;author&gt;$$DGogh, Vincent van, 1853-1890$$EGogh,
+        Vincent van, 1853-1890&lt;/author&gt; \n&lt;author&gt;$$DEstienne, Charles$$EEstienne,
+        Charles&lt;/author&gt; \n&lt;title&gt;$$DVan Gogh$$EVan Gogh&lt;/title&gt;
+        \n&lt;title&gt;$$DTaste of our time [series]$$ETaste of our time [series]&lt;/title&gt;
+        \n&lt;subject&gt;$$DGogh, Vincent van, 1853-1890$$EGogh, Vincent van, 1853-1890&lt;/subject&gt;
+        \n&lt;callnumber&gt;$$INDU$$DND 653 .G7 S513 1953$$E0nd   00653.g  70000  s513
+        1953 $$T0&lt;/callnumber&gt; \n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT deliveryCategory=&quot;Physical
+        Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G7 S513
+        1953 )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Sibert&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Sibert%2C%20C.%20H&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;002687265&lt;/ndu_aleph&gt;&lt;grp_id&gt;144869402&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:,OCLC:02226743,LCCN:&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Sibert&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Sibert%2C%20C.%20H&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;002687265&lt;/ndu_aleph&gt;&lt;grp_id&gt;144869402&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=no%3A02226743&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;4366505&quot; RANK=&quot;0.36959034&quot; NO=&quot;6&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n&lt;sourcerecordid&gt;002815557&lt;/sourcerecordid&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph002815557&lt;/recordid&gt;
+        \n&lt;originalsourceid&gt;NDU01&lt;/originalsourceid&gt; \n&lt;ilsapiid&gt;NDU01002815557&lt;/ilsapiid&gt;
+        \n&lt;sourceformat&gt;MARC21&lt;/sourceformat&gt; \n&lt;sourcesystem&gt;Aleph&lt;/sourcesystem&gt;
+        \n&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;video&lt;/type&gt; \n&lt;title&gt;Van
+        Gogh&lt;/title&gt; \n&lt;contributor&gt;Maurice Pialat 1925-&lt;/contributor&gt;
+        \n&lt;contributor&gt;Jacques Dutronc&lt;/contributor&gt; \n&lt;contributor&gt;Bernard
+        Lecoq&lt;/contributor&gt; \n&lt;contributor&gt;Alexandra London&lt;/contributor&gt;
+        \n&lt;contributor&gt;G&#xE9;rard S&#xE9;ty 1922-1998.&lt;/contributor&gt;
+        \n&lt;contributor&gt;Corinne Bourdon&lt;/contributor&gt; \n&lt;contributor&gt;Elsa
+        Zylberstein&lt;/contributor&gt; \n&lt;contributor&gt;Leslie Azzoulai&lt;/contributor&gt;
+        \n&lt;contributor&gt;Sony Pictures Classics [Firm]&lt;/contributor&gt; \n&lt;contributor&gt;Erato
+        Films.&lt;/contributor&gt; \n&lt;contributor&gt;Films du Livradois [Firm]&lt;/contributor&gt;
+        \n&lt;contributor&gt;Studio Canal+.&lt;/contributor&gt; \n&lt;contributor&gt;Sony
+        Pictures Home Entertainment [Firm]&lt;/contributor&gt; \n&lt;publisher&gt;Culver
+        City, Calif. : Sony Pictures Home Entertainment&lt;/publisher&gt; \n&lt;creationdate&gt;2007&lt;/creationdate&gt;
+        \n&lt;format&gt;1 videodisc (ca. 159 min.) : sd., col. ; 4 3/4 in..&lt;/format&gt;
+        \n&lt;identifier&gt;$$CISBN $$V1424840163; $$CISBN $$V9781424840168&lt;/identifier&gt;
+        \n&lt;subject&gt;Gogh, Vincent van, 1853-1890 -- Drama&lt;/subject&gt; \n&lt;subject&gt;Suicide
+        -- France -- Paris -- Drama&lt;/subject&gt; \n&lt;subject&gt;Brothers -- France
+        -- Paris -- Drama&lt;/subject&gt; \n&lt;subject&gt;Man-woman relationships
+        -- France -- Paris -- Drama&lt;/subject&gt; \n&lt;subject&gt;Depressed persons
+        -- France -- Paris -- Drama&lt;/subject&gt; \n&lt;subject&gt;Post-impressionism
+        [Art] -- France -- Paris -- Drama&lt;/subject&gt; \n&lt;subject&gt;Feature
+        films&lt;/subject&gt; \n&lt;subject&gt;Foreign films -- France&lt;/subject&gt;
+        \n&lt;subject&gt;Biographical films&lt;/subject&gt; \n&lt;description&gt;In
+        late spring, 1890, Vincent moves to Auvers-sur-Oise, which is located near
+        Paris. He is there under the care of Dr. Gachet and living in a humble inn.
+        Fewer than 70 days later, Vincent is dead from a self-inflicted gunshot wound.
+        Vincent works on his painting, including his landscapes and portraits. His
+        brother Theo, wife Johanna, and their baby visit Auvers. Vincent is playful
+        and charming. Vincent engages the attentions of Gachet's daughter Marguerite,
+        a young maid at the inn, a Parisian prostitute named Cathy, and even Johanna.
+        Shortly before his death, Vincent visits Paris, quarrels with Theo, disparages
+        his own art and accomplishments, dances at a brothel, and is warm then cold
+        toward Marguerite.&lt;/description&gt; \n&lt;language&gt;fre&lt;/language&gt;
+        \n&lt;availlibrary&gt;$$INDU$$LHESB$$1Audio Center&amp;amp;nbsp;DVD$$2(D 01059
+        )$$Savailable$$31$$40$$5N$$60$$XNDU50$$YAUDIO$$ZDVD&lt;/availlibrary&gt; \n&lt;unititle&gt;Van
+        Gogh (Motion picture : 1991)&lt;/unititle&gt; \n&lt;lds01&gt;Originally released
+        as a motion picture in 1991.&lt;/lds01&gt; \n&lt;lds01&gt;Special features:
+        Deleted scenes; teaser trailer.&lt;/lds01&gt; \n&lt;lds01&gt;DVD; region 1;
+        anamorphic widescreen (1.66:1) presentation.&lt;/lds01&gt; \n&lt;lds02&gt;ndu_aleph002815557&lt;/lds02&gt;
+        \n&lt;lds05&gt;French dialogue, English or French subtitles.&lt;/lds05&gt;
+        \n&lt;lds06&gt;Sony Pictures Classics ; Erato Films ; Les Films du Livradois
+        ; [presented by] Daniel Toscan du Plantier and Le Studio Canal+ ; written
+        and directed by Maurice Pialat.&lt;/lds06&gt; \n&lt;lds31&gt;Van Gogh (Motion
+        picture : 1991)&lt;/lds31&gt; \n&lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;&lt;availpnx&gt;available&lt;/availpnx&gt;&lt;/display&gt;\n&lt;links&gt;\n&lt;openurl&gt;$$Topenurl_journal&lt;/openurl&gt;
+        \n&lt;backlink&gt;$$Taleph_backlink$$DNotre Dame Catalog [videorecording]&lt;/backlink&gt;
+        \n&lt;thumbnail&gt;$$Tamazon_thumb&lt;/thumbnail&gt; \n&lt;thumbnail&gt;$$Tsyndetics_thumb&lt;/thumbnail&gt;
+        \n&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt; \n&lt;linktoabstract&gt;$$Tsyndetics_abstract$$Elinktoabstract&lt;/linktoabstract&gt;
+        \n&lt;openurlfulltext&gt;$$Topenurlfull_journal&lt;/openurlfulltext&gt; \n&lt;linktoholdings&gt;$$Taleph_holdings$$INDU&lt;/linktoholdings&gt;
+        \n&lt;linktoholdings&gt;$$Taleph_holdings&lt;/linktoholdings&gt; \n&lt;linktoholdsnotexist&gt;$$Taleph_holdings_not_in_user_institution&lt;/linktoholdsnotexist&gt;
+        \n&lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt; \n&lt;linktoexcerpt&gt;$$Tsyndetics_excerpt$$Elinktoexcerpt&lt;/linktoexcerpt&gt;
+        \n&lt;lln01&gt;$$Tfindit_link&lt;/lln01&gt; \n&lt;/links&gt;\n&lt;search&gt;\n&lt;creatorcontrib&gt;Sony
+        Pictures Classics ; Erato Films ; Les Films du Livradois ; [presented by]
+        Daniel Toscan du Plantier and Le Studio Canal+ ; written and directed by Maurice
+        Pialat.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Jacques Dutronc, Bernard
+        Lecoq, Alexandra London, G&#xE9;rard S&#xE9;ty, Corrine Bourdon, Elsa Zylberstein,
+        Leslie Azoulai.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Maurice,  Pialat
+        \ 1925-&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Jacques  Dutronc&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Bernard  Lecoq&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Alexandra
+        \ London&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;G&#xE9;rard,  S&#xE9;ty
+        \ 1922-1998.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Corinne  Bourdon&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Elsa  Zylberstein&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Leslie
+        \ Azzoulai&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Pialat, M&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Dutronc, J&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Lecoq,
+        B&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;London, A&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;S&#xE9;ty, G&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Bourdon,
+        C&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Zylberstein, E&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Azzoulai, L&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Sony
+        Pictures Classics (Firm)&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Erato
+        Films.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Films du Livradois (Firm)&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Studio Canal+.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Sony
+        Pictures Home Entertainment (Firm)&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Azoulai,
+        Leslie&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Sony Pictures Entertainment,
+        Inc. Sony Pictures Classics&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Canal+
+        (Firm)&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Canal Plus (Firm)&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Studio Canal Plus&lt;/creatorcontrib&gt; \n&lt;title&gt;Van
+        Gogh&lt;/title&gt; \n&lt;description&gt;In late spring, 1890, Vincent moves
+        to Auvers-sur-Oise, which is located near Paris. He is there under the care
+        of Dr. Gachet and living in a humble inn. Fewer than 70 days later, Vincent
+        is dead from a self-inflicted gunshot wound. Vincent works on his painting,
+        including his landscapes and portraits. His brother Theo, wife Johanna, and
+        their baby visit Auvers. Vincent is playful and charming. Vincent engages
+        the attentions of Gachet's daughter Marguerite, a young maid at the inn, a
+        Parisian prostitute named Cathy, and even Johanna. Shortly before his death,
+        Vincent visits Paris, quarrels with Theo, disparages his own art and accomplishments,
+        dances at a brothel, and is warm then cold toward Marguerite.&lt;/description&gt;
+        \n&lt;subject&gt;Gogh, Vincent van, 1853-1890 Drama.&lt;/subject&gt; \n&lt;subject&gt;Suicide
+        France Paris Drama.&lt;/subject&gt; \n&lt;subject&gt;Brothers France Paris
+        Drama.&lt;/subject&gt; \n&lt;subject&gt;Man-woman relationships France Paris
+        Drama.&lt;/subject&gt; \n&lt;subject&gt;Depressed persons France Paris Drama.&lt;/subject&gt;
+        \n&lt;subject&gt;Post-impressionism (Art) France Paris Drama.&lt;/subject&gt;
+        \n&lt;subject&gt;Feature films.&lt;/subject&gt; \n&lt;subject&gt;Foreign films
+        France.&lt;/subject&gt; \n&lt;subject&gt;Biographical films.&lt;/subject&gt;
+        \n&lt;general&gt;Sony Pictures Home Entertainment,&lt;/general&gt; \n&lt;general&gt;MPAA
+        rating: R; for sexuality and nudity.&lt;/general&gt; \n&lt;general&gt;C&#xE9;sar
+        Award for Best Actor (Jacques Dutronc)&lt;/general&gt; \n&lt;general&gt;043396173590&lt;/general&gt;
+        \n&lt;general&gt;17359&lt;/general&gt; \n&lt;general&gt;[videorecording] /&lt;/general&gt;
+        \n&lt;general&gt;(OCoLC)75970063&lt;/general&gt; \n&lt;general&gt;OCoLC75970063&lt;/general&gt;
+        \n&lt;general&gt;75970063&lt;/general&gt; \n&lt;general&gt;AllDocuments&lt;/general&gt;
+        \n&lt;general&gt;Originally released as a motion picture in 1991.&lt;/general&gt;
+        \n&lt;general&gt;Special features: Deleted scenes; teaser trailer.&lt;/general&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph002815557&lt;/recordid&gt;
+        \n&lt;recordid&gt;002815557&lt;/recordid&gt; \n&lt;recordid&gt;2815557&lt;/recordid&gt;
+        \n&lt;isbn&gt;1424840163&lt;/isbn&gt; \n&lt;isbn&gt;9781424840168&lt;/isbn&gt;
+        \n&lt;creationdate&gt;2007&lt;/creationdate&gt; \n&lt;startdate&gt;20070101&lt;/startdate&gt;
+        \n&lt;enddate&gt;20071231&lt;/enddate&gt; \n&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+        \n&lt;searchscope&gt;NDU&lt;/searchscope&gt; \n&lt;scope&gt;AUDIO&lt;/scope&gt;
+        \n&lt;scope&gt;ndu_aleph&lt;/scope&gt; \n&lt;scope&gt;NDU&lt;/scope&gt; \n&lt;alttitle&gt;Van
+        Gogh (Motion picture : 1991)&lt;/alttitle&gt; \n&lt;lsr01&gt;AUDIO DVD&lt;/lsr01&gt;
+        \n&lt;lsr02&gt;Pialat Dutronc Lecoq London S&#xE9;ty Bourdon Zylberstein Azzoulai
+        Van Gogh&lt;/lsr02&gt; \n&lt;lsr02&gt;Van Gogh Pialat Dutronc Lecoq London
+        S&#xE9;ty Bourdon Zylberstein Azzoulai&lt;/lsr02&gt; \n&lt;lsr04&gt;Van Gogh
+        (Motion picture : 1991)&lt;/lsr04&gt; \n&lt;lsr07&gt;Pialat Dutronc Lecoq
+        London S&#xE9;ty Bourdon Zylberstein Azzoulai Van Gogh&lt;/lsr07&gt; \n&lt;lsr07&gt;Van
+        Gogh Pialat Dutronc Lecoq London S&#xE9;ty Bourdon Zylberstein Azzoulai&lt;/lsr07&gt;
+        \n&lt;lsr06&gt;Sony Pictures Home Entertainment,&lt;/lsr06&gt; \n&lt;lsr08&gt;Culver
+        City, Calif. :&lt;/lsr08&gt; \n&lt;lsr31&gt;Van Gogh (Motion picture : 1991)&lt;/lsr31&gt;
+        \n&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van Gogh&lt;/title&gt; \n&lt;creationdate&gt;2007&lt;/creationdate&gt;
+        \n&lt;author&gt;Pialat, Maurice, 1925-&lt;/author&gt; \n&lt;lso01&gt;2007&lt;/lso01&gt;
+        \n&lt;/sort&gt;\n&lt;facets&gt;\n&lt;language&gt;fre&lt;/language&gt; \n&lt;creationdate&gt;2007&lt;/creationdate&gt;
+        \n&lt;topic&gt;Gogh, Vincent van, 1853-1890&#x2013;Drama&lt;/topic&gt; \n&lt;topic&gt;Suicide&#x2013;France&#x2013;Paris&#x2013;Drama&lt;/topic&gt;
+        \n&lt;topic&gt;Brothers&#x2013;France&#x2013;Paris&#x2013;Drama&lt;/topic&gt;
+        \n&lt;topic&gt;Man-woman relationships&#x2013;France&#x2013;Paris&#x2013;Drama&lt;/topic&gt;
+        \n&lt;topic&gt;Depressed persons&#x2013;France&#x2013;Paris&#x2013;Drama&lt;/topic&gt;
+        \n&lt;topic&gt;Post-impressionism (Art)&#x2013;France&#x2013;Paris&#x2013;Drama&lt;/topic&gt;
+        \n&lt;toplevel&gt;available&lt;/toplevel&gt; \n&lt;prefilter&gt;videos&lt;/prefilter&gt;
+        \n&lt;prefilter&gt; audio_video&lt;/prefilter&gt; \n&lt;prefilter&gt;dvd&lt;/prefilter&gt;
+        \n&lt;rsrctype&gt;videos&lt;/rsrctype&gt; \n&lt;rsrctype&gt; audio_video&lt;/rsrctype&gt;
+        \n&lt;rsrctype&gt;dvd&lt;/rsrctype&gt; \n&lt;creatorcontrib&gt;Pialat, M&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Dutronc, J&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Lecoq,
+        B&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;London, A&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;S&#xE9;ty, G&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Bourdon,
+        C&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Zylberstein, E&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Azzoulai, L&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Sony
+        Pictures Classics (Firm)&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Erato
+        Films&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Films du Livradois (Firm)&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Studio Canal+&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Sony
+        Pictures Home Entertainment (Firm)&lt;/creatorcontrib&gt; \n&lt;library&gt;HESB&lt;/library&gt;
+        \n&lt;lfc04&gt;Van Gogh (Motion picture : 1991)&lt;/lfc04&gt; \n&lt;classificationlcc&gt;P
+        - Language and literature.&#x2013;Literature (General)&lt;/classificationlcc&gt;&lt;frbrgroupid&gt;144895631&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c2&gt;1424840163;9781424840168&lt;/c2&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt;
+        \n&lt;c4&gt;2007&lt;/c4&gt; \n&lt;f3&gt;1424840163;9781424840168&lt;/f3&gt;
+        \n&lt;f5&gt;vangogh;mp&lt;/f5&gt; \n&lt;f6&gt;2007&lt;/f6&gt; \n&lt;f7&gt;van
+        goghdvd&lt;/f7&gt; \n&lt;f8&gt;fr&lt;/f8&gt; \n&lt;f9&gt;1 videodisc (ca.
+        159 min.) :&lt;/f9&gt; \n&lt;f10&gt;sony pictures home entertainment&lt;/f10&gt;
+        \n&lt;/dedup&gt;\n&lt;frbr&gt;\n&lt;t&gt;99&lt;/t&gt; \n&lt;k1&gt;$$Kpialat
+        maurice 1925$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Kdutronc jacques$$AA&lt;/k1&gt;
+        \n&lt;k1&gt;$$Klecoq bernard$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Klondon alexandra$$AA&lt;/k1&gt;
+        \n&lt;k1&gt;$$Ksety gerard 1922 1998$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Kbourdon
+        corinne$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Kzylberstein elsa$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Kazzoulai
+        leslie$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Ksony pictures classics firm$$AA&lt;/k1&gt;
+        \n&lt;k1&gt;$$Kerato films$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Kfilms du livradois
+        firm$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Kstudio canal+$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Ksony
+        pictures home entertainment firm$$AA&lt;/k1&gt; \n&lt;k2&gt;$$Kvan gogh motion
+        picture 1991$$ATO&lt;/k2&gt; \n&lt;k3&gt;$$Kmotionpicture van gogh$$AT&lt;/k3&gt;
+        \n&lt;/frbr&gt;\n&lt;delivery&gt;\n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;delcategory&gt;Physical Item&lt;/delcategory&gt; \n&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;PN1995.9.A73&lt;/classificationlcc&gt;
+        \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;\n&lt;aulast&gt;Pialat&lt;/aulast&gt;
+        \n&lt;aufirst&gt;Maurice,&lt;/aufirst&gt; \n&lt;addau&gt;Pialat, Maurice&lt;/addau&gt;
+        \n&lt;addau&gt;Dutronc, Jacques&lt;/addau&gt; \n&lt;addau&gt;Lecoq, Bernard&lt;/addau&gt;
+        \n&lt;addau&gt;London, Alexandra&lt;/addau&gt; \n&lt;addau&gt;S&#xE9;ty, G&#xE9;rard&lt;/addau&gt;
+        \n&lt;addau&gt;Bourdon, Corinne&lt;/addau&gt; \n&lt;addau&gt;Zylberstein,
+        Elsa&lt;/addau&gt; \n&lt;addau&gt;Azzoulai, Leslie&lt;/addau&gt; \n&lt;btitle&gt;Van
+        Gogh&lt;/btitle&gt; \n&lt;date&gt;2007&lt;/date&gt; \n&lt;risdate&gt;2007.&lt;/risdate&gt;
+        \n&lt;isbn&gt;1424840163&lt;/isbn&gt; \n&lt;isbn&gt;9781424840168&lt;/isbn&gt;
+        \n&lt;format&gt;book&lt;/format&gt; \n&lt;genre&gt;unknown&lt;/genre&gt; \n&lt;ristype&gt;VIDEO&lt;/ristype&gt;
+        \n&lt;abstract&gt;In late spring, 1890, Vincent moves to Auvers-sur-Oise,
+        which is located near Paris. He is there under the care of Dr. Gachet and
+        living in a humble inn. Fewer than 70 days later, Vincent is dead from a self-inflicted
+        gunshot wound. Vincent works on his painting, including his landscapes and
+        portraits. His brother Theo, wife Johanna, and their baby visit Auvers. Vincent
+        is playful and charming. Vincent engages the attentions of Gachet's daughter
+        Marguerite, a young maid at the inn, a Parisian prostitute named Cathy, and
+        even Johanna. Shortly before his death, Vincent visits Paris, quarrels with
+        Theo, disparages his own art and accomplishments, dances at a brothel, and
+        is warm then cold toward Marguerite.&lt;/abstract&gt; \n&lt;cop&gt;Culver
+        City, Calif.&lt;/cop&gt; \n&lt;pub&gt;Sony Pictures Home Entertainment&lt;/pub&gt;
+        \n&lt;oclcid&gt;75970063&lt;/oclcid&gt; \n&lt;/addata&gt;\n&lt;browse&gt;\n&lt;author&gt;$$DPialat,
+        Maurice, 1925-$$EPialat, Maurice, 1925-&lt;/author&gt; \n&lt;author&gt;$$DDutronc,
+        Jacques$$EDutronc, Jacques&lt;/author&gt; \n&lt;author&gt;$$DLecoq, Bernard$$ELecoq,
+        Bernard&lt;/author&gt; \n&lt;author&gt;$$DLondon, Alexandra$$ELondon, Alexandra&lt;/author&gt;
+        \n&lt;author&gt;$$DS&#xE9;ty, G&#xE9;rard, 1922-1998$$ES&#xE9;ty, G&#xE9;rard,
+        1922-1998&lt;/author&gt; \n&lt;author&gt;$$DBourdon, Corinne$$EBourdon, Corinne&lt;/author&gt;
+        \n&lt;author&gt;$$DZylberstein, Elsa$$EZylberstein, Elsa&lt;/author&gt; \n&lt;author&gt;$$DAzzoulai,
+        Leslie$$EAzzoulai, Leslie&lt;/author&gt; \n&lt;author&gt;$$DSony Pictures
+        Classics (Firm)$$ESony Pictures Classics (Firm)&lt;/author&gt; \n&lt;author&gt;$$DErato
+        Films$$EErato Films&lt;/author&gt; \n&lt;author&gt;$$DFilms du Livradois (Firm)$$EFilms
+        du Livradois (Firm)&lt;/author&gt; \n&lt;author&gt;$$DStudio Canal+$$EStudio
+        Canal+&lt;/author&gt; \n&lt;author&gt;$$DSony Pictures Home Entertainment
+        (Firm)$$ESony Pictures Home Entertainment (Firm)&lt;/author&gt; \n&lt;title&gt;$$DVan
+        Gogh$$EVan Gogh&lt;/title&gt; \n&lt;title&gt;$$DVan Gogh (Motion picture :
+        1991)$$EVan Gogh (Motion picture : 1991)&lt;/title&gt; \n&lt;subject&gt;$$DSuicide
+        -- France -- Paris -- Drama$$ESuicide France Paris Drama&lt;/subject&gt; \n&lt;subject&gt;$$DBrothers
+        -- France -- Paris -- Drama$$EBrothers France Paris Drama&lt;/subject&gt;
+        \n&lt;subject&gt;$$DMan-woman relationships -- France -- Paris -- Drama$$EMan-woman
+        relationships France Paris Drama&lt;/subject&gt; \n&lt;subject&gt;$$DDepressed
+        persons -- France -- Paris -- Drama$$EDepressed persons France Paris Drama&lt;/subject&gt;
+        \n&lt;subject&gt;$$DPost-impressionism (Art) -- France -- Paris -- Drama$$EPost-impressionism
+        (Art) France Paris Drama&lt;/subject&gt; \n&lt;subject&gt;$$DGogh, Vincent
+        van, 1853-1890 -- Drama$$EGogh, Vincent van, 1853-1890 Drama&lt;/subject&gt;
+        \n&lt;subject&gt;$$DFeature films$$EFeature films&lt;/subject&gt; \n&lt;subject&gt;$$DForeign
+        films -- France$$EForeign films France&lt;/subject&gt; \n&lt;subject&gt;$$DBiographical
+        films$$EBiographical films&lt;/subject&gt; \n&lt;callnumber&gt;$$INDU$$DPN
+        1995.9 .A73 V36 2007$$E0pn   0199590000.a  73000  v36 2007 $$T0&lt;/callnumber&gt;
+        \n&lt;institution&gt;NDU&lt;/institution&gt; \n&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT
+        deliveryCategory=&quot;Physical Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;Audio
+        Center&amp;amp;nbsp;DVD&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(D 01059
+        )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Pialat&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=1424840163&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;002815557&lt;/ndu_aleph&gt;&lt;grp_id&gt;144895631&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://images.amazon.com/images/P/1424840163.01._SSTHUM_.jpg&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://syndetics.com/index.aspx?isbn=1424840163/SC.JPG&amp;amp;client=CLIENT&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:1424840163,OCLC:75970063,LCCN:&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:linktoabstract&gt;http://syndetics.com/index.aspx?isbn=1424840163/SUMMARY.HTML&amp;amp;client=CLIENT&amp;amp;type=rn12&lt;/sear:linktoabstract&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Pialat&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=1424840163&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;002815557&lt;/ndu_aleph&gt;&lt;grp_id&gt;144895631&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=isbn%3A1424840163&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;1417816&quot; RANK=&quot;0.36930853&quot; NO=&quot;7&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n&lt;sourcerecordid&gt;001697287&lt;/sourcerecordid&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph001697287&lt;/recordid&gt;
+        \n&lt;originalsourceid&gt;NDU01&lt;/originalsourceid&gt; \n&lt;ilsapiid&gt;NDU01001697287&lt;/ilsapiid&gt;
+        \n&lt;sourceformat&gt;MARC21&lt;/sourceformat&gt; \n&lt;sourcesystem&gt;Aleph&lt;/sourcesystem&gt;
+        \n&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;video&lt;/type&gt; \n&lt;title&gt;Van
+        Gogh&lt;/title&gt; \n&lt;contributor&gt;Maurice Pialat 1925-&lt;/contributor&gt;
+        \n&lt;contributor&gt;Jacques Dutronc&lt;/contributor&gt; \n&lt;contributor&gt;Columbia
+        TriStar Home Video [Firm]&lt;/contributor&gt; \n&lt;publisher&gt;Burbank,
+        Calif. : Columbia TriStar Home Video&lt;/publisher&gt; \n&lt;creationdate&gt;c1992&lt;/creationdate&gt;
+        \n&lt;format&gt;1 videocassette (approx. 155 min.) : sd., col. ; 1/2 in..&lt;/format&gt;
+        \n&lt;identifier&gt;$$CISBN $$V0800127986 :&lt;/identifier&gt; \n&lt;subject&gt;Gogh,
+        Vincent van, 1853-1890 -- Drama&lt;/subject&gt; \n&lt;subject&gt;Feature films&lt;/subject&gt;
+        \n&lt;subject&gt;Motion pictures, French&lt;/subject&gt; \n&lt;subject&gt;Foreign
+        films&lt;/subject&gt; \n&lt;description&gt;An acclaimed, award-winning portrait
+        of artist Vincent Van Gogh's final days, revealing his mad genius and dark
+        sensuality.&lt;/description&gt; \n&lt;language&gt;fre&lt;/language&gt; \n&lt;availlibrary&gt;$$INDU$$LHESB$$1Audio
+        Center&amp;amp;nbsp;Video storage; Ask at Audio Visual desk$$2(P579-2 VC )$$Savailable$$31$$40$$5N$$64$$XNDU50$$YAUDIO$$ZSTORE&lt;/availlibrary&gt;
+        \n&lt;lds01&gt;Rated R.&lt;/lds01&gt; \n&lt;lds01&gt;In French with yellow
+        English subtitles.&lt;/lds01&gt; \n&lt;lds01&gt;&quot;53633&quot;&lt;/lds01&gt;
+        \n&lt;lds01&gt;VHS format.&lt;/lds01&gt; \n&lt;lds02&gt;ndu_aleph001697287&lt;/lds02&gt;
+        \n&lt;lds06&gt;A co-production Erato Film, Le Studio Canal+, Les Films du
+        Livradois, Films A2.&lt;/lds06&gt; \n&lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;&lt;availpnx&gt;available&lt;/availpnx&gt;&lt;/display&gt;\n&lt;links&gt;\n&lt;openurl&gt;$$Topenurl_journal&lt;/openurl&gt;
+        \n&lt;backlink&gt;$$Taleph_backlink$$DNotre Dame Catalog [videorecording]&lt;/backlink&gt;
+        \n&lt;thumbnail&gt;$$Tamazon_thumb&lt;/thumbnail&gt; \n&lt;thumbnail&gt;$$Tsyndetics_thumb&lt;/thumbnail&gt;
+        \n&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt; \n&lt;linktoabstract&gt;$$Tsyndetics_abstract$$Elinktoabstract&lt;/linktoabstract&gt;
+        \n&lt;openurlfulltext&gt;$$Topenurlfull_journal&lt;/openurlfulltext&gt; \n&lt;linktoholdings&gt;$$Taleph_holdings$$INDU&lt;/linktoholdings&gt;
+        \n&lt;linktoholdings&gt;$$Taleph_holdings&lt;/linktoholdings&gt; \n&lt;linktoholdsnotexist&gt;$$Taleph_holdings_not_in_user_institution&lt;/linktoholdsnotexist&gt;
+        \n&lt;linktouc&gt;$$Tworldcat_isbn$$Eworldcat&lt;/linktouc&gt; \n&lt;linktoexcerpt&gt;$$Tsyndetics_excerpt$$Elinktoexcerpt&lt;/linktoexcerpt&gt;
+        \n&lt;lln01&gt;$$Tfindit_link&lt;/lln01&gt; \n&lt;/links&gt;\n&lt;search&gt;\n&lt;creatorcontrib&gt;A
+        co-production Erato Film, Le Studio Canal+, Les Films du Livradois, Films
+        A2.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Written and directed by
+        Maurice Pialat.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Jacques Dutronc,
+        Bernard Lecoq, Alexandra London, Gerard Sety, Corrine Bourdon, Elsa Zylberstein,
+        Leslie Azoulai.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Maurice,  Pialat
+        \ 1925-&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Jacques  Dutronc&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Pialat, M&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Dutronc,
+        J&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Columbia TriStar Home Video
+        (Firm)&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Sony Pictures Entertainment,
+        Inc. Columbia TriStar Home Video (Firm)&lt;/creatorcontrib&gt; \n&lt;title&gt;Van
+        Gogh&lt;/title&gt; \n&lt;description&gt;An acclaimed, award-winning portrait
+        of artist Vincent Van Gogh's final days, revealing his mad genius and dark
+        sensuality.&lt;/description&gt; \n&lt;subject&gt;Gogh, Vincent van, 1853-1890
+        Drama.&lt;/subject&gt; \n&lt;subject&gt;Feature films.&lt;/subject&gt; \n&lt;subject&gt;Motion
+        pictures, French.&lt;/subject&gt; \n&lt;subject&gt;Foreign films.&lt;/subject&gt;
+        \n&lt;subject&gt;Features (Motion pictures)&lt;/subject&gt; \n&lt;subject&gt;Feature-length
+        films&lt;/subject&gt; \n&lt;subject&gt;Motion pictures, Foreign&lt;/subject&gt;
+        \n&lt;subject&gt;Films, Foreign&lt;/subject&gt; \n&lt;subject&gt;Foreign films&lt;/subject&gt;
+        \n&lt;subject&gt;Motion pictures, French&lt;/subject&gt; \n&lt;subject&gt;French
+        motion pictures&lt;/subject&gt; \n&lt;general&gt;Columbia TriStar Home Video,&lt;/general&gt;
+        \n&lt;general&gt;[videorecording] /&lt;/general&gt; \n&lt;general&gt;(OCoLC)29649599&lt;/general&gt;
+        \n&lt;general&gt;OCoLC29649599&lt;/general&gt; \n&lt;general&gt;29649599&lt;/general&gt;
+        \n&lt;general&gt;AllDocuments&lt;/general&gt; \n&lt;general&gt;Rated R.&lt;/general&gt;
+        \n&lt;general&gt;In French with yellow English subtitles.&lt;/general&gt;
+        \n&lt;general&gt;&quot;53633&quot;&lt;/general&gt; \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt;
+        \n&lt;recordid&gt;ndu_aleph001697287&lt;/recordid&gt; \n&lt;recordid&gt;001697287&lt;/recordid&gt;
+        \n&lt;recordid&gt;1697287&lt;/recordid&gt; \n&lt;isbn&gt;0800127986&lt;/isbn&gt;
+        \n&lt;isbn&gt;9780800127985&lt;/isbn&gt; \n&lt;creationdate&gt;1992&lt;/creationdate&gt;
+        \n&lt;startdate&gt;19920101&lt;/startdate&gt; \n&lt;enddate&gt;19921231&lt;/enddate&gt;
+        \n&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt; \n&lt;searchscope&gt;NDU&lt;/searchscope&gt;
+        \n&lt;scope&gt;AUDIO&lt;/scope&gt; \n&lt;scope&gt;ndu_aleph&lt;/scope&gt;
+        \n&lt;scope&gt;NDU&lt;/scope&gt; \n&lt;lsr01&gt;AUDIO STORE&lt;/lsr01&gt;
+        \n&lt;lsr01&gt;AUDIO Video storage; Ask at Audio Visual desk&lt;/lsr01&gt;
+        \n&lt;lsr02&gt;Pialat Dutronc Van Gogh&lt;/lsr02&gt; \n&lt;lsr02&gt;Van Gogh
+        Pialat Dutronc&lt;/lsr02&gt; \n&lt;lsr07&gt;Pialat Dutronc Van Gogh&lt;/lsr07&gt;
+        \n&lt;lsr07&gt;Van Gogh Pialat Dutronc&lt;/lsr07&gt; \n&lt;lsr06&gt;Columbia
+        TriStar Home Video,&lt;/lsr06&gt; \n&lt;lsr08&gt;Burbank, Calif. :&lt;/lsr08&gt;
+        \n&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van Gogh&lt;/title&gt; \n&lt;creationdate&gt;1992&lt;/creationdate&gt;
+        \n&lt;author&gt;Pialat, Maurice, 1925-&lt;/author&gt; \n&lt;lso01&gt;1992&lt;/lso01&gt;
+        \n&lt;/sort&gt;\n&lt;facets&gt;\n&lt;language&gt;fre&lt;/language&gt; \n&lt;creationdate&gt;1992&lt;/creationdate&gt;
+        \n&lt;topic&gt;Gogh, Vincent van, 1853-1890&#x2013;Drama&lt;/topic&gt; \n&lt;topic&gt;Feature
+        films&lt;/topic&gt; \n&lt;topic&gt;Motion pictures, French&lt;/topic&gt; \n&lt;topic&gt;Foreign
+        films&lt;/topic&gt; \n&lt;toplevel&gt;available&lt;/toplevel&gt; \n&lt;prefilter&gt;videos&lt;/prefilter&gt;
+        \n&lt;prefilter&gt; audio_video&lt;/prefilter&gt; \n&lt;prefilter&gt;videotape&lt;/prefilter&gt;
+        \n&lt;rsrctype&gt;videos&lt;/rsrctype&gt; \n&lt;rsrctype&gt; audio_video&lt;/rsrctype&gt;
+        \n&lt;rsrctype&gt;videotape&lt;/rsrctype&gt; \n&lt;creatorcontrib&gt;Pialat,
+        M&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Dutronc, J&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Columbia TriStar Home Video (Firm)&lt;/creatorcontrib&gt;
+        \n&lt;library&gt;HESB&lt;/library&gt; \n&lt;frbrgroupid&gt;143917643&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c2&gt;0800127986&lt;/c2&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt; \n&lt;c4&gt;1992&lt;/c4&gt;
+        \n&lt;f3&gt;0800127986&lt;/f3&gt; \n&lt;f5&gt;vangogh;mp&lt;/f5&gt; \n&lt;f6&gt;1992&lt;/f6&gt;
+        \n&lt;f7&gt;van goghvideotape&lt;/f7&gt; \n&lt;f8&gt;cau&lt;/f8&gt; \n&lt;f9&gt;1
+        videocassette (approx. 155 min.) :&lt;/f9&gt; \n&lt;f10&gt;columbia tristar
+        home video&lt;/f10&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;\n&lt;t&gt;99&lt;/t&gt;
+        \n&lt;k1&gt;$$Kpialat maurice 1925$$AA&lt;/k1&gt; \n&lt;k1&gt;$$Kdutronc jacques$$AA&lt;/k1&gt;
+        \n&lt;k1&gt;$$Kcolumbia tristar home video firm$$AA&lt;/k1&gt; \n&lt;k3&gt;$$Kmotionpicture
+        van gogh$$AT&lt;/k3&gt; \n&lt;/frbr&gt;\n&lt;delivery&gt;\n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;delcategory&gt;Physical Item&lt;/delcategory&gt; \n&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;PN1997&lt;/classificationlcc&gt;
+        \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;\n&lt;aulast&gt;Pialat&lt;/aulast&gt;
+        \n&lt;aufirst&gt;Maurice,&lt;/aufirst&gt; \n&lt;addau&gt;Pialat, Maurice&lt;/addau&gt;
+        \n&lt;addau&gt;Dutronc, Jacques&lt;/addau&gt; \n&lt;btitle&gt;Van Gogh&lt;/btitle&gt;
+        \n&lt;date&gt;1992&lt;/date&gt; \n&lt;risdate&gt;c1992.&lt;/risdate&gt; \n&lt;isbn&gt;0800127986&lt;/isbn&gt;
+        \n&lt;format&gt;book&lt;/format&gt; \n&lt;genre&gt;unknown&lt;/genre&gt; \n&lt;ristype&gt;VIDEO&lt;/ristype&gt;
+        \n&lt;abstract&gt;An acclaimed, award-winning portrait of artist Vincent Van
+        Gogh's final days, revealing his mad genius and dark sensuality.&lt;/abstract&gt;
+        \n&lt;cop&gt;Burbank, Calif.&lt;/cop&gt; \n&lt;pub&gt;Columbia TriStar Home
+        Video&lt;/pub&gt; \n&lt;oclcid&gt;29649599&lt;/oclcid&gt; \n&lt;/addata&gt;\n&lt;browse&gt;\n&lt;author&gt;$$DPialat,
+        Maurice, 1925-$$EPialat, Maurice, 1925-&lt;/author&gt; \n&lt;author&gt;$$DDutronc,
+        Jacques$$EDutronc, Jacques&lt;/author&gt; \n&lt;author&gt;$$DColumbia TriStar
+        Home Video (Firm)$$EColumbia TriStar Home Video (Firm)&lt;/author&gt; \n&lt;title&gt;$$DVan
+        Gogh$$EVan Gogh&lt;/title&gt; \n&lt;subject&gt;$$DFeature films$$EFeature
+        films&lt;/subject&gt; \n&lt;subject&gt;$$DMotion pictures, French$$EMotion
+        pictures, French&lt;/subject&gt; \n&lt;subject&gt;$$DForeign films$$EForeign
+        films&lt;/subject&gt; \n&lt;subject&gt;$$DGogh, Vincent van, 1853-1890 --
+        Drama$$EGogh, Vincent van, 1853-1890 Drama&lt;/subject&gt; \n&lt;callnumber&gt;$$INDU$$DPN
+        1997 .V36 1992$$E0pn   01997.v  36000  1992 $$T0&lt;/callnumber&gt; \n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT deliveryCategory=&quot;Physical
+        Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;Audio
+        Center&amp;amp;nbsp;Video storage; Ask at Audio Visual desk&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(P579-2
+        VC )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Pialat&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0800127986&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;001697287&lt;/ndu_aleph&gt;&lt;grp_id&gt;143917643&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://images.amazon.com/images/P/0800127986.01._SSTHUM_.jpg&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://syndetics.com/index.aspx?isbn=0800127986/SC.JPG&amp;amp;client=CLIENT&lt;/sear:thumbnail&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:0800127986,OCLC:29649599,LCCN:&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:linktoabstract&gt;http://syndetics.com/index.aspx?isbn=0800127986/SUMMARY.HTML&amp;amp;client=CLIENT&amp;amp;type=rn12&lt;/sear:linktoabstract&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh&amp;rft.aulast=Pialat&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0800127986&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;001697287&lt;/ndu_aleph&gt;&lt;grp_id&gt;143917643&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=isbn%3A0800127986&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;4569873&quot; RANK=&quot;0.27714348&quot; NO=&quot;8&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n
+        \n \n \n \n \n \n \n&lt;sourcerecordid&gt;$$V000036011$$Osmc_aleph000036011&lt;/sourcerecordid&gt;&lt;sourcerecordid&gt;$$V000140900$$Ondu_aleph000140900&lt;/sourcerecordid&gt;&lt;sourceid&gt;$$Vsmc_aleph$$Osmc_aleph000036011&lt;/sourceid&gt;&lt;sourceid&gt;$$Vndu_aleph$$Ondu_aleph000140900&lt;/sourceid&gt;&lt;recordid&gt;dedupmrg19965197&lt;/recordid&gt;&lt;originalsourceid&gt;$$VSMC01$$Osmc_aleph000036011&lt;/originalsourceid&gt;&lt;originalsourceid&gt;$$VNDU01$$Ondu_aleph000140900&lt;/originalsourceid&gt;&lt;sourceformat&gt;$$VMARC21$$Osmc_aleph000036011&lt;/sourceformat&gt;&lt;sourceformat&gt;$$VMARC21$$Ondu_aleph000140900&lt;/sourceformat&gt;&lt;sourcesystem&gt;$$VAleph$$Osmc_aleph000036011&lt;/sourcesystem&gt;&lt;sourcesystem&gt;$$VAleph$$Ondu_aleph000140900&lt;/sourcesystem&gt;&lt;ilsapiid&gt;$$VSMC01000036011$$Osmc_aleph000036011&lt;/ilsapiid&gt;&lt;ilsapiid&gt;$$VNDU01000140900$$Ondu_aleph000140900&lt;/ilsapiid&gt;&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;book&lt;/type&gt;
+        \n&lt;title&gt;Van Gogh.&lt;/title&gt; \n&lt;creator&gt;Pierre Cabanne&lt;/creator&gt;
+        \n&lt;edition&gt;[1st American ed.].&lt;/edition&gt; \n&lt;publisher&gt;Englewood
+        Cliffs, N.J., Prentice-Hall&lt;/publisher&gt; \n&lt;creationdate&gt;1963&lt;/creationdate&gt;
+        \n&lt;format&gt;288 p..&lt;/format&gt; \n&lt;subject&gt;Gogh, Vincent van,
+        1853-1890,&lt;/subject&gt; \n&lt;language&gt;eng;fre&lt;/language&gt; \n \n
+        \n&lt;availlibrary&gt;$$ISMC$$LSMC$$1General Collection$$2(ND 653 .G61 C1
+        )$$Savailable$$31$$40$$5N$$62$$XSMC50$$YSMC$$ZCOLL$$Osmc_aleph000036011&lt;/availlibrary&gt;&lt;availlibrary&gt;$$INDU$$LHESB$$1General
+        Collection$$2(ND 653 .G539 C3 )$$Scheck_holdings$$XNDU50$$YHESB$$ZGEN$$Ondu_aleph000140900&lt;/availlibrary&gt;&lt;availinstitution&gt;$$INDU$$Scheck_holdings&lt;/availinstitution&gt;&lt;availinstitution&gt;$$ISMC$$Savailable&lt;/availinstitution&gt;&lt;availpnx&gt;available&lt;/availpnx&gt;&lt;lds02&gt;smc_aleph000036011&lt;/lds02&gt;&lt;lds02&gt;ndu_aleph000140900&lt;/lds02&gt;&lt;/display&gt;\n&lt;links&gt;\n
+        \n \n \n \n \n \n \n \n \n&lt;linktoholdings&gt;$$V$$Taleph_holdings$$ISMC$$Osmc_aleph000036011&lt;/linktoholdings&gt;&lt;linktoholdings&gt;$$V$$Taleph_holdings$$Osmc_aleph000036011&lt;/linktoholdings&gt;&lt;linktoholdings&gt;$$V$$Taleph_holdings$$INDU$$Ondu_aleph000140900&lt;/linktoholdings&gt;&lt;linktoholdings&gt;$$V$$Taleph_holdings$$Ondu_aleph000140900&lt;/linktoholdings&gt;&lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Osmc_aleph000036011&lt;/linktoholdsnotexist&gt;&lt;linktoholdsnotexist&gt;$$V$$Taleph_holdings_not_in_user_institution$$Ondu_aleph000140900&lt;/linktoholdsnotexist&gt;&lt;backlink&gt;$$V$$Taleph_backlink$$DSaint
+        Mary's Catalog$$Osmc_aleph000036011&lt;/backlink&gt;&lt;backlink&gt;$$V$$Taleph_backlink$$DNotre
+        Dame Catalog$$Ondu_aleph000140900&lt;/backlink&gt;&lt;openurl&gt;$$V$$Topenurl_journal$$Osmc_aleph000036011&lt;/openurl&gt;&lt;openurl&gt;$$V$$Topenurl_journal$$Ondu_aleph000140900&lt;/openurl&gt;&lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Osmc_aleph000036011&lt;/openurlfulltext&gt;&lt;openurlfulltext&gt;$$V$$Topenurlfull_journal$$Ondu_aleph000140900&lt;/openurlfulltext&gt;&lt;linktouc&gt;$$Tworldcat_oclc$$Eworldcat&lt;/linktouc&gt;&lt;linktouc&gt;$$Tworldcat_oclc$$Eworldcat&lt;/linktouc&gt;&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt;&lt;lln01&gt;$$Tfindit_link$$Osmc_aleph000036011&lt;/lln01&gt;&lt;lln01&gt;$$Tfindit_link$$Ondu_aleph000140900&lt;/lln01&gt;&lt;/links&gt;\n&lt;search&gt;&lt;creatorcontrib&gt;Pierre
+        \ Cabanne&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Cabanne, P&lt;/creatorcontrib&gt;&lt;creatorcontrib&gt;Kaban,
+        Piyer&lt;/creatorcontrib&gt;&lt;title&gt;Van Gogh.&lt;/title&gt;&lt;subject&gt;Gogh,
+        Vincent van, 1853-1890,&lt;/subject&gt;&lt;subject&gt;Fan-ku, 1853-1890&lt;/subject&gt;&lt;subject&gt;Van
+        Gogh, Vincent, 1853-1890&lt;/subject&gt;&lt;subject&gt;Gogh, Vincent-Willem
+        van, 1853-1890&lt;/subject&gt;&lt;subject&gt;Van-Gog, Vintsent, 1853-1890&lt;/subject&gt;&lt;subject&gt;Fan-kao,
+        1853-1890&lt;/subject&gt;&lt;general&gt;Prentice-Hall&lt;/general&gt;&lt;general&gt;(OCoLC)00518333&lt;/general&gt;&lt;general&gt;OCoLC00518333&lt;/general&gt;&lt;general&gt;00518333&lt;/general&gt;&lt;general&gt;0518333&lt;/general&gt;&lt;general&gt;AllDocuments&lt;/general&gt;&lt;sourceid&gt;smc_aleph&lt;/sourceid&gt;&lt;recordid&gt;smc_aleph000036011&lt;/recordid&gt;&lt;recordid&gt;000036011&lt;/recordid&gt;&lt;recordid&gt;36011&lt;/recordid&gt;&lt;creationdate&gt;1963&lt;/creationdate&gt;&lt;startdate&gt;19630101&lt;/startdate&gt;&lt;enddate&gt;19631231&lt;/enddate&gt;&lt;searchscope&gt;smc_aleph&lt;/searchscope&gt;&lt;searchscope&gt;SMC&lt;/searchscope&gt;&lt;scope&gt;SMC&lt;/scope&gt;&lt;scope&gt;smc_aleph&lt;/scope&gt;&lt;lsr01&gt;SMC
+        COLL&lt;/lsr01&gt;&lt;lsr01&gt;SMC General Collection&lt;/lsr01&gt;&lt;lsr02&gt;Cabanne
+        Van Gogh&lt;/lsr02&gt;&lt;lsr02&gt;Van Gogh Cabanne&lt;/lsr02&gt;&lt;lsr05&gt;ND
+        653 .G61 C1&lt;/lsr05&gt;&lt;lsr05&gt;ND653.G61C1&lt;/lsr05&gt;&lt;lsr05&gt;ND653
+        .G61 C1 :&lt;/lsr05&gt;&lt;lsr07&gt;Cabanne Van Gogh&lt;/lsr07&gt;&lt;lsr07&gt;Van
+        Gogh Cabanne&lt;/lsr07&gt;&lt;lsr06&gt;Prentice-Hall&lt;/lsr06&gt;&lt;lsr08&gt;Englewood
+        Cliffs, N.J.,&lt;/lsr08&gt;&lt;subject&gt;Gogh, Vincent van, 1853-1890.&lt;/subject&gt;&lt;subject&gt;Van-Gog,
+        Vint&#x361;sent, 1853-1890&lt;/subject&gt;&lt;subject&gt;Fan'gao, 1853-1890&lt;/subject&gt;&lt;subject&gt;Fangu,
+        1853-1890&lt;/subject&gt;&lt;subject&gt;Fangu, Wensheng, 1853-1890&lt;/subject&gt;&lt;subject&gt;&#x5D2;&#x5D5;&#x5D2;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;&lt;/subject&gt;&lt;subject&gt;&#x5D2;&#x5D5;&#x5DA;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/subject&gt;&lt;subject&gt;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt;&lt;subject&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt;&lt;subject&gt;&#x68B5;&#x9AD8;, 1853-1890&lt;/subject&gt;&lt;general&gt;AAQ4987&lt;/general&gt;&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt;&lt;recordid&gt;ndu_aleph000140900&lt;/recordid&gt;&lt;recordid&gt;000140900&lt;/recordid&gt;&lt;recordid&gt;140900&lt;/recordid&gt;&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;&lt;searchscope&gt;NDU&lt;/searchscope&gt;&lt;scope&gt;HESB&lt;/scope&gt;&lt;scope&gt;ndu_aleph&lt;/scope&gt;&lt;scope&gt;NDU&lt;/scope&gt;&lt;lsr01&gt;HESB
+        GEN&lt;/lsr01&gt;&lt;lsr01&gt;HESB General Collection&lt;/lsr01&gt;&lt;lsr05&gt;ND
+        653 .G539 C3&lt;/lsr05&gt;&lt;lsr05&gt;ND653.G539C3&lt;/lsr05&gt;&lt;lsr05&gt;ND653
+        .G539 C3 :&lt;/lsr05&gt;&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van Gogh.&lt;/title&gt;
+        \n&lt;creationdate&gt;1963&lt;/creationdate&gt; \n&lt;author&gt;Cabanne, Pierre.&lt;/author&gt;
+        \n&lt;lso01&gt;1963&lt;/lso01&gt; \n&lt;/sort&gt;\n&lt;facets&gt;&lt;language&gt;eng&lt;/language&gt;&lt;creationdate&gt;1963&lt;/creationdate&gt;&lt;topic&gt;Gogh,
+        Vincent van, 1853-1890&lt;/topic&gt;&lt;toplevel&gt;available&lt;/toplevel&gt;&lt;prefilter&gt;books&lt;/prefilter&gt;&lt;prefilter&gt;print&lt;/prefilter&gt;&lt;rsrctype&gt;books&lt;/rsrctype&gt;&lt;rsrctype&gt;print&lt;/rsrctype&gt;&lt;creatorcontrib&gt;Cabanne,
+        P&lt;/creatorcontrib&gt;&lt;library&gt;SMC&lt;/library&gt;&lt;classificationlcc&gt;N
+        - Fine arts.&#x2013;Painting&#x2013;History&lt;/classificationlcc&gt;&lt;library&gt;HESB&lt;/library&gt;&lt;frbrgroupid&gt;76749200&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c1&gt;63004334&lt;/c1&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt; \n&lt;c4&gt;1963&lt;/c4&gt;
+        \n&lt;f1&gt;63004334&lt;/f1&gt; \n&lt;f5&gt;vangogh&lt;/f5&gt; \n&lt;f6&gt;1963&lt;/f6&gt;
+        \n&lt;f7&gt;van gogh&lt;/f7&gt; \n&lt;f9&gt;288 p.&lt;/f9&gt; \n&lt;f10&gt;prentice
+        hall&lt;/f10&gt; \n&lt;f11&gt;cabanne pierre&lt;/f11&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;&lt;t&gt;99&lt;/t&gt;&lt;k1&gt;$$Kcabanne
+        pierre$$AA&lt;/k1&gt;&lt;k3&gt;$$Kvan gogh$$AT&lt;/k3&gt;&lt;/frbr&gt;\n&lt;delivery&gt;&lt;institution&gt;$$VSMC$$Osmc_aleph000036011&lt;/institution&gt;&lt;delcategory&gt;$$VPhysical
+        Item$$Osmc_aleph000036011&lt;/delcategory&gt;&lt;institution&gt;$$VNDU$$Ondu_aleph000140900&lt;/institution&gt;&lt;delcategory&gt;$$VPhysical
+        Item$$Ondu_aleph000140900&lt;/delcategory&gt;&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;ND
+        653 .G61&lt;/classificationlcc&gt; \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;&lt;aulast&gt;Cabanne&lt;/aulast&gt;&lt;aufirst&gt;Pierre&lt;/aufirst&gt;&lt;au&gt;Cabanne,
+        Pierre&lt;/au&gt;&lt;btitle&gt;Van Gogh.&lt;/btitle&gt;&lt;date&gt;1963&lt;/date&gt;&lt;risdate&gt;[1963]&lt;/risdate&gt;&lt;format&gt;book&lt;/format&gt;&lt;genre&gt;book&lt;/genre&gt;&lt;ristype&gt;BOOK&lt;/ristype&gt;&lt;notes&gt;Bibliography:
+        p. 280.&lt;/notes&gt;&lt;cop&gt;Englewood Cliffs, N.J.&lt;/cop&gt;&lt;pub&gt;Prentice-Hall&lt;/pub&gt;&lt;oclcid&gt;00518333&lt;/oclcid&gt;&lt;lccn&gt;63004334&lt;/lccn&gt;&lt;/addata&gt;\n&lt;browse&gt;\n
+        \n \n \n \n \n&lt;title&gt;$$DVan Gogh$$EVan Gogh$$USMC&lt;/title&gt;&lt;title&gt;$$DVan
+        Gogh$$EVan Gogh$$UNDU&lt;/title&gt;&lt;subject&gt;$$DGogh, Vincent van, 1853-1890$$EGogh,
+        Vincent van, 1853-1890$$USMC&lt;/subject&gt;&lt;subject&gt;$$DGogh, Vincent
+        van, 1853-1890$$EGogh, Vincent van, 1853-1890$$UNDU&lt;/subject&gt;&lt;author&gt;$$DCabanne,
+        Pierre$$ECabanne, Pierre$$USMC&lt;/author&gt;&lt;author&gt;$$DCabanne, Pierre$$ECabanne,
+        Pierre$$UNDU&lt;/author&gt;&lt;callnumber&gt;$$ISMC$$DND 653 .G61 C1$$E0nd
+        \  00653.g  61000  c1 $$T0&lt;/callnumber&gt;&lt;callnumber&gt;$$INDU$$DND
+        653 .G7 C33 1963$$END 653 .G7 C33 1963 $$T0$$DND 653 .G539 C3$$E0nd   00653.g
+        \ 53900  c3 $$T0&lt;/callnumber&gt;&lt;institution&gt;SMC&lt;/institution&gt;&lt;institution&gt;NDU&lt;/institution&gt;&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT
+        deliveryCategory=&quot;Physical Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;check_holdings&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G539 C3
+        )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;SMC&lt;/sear:institution&gt;&lt;sear:library&gt;SMC&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G61 C1 )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-smc_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh.&amp;rft.aulast=Cabanne&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Cabanne%2C%20Pierre&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;smc_aleph&gt;000036011&lt;/smc_aleph&gt;&lt;grp_id&gt;76749200&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh.&amp;rft.aulast=Cabanne&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Cabanne%2C%20Pierre&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000140900&lt;/ndu_aleph&gt;&lt;grp_id&gt;76749200&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:,OCLC:00518333,LCCN:63004334&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-smc_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh.&amp;rft.aulast=Cabanne&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Cabanne%2C%20Pierre&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;smc_aleph&gt;000036011&lt;/smc_aleph&gt;&lt;grp_id&gt;76749200&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh.&amp;rft.aulast=Cabanne&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Cabanne%2C%20Pierre&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000140900&lt;/ndu_aleph&gt;&lt;grp_id&gt;76749200&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=no%3A00518333&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;1605892&quot; RANK=&quot;0.27709287&quot; NO=&quot;9&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n&lt;sourcerecordid&gt;002086677&lt;/sourcerecordid&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph002086677&lt;/recordid&gt;
+        \n&lt;originalsourceid&gt;NDU01&lt;/originalsourceid&gt; \n&lt;ilsapiid&gt;NDU01002086677&lt;/ilsapiid&gt;
+        \n&lt;sourceformat&gt;MARC21&lt;/sourceformat&gt; \n&lt;sourcesystem&gt;Aleph&lt;/sourcesystem&gt;
+        \n&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;book&lt;/type&gt; \n&lt;title&gt;Van
+        Gogh.&lt;/title&gt; \n&lt;creator&gt;Ren&#xE9; Huyghe&lt;/creator&gt; \n&lt;publisher&gt;New
+        York, Crown Publishers&lt;/publisher&gt; \n&lt;creationdate&gt;1958&lt;/creationdate&gt;
+        \n&lt;format&gt;95 p. illus. (part mounted col.) plates (part col.) 29 cm..&lt;/format&gt;
+        \n&lt;subject&gt;Gogh, Vincent van, 1853-1890&lt;/subject&gt; \n&lt;language&gt;eng&lt;/language&gt;
+        \n&lt;availlibrary&gt;$$INDU$$LHESB$$1General Collection$$2(ND 653 .G7 H93
+        1958 )$$Savailable$$31$$40$$5N$$60$$XNDU50$$YHESB$$ZGEN&lt;/availlibrary&gt;
+        \n&lt;lds02&gt;ndu_aleph002086677&lt;/lds02&gt; \n&lt;lds06&gt;[Translated
+        by Helen C. Slonim]&lt;/lds06&gt; \n&lt;availinstitution&gt;$$INDU$$Savailable&lt;/availinstitution&gt;&lt;availpnx&gt;available&lt;/availpnx&gt;&lt;/display&gt;\n&lt;links&gt;\n&lt;openurl&gt;$$Topenurl_journal&lt;/openurl&gt;
+        \n&lt;backlink&gt;$$Taleph_backlink$$DNotre Dame Catalog&lt;/backlink&gt;
+        \n&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt; \n&lt;openurlfulltext&gt;$$Topenurlfull_journal&lt;/openurlfulltext&gt;
+        \n&lt;linktoholdings&gt;$$Taleph_holdings$$INDU&lt;/linktoholdings&gt; \n&lt;linktoholdings&gt;$$Taleph_holdings&lt;/linktoholdings&gt;
+        \n&lt;linktoholdsnotexist&gt;$$Taleph_holdings_not_in_user_institution&lt;/linktoholdsnotexist&gt;
+        \n&lt;linktouc&gt;$$Tworldcat_oclc$$Eworldcat&lt;/linktouc&gt; \n&lt;lln01&gt;$$Tfindit_link&lt;/lln01&gt;
+        \n&lt;/links&gt;\n&lt;search&gt;\n&lt;creatorcontrib&gt;Ren&#xE9;  Huyghe&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Huyghe, R&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;[Translated
+        by Helen C. Slonim]&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x30E6;&#x30A4;&#x30B0;&#x30EB;&#x30CD;&lt;/creatorcontrib&gt;
+        \n&lt;title&gt;Van Gogh.&lt;/title&gt; \n&lt;subject&gt;Gogh, Vincent van,
+        1853-1890.&lt;/subject&gt; \n&lt;subject&gt;Van Gogh, Vincent, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Gogh, Vincent-Willem van, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Van-Gog,
+        Vint&#x361;sent, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fan-kao, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Fan'gao, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fangu,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;Fangu, Wensheng, 1853-1890&lt;/subject&gt;
+        \n&lt;subject&gt;Fan-ku, 1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5D2;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;&lt;/subject&gt;
+        \n&lt;subject&gt;&#x5D2;&#x5D5;&#x5DA;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/subject&gt; \n&lt;subject&gt;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/subject&gt; \n&lt;subject&gt;&#x68B5;&#x9AD8;, 1853-1890&lt;/subject&gt;
+        \n&lt;general&gt;Crown Publishers,&lt;/general&gt; \n&lt;general&gt;(OCoLC)00817216&lt;/general&gt;
+        \n&lt;general&gt;OCoLC00817216&lt;/general&gt; \n&lt;general&gt;00817216&lt;/general&gt;
+        \n&lt;general&gt;0817216&lt;/general&gt; \n&lt;general&gt;AllDocuments&lt;/general&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph002086677&lt;/recordid&gt;
+        \n&lt;recordid&gt;002086677&lt;/recordid&gt; \n&lt;recordid&gt;2086677&lt;/recordid&gt;
+        \n&lt;creationdate&gt;1958&lt;/creationdate&gt; \n&lt;startdate&gt;19580101&lt;/startdate&gt;
+        \n&lt;enddate&gt;19581231&lt;/enddate&gt; \n&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+        \n&lt;searchscope&gt;NDU&lt;/searchscope&gt; \n&lt;scope&gt;HESB&lt;/scope&gt;
+        \n&lt;scope&gt;ndu_aleph&lt;/scope&gt; \n&lt;scope&gt;NDU&lt;/scope&gt; \n&lt;lsr01&gt;HESB
+        GEN&lt;/lsr01&gt; \n&lt;lsr01&gt;HESB General Collection&lt;/lsr01&gt; \n&lt;lsr02&gt;Huyghe
+        Van Gogh&lt;/lsr02&gt; \n&lt;lsr02&gt;Van Gogh Huyghe&lt;/lsr02&gt; \n&lt;lsr05&gt;ND
+        653 .G7 H93 1958&lt;/lsr05&gt; \n&lt;lsr05&gt;ND653.G7H931958&lt;/lsr05&gt;
+        \n&lt;lsr05&gt;ND653 .G7 H93 1958 :&lt;/lsr05&gt; \n&lt;lsr07&gt;Huyghe Van
+        Gogh&lt;/lsr07&gt; \n&lt;lsr07&gt;Van Gogh Huyghe&lt;/lsr07&gt; \n&lt;lsr06&gt;Crown
+        Publishers,&lt;/lsr06&gt; \n&lt;lsr08&gt;New York,&lt;/lsr08&gt; \n&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van
+        Gogh.&lt;/title&gt; \n&lt;creationdate&gt;1958&lt;/creationdate&gt; \n&lt;author&gt;Huyghe,
+        Ren&#xE9;.&lt;/author&gt; \n&lt;lso01&gt;1958&lt;/lso01&gt; \n&lt;/sort&gt;\n&lt;facets&gt;\n&lt;language&gt;eng&lt;/language&gt;
+        \n&lt;creationdate&gt;1958&lt;/creationdate&gt; \n&lt;topic&gt;Gogh, Vincent
+        van, 1853-1890&lt;/topic&gt; \n&lt;toplevel&gt;available&lt;/toplevel&gt;
+        \n&lt;prefilter&gt;books&lt;/prefilter&gt; \n&lt;prefilter&gt;print&lt;/prefilter&gt;
+        \n&lt;rsrctype&gt;books&lt;/rsrctype&gt; \n&lt;rsrctype&gt;print&lt;/rsrctype&gt;
+        \n&lt;creatorcontrib&gt;Huyghe, R&lt;/creatorcontrib&gt; \n&lt;library&gt;HESB&lt;/library&gt;
+        \n&lt;classificationlcc&gt;N - Fine arts.&#x2013;Painting&#x2013;History&lt;/classificationlcc&gt;&lt;frbrgroupid&gt;144321094&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c1&gt;58012881&lt;/c1&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt; \n&lt;c4&gt;1958&lt;/c4&gt;
+        \n&lt;f1&gt;58012881&lt;/f1&gt; \n&lt;f5&gt;vangogh&lt;/f5&gt; \n&lt;f6&gt;1958&lt;/f6&gt;
+        \n&lt;f7&gt;van gogh&lt;/f7&gt; \n&lt;f8&gt;nyu&lt;/f8&gt; \n&lt;f9&gt;95
+        p.&lt;/f9&gt; \n&lt;f10&gt;crown publishers&lt;/f10&gt; \n&lt;f11&gt;huyghe
+        rene&lt;/f11&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;\n&lt;t&gt;99&lt;/t&gt; \n&lt;k1&gt;$$Khuyghe
+        rene$$AA&lt;/k1&gt; \n&lt;k3&gt;$$Kvan gogh$$AT&lt;/k3&gt; \n&lt;/frbr&gt;\n&lt;delivery&gt;\n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;delcategory&gt;Physical Item&lt;/delcategory&gt; \n&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;ND
+        653 .G7&lt;/classificationlcc&gt; \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;\n&lt;aulast&gt;Huyghe&lt;/aulast&gt;
+        \n&lt;aufirst&gt;Ren&#xE9;&lt;/aufirst&gt; \n&lt;au&gt;Huyghe, Ren&#xE9;&lt;/au&gt;
+        \n&lt;btitle&gt;Van Gogh.&lt;/btitle&gt; \n&lt;date&gt;1958&lt;/date&gt; \n&lt;risdate&gt;1958.&lt;/risdate&gt;
+        \n&lt;format&gt;book&lt;/format&gt; \n&lt;genre&gt;book&lt;/genre&gt; \n&lt;ristype&gt;BOOK&lt;/ristype&gt;
+        \n&lt;notes&gt;Bibliography: p. 92-94.&lt;/notes&gt; \n&lt;cop&gt;New York&lt;/cop&gt;
+        \n&lt;pub&gt;Crown Publishers&lt;/pub&gt; \n&lt;oclcid&gt;00817216&lt;/oclcid&gt;
+        \n&lt;lccn&gt;58012881&lt;/lccn&gt; \n&lt;/addata&gt;\n&lt;browse&gt;\n&lt;author&gt;$$DHuyghe,
+        Ren&#xE9;$$EHuyghe, Ren&#xE9;&lt;/author&gt; \n&lt;title&gt;$$DVan Gogh$$EVan
+        Gogh&lt;/title&gt; \n&lt;subject&gt;$$DGogh, Vincent van, 1853-1890$$EGogh,
+        Vincent van, 1853-1890&lt;/subject&gt; \n&lt;callnumber&gt;$$INDU$$DND 653
+        .G7 H93 1958$$E0nd   00653.g  70000  h93 1958 $$T0&lt;/callnumber&gt; \n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT deliveryCategory=&quot;Physical
+        Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;available&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G7 H93 1958
+        )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh.&amp;rft.aulast=Huyghe&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Huyghe%2C%20Ren&#xE9;&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;002086677&lt;/ndu_aleph&gt;&lt;grp_id&gt;144321094&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:,OCLC:00817216,LCCN:58012881&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh.&amp;rft.aulast=Huyghe&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Huyghe%2C%20Ren&#xE9;&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;002086677&lt;/ndu_aleph&gt;&lt;grp_id&gt;144321094&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=no%3A00817216&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;sear:DOC
+        ID=&quot;3451622&quot; RANK=&quot;0.27647027&quot; NO=&quot;10&quot; SEARCH_ENGINE=&quot;Local
+        Search Engine&quot; SEARCH_ENGINE_TYPE=&quot;Local Search Engine&quot;&gt;&lt;PrimoNMBib
+        xmlns=&quot;http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib&quot;&gt;\n&lt;record&gt;\n&lt;control&gt;\n&lt;sourcerecordid&gt;000140910&lt;/sourcerecordid&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph000140910&lt;/recordid&gt;
+        \n&lt;originalsourceid&gt;NDU01&lt;/originalsourceid&gt; \n&lt;ilsapiid&gt;NDU01000140910&lt;/ilsapiid&gt;
+        \n&lt;sourceformat&gt;MARC21&lt;/sourceformat&gt; \n&lt;sourcesystem&gt;Aleph&lt;/sourcesystem&gt;
+        \n&lt;/control&gt;\n&lt;display&gt;\n&lt;type&gt;book&lt;/type&gt; \n&lt;title&gt;Van
+        Gogh,&lt;/title&gt; \n&lt;creator&gt;Vincent van Gogh 1853-1890.&lt;/creator&gt;
+        \n&lt;contributor&gt;Andre Leclerc&lt;/contributor&gt; \n&lt;publisher&gt;New
+        York, Hyperion Press&lt;/publisher&gt; \n&lt;creationdate&gt;1948&lt;/creationdate&gt;
+        \n&lt;format&gt;45 p. (chiefly illus. (part col.)) 17 cm..&lt;/format&gt;
+        \n&lt;language&gt;eng&lt;/language&gt; \n&lt;availlibrary&gt;$$INDU$$LHESB$$1General
+        Collection$$2(ND 653 .G557 K7 )$$Scheck_holdings$$XNDU50$$YHESB$$ZGEN&lt;/availlibrary&gt;
+        \n&lt;lds02&gt;ndu_aleph000140910&lt;/lds02&gt; \n&lt;availinstitution&gt;$$INDU$$Scheck_holdings&lt;/availinstitution&gt;&lt;availpnx&gt;unavailable&lt;/availpnx&gt;&lt;/display&gt;\n&lt;links&gt;\n&lt;openurl&gt;$$Topenurl_journal&lt;/openurl&gt;
+        \n&lt;backlink&gt;$$Taleph_backlink$$DNotre Dame Catalog&lt;/backlink&gt;
+        \n&lt;thumbnail&gt;$$Tgoogle_thumb&lt;/thumbnail&gt; \n&lt;openurlfulltext&gt;$$Topenurlfull_journal&lt;/openurlfulltext&gt;
+        \n&lt;linktoholdings&gt;$$Taleph_holdings$$INDU&lt;/linktoholdings&gt; \n&lt;linktoholdings&gt;$$Taleph_holdings&lt;/linktoholdings&gt;
+        \n&lt;linktoholdsnotexist&gt;$$Taleph_holdings_not_in_user_institution&lt;/linktoholdsnotexist&gt;
+        \n&lt;linktouc&gt;$$Tworldcat_oclc$$Eworldcat&lt;/linktouc&gt; \n&lt;lln01&gt;$$Tfindit_link&lt;/lln01&gt;
+        \n&lt;/links&gt;\n&lt;search&gt;\n&lt;creatorcontrib&gt;Vincent van,  Gogh
+        \ 1853-1890.&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Gogh, V&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Andre  Leclerc&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Leclerc,
+        A&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fan-kao, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Van Gogh, Vincent, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Gogh, Vincent-Willem van, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Van-Gog, Vint&#x361;sent, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;Fan'gao, 1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fangu,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fangu, Wensheng,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Fan-ku, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;&#x5D2;&#x5D5;&#x5D2;, &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8;
+        &#x5D5;&#x5D0;&#x5DF;&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x5D2;&#x5D5;&#x5DA;,
+        &#x5D5;&#x5D9;&#x5E0;&#x5E1;&#x5E0;&#x5D8; &#x5D5;&#x5D0;&#x5DF;, 1853&#x5BE;1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;&#x30B4;&#x30C3;&#x30DB;, 1853-1890&lt;/creatorcontrib&gt;
+        \n&lt;creatorcontrib&gt;&#x30D3;&#x30F3;&#x30BB;&#x30F3;&#x30C8;&#x30B4;&#x30C3;&#x30DB;,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;&#x68B5;&#x9AD8;,
+        1853-1890&lt;/creatorcontrib&gt; \n&lt;title&gt;Van Gogh,&lt;/title&gt; \n&lt;general&gt;Hyperion
+        Press&lt;/general&gt; \n&lt;general&gt;(OCoLC)01691710&lt;/general&gt; \n&lt;general&gt;OCoLC01691710&lt;/general&gt;
+        \n&lt;general&gt;01691710&lt;/general&gt; \n&lt;general&gt;1691710&lt;/general&gt;
+        \n&lt;general&gt;AAQ4998&lt;/general&gt; \n&lt;general&gt;AllDocuments&lt;/general&gt;
+        \n&lt;sourceid&gt;ndu_aleph&lt;/sourceid&gt; \n&lt;recordid&gt;ndu_aleph000140910&lt;/recordid&gt;
+        \n&lt;recordid&gt;000140910&lt;/recordid&gt; \n&lt;recordid&gt;140910&lt;/recordid&gt;
+        \n&lt;creationdate&gt;1948&lt;/creationdate&gt; \n&lt;startdate&gt;19480101&lt;/startdate&gt;
+        \n&lt;enddate&gt;19481231&lt;/enddate&gt; \n&lt;searchscope&gt;ndu_aleph&lt;/searchscope&gt;
+        \n&lt;searchscope&gt;NDU&lt;/searchscope&gt; \n&lt;scope&gt;HESB&lt;/scope&gt;
+        \n&lt;scope&gt;ndu_aleph&lt;/scope&gt; \n&lt;scope&gt;NDU&lt;/scope&gt; \n&lt;lsr01&gt;HESB
+        GEN&lt;/lsr01&gt; \n&lt;lsr01&gt;HESB General Collection&lt;/lsr01&gt; \n&lt;lsr02&gt;Gogh
+        Leclerc Van Gogh&lt;/lsr02&gt; \n&lt;lsr02&gt;Van Gogh Gogh Leclerc&lt;/lsr02&gt;
+        \n&lt;lsr05&gt;ND 653 .G557 K7&lt;/lsr05&gt; \n&lt;lsr05&gt;ND653.G557K7&lt;/lsr05&gt;
+        \n&lt;lsr05&gt;ND653 .G557 K7 :&lt;/lsr05&gt; \n&lt;lsr07&gt;Gogh Leclerc
+        Van Gogh&lt;/lsr07&gt; \n&lt;lsr07&gt;Van Gogh Gogh Leclerc&lt;/lsr07&gt;
+        \n&lt;lsr06&gt;Hyperion Press&lt;/lsr06&gt; \n&lt;lsr08&gt;New York,&lt;/lsr08&gt;
+        \n&lt;/search&gt;\n&lt;sort&gt;\n&lt;title&gt;Van Gogh,&lt;/title&gt; \n&lt;creationdate&gt;1948&lt;/creationdate&gt;
+        \n&lt;author&gt;Gogh, Vincent van, 1853-1890.&lt;/author&gt; \n&lt;lso01&gt;1948&lt;/lso01&gt;
+        \n&lt;/sort&gt;\n&lt;facets&gt;\n&lt;language&gt;eng&lt;/language&gt; \n&lt;creationdate&gt;1948&lt;/creationdate&gt;
+        \n&lt;prefilter&gt;books&lt;/prefilter&gt; \n&lt;prefilter&gt;print&lt;/prefilter&gt;
+        \n&lt;rsrctype&gt;books&lt;/rsrctype&gt; \n&lt;rsrctype&gt;print&lt;/rsrctype&gt;
+        \n&lt;creatorcontrib&gt;Gogh, V&lt;/creatorcontrib&gt; \n&lt;creatorcontrib&gt;Leclerc,
+        A&lt;/creatorcontrib&gt; \n&lt;library&gt;HESB&lt;/library&gt; \n&lt;frbrgroupid&gt;142472683&lt;/frbrgroupid&gt;&lt;frbrtype&gt;6&lt;/frbrtype&gt;&lt;/facets&gt;\n&lt;dedup&gt;\n&lt;t&gt;1&lt;/t&gt;
+        \n&lt;c1&gt;48006743&lt;/c1&gt; \n&lt;c3&gt;vangogh&lt;/c3&gt; \n&lt;c4&gt;1948&lt;/c4&gt;
+        \n&lt;f1&gt;48006743&lt;/f1&gt; \n&lt;f5&gt;vangogh&lt;/f5&gt; \n&lt;f6&gt;1948&lt;/f6&gt;
+        \n&lt;f7&gt;van gogh&lt;/f7&gt; \n&lt;f8&gt;nyu&lt;/f8&gt; \n&lt;f9&gt;45
+        p. (chiefly illus. (part col.))&lt;/f9&gt; \n&lt;f10&gt;hyperion press&lt;/f10&gt;
+        \n&lt;f11&gt;gogh vincent van 1853 1890&lt;/f11&gt; \n&lt;/dedup&gt;\n&lt;frbr&gt;\n&lt;t&gt;99&lt;/t&gt;
+        \n&lt;k1&gt;$$Kgogh vincent van 1853 1890$$AA&lt;/k1&gt; \n&lt;k3&gt;$$Kvan
+        gogh$$AT&lt;/k3&gt; \n&lt;/frbr&gt;\n&lt;delivery&gt;\n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;delcategory&gt;Physical Item&lt;/delcategory&gt; \n&lt;/delivery&gt;\n&lt;enrichment&gt;\n&lt;classificationlcc&gt;ND
+        653 .G557&lt;/classificationlcc&gt; \n&lt;/enrichment&gt;\n&lt;ranking&gt;\n&lt;booster1&gt;1&lt;/booster1&gt;
+        \n&lt;booster2&gt;1&lt;/booster2&gt; \n&lt;/ranking&gt;\n&lt;addata&gt;\n&lt;aulast&gt;Gogh&lt;/aulast&gt;
+        \n&lt;aufirst&gt;Vincent van,&lt;/aufirst&gt; \n&lt;au&gt;Gogh, Vincent van&lt;/au&gt;
+        \n&lt;addau&gt;Leclerc, Andre&lt;/addau&gt; \n&lt;btitle&gt;Van Gogh,&lt;/btitle&gt;
+        \n&lt;date&gt;1948&lt;/date&gt; \n&lt;risdate&gt;[1948]&lt;/risdate&gt; \n&lt;format&gt;book&lt;/format&gt;
+        \n&lt;genre&gt;book&lt;/genre&gt; \n&lt;ristype&gt;BOOK&lt;/ristype&gt; \n&lt;cop&gt;New
+        York&lt;/cop&gt; \n&lt;pub&gt;Hyperion Press&lt;/pub&gt; \n&lt;oclcid&gt;01691710&lt;/oclcid&gt;
+        \n&lt;lccn&gt;48006743&lt;/lccn&gt; \n&lt;/addata&gt;\n&lt;browse&gt;\n&lt;author&gt;$$DGogh,
+        Vincent van, 1853-1890$$EGogh, Vincent van, 1853-1890&lt;/author&gt; \n&lt;author&gt;$$DLeclerc,
+        Andre$$ELeclerc, Andre&lt;/author&gt; \n&lt;title&gt;$$DVan Gogh$$EVan Gogh&lt;/title&gt;
+        \n&lt;callnumber&gt;$$INDU$$DND 653 .G7 L4$$END 653 .G7 L4 $$T0$$DND 653 .G557
+        K7$$E0nd   00653.g  55700  k7 $$T0&lt;/callnumber&gt; \n&lt;institution&gt;NDU&lt;/institution&gt;
+        \n&lt;/browse&gt;\n&lt;/record&gt;&lt;/PrimoNMBib&gt;&lt;sear:GETIT deliveryCategory=&quot;Physical
+        Item&quot; GetIt1=&quot;OVP&quot; GetIt2=&quot;&quot;/&gt;&lt;sear:LIBRARIES&gt;&lt;sear:LIBRARY&gt;&lt;sear:institution&gt;NDU&lt;/sear:institution&gt;&lt;sear:library&gt;HESB&lt;/sear:library&gt;&lt;sear:status&gt;check_holdings&lt;/sear:status&gt;&lt;sear:collection&gt;General
+        Collection&lt;/sear:collection&gt;&lt;sear:callNumber&gt;(ND 653 .G557 K7
+        )&lt;/sear:callNumber&gt;&lt;sear:url&gt;OVP&lt;/sear:url&gt;&lt;/sear:LIBRARY&gt;&lt;/sear:LIBRARIES&gt;&lt;sear:LINKS&gt;&lt;sear:openurl&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh%2C&amp;rft.aulast=Gogh&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Gogh%2C%20Vincent%20van&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000140910&lt;/ndu_aleph&gt;&lt;grp_id&gt;142472683&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurl&gt;&lt;sear:backlink/&gt;&lt;sear:thumbnail&gt;http://books.google.com/books?bibkeys=ISBN:,OCLC:01691710,LCCN:48006743&amp;amp;jscmd=viewapi&amp;amp;callback=updateGBSCover&lt;/sear:thumbnail&gt;&lt;sear:openurlfulltext&gt;&lt;![CDATA[http://findtext.library.nd.edu:8889/ndu_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2014-06-25T14%3A55%3A04IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ndu_aleph&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Van%20Gogh%2C&amp;rft.aulast=Gogh&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=Gogh%2C%20Vincent%20van&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id=&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&amp;svc.fulltext=yes&amp;rft.eisbn=&amp;rft_dat=&lt;ndu_aleph&gt;000140910&lt;/ndu_aleph&gt;&lt;grp_id&gt;142472683&lt;/grp_id&gt;&lt;oa&gt;&lt;/oa&gt;&amp;rft_id=info:oai/&amp;req.language=]]&gt;&lt;/sear:openurlfulltext&gt;&lt;sear:linktoholdings&gt;OVP&lt;/sear:linktoholdings&gt;&lt;sear:linktouc&gt;http://www.worldcat.org/search?q=no%3A01691710&lt;/sear:linktouc&gt;&lt;sear:lln01/&gt;&lt;/sear:LINKS&gt;&lt;/sear:DOC&gt;&lt;/sear:DOCSET&gt;&lt;/sear:RESULT&gt;&lt;sear:searchToken&gt;0&lt;/sear:searchToken&gt;&lt;/sear:JAGROOT&gt;&lt;/sear:SEGMENTS&gt;</searchBriefReturn></ns1:searchBriefResponse></soapenv:Body></soapenv:Envelope>"
+    http_version:
+  recorded_at: Wed, 25 Jun 2014 18:55:04 GMT
+recorded_with: VCR 2.4.0

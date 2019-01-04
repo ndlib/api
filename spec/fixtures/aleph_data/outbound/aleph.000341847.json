@@ -1,0 +1,22 @@
+
+{
+    "transaction"   : "000341847",
+    "request_type"  : "Doc Del",
+    "delivery_type" : "Ship",
+    "source"        : "Aleph",
+    "title"         : "Proceedings. Edited by Erik Åkerberg and Eva Crane.",
+    "author"        : "International Symposium on Pollinaton (2nd : 1964 : London)",
+    "enum_chron"    : "",
+    "pages"         : "",
+    "article_title" : "",
+    "article_author": "",
+    "barcode"       : "00000005339239",
+    "isbn"          : "",
+    "issn"          : "",
+    "bib_number"    : "586656",
+    "adm_number"    : "586656",
+    "item_sequence" : "    1.0",
+    "call_number"   : "SF 521 .B35 v.47 Suppl.",
+    "send_to"       : "Architecture [117 Bond]",
+    "rush"          : "No" 
+}

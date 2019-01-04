@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circ-status>
+  <item-data>
+    <z30-description/>
+    <loan-status>Missing MS</loan-status>
+    <due-date>Missing MS</due-date>
+    <due-hour/>
+    <sub-library>Hesburgh Library</sub-library>
+    <collection>General Collection</collection>
+    <location>BR 128 .H5 G72 1983</location>
+    <pages/>
+    <no-requests/>
+    <location-2/>
+    <barcode>00000020368700</barcode>
+    <opac-note/>
+  </item-data>
+  <item-data>
+    <z30-description/>
+    <loan-status/>
+    <due-date>Lost</due-date>
+    <due-hour>12:00 AM</due-hour>
+    <sub-library>Hesburgh Library</sub-library>
+    <collection>General Collection</collection>
+    <location>BR 128 .H5 G72 1983</location>
+    <pages/>
+    <no-requests/>
+    <location-2/>
+    <barcode>00000018756551</barcode>
+    <opac-note/>
+  </item-data>
+  <item-data>
+    <z30-description/>
+    <loan-status/>
+    <due-date/>
+    <due-hour/>
+    <sub-library>Hesburgh Library</sub-library>
+    <collection>General Collection</collection>
+    <location>BR 128 .H5 G72 1983</location>
+    <pages/>
+    <no-requests/>
+    <location-2/>
+    <barcode>00000020711396</barcode>
+    <opac-note/>
+  </item-data>
+  <session-id>C9XRK58T7KGBA58KC6JV6YV6MEQIS9SQK6KL3VL5P311NVGC9Y</session-id>
+</circ-status>

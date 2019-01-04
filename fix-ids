@@ -1,0 +1,38 @@
+
+
+# select all the uniq course ids
+new_course_ids = Request.all.collect { |r| r.course_id }.uniq
+matched = {}
+new_course_ids.each do | new |
+
+  # convert it and join it back up
+  new_arr = new.split("_")
+  key = new_arr[0] + "_" + new_arr.slice(1, 10).sort.join("_")
+
+  # count the number of times this has happened
+  if matched[key]
+    matched[key].push(new)
+  else
+    matched[key] = [new]
+  end
+end
+
+# select the keys that have been used more than 1 time
+# and turn it into an array
+keys_to_not_update = matched.select { | k, v | v.size > 1  }.values.flatten
+
+
+keys_updated = []
+new_course_ids.each do | course_id |
+  # convert the key
+  new_arr = course_id.split("_")
+  key = new_arr[0] + "_" + new_arr.slice(1, 10).sort.join("_")
+
+  # if the keys are not different and we should not skip it
+  if key != course_id && !keys_to_not_update.include?(key)
+    puts "update #{course_id} to #{key}"
+    keys_updated.push(key)
+    # update it.
+    # Request.where("course_id = ?", course_id).update_all(course_id: key)
+  end
+end

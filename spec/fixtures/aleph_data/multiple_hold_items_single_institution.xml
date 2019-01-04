@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hold-grp-list>
+  <reply-text>ok</reply-text>
+  <reply-code>0000</reply-code>
+  <hold allowed="Y">
+    <institution code="NDU50">
+      <inst-name>University of Notre Dame</inst-name>
+      <group href="http://paul.library.nd.edu:1891/rest-dlf/patron/BLD1231364/record/NDU01001003759/holds/NDU50001003759000030"/>
+      <group href="http://paul.library.nd.edu:1891/rest-dlf/patron/BLD1231364/record/NDU01001003759/holds/NDU50001003759000020"/>
+      <group href="http://paul.library.nd.edu:1891/rest-dlf/patron/BLD1231364/record/NDU01001003759/holds/NDU50001003759000010"/>
+      <group href="http://paul.library.nd.edu:1891/rest-dlf/patron/BLD1231364/record/NDU01001003759/holds/NDU50001003759000040"/>
+    </institution>
+  </hold>
+</hold-grp-list>

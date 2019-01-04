@@ -1,0 +1,9 @@
+Pulling Items from Aleph for Reserves
+
+Example URI for pulling a specific set of reserves records based on Aleph course string:
+
+wget "http://alephprod.library.nd.edu:8991/X?op=find&code=CNO&request=ARHI-40320-01&base=NDU30" -O arhi_40320_1.xml
+
+Example URI for pulling a specific record within an Aleph reserves set:
+
+wget "http://alephprod.library.nd.edu:8991/X?op=present&set_entry=1&set_number=563716&base=NDU30" -O arhi_record_1.xml
