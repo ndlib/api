@@ -57,6 +57,15 @@ task :pre_production do
   set :branch, 'attempt_to_add_modules'
 end
 
+desc "Setup for the Prep environment"
+task :prep do
+  # Customize pre_production configuration
+  set :deploy_to, "/home/app/#{application}"
+  set :domain, "api-prep.lc.nd.edu"
+
+  set :branch, 'attempt_to_add_modules'
+end
+
 desc "Setup for the production environment"
 task :production do
   # Customize pre_production configuration

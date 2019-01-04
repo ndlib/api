@@ -21,9 +21,11 @@ dependencies:
 hosts:
   - api.library.nd.edu
   - apipprd.library.nd.edu
+  - api-prep.lc.nd.edu
 urls:
   - https://api.library.nd.edu
   - https://apipprd.library.nd.edu
+  - https://api-prep.library.nd.edu
   - http://jenkins.library.nd.edu/jenkins
 setup: >
   Check out the repo.  rake db:create; rake db:migrate; rake db:test:prepare; rake db:seed; 
@@ -32,6 +34,6 @@ deploy: >
   Login in to jenkins and run the api project.
 notes:
 last_review:
-  date: 2019-01-03
+  date: 2019-01-04
 reviewer: rfox2
 
