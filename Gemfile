@@ -30,6 +30,8 @@ group :application do
   gem "excon"
   gem 'typhoeus'
   gem 'virtus'
+  gem 'addressable'
+  gem "public_suffix"
 
   # To see indexing progress
   gem 'progress_bar'
@@ -40,12 +42,10 @@ group :application do
   # update nori to address issue
   gem "nori", '~> 2.5.0'
 
-  gem 'addressable'
-  gem "public_suffix"
+  # Sentry.io integration
+  gem "sentry-raven"
 end
 
-# Sentry.io integration
-gem "sentry-raven"
 
 # For deployment from a CI server
 group :deployment do
