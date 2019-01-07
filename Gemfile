@@ -47,6 +47,13 @@ end
 # Sentry.io integration
 gem "sentry-raven"
 
+# For deployment from a CI server
+group :deployment do
+  # Use Capistrano for deployment
+  gem "capistrano", "~> 3.11"
+  gem "capistrano-rails", "~> 1.1"
+  gem "capistrano-maintenance", "~> 1.0"
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
