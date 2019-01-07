@@ -2,7 +2,7 @@ require './lib/deploy/memcached'
 require './lib/deploy/whenever'
 
 begin
-  require 'new_relic/recipes'
+  # require 'new_relic/recipes'
 
   after "deploy:update", "newrelic:notice_deployment"
 rescue LoadError
