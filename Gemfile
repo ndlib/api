@@ -10,7 +10,7 @@ gem 'devise'
 gem 'devise_cas_authenticatable'
 gem 'devise-token_authenticatable'
 gem 'exlibris-primo'
-gem "hesburgh_infrastructure", git: 'git@git.library.nd.edu:hesburgh_infrastructure'
+# gem "hesburgh_infrastructure", git: 'git@git.library.nd.edu:hesburgh_infrastructure'
 
 #check to see if there is a version above 2.4.0.
 # this was added to bc there is a fix in master for cyrillic characters that has not been released.
