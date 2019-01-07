@@ -6,13 +6,6 @@ GIT
       capistrano (~> 2.15.0)
       rails
 
-GIT
-  remote: https://github.com/savonrb/nori.git
-  revision: 3a9cdb63e624430b970ef48a641d8622840ebbbc
-  ref: 3a9cdb63e624430b970ef48a641d8622840ebbbc
-  specs:
-    nori (2.4.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -178,6 +171,7 @@ GEM
       net-ssh (>= 4.0.0)
     nokogiri (1.9.1)
       mini_portile2 (~> 2.4.0)
+    nori (2.5.0)
     options (2.3.2)
     orm_adapter (0.5.0)
     pr_geohash (1.0.0)
@@ -356,7 +350,7 @@ DEPENDENCIES
   multi_xml
   mysql2 (~> 0.4.4)
   net-ldap
-  nori!
+  nori (~> 2.5.0)
   progress_bar
   public_suffix
   rack-jsonp-middleware

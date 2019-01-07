@@ -14,7 +14,7 @@ gem "hesburgh_infrastructure", git: 'git@git.library.nd.edu:hesburgh_infrastruct
 
 #check to see if there is a version above 2.4.0.
 # this was added to bc there is a fix in master for cyrillic characters that has not been released.
-gem 'nori', git: 'https://github.com/savonrb/nori.git', ref: '3a9cdb63e624430b970ef48a641d8622840ebbbc'
+# gem 'nori', git: 'https://github.com/savonrb/nori.git', ref: '3a9cdb63e624430b970ef48a641d8622840ebbbc'
 gem 'jquery-rails'
 gem 'mysql2', '~> 0.4.4' #, '<= 0.3.19'
 # gem 'activerecord-mysql2-adapter'
@@ -39,6 +39,9 @@ gem 'progress_bar'
 
 # Server monitoring
 # gem 'newrelic_rpm'
+
+# update nori to address issue
+gem "nori", '~> 2.5.0'
 
 gem 'addressable'
 

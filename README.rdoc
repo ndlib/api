@@ -15,6 +15,9 @@ file is in place first):
 bundle exec rake db:create
 bunde exec rake db:migrate
 
+A valid config/rest.yml file needs to be in place for testing and development. Please
+refer to the example to create this file.
+
 Create a directory off of the root directory: ./tmp/cache for the cache files
 
 Make sure your environment is set correctly:

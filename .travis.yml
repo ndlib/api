@@ -1,0 +1,15 @@
+sudo: false
+language: ruby
+cache:
+  bundler: true
+rvm:
+- 2.4
+addons:
+  mysql: '5.6'
+before_script:
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- cp config/secrets.yml.travis config/secrets.yml
+- cp config/database.yml.travis config/database.yml
+- echo "create database api_test;" | mysql -u root
+script: bundle exec rspec spec
