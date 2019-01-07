@@ -21,4 +21,7 @@ require "capistrano/rails"
 # $:.unshift File.join(File.dirname(__FILE__),'lib')
 # require 'hesburgh_infrastructure/capistrano'
 
-load 'config/deploy' # remove this line to skip loading any of the default tasks
+# load 'config/deploy' # remove this line to skip loading any of the default tasks
+
+# Load custom tasks from `lib/capistrano/tasks" if you have any defined
+Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
