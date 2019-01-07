@@ -10,7 +10,6 @@ install_plugin Capistrano::SCM::Git
 # Include rails specific tasks
 require "capistrano/rails"
 
-require "whenever/capistrano"
 
 # NOTE: The default capistrano asset tasks are not executed with bundler
 # Uncomment if you are using Rails' asset pipeline
