@@ -54,17 +54,19 @@ namespace :deploy do
   end
 
   desc "Reload the Solr configuration"
-  task :reload_solr_core, :roles => :app do
-    solr_yml = YAML.load_file("config/sunspot.yml")
-    [rails_env.to_s].each do |solr_environment|
-      solr_config = solr_yml[solr_environment]['solr']
-      core_url = "http://#{solr_config['hostname']}:#{solr_config['port']}#{solr_config['path']}"
-      core_regex = /[^\/]+$/
-      core_name = core_url.match(core_regex)[0]
-      base_solr_url = core_url.gsub(core_regex,'')
-      reload_url = base_solr_url + "admin/cores?action=RELOAD&core=" + core_name
-      puts "Reloading solr core: #{reload_url}"
-      run "curl -I -A \"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)\" \"#{reload_url}\""
+  task :reload_solr_core do
+    on primary roles :app do
+      solr_yml = YAML.load_file("config/sunspot.yml")
+      [rails_env.to_s].each do |solr_environment|
+        solr_config = solr_yml[solr_environment]['solr']
+        core_url = "http://#{solr_config['hostname']}:#{solr_config['port']}#{solr_config['path']}"
+        core_regex = /[^\/]+$/
+        core_name = core_url.match(core_regex)[0]
+        base_solr_url = core_url.gsub(core_regex,'')
+        reload_url = base_solr_url + "admin/cores?action=RELOAD&core=" + core_name
+        puts "Reloading solr core: #{reload_url}"
+        run "curl -I -A \"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)\" \"#{reload_url}\""
+    end
     end
   end
 
