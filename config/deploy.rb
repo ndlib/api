@@ -43,15 +43,15 @@ set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/ca
 
 # set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
 
-namespace :deploy do
+# namespace :deploy do
 
-  desc "Restart application"
-  task :restart do
-    on roles(:web), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      execute :touch, release_path.join("tmp/restart.txt")
-    end
-  end
+#   desc "Restart application"
+#   task :restart do
+#     on roles(:web), in: :sequence, wait: 5 do
+#       # Your restart mechanism here, for example:
+#       execute :touch, release_path.join("tmp/restart.txt")
+#     end
+#   end
 
   # desc "Reload the Solr configuration"
   # task :reload_solr_core do
@@ -80,7 +80,7 @@ namespace :deploy do
 #       # end
 #     end
 #   end
-end
+# end
 
 # before 'deploy:reload_solr_core'
 
