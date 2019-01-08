@@ -80,7 +80,7 @@ namespace :deploy do
 #       # end
 #     end
 #   end
-# end
+end
 
 # before 'deploy:reload_solr_core'
 
