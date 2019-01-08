@@ -18,7 +18,7 @@ group :application do
   gem 'net-ldap'
   gem 'rack-jsonp-middleware'
   gem 'savon' #, '~> 2.5.0'
-  gem "whenever", :require => false
+  # gem "whenever", :require => false
   gem 'icalendar'
   gem 'sunspot_rails', '2.3.0' # '<= 2.1.1'
   gem 'rsolr' #, '1.0.7'
