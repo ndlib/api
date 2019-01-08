@@ -53,6 +53,7 @@ group :deployment do
   gem "capistrano", "~> 3.11"
   gem "capistrano-rails", "~> 1.1"
   gem "capistrano-maintenance", "~> 1.0"
+  gem "whenever"
 end
 
 # Gems used only for assets and not required
