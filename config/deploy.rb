@@ -41,7 +41,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/ca
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :default_env, { path: "/opt/ruby/current/bin:$PATH" }
 
-set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
+# set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
 
 namespace :deploy do
 
