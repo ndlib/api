@@ -55,7 +55,7 @@ namespace :deploy do
 
   desc "Reload the Solr configuration"
   task :reload_solr_core do
-    on primary roles :app do
+    on roles(:app) do
       solr_yml = YAML.load_file("config/sunspot.yml")
       [rails_env.to_s].each do |solr_environment|
         solr_config = solr_yml[solr_environment]['solr']
