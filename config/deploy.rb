@@ -12,7 +12,7 @@ set :repo_url, "git@github.com:ndlib/api.git"
 set :deploy_to, "/home/app/api"
 
 set :ssh_options, {
-  verify_host_key: :never,
+  verify_host_key: false,
 }
 
 # Default value for :format is :airbrussh.
