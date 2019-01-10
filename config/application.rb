@@ -9,6 +9,9 @@ require File.expand_path('../../lib/hash_ostruct', __FILE__)
 require "raven/base"
 require "raven/integrations/rails"
 
+# Devise
+require "devise"
+
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require(*Rails.groups(:assets => %w(development test)))
