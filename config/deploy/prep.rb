@@ -6,7 +6,7 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-server 'api-prep.lc.nd.edu', user: 'app', roles: %w{web app db}
+server "api-prep.lc.nd.edu", user: "app", roles: %w{web app db}
 
 set :rack_env, :prep
 

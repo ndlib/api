@@ -33,6 +33,9 @@ group :application do
   gem 'addressable'
   gem "public_suffix"
 
+  # May need to use specific sshkit gem
+  gem "sshkit" # , '<= 1.15.1'
+
   # To see indexing progress
   gem 'progress_bar'
 
@@ -42,10 +45,21 @@ group :application do
   # update nori to address issue
   gem "nori", '~> 2.5.0'
 
+  # required for asset precompile and rake
+  gem 'bigdecimal'
+
+
   # Sentry.io integration
   gem "sentry-raven"
-end
+  
+  gem 'sass-rails' #,   '~> 3.2.3'
+  gem 'coffee-rails' #, '~> 3.2.1'
 
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  gem 'therubyracer', platforms: :ruby
+
+  gem 'uglifier', '>= 1.0.3'
+end
 
 # For deployment from a CI server
 group :deployment do
@@ -54,18 +68,6 @@ group :deployment do
   gem "capistrano-rails", "~> 1.1"
   gem "capistrano-maintenance", "~> 1.0"
   gem "whenever"
-end
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails' #,   '~> 3.2.3'
-  gem 'coffee-rails' #, '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', platforms: :ruby
-
-  gem 'uglifier', '>= 1.0.3'
 end
 
 group :development, :test do

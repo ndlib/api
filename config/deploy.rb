@@ -12,7 +12,7 @@ set :repo_url, "git@github.com:ndlib/api.git"
 set :deploy_to, "/home/app/api"
 
 set :ssh_options, {
-  verify_host_key: false,
+  verify_host_key: :never,
 }
 
 # Default value for :format is :airbrussh.
@@ -30,20 +30,30 @@ set :ssh_options, {
 set :linked_files, fetch(:linked_files, []).push("config/database.yml")
 set :linked_files, fetch(:linked_files, []).push("config/secrets.yml")
 set :linked_files, fetch(:linked_files, []).push("config/rest.yml")
-set :linked_files, fetch(:linked_files, []).push("/aleph_data")
-set :linked_files, fetch(:linked_files, []).push({ "/oit_data" => "/banner_data" })
+# set :linked_files, fetch(:linked_files, []).push("/aleph_data")
+# set :linked_files, fetch(:linked_files, []).push({ "/oit_data" => "/banner_data" })
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
-set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "solr")
+set :linked_dirs, fetch(:linked_dirs, []).push("aleph_data", "bin", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "solr")
+# append :linked_dirs, "bin", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "solr"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-# set :default_env, { path: "/opt/ruby/current/bin:$PATH" }
+set :default_env, { path: "/opt/ruby/current/bin:$PATH" }
 
 # set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
 
-# namespace :deploy do
+namespace :deploy do
+
+  desc "Create Banner Data Symlink"
+  task :banner_symlink do
+    on roles(:app) do
+      info "Create Banner Symlink"
+      execute "ln -s /home/app/api/shared/oit_data /home/app/api/current/banner_data"
+      info "Banner Data Symlink Created"
+    end
+  end
 
 #   desc "Restart application"
 #   task :restart do
@@ -68,7 +78,10 @@ set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/ca
   #       run "curl -I -A \"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)\" \"#{reload_url}\""
   #     end
   #   end
-  # end
+end
+
+after 'deploy:finishing', 'deploy:banner_symlink'
+
 
 #   after :published, :restart
 
