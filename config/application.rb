@@ -8,7 +8,6 @@ require File.expand_path('../../lib/hash_ostruct', __FILE__)
 # Sentry
 require "raven/base"
 require "raven/integrations/rails"
-require "raven/integrations/delayed_job"
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
