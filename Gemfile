@@ -18,7 +18,7 @@ group :application do
   gem 'net-ldap'
   gem 'rack-jsonp-middleware'
   gem 'savon' #, '~> 2.5.0'
-  gem "whenever", :require => false
+  # gem "whenever", :require => false
   gem 'icalendar'
   gem 'sunspot_rails', '2.3.0' # '<= 2.1.1'
   gem 'rsolr' #, '1.0.7'
@@ -33,6 +33,9 @@ group :application do
   gem 'addressable'
   gem "public_suffix"
 
+  # May need to use specific sshkit gem
+  gem "sshkit" # , '<= 1.15.1'
+
   # To see indexing progress
   gem 'progress_bar'
 
@@ -42,22 +45,13 @@ group :application do
   # update nori to address issue
   gem "nori", '~> 2.5.0'
 
+  # required for asset precompile and rake
+  gem 'bigdecimal'
+
+
   # Sentry.io integration
   gem "sentry-raven"
-end
-
-
-# For deployment from a CI server
-group :deployment do
-  # Use Capistrano for deployment
-  gem "capistrano", "~> 3.11"
-  gem "capistrano-rails", "~> 1.1"
-  gem "capistrano-maintenance", "~> 1.0"
-end
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
+  
   gem 'sass-rails' #,   '~> 3.2.3'
   gem 'coffee-rails' #, '~> 3.2.1'
 
@@ -65,6 +59,15 @@ group :assets do
   gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+# For deployment from a CI server
+group :deployment do
+  # Use Capistrano for deployment
+  gem "capistrano", "~> 3.11"
+  gem "capistrano-rails", "~> 1.1"
+  gem "capistrano-maintenance", "~> 1.0"
+  gem "whenever"
 end
 
 group :development, :test do
