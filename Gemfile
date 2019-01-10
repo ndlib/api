@@ -47,10 +47,6 @@ group :application do
 
   # required for asset precompile and rake
   gem 'bigdecimal'
-
-
-  # Sentry.io integration
-  gem "sentry-raven"
   
   gem 'sass-rails' #,   '~> 3.2.3'
   gem 'coffee-rails' #, '~> 3.2.1'
@@ -68,6 +64,9 @@ group :deployment do
   gem "capistrano-rails", "~> 1.1"
   gem "capistrano-maintenance", "~> 1.0"
   gem "whenever"
+
+  # Sentry.io integration
+  gem "sentry-raven"
 end
 
 group :development, :test do
