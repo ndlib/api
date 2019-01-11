@@ -50,6 +50,7 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     bcrypt (3.1.12)
+    bigdecimal (1.4.2)
     builder (3.2.3)
     capistrano (3.11.0)
       airbrussh (>= 1.0.0)
@@ -328,6 +329,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-nulldb-adapter
   addressable
+  bigdecimal
   capistrano (~> 3.11)
   capistrano-maintenance (~> 1.0)
   capistrano-rails (~> 1.1)

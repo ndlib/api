@@ -4,7 +4,8 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Api::Application.load_tasks
+# Api::Application.load_tasks
+Rails.application.load_tasks
 
 
 namespace :cache do

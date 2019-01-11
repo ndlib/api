@@ -47,6 +47,8 @@ group :application do
   
   gem 'virtus'
   gem 'sunspot_rails', '2.3.0' # '<= 2.1.1'
+
+  gem 'bigdecimal'
 end
 
 
