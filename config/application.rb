@@ -5,19 +5,12 @@ require 'rails/all'
 require 'rack/jsonp'
 require File.expand_path('../../lib/hash_ostruct', __FILE__)
 
-# Sentry
-require "raven/base"
-require "raven/integrations/rails"
-
-# Devise
-require "devise"
-require "devise_cas_authenticatable"
-
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
+  # Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
+  Bundler.require(:application, *Rails.groups)
 end
 
 module Api

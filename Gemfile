@@ -3,38 +3,33 @@ source 'http://rubygems.org'
 group :application do
   gem 'rails', '4.2.11'
   gem 'dalli' #memcache
+  # gem "hesburgh_infrastructure", git: 'git@git.library.nd.edu:hesburgh_infrastructure'
+
+  gem 'exlibris-primo'
+  gem "public_suffix"
   gem 'devise'
   gem 'devise_cas_authenticatable'
   gem 'devise-token_authenticatable'
-  gem 'exlibris-primo'
-  # gem "hesburgh_infrastructure", git: 'git@git.library.nd.edu:hesburgh_infrastructure'
-
+  
   #check to see if there is a version above 2.4.0.
   # this was added to bc there is a fix in master for cyrillic characters that has not been released.
   # gem 'nori', git: 'https://github.com/savonrb/nori.git', ref: '3a9cdb63e624430b970ef48a641d8622840ebbbc'
   gem 'jquery-rails'
   gem 'mysql2', '~> 0.4.4' #, '<= 0.3.19'
   # gem 'activerecord-mysql2-adapter'
+  gem "faraday"
+  gem "faraday_middleware"
   gem 'net-ldap'
   gem 'rack-jsonp-middleware'
   gem 'savon' #, '~> 2.5.0'
-  # gem "whenever", :require => false
+  gem "whenever", :require => false
   gem 'icalendar'
-  gem 'sunspot_rails', '2.3.0' # '<= 2.1.1'
   gem 'rsolr' #, '1.0.7'
   gem 'colored'
   gem "rb-readline"
-  gem "faraday"
-  gem "faraday_middleware"
   gem "multi_xml"
   gem "excon"
   gem 'typhoeus'
-  gem 'virtus'
-  gem 'addressable'
-  gem "public_suffix"
-
-  # May need to use specific sshkit gem
-  gem "sshkit" # , '<= 1.15.1'
 
   # To see indexing progress
   gem 'progress_bar'
@@ -45,9 +40,19 @@ group :application do
   # update nori to address issue
   gem "nori", '~> 2.5.0'
 
-  # required for asset precompile and rake
-  gem 'bigdecimal'
+  gem 'addressable'
+ 
+  # Sentry.io integration
+  gem "sentry-raven"
   
+  gem 'virtus'
+  gem 'sunspot_rails', '2.3.0' # '<= 2.1.1'
+end
+
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
   gem 'sass-rails' #,   '~> 3.2.3'
   gem 'coffee-rails' #, '~> 3.2.1'
 
@@ -55,9 +60,6 @@ group :application do
   gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
-
-  # Sentry.io integration
-  gem "sentry-raven"
 end
 
 # For deployment from a CI server
@@ -66,13 +68,13 @@ group :deployment do
   gem "capistrano", "~> 3.11"
   gem "capistrano-rails", "~> 1.1"
   gem "capistrano-maintenance", "~> 1.0"
-  gem "whenever"
 end
 
 group :development, :test do
   gem 'activerecord-nulldb-adapter'
   gem 'ruby-prof'
   gem "rspec-rails" #, '~> 3.2.0'
+  gem "spork" # , '~> 1.0rc', :git => "git://github.com/ndlib/spork.git", :branch => 'rspec3_runner'
   gem "capybara"
   gem "factory_girl_rails", :require => false
   gem "faker"

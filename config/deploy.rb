@@ -30,8 +30,6 @@ set :ssh_options, {
 set :linked_files, fetch(:linked_files, []).push("config/database.yml")
 set :linked_files, fetch(:linked_files, []).push("config/secrets.yml")
 set :linked_files, fetch(:linked_files, []).push("config/rest.yml")
-# set :linked_files, fetch(:linked_files, []).push("/aleph_data")
-# set :linked_files, fetch(:linked_files, []).push({ "/oit_data" => "/banner_data" })
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
