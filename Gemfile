@@ -55,6 +55,9 @@ group :application do
   gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  # Sentry.io integration
+  gem "sentry-raven"
 end
 
 # For deployment from a CI server
@@ -64,9 +67,6 @@ group :deployment do
   gem "capistrano-rails", "~> 1.1"
   gem "capistrano-maintenance", "~> 1.0"
   gem "whenever"
-
-  # Sentry.io integration
-  gem "sentry-raven"
 end
 
 group :development, :test do
