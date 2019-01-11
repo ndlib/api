@@ -12,5 +12,8 @@ development:
 pre_production:
   <<: *test
 
+prep:
+  <<: *test
+
 dm_production:
   <<: *test
