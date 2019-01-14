@@ -22,7 +22,6 @@ group :application do
   gem 'net-ldap'
   gem 'rack-jsonp-middleware'
   gem 'savon' #, '~> 2.5.0'
-  gem "whenever", :require => false
   gem 'icalendar'
   gem 'rsolr' #, '1.0.7'
   gem 'colored'
@@ -70,6 +69,7 @@ group :deployment do
   gem "capistrano", "~> 3.11"
   gem "capistrano-rails", "~> 1.1"
   gem "capistrano-maintenance", "~> 1.0"
+  gem "whenever", :require => false
 end
 
 group :development, :test do
