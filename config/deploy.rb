@@ -15,6 +15,10 @@ set :ssh_options, {
   verify_host_key: :never,
 }
 
+
+# Default value for keep_releases is 5
+set :keep_releases, 5
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
@@ -53,13 +57,13 @@ namespace :deploy do
     end
   end
 
-#   desc "Restart application"
-#   task :restart do
-#     on roles(:web), in: :sequence, wait: 5 do
-#       # Your restart mechanism here, for example:
-#       execute :touch, release_path.join("tmp/restart.txt")
-#     end
-#   end
+  desc "Restart application"
+  task :restart do
+    on roles(:web), in: :sequence, wait: 5 do
+      # Your restart mechanism here, for example:
+      execute :touch, release_path.join("tmp/restart.txt")
+    end
+  end
 
   # desc "Reload the Solr configuration"
   # task :reload_solr_core do
@@ -75,31 +79,29 @@ namespace :deploy do
   #       puts "Reloading solr core: #{reload_url}"
   #       run "curl -I -A \"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)\" \"#{reload_url}\""
   #     end
-  #   end
+# #   end
+
+  after :published, :restart
+
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      # Here we can do anything such as:
+      # within release_path do
+      #   execute :rake, "cache:clear"
+      # end
+    end
+  end
 end
 
 after 'deploy:finishing', 'deploy:banner_symlink'
 
 
-#   after :published, :restart
-
-#   after :restart, :clear_cache do
-#     on roles(:web), in: :groups, limit: 3, wait: 10 do
-#       # Here we can do anything such as:
-#       # within release_path do
-#       #   execute :rake, "cache:clear"
-#       # end
-#     end
-#   end
-# end
+ end
 
 # before 'deploy:reload_solr_core'
 
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
-
-# Default value for keep_releases is 5
-# set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
