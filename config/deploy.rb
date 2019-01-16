@@ -95,9 +95,6 @@ end
 
 after 'deploy:finishing', 'deploy:banner_symlink'
 
-
- end
-
 # before 'deploy:reload_solr_core'
 
 # Default value for local_user is ENV['USER']
