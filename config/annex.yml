@@ -14,9 +14,9 @@ pre_production:
   aleph_archive_dir: '/global/data/annex/pprd/archive/'
 
 prep:
-  aleph_inbound_dir: '/global/data/annex/pprd/inbound/'
-  aleph_outbound_dir: '/global/data/annex/pprd/outbound/'
-  aleph_archive_dir: '/global/data/annex/pprd/archive/'
+  aleph_inbound_dir: '/api-gateway/annex/pprd/inbound/'
+  aleph_outbound_dir: '/api-gateway/annex/pprd/outbound/'
+  aleph_archive_dir: '/api-gateway/annex/pprd/archive/'
 
 
 production:
