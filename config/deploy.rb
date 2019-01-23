@@ -52,7 +52,7 @@ namespace :deploy do
   task :banner_symlink do
     on roles(:app) do
       info "Create Banner Symlink"
-      execute "ln -s /home/app/api/shared/oit_data /home/app/api/current/banner_data"
+      execute "ln -s /api-gateway/reserves/oit_data /home/app/api/current/banner_data"
       info "Banner Data Symlink Created"
     end
   end
