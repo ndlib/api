@@ -37,7 +37,7 @@ set :linked_files, fetch(:linked_files, []).push("config/rest.yml")
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
-set :linked_dirs, fetch(:linked_dirs, []).push("aleph_data", "bin", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "solr")
+set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "solr")
 # append :linked_dirs, "bin", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "solr"
 
 # Default value for default_env is {}
@@ -54,6 +54,15 @@ namespace :deploy do
       info "Create Banner Symlink"
       execute "ln -s /api-gateway/reserves/oit_data /home/app/api/current/banner_data"
       info "Banner Data Symlink Created"
+    end
+  end
+
+  desc "Create Aleph Data Symlink"
+  task :aleph_symlink do
+    on roles(:app) do
+      info "Create Aleph Symlink"
+      execute "ln -s /api-gateway/reserves /home/app/api/current/aleph_data"
+      info "Aleph Data Symlink Created"
     end
   end
 
@@ -93,7 +102,7 @@ namespace :deploy do
   end
 end
 
-after 'deploy:finishing', 'deploy:banner_symlink'
+after 'deploy:finishing', 'deploy:banner_symlink', 'deploy:aleph_symlink'
 
 # before 'deploy:reload_solr_core'
 
