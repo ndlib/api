@@ -102,7 +102,8 @@ namespace :deploy do
   end
 end
 
-after 'deploy:finishing', 'deploy:banner_symlink', 'deploy:aleph_symlink'
+after 'deploy:finishing', 'deploy:banner_symlink'
+after 'deploy:banner_symlink', 'deploy:aleph_symlink'
 
 # before 'deploy:reload_solr_core'
 
