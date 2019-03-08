@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "d8e8b720-8d74-4bdc-aa40-7857c5ba915f",
+		"name": "API",
+		"description": "This collection will run some basic checks against the Hesburgh Libraries' API server.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check API for needed auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4cbd0d2e-9db6-413c-9515-d0eafa6acaf8",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});",
+							"pm.test(\"Be sure the API is rejecting without proper Auth\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.error).to.eql(\"You must authenticate using a valid authorization token\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{APIURL}}/1.0/people/by_netid/{{$guid}}.json",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"people",
+						"by_netid",
+						"{{$guid}}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check API for proper auth response",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "29a3e422-ee7a-4300-b4d6-bb49dfc301d3",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});",
+							"pm.test(\"Be sure the API is checking Auth\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.error).to.eql(\"Invalid authentication token.\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{APIURL}}/1.0/people/by_netid/{{$guid}}.json?auth_token=<auth_token>",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"people",
+						"by_netid",
+						"{{$guid}}.json"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "<auth_token>"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify NetID lookup",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f8b238c7-c8be-4791-81b4-84289a1b8da9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Make sure the sent in ID is being returned\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var id = jsonData.people[0].id;",
+							"    pm.expect(id).to.eql(\"qaqaqa\")",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "{{AuthToken}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{APIURL}}/1.0/people/by_netid/qaqaqa.json?auth_token={{AuthToken}}",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"people",
+						"by_netid",
+						"qaqaqa.json"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "{{AuthToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "44e4cf61-10f3-4500-bac2-62493274a270",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f047e1eb-55be-4b94-85b2-85cf439faeb5",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Response time is less than 1000ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+					"});"
+				]
+			}
+		}
+	]
+}
