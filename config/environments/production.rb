@@ -65,6 +65,9 @@ Api::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  # Log level
+  config.log_level = :info
+
   # API backends
   config.api_backend_availability = "https://factotum.library.nd.edu/utilities/availability/hours/api?codes=<<codes>>&date=<<date>>"
   config.api_backend_maps = "https://factotum.library.nd.edu/utilities/maps/api.json"
