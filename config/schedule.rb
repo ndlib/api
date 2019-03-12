@@ -23,6 +23,7 @@
 
 
 set :output, "log/cron_log.log"
+env :PATH, '/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/app/.local/bin:/home/app/bin'
 
 job_type :runner, "cd :path && bundle exec rails runner -e :environment ':task' :output"
 job_type :rake,   "cd :path && :environment_variable=:environment bundle exec rake :task --silent :output"
