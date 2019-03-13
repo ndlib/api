@@ -20,6 +20,6 @@ prep:
 
 
 production:
-  aleph_inbound_dir: '/global/data/annex/prod/inbound/'
-  aleph_outbound_dir: '/global/data/annex/prod/outbound/'
-  aleph_archive_dir: '/global/data/annex/prod/archive/'
+  aleph_inbound_dir: '/api-gateway/annex/prod/inbound/'
+  aleph_outbound_dir: '/api-gateway/annex/prod/outbound/'
+  aleph_archive_dir: '/api-gateway/annex/prod/archive/'
