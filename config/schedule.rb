@@ -34,10 +34,6 @@ every 1.day, :at => '4:30 am' do
   rake "banner:reindex"
 end
 
-every 1.day, :at => '5:30 am' do
-  rake "banner:batch_archive"
-end
-
 # every morning
 every 1.day, :at => '4:45 am' do
   rake "aleph:reindex"
