@@ -52,7 +52,7 @@ class Discovery2::Holdings::Request
   end
 
   def base_url
-    "http://alephprod.library.nd.edu:1891/"
+    "http://aleph1-2010.library.nd.edu:1891/"
   end
 
   def base_path

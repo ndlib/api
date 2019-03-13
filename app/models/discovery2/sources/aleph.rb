@@ -45,7 +45,7 @@ class Discovery2::Sources::Aleph
   end
 
   def host
-    "https://alephprod.library.nd.edu"
+    "https://aleph1-2010.library.nd.edu"
   end
 
   def direct_path

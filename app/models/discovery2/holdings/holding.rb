@@ -27,7 +27,7 @@ class Discovery2::Holdings::Holding
         holdings: holdings,
         supplements: supplements,
         indexes: indexes,
-        detail_url: "http://alephprod.library.nd.edu/F?func=item-global&doc_library=#{base}&doc_number=#{doc_num}",
+        detail_url: "http://aleph1-2010.library.nd.edu/F?func=item-global&doc_library=#{base}&doc_number=#{doc_num}",
         map_url: Discovery2::Holdings::GenerateMapURL.call(self),
       }
     end

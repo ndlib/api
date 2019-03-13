@@ -83,7 +83,7 @@ Api::Application.configure do
   config.aleph_course_reserves = "https://aleph1.library.nd.edu/X?op=find&code=CNO&request=<<course_id>>&base=NDU30"
   config.aleph_reserve_items = "https://aleph1.library.nd.edu/X?op=present&set_entry=<<item_number>>&set_number=<<set_id>>&base=NDU30"
   config.aleph_reserve_item_status = "https://aleph1.library.nd.edu/X?op=circ_status&library=NDU30&sys_no=<<doc_number>>"
-  config.aleph_rest_url = "http://alephprod.library.nd.edu:1891/"
+  config.aleph_rest_url = "http://aleph1-2010.library.nd.edu:1891/"
 
 end
 
