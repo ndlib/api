@@ -8,7 +8,7 @@ FactoryGirl.define do
       lde = new() 
       lde["ndtitle"] = Faker::Job.title
       lde["nddepartment"] = Faker::Lorem.words
-      lde["uid"] = Faker::Internet.user_name
+      lde["cn"] = Faker::Internet.user_name
       lde["givenname"] = Faker::Name.first_name
       lde["sn"] = Faker::Name.last_name
       lde
