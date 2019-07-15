@@ -69,10 +69,10 @@ module LdapRequestHelper
         :return_result  => true
       }
       if type == 'disjoined'
-        param_list[:attributes] = ['uid', 'givenname', 'sn', 'displayname']
+        param_list[:attributes] = ['cn', 'givenName', 'sn', 'displayName']
         param_list[:size] = 5
       else
-        param_list[:attributes] = ['title', 'nddepartment', 'givenname', 'displayname', 'cn', 'ndguid', 'uid', 'sn', 'ndprimaryaffiliation', 'mail']
+        param_list[:attributes] = ['givenName', 'displayName', 'cn', 'ndguid', 'sn', 'eduPersonPrimaryAffiliation', 'mail', 'postaladdress']
       end
       @ldap_object.search(param_list) do |entry|
         results.push(entry)
@@ -94,14 +94,14 @@ module LdapRequestHelper
 
     def full_filter(value)
       modified_value = value + '*'
-      Net::LDAP::Filter.eq('uid',modified_value) |
-      Net::LDAP::Filter.eq('givenname',modified_value) |
+      Net::LDAP::Filter.eq('cn',modified_value) |
+      Net::LDAP::Filter.eq('givenName',modified_value) |
       Net::LDAP::Filter.eq('sn',modified_value)
     end
 
     def partial_filter(value)
       modified_value = value + '*'
-      Net::LDAP::Filter.eq('displayname',modified_value)
+      Net::LDAP::Filter.eq('displayName',modified_value)
     end
 
     def set_value(type, args)

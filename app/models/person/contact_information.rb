@@ -10,8 +10,7 @@ class Person::ContactInformation
 
   def campus_address(args = {})
     if (args[:ldap_person])
-      @campus_address = args[:ldap_person].postaladdress.first.gsub(/\$/, '&#10;') if args[:ldap_person].respond_to?(:postaladdress)
-      @campus_address = args[:ldap_person].ndofficeaddress.first.gsub(/\$/, '&#10;') if args[:ldap_person].respond_to?(:ndofficeaddress)
+      @campus_address = args[:ldap_person].postalAddress.first.gsub(/\$/, ', ') if args[:ldap_person].respond_to?(:postalAddress)
     end
     unless (args[:directory_person].nil?)
       @campus_address = args[:directory_person][0]["address"]

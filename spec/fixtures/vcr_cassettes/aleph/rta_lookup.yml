@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://aleph1-2010.library.nd.edu:8991/X?library=NDU30&op=circ_status&sys_no=000049115
+    uri: http://alephprod.library.nd.edu:8991/X?library=NDU30&op=circ_status&sys_no=000049115
     body:
       encoding: US-ASCII
       string: ''
