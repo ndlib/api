@@ -32,9 +32,9 @@ class Person::Base
   end
 
   def build_ldap_person
-    # ldap_person = Rails.cache.fetch(ldap_cache_key) do
-    ldap_person =  pull_from_ldap
-    # end
+    ldap_person = Rails.cache.fetch(ldap_cache_key) do
+      pull_from_ldap
+    end
     parse_ldap_values(ldap_person)
 
     ldap_person
@@ -112,7 +112,6 @@ class Person::Base
   def valid_identifiers
     {
       by_id:      {ldap:'ndGuid',staff_directory:'id'},
-      # by_netid:   {ldap:'uid',staff_directory:'email'}
       by_netid:   {ldap:'cn',staff_directory:'email'}
     }
   end
