@@ -92,10 +92,8 @@ module Api
     end
 
     # LDAP parameters
-    # config.ldap_host = 'directory.nd.edu'
     config.ldap_host = 'activedirectory.nd.edu'
     config.ldap_port = 636
-    # config.ldap_base = 'o=University of Notre Dame,st=Indiana,c=US'
     config.ldap_base = 'OU=Accounts,DC=ND,DC=EDU'
 
     config.findtext_url = 'http://findtext.library.nd.edu:8889/ndu_local'
