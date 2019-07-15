@@ -32,10 +32,9 @@ class Person::Base
   end
 
   def build_ldap_person
-    ldap_person = Rails.cache.fetch(ldap_cache_key) do
-      pull_from_ldap
-      # ldap_person = ldap_get(@identifier_contexts[:ldap],@id)
-    end
+    # ldap_person = Rails.cache.fetch(ldap_cache_key) do
+    ldap_person =  pull_from_ldap
+    # end
     parse_ldap_values(ldap_person)
 
     ldap_person
@@ -51,12 +50,12 @@ class Person::Base
   end
 
   def person_search
-    results = ldap_get('uid', @id, 'disjoined')
+    results = ldap_get('cn', @id, 'disjoined')
     results.map { |person|
-      p = { uid: get_attribute(person, 'uid'),
-            first_name: get_attribute(person, 'givenname'),
+      p = { uid: get_attribute(person, 'cn'),
+            first_name: get_attribute(person, 'givenName'),
             last_name: get_attribute(person, 'sn'),
-            full_name: get_attribute(person, 'displayname')
+            full_name: get_attribute(person, 'displayName')
           }
       JSON.parse(p.to_json) } if !results.blank?
   end
@@ -93,7 +92,7 @@ class Person::Base
   end
 
   def contact_information(ldap_person, directory_person)
-    @contact_information = ::Person::ContactInformation.new(:ldap_person => ldap_person, :directory_person => directory_person)
+    @contact_information = Person::ContactInformation.new(:ldap_person => ldap_person, :directory_person => directory_person)
   end
 
   def positions
@@ -112,8 +111,9 @@ class Person::Base
 
   def valid_identifiers
     {
-      by_id:      {ldap:'ndguid',staff_directory:'id'},
-      by_netid:   {ldap:'uid',staff_directory:'email'}
+      by_id:      {ldap:'ndGuid',staff_directory:'id'},
+      # by_netid:   {ldap:'uid',staff_directory:'email'}
+      by_netid:   {ldap:'cn',staff_directory:'email'}
     }
   end
 
@@ -128,25 +128,17 @@ class Person::Base
   end
 
   def pull_from_ldap
-    # begin
-      ldap_person = ldap_get(@identifier_contexts[:ldap],@id)
-    # rescue Exception => e
-      # Rails.logger.warn(time_stamp + " [ERROR] Error contacting ldap: #{e.message}")
-      # ldap_person = nil
-    # end
-    ldap_person
+    ldap_get(@identifier_contexts[:ldap],@id)
   end
 
   def parse_ldap_values(ldap_person)
     if (ldap_person)
-      @netid = ldap_person.uid.first if ldap_person.respond_to?(:uid)
-      @first_name = ldap_person.givenname.first if ldap_person.respond_to?(:givenname)
+      @netid = ldap_person.cn.first if ldap_person.respond_to?(:cn)
+      @first_name = ldap_person.givenName.first if ldap_person.respond_to?(:givenName)
       @last_name = ldap_person.sn.first if ldap_person.respond_to?(:sn)
-      @full_name = ldap_person.displayname.first if ldap_person.respond_to?(:displayname)
+      @full_name = ldap_person.displayName.first if ldap_person.respond_to?(:displayName)
       @ndguid = ldap_person.ndguid.first if ldap_person.respond_to?(:ndguid)
-      @position_title = ldap_person.ndtitle.first if ldap_person.respond_to?(:ndtitle)
-      @campus_department = ldap_person.nddepartment.first if ldap_person.respond_to?(:nddepartment)
-      @primary_affiliation = ldap_person.ndprimaryaffiliation.first if ldap_person.respond_to?(:ndprimaryaffiliation)
+      @primary_affiliation = ldap_person.eduPersonPrimaryAffiliation.first if ldap_person.respond_to?(:eduPersonPrimaryAffiliation)
     end
   end
 

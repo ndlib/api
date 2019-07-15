@@ -46,6 +46,7 @@ app/assets/javascripts/consumers.js
 app/assets/javascripts/services.js
 app/assets/javascripts/static.js
 app/assets/javascripts/users.js
+public/assets
 
 # Ignore Solr data and pids
 /solr/data/*
