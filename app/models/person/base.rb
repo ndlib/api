@@ -53,15 +53,19 @@ class Person::Base
     results = ldap_get('cn', @id, 'disjoined')
     results.map { |person|
       p = { uid: get_attribute(person, 'cn'),
-            first_name: get_attribute(person, 'givenName'),
+            first_name: get_attribute(person, 'givenname'),
             last_name: get_attribute(person, 'sn'),
-            full_name: get_attribute(person, 'displayName')
+            full_name: get_attribute(person, 'displayname')
           }
       JSON.parse(p.to_json) } if !results.blank?
   end
 
   def get_attribute(person, attr)
+    if JSON.parse(person.to_json)['myhash'][attr]
       JSON.parse(person.to_json)['myhash'][attr].first
+    else
+      nil
+    end
   end
 
   def self.all_people_by_context(population_context)
