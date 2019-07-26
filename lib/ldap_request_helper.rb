@@ -70,7 +70,7 @@ module LdapRequestHelper
       }
       if type == 'disjoined'
         param_list[:attributes] = ['cn', 'givenName', 'sn', 'displayName']
-        param_list[:size] = 5
+        param_list[:size] = 10
       else
         param_list[:attributes] = ['givenName', 'displayName', 'cn', 'ndguid', 'sn', 'eduPersonPrimaryAffiliation', 'mail', 'postaladdress']
       end
@@ -84,24 +84,30 @@ module LdapRequestHelper
       if type == 'standard'
         Net::LDAP::Filter.equals(attr,value)
       elsif type == 'disjoined'
-        if value =~ /\s+/
-          partial_filter(value)
-        else
-          full_filter(value)
-        end
+        full_filter(value)
       end
     end
 
     def full_filter(value)
-      modified_value = value + '*'
-      Net::LDAP::Filter.eq('cn',modified_value) |
-      Net::LDAP::Filter.eq('givenName',modified_value) |
-      Net::LDAP::Filter.eq('sn',modified_value)
+      # modified_value = value # + '*'
+      if value =~ /\s+/
+        Net::LDAP::Filter.begins('cn',split_values(value).first) |
+        Net::LDAP::Filter.begins('givenName',split_values(value).first) |
+        Net::LDAP::Filter.ends('sn',split_values(value).last)
+      else
+        Net::LDAP::Filter.begins('cn',value) |
+        Net::LDAP::Filter.begins('givenName',value) |
+        Net::LDAP::Filter.ends('sn',value)
+      end
     end
 
     def partial_filter(value)
       modified_value = value + '*'
       Net::LDAP::Filter.eq('displayName',modified_value)
+    end
+
+    def split_values(input)
+      input.gsub(/\s+/m, ' ').strip.split(" ")
     end
 
     def set_value(type, args)
