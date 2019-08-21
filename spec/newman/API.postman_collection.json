@@ -170,8 +170,8 @@
 				"id": "f047e1eb-55be-4b94-85b2-85cf439faeb5",
 				"type": "text/javascript",
 				"exec": [
-					"pm.test(\"Response time is less than 1000ms\", function () {",
-					"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+					"pm.test(\"Response time is less than 5000ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(5000);",
 					"});"
 				]
 			}
