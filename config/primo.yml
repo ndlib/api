@@ -10,7 +10,7 @@ development:
   <<: *test
 
 pre_production:
-  <<: *test
+  <<: *production
 
 prep:
   <<: *test
