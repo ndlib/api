@@ -1,4 +1,4 @@
-## Testing RabbitMQ Deployments with Newman
+## Testing API Deployments with Newman
 
 ### Variables Needed
 Variable Name | Variable Value
