@@ -10,10 +10,10 @@ development:
   <<: *test
 
 pre_production:
-  <<: *test
+  <<: *production
 
 prep:
-  <<: *test
+  <<: *production
 
 dm_production:
   <<: *test
