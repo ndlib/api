@@ -29,10 +29,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "{{APIURL}}/1.0/people/by_netid/{{$guid}}.json",
 					"host": [
@@ -71,10 +67,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "{{APIURL}}/1.0/people/by_netid/{{$guid}}.json?auth_token=<auth_token>",
 					"host": [
@@ -127,12 +119,8 @@
 						"disabled": true
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
-					"raw": "{{APIURL}}/1.0/people/by_netid/qaqaqa.json?auth_token={{AuthToken}}",
+					"raw": "{{APIURL}}/1.0/people/by_netid/qaqaqa.json?auth_token=<auth_token>",
 					"host": [
 						"{{APIURL}}"
 					],
@@ -143,6 +131,518 @@
 						"qaqaqa.json"
 					],
 					"query": [
+						{
+							"key": "auth_token",
+							"value": "{{AuthToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check NetID lookup of Courses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f8b238c7-c8be-4791-81b4-84289a1b8da9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Make sure the sent in ID is being returned\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var id = jsonData.people[0].id;",
+							"    pm.expect(id).to.eql(\"pgurel\")",
+							"});",
+							"pm.test(\"Make sure the sent in ID is faculty\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var affiliation = jsonData.people[0].primary_affiliation;",
+							"    pm.expect(affiliation).to.eql(\"faculty\")",
+							"});",
+							"pm.test(\"Verify the expected course ID is returned - Transnational America\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var courseData = jsonData.people[0].instructed_courses[0].course_id",
+							"    pm.expect(courseData).to.eql('201620_AMST_30194')",
+							"});",
+							"pm.test(\"Verify the expected course is returned - Transnational America\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var courseData = jsonData.people[0].instructed_courses[0].course_title",
+							"    pm.expect(courseData).to.eql('Transnational America')",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"type": "text",
+						"value": "{{AuthToken}}",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{APIURL}}/1.0/people/by_netid/pgurel/201620/courses.json?auth_token=<auth_token>",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"people",
+						"by_netid",
+						"pgurel",
+						"201620",
+						"courses.json"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "{{AuthToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Course Lookup by Course Triple",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f8b238c7-c8be-4791-81b4-84289a1b8da9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify the returned course has the correct term prefix\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var termPrefix = jsonData.term_prefix;",
+							"    pm.expect(termPrefix).to.eql(\"201620\")",
+							"});",
+							"pm.test(\"Verify the returned course has the correct alphanumeric prefix\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var alphaPrefix = jsonData.alpha_prefix;",
+							"    pm.expect(alphaPrefix).to.eql(\"AMST\")",
+							"});",
+							"pm.test(\"Verify the expected course ID is returned\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var courseID = jsonData.number",
+							"    pm.expect(courseID).to.eql(30194)",
+							"});",
+							"pm.test(\"Verify the expected course is returned - Transnational America\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var courseData = jsonData.course_title",
+							"    pm.expect(courseData).to.eql('Transnational America')",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"type": "text",
+						"value": "{{AuthToken}}",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{APIURL}}/1.0/resources/courses/by_course_triple/201620_AMST_30194.json?auth_token=<auth_token>",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"resources",
+						"courses",
+						"by_course_triple",
+						"201620_AMST_30194.json"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "{{AuthToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Course Lookup by Course ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f8b238c7-c8be-4791-81b4-84289a1b8da9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify the returned course has the correct term prefix\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var termPrefix = jsonData.term_prefix;",
+							"    pm.expect(termPrefix).to.eql(\"201620\")",
+							"});",
+							"pm.test(\"Verify the returned course has the correct alphanumeric prefix\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var alphaPrefix = jsonData.alpha_prefix;",
+							"    pm.expect(alphaPrefix).to.eql(\"AMST\")",
+							"});",
+							"pm.test(\"Verify the expected course ID is returned\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var courseID = jsonData.number",
+							"    pm.expect(courseID).to.eql(30194)",
+							"});",
+							"pm.test(\"Verify the expected course is returned - Transnational America\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var courseData = jsonData.course_title",
+							"    pm.expect(courseData).to.eql('Transnational America')",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"type": "text",
+						"value": "{{AuthToken}}",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{APIURL}}/1.0/resources/courses/by_course_id/201620/AMST/30194.json?auth_token=<auth_token>",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"resources",
+						"courses",
+						"by_course_id",
+						"201620",
+						"AMST",
+						"30194.json"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "{{AuthToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Course Search by Query",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f8b238c7-c8be-4791-81b4-84289a1b8da9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify the returned course has the correct term prefix\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var termPrefix = jsonData[0].term_prefix;",
+							"    pm.expect(termPrefix).to.eql('201720')",
+							"});",
+							"pm.test(\"Verify the returned course has the correct alphanumeric prefix\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var alphaPrefix = jsonData[0].alpha_prefix;",
+							"    pm.expect(alphaPrefix).to.eql(\"AMST\")",
+							"});",
+							"pm.test(\"Verify the expected course ID is returned\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var courseID = jsonData[0].number",
+							"    pm.expect(courseID).to.eql(30194)",
+							"});",
+							"pm.test(\"Verify the expected course is returned - Transnational America\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var courseData = jsonData[0].course_title",
+							"    pm.expect(courseData).to.eql('Transnational America')",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"type": "text",
+						"value": "{{AuthToken}}",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{APIURL}}/1.0/resources/courses/search.json?q=Transnational%20America&auth_token=<auth_token>",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"resources",
+						"courses",
+						"search.json"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Transnational%20America"
+						},
+						{
+							"key": "auth_token",
+							"value": "{{AuthToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Searching by Resource ID via Resources API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c6873fc4-f6d3-4606-ad9b-39b3f934ce62",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Make sure the sent in item is the correct type (Book)\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var type = jsonData.records[0].display.type;",
+							"    pm.expect(type).to.eql(\"Book\")",
+							"});",
+							"pm.test(\"Make sure the sent in item ID is returned properly\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var searchTerm = jsonData.search_term;",
+							"    pm.expect(searchTerm).to.eql(\"000062297\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected author\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var author = jsonData.records[0].openurl.au;",
+							"    pm.expect(author).to.eql('Fraser, Douglas')",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected author first name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var auFirst = jsonData.records[0].openurl.aufirst;",
+							"    pm.expect(auFirst).to.eql(\"Douglas,\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected author last name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var auLast = jsonData.records[0].openurl.aulast;",
+							"    pm.expect(auLast).to.eql(\"Fraser\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected title\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var title = jsonData.records[0].openurl.btitle;",
+							"    pm.expect(title).to.eql(\"Village planning in the primitive world.\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected publication date\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var pubDate = jsonData.records[0].openurl.date;",
+							"    pm.expect(pubDate).to.eql(\"1968\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected publisher\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var publisher = jsonData.records[0].openurl.pub;",
+							"    pm.expect(publisher).to.eql(\"Braziller\")",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{APIURL}}/1.0/resources/search/id.json?q=000062297&auth_token=<auth_token>",
+					"protocol": "https",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"resources",
+						"search",
+						"id.json"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "000062297"
+						},
+						{
+							"key": "auth_token",
+							"value": "{{AuthToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Searching for Item via Barcode",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c6873fc4-f6d3-4606-ad9b-39b3f934ce62",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Make sure the sent in barcode returns the proper Call Number\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var callNumber = jsonData.call_number;",
+							"    pm.expect(callNumber).to.eql(\"F 849 .M68 M37 2000\")",
+							"});",
+							"pm.test(\"Make sure the sent in barcode is returned properly\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var searchTerm = jsonData.barcode;",
+							"    pm.expect(searchTerm).to.eql(\"00000019247790\")",
+							"});",
+							"pm.test(\"Make sure the sent in barcode has the expected author\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var author = jsonData.author;",
+							"    pm.expect(author).to.eql('Martin, Gregory, 1971-')",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected title\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var title = jsonData.title;",
+							"    pm.expect(title).to.eql(\"Mountain City /Gregory Martin.\")",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{APIURL}}/1.0/resources/items/record?barcode=00000019247790&auth_token=<auth_token>",
+					"protocol": "https",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"resources",
+						"items",
+						"record"
+					],
+					"query": [
+						{
+							"key": "barcode",
+							"value": "00000019247790"
+						},
+						{
+							"key": "auth_token",
+							"value": "{{AuthToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Searching by Resource ID via Discovery API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c6873fc4-f6d3-4606-ad9b-39b3f934ce62",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Make sure the sent in item is the correct type (Book)\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var type = jsonData.records[0].display.type;",
+							"    pm.expect(type).to.eql(\"Book\")",
+							"});",
+							"pm.test(\"Make sure the sent in item ID is returned properly\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var searchTerm = jsonData.search_term;",
+							"    pm.expect(searchTerm).to.eql(\"000062297\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected author\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var author = jsonData.records[0].openurl.au;",
+							"    pm.expect(author).to.eql('Fraser, Douglas')",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected author first name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var auFirst = jsonData.records[0].openurl.aufirst;",
+							"    pm.expect(auFirst).to.eql(\"Douglas,\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected author last name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var auFirst = jsonData.records[0].openurl.aulast;",
+							"    pm.expect(auFirst).to.eql(\"Fraser\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected title\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var auFirst = jsonData.records[0].openurl.btitle;",
+							"    pm.expect(auFirst).to.eql(\"Village planning in the primitive world.\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected publication date\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var auFirst = jsonData.records[0].openurl.date;",
+							"    pm.expect(auFirst).to.eql(\"1968\")",
+							"});",
+							"pm.test(\"Make sure the sent in item has the expected publisher\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var auFirst = jsonData.records[0].openurl.pub;",
+							"    pm.expect(auFirst).to.eql(\"Braziller\")",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{APIURL}}/1.0/discovery/id.json?q=000062297&auth_token=<auth_token>",
+					"protocol": "https",
+					"host": [
+						"{{APIURL}}"
+					],
+					"path": [
+						"1.0",
+						"discovery",
+						"id.json"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "000062297"
+						},
 						{
 							"key": "auth_token",
 							"value": "{{AuthToken}}"
