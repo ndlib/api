@@ -137,9 +137,9 @@ class Person::Base
   def parse_ldap_values(ldap_person)
     if (ldap_person)
       @netid = ldap_person.cn.first if ldap_person.respond_to?(:cn)
-      @first_name = ldap_person.givenName.first if ldap_person.respond_to?(:givenName)
-      @last_name = ldap_person.sn.first if ldap_person.respond_to?(:sn)
-      @full_name = ldap_person.displayName.first if ldap_person.respond_to?(:displayName)
+      @first_name = ldap_person.givenName.first.force_encoding("UTF-8") if ldap_person.respond_to?(:givenName)
+      @last_name = ldap_person.sn.first.force_encoding("UTF-8") if ldap_person.respond_to?(:sn)
+      @full_name = ldap_person.displayName.first.force_encoding("UTF-8") if ldap_person.respond_to?(:displayName)
       @ndguid = ldap_person.ndguid.first if ldap_person.respond_to?(:ndguid)
       @primary_affiliation = ldap_person.eduPersonPrimaryAffiliation.first if ldap_person.respond_to?(:eduPersonPrimaryAffiliation)
     end
