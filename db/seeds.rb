@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-["mkirpa2","rdoughty","jgondron","jhartzle","rfox2","awetheri","dwolfe2"].each do | username |
+["mkirkpa2","rdoughty","jgondron","jhartzle","rfox2","awetheri","dwolfe2"].each do | username |
   unless Admin::User.where(:username => username).first
      Admin::User.new(:username => username).save!
   end
