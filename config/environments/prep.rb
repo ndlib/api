@@ -67,9 +67,9 @@ Api::Application.configure do
   config.active_support.deprecation = :notify
 
   # API backends
-  config.api_backend_availability = "https://factotumpprd.library.nd.edu/utilities/availability/hours/api?codes=<<codes>>&date=<<date>>"
-  config.api_backend_maps = "https://factotumpprd.library.nd.edu/utilities/maps/api.json"
-  config.api_backend_staff_directory = "https://factotum.library.nd.edu/directory/api/<<type>>/json/<<identifier>>/<<id>>"
+  config.api_backend_availability = "https://factotum-prep.library.nd.edu/utilities/availability/hours/api?codes=<<codes>>&date=<<date>>"
+  config.api_backend_maps = "https://factotum-prep.library.nd.edu/utilities/maps/api.json"
+  config.api_backend_staff_directory = "https://factotum-prep.library.nd.edu/directory/api/<<type>>/json/<<identifier>>/<<id>>"
 
   config.banner_dir = Rails.root.join('banner_data', 'ereserve_extract').to_s
   config.banner_archive_dir = Rails.root.join('banner_data', 'ereserve_extract').to_s
