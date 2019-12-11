@@ -15,11 +15,10 @@ class ApplicationController < ActionController::Base
 
   # Okta
   def login_user!
-    if !session[:netid]
+    if !session[:netid] || !session[:authorized_admin]
       redirect_to user_oktaoauth_omniauth_authorize_path
     end
   end
-
 
   protect_from_forgery
 
