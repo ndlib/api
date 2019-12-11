@@ -1,7 +1,7 @@
 Api::Application.routes.draw do
 
   devise_for :consumers, :class_name => 'Admin::Consumer'
-  devise_for :users, :class_name => 'Admin::User'
+  devise_for :users, :class_name => 'Admin::User', controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   root to: 'admin/services#index'
 
