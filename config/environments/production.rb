@@ -84,8 +84,3 @@ Api::Application.configure do
   config.aleph_rest_url = "http://aleph1-2010.library.nd.edu:1891/"
 
 end
-
-Devise.setup do |config|
-  # CAS auth
-  config.cas_base_url = "https://login.nd.edu/cas"
-end

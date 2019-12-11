@@ -8,7 +8,10 @@ group :application do
   gem 'exlibris-primo'
   gem "public_suffix"
   gem 'devise'
-  gem 'devise_cas_authenticatable'
+
+  # Okta
+  gem 'omniauth-oktaoauth'
+
   gem 'devise-token_authenticatable'
   
   #check to see if there is a version above 2.4.0.

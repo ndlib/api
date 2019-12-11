@@ -222,7 +222,7 @@ Devise.setup do |config|
   # By default, devise_cas_authenticatable will create users.  If you would rather
   # require user records to already exist locally before they can authenticate via
   # CAS, uncomment the following line.
-  config.cas_create_user = false
+  # config.cas_create_user = false
 
 
   # ==> Warden configuration
@@ -251,4 +251,17 @@ Devise.setup do |config|
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = "/my_engine/users/auth"
+
+  # Okta
+  require 'omniauth-oktaoauth'
+  okta_issuer = Rails.application.secrets.okta["base_auth_url"] + Rails.application.secrets.okta["auth_server_id"]
+  config.omniauth(:oktaoauth,
+                Rails.application.secrets.okta["client_id"],
+                Rails.application.secrets.okta["client_secret"],
+                :scope => 'openid profile email netid',
+                :fields => ['profile', 'email', 'netid'],
+                :client_options => {site: okta_issuer, authorize_url: okta_issuer + "/v1/authorize", token_url: okta_issuer + "/v1/token"},
+                :auth_server_id => Rails.application.secrets.okta["auth_server_id"],
+                :issuer => okta_issuer,
+                :strategy_class => OmniAuth::Strategies::Oktaoauth)
 end
