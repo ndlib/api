@@ -6,7 +6,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       user = Admin::User.where(username: session[:netid]).first
       if user.present?
         session[:authorized_admin] = true
-        sign_in_and_redirect @user
+        sign_in_and_redirect user
       else
         render :unauthorized, status: 401
       end
