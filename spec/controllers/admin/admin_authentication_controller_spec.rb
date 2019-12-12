@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-class AdminCasAuthenticationController < Admin::BaseController
+class AdminAuthenticationController < Admin::BaseController
   def identify
     render :text => current_user.name
   end
 end
 
-describe AdminCasAuthenticationController do
+describe AdminAuthenticationController do
 
   # let(:login_user) {FactoryGirl.create(:user)}
 
   before(:all) do
     Rails.application.routes.draw do
-      match '/identify' => 'admin_cas_authentication#identify', :as => :identify, via: [:get, :post]
+      match '/identify' => 'admin_authentication#identify', :as => :identify, via: [:get, :post]
     end
   end
 

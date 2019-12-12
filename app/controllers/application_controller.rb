@@ -13,6 +13,12 @@ class ApplicationController < ActionController::Base
     headers['Access-Control-Request-Method'] = 'PUT, GET, POST, DELETE, OPTIONS'
   end
 
+  # Okta
+  def login_user!
+    if !session[:netid] || !session[:authorized_admin]
+      redirect_to user_oktaoauth_omniauth_authorize_path
+    end
+  end
 
   protect_from_forgery
 
