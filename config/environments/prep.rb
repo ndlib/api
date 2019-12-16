@@ -74,7 +74,7 @@ Api::Application.configure do
   config.banner_dir = Rails.root.join('banner_data', 'ereserve_extract').to_s
   config.banner_archive_dir = Rails.root.join('banner_data', 'ereserve_extract').to_s
 
-  config.print_reserves_file = Rails.root.join('aleph_data', 'z108_data.csv').to_s
+  config.print_reserves_file = Rails.root.join('aleph_data', 'prep', 'z108_data.csv').to_s
 
   config.enrollment_file = Rails.root.join('spec', 'fixtures', 'oit_data', 'enrollment.tsv').to_s
   config.crosslists_file = Rails.root.join('spec', 'fixtures', 'oit_data', 'crosslists.tsv').to_s
