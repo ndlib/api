@@ -74,7 +74,7 @@ Api::Application.configure do
   config.banner_dir = Rails.root.join('banner_data', 'ereserve_extract').to_s
   config.banner_archive_dir = Rails.root.join('banner_data', 'ereserve_extract').to_s
 
-  config.print_reserves_file = Rails.root.join('aleph_data', 'z108_data.csv').to_s
+  config.print_reserves_file = Rails.root.join('aleph_data', 'prep', 'z108_data.csv').to_s
 
   config.enrollment_file = Rails.root.join('spec', 'fixtures', 'oit_data', 'enrollment.tsv').to_s
   config.crosslists_file = Rails.root.join('spec', 'fixtures', 'oit_data', 'crosslists.tsv').to_s
@@ -82,9 +82,9 @@ Api::Application.configure do
   config.supersections_file = Rails.root.join('spec', 'fixtures', 'oit_data', 'supersections.tsv').to_s
   config.coursetitles_file = Rails.root.join('spec', 'fixtures', 'oit_data', 'coursetitles.tsv').to_s
 
-  config.aleph_course_reserves = "https://aleph23-prod.library.nd.edu/X?op=find&code=CNO&request=<<course_id>>&base=NDU30"
-  config.aleph_reserve_items = "https://aleph23-prod.library.nd.edu/X?op=present&set_entry=<<item_number>>&set_number=<<set_id>>&base=NDU30"
-  config.aleph_reserve_item_status = "https://aleph23-prod.library.nd.edu/X?op=circ_status&library=NDU30&sys_no=<<doc_number>>"
-  config.aleph_rest_url = "http://aleph23-prod.library.nd.edu:1891/"
+  config.aleph_course_reserves = "https://aleph23-prod.lc.nd.edu/X?op=find&code=CNO&request=<<course_id>>&base=NDU30"
+  config.aleph_reserve_items = "https://aleph23-prod.lc.nd.edu/X?op=present&set_entry=<<item_number>>&set_number=<<set_id>>&base=NDU30"
+  config.aleph_reserve_item_status = "https://aleph23-prod.lc.nd.edu/X?op=circ_status&library=NDU30&sys_no=<<doc_number>>"
+  config.aleph_rest_url = "http://aleph23-prod.lc.nd.edu:1891/"
 
 end
