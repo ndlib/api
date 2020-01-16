@@ -4,9 +4,9 @@ namespace :banner do
     clear_index()
     puts "scanning directories"
 
-    Dir.new(Rails.configuration.banner_dir.to_s).to_a.sort.reverse.each do |dir|
-      path = Rails.configuration.banner_dir.to_s + "/" + dir.to_s
-      process_files(Dir.new(path), false) unless dir.to_s =~ /\.|\.\./
+    Dir.glob("#{Rails.configuration.banner_dir.to_s}/**/*/").to_a.sort.reverse.each do |dir|
+      path = dir.to_s
+      process_files(Dir.new(path), false) unless path =~ /\.|\.\./ || Dir.glob("#{path}/*.tsv").to_a.length() == 0
     end
   end
 
