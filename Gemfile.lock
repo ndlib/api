@@ -190,7 +190,7 @@ GEM
       highline (>= 1.6, < 3)
       options (~> 2.3.0)
     public_suffix (3.0.3)
-    rack (1.6.11)
+    rack (1.6.12)
     rack-jsonp-middleware (0.0.10)
       rack
     rack-test (0.6.3)
