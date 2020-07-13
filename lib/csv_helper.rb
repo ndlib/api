@@ -112,6 +112,8 @@ module CSVHelper
       instructor[:term] = data_elements[:term]
       instructor[:status] = data_elements[:status]
       instructor[:section_groups] = {} if instructor[:section_groups].blank?
+
+
       if data_elements[:status] == "Primary"
         instructor[:section_groups][course_triple(data_elements).to_s] = build_instructor_section_groups(instructor, data_elements)
       end
@@ -151,7 +153,12 @@ module CSVHelper
     end
 
     def course_triple(data_elements)
-      "#{data_elements[:term]}_#{data_elements[:alpha_prefix]}_#{data_elements[:number]}"
+      triple = "#{data_elements[:term]}_#{data_elements[:alpha_prefix]}_#{data_elements[:number]}"
+      if triple === "202010_ENGL_13186"        
+        triple += "_#{data_elements[:section]}"
+      end
+
+      triple
     end
 
     def get_title(data_elements)
