@@ -13,12 +13,12 @@ group :application do
   gem 'omniauth-oktaoauth'
 
   gem 'devise-token_authenticatable'
-  
+
   #check to see if there is a version above 2.4.0.
   # this was added to bc there is a fix in master for cyrillic characters that has not been released.
   # gem 'nori', git: 'https://github.com/savonrb/nori.git', ref: '3a9cdb63e624430b970ef48a641d8622840ebbbc'
   gem 'jquery-rails'
-  gem 'mysql2', '~> 0.4.4' #, '<= 0.3.19'
+  gem 'mysql2', '~> 0.5.3' #, '<= 0.3.19'
   # gem 'activerecord-mysql2-adapter'
   gem "faraday"
   gem "faraday_middleware"
@@ -43,10 +43,10 @@ group :application do
   gem "nori", '~> 2.5.0'
 
   gem 'addressable'
- 
+
   # Sentry.io integration
   gem "sentry-raven"
-  
+
   gem 'virtus'
   gem 'sunspot_rails', '2.3.0' # '<= 2.1.1'
 
