@@ -1,0 +1,66 @@
+name: API Codebase CI
+
+# Run the workflow when pushing to a branch other than the trunk branch, and also run it when a PR is submitted
+
+on:
+  push: 
+    branches-ignore:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs: 
+  build-and-test:
+
+  # Run this job on the Ubuntu 20.04 LTS release, most recent stable as of 2021-01-12
+    runs-on: ubuntu-20.04
+
+  # Run steps to build project and then run itnernal test suite
+    steps:
+      - uses: actions/checkout@v2
+
+  # Setup version of Ruby to run thhe build and test suite
+      - name: Set up Ruby environment
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.4
+  
+  # Start local MySQL service
+      - name: Start mysql
+        run: sudo systemctl start mysql.service
+      
+  # Install any needed dependencies to the runner
+      # - name: Install dependencies
+      #   run: 
+
+  # Install required bundler gem
+      - name: Install bundler @ 1.17.3
+        run: gem install bundler -v 1.17.3
+
+  # Install Gems
+      - name: Install Ruby gems
+        run: bundle install
+  
+  # Prepare environment for testing
+      - name: Place template files into environment
+        run: |
+          cp config/secrets.yml.actions config/secrets.yml
+          cp config/database.yml.actions config/database.yml
+          cp config/rest.yml.actions config/rest.yml
+
+  # Create test database
+      - name: Prepare the test database
+        env:
+          MYSQL_PASSWORD: root
+          RAILS_ENV: test
+        run: |
+          mkdir -p tmp/cache
+          echo "create database api_test;" | mysql -uroot -proot
+          bundle exec rake --trace db:create
+          bundle exec rake --trace db:migrate test
+  # Run rspec tests
+      - name: Run unit tests
+        env: 
+          MYSQL_PASSWORD: root
+        run: bundle exec rspec spec

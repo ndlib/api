@@ -1,0 +1,75 @@
+##########################################
+# Shared settings
+##########################################
+
+mysql_settings: &mysql_settings
+  adapter: mysql2
+  pool:    5
+  timeout: 5000
+  encoding: utf8
+
+nulldb_settings: &nulldb_settings
+  adapter: nulldb
+  schema: "db/nulldb_schema.rb"
+
+##########################################
+# Environments
+##########################################
+
+development:
+  <<: *mysql_settings
+  database: 
+  username: 
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test: &test
+  <<: *mysql_settings
+  database: api_test
+  username: root
+  password: <%= ENV["MYSQL_PASSWORD"] %>
+
+pre_production:
+  <<: *mysql_settings
+  database: 
+  host:  
+  username: 
+  password: 
+
+production:
+  <<: *mysql_settings
+  database: 
+  username: 
+
+#############################################
+## Datamart Connection
+#############################################
+dm_development:
+  <<: *mysql_settings
+  database: 
+  host: 
+  username: 
+  password: 
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+dm_test:
+  <<: *nulldb_settings
+  database: 
+
+dm_pre_production:
+  <<: *mysql_settings
+  database: 
+  host:     
+  username: 
+  password: 
+
+dm_production:
+  <<: *mysql_settings
+  database: 
+  username: 
+
+cucumber:
+  <<: *test

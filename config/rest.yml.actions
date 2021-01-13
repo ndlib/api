@@ -1,0 +1,20 @@
+test: &test
+  aleph_rest_url: 
+  aleph_xservices_url: 
+  aleph_xservices_username: ''
+  aleph_xservices_password: ''
+  aleph_xservices_item_path: ''
+
+
+production: &production
+  aleph_rest_url: 
+  aleph_xservices_url:  
+  aleph_xservices_username: ''
+  aleph_xservices_password: ''
+  aleph_xservices_item_path: ''
+
+development:
+  <<: *test
+
+pre_production:
+  <<: *test
