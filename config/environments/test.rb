@@ -14,6 +14,9 @@ Api::Application.configure do
   # Log error messages when you accidentally call methods on nil
   config.whiny_nils = true
 
+  # default host name for testing
+  Rails.application.routes.default_url_options[:host] = 'test.host'
+
   # Log level
   config.log_level = :debug
 

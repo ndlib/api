@@ -4,6 +4,10 @@ class AdminAuthenticationController < Admin::BaseController
   def identify
     render :text => current_user.name
   end
+
+  def fake_controller_method
+    render :text => 'null'
+  end
 end
 
 describe AdminAuthenticationController do
@@ -13,6 +17,7 @@ describe AdminAuthenticationController do
   before(:all) do
     Rails.application.routes.draw do
       match '/identify' => 'admin_authentication#identify', :as => :identify, via: [:get, :post]
+      match '/fake_controller_method' => 'admin_authentication#fake_controller_method', :as => :fake_controller_method, via: [:get, :post]
     end
   end
 
@@ -25,11 +30,9 @@ describe AdminAuthenticationController do
     before(:each) do
       @request.env["devise.mapping"] = Devise.mappings[:user]
       @login_user = FactoryGirl.create(:user)
-      sign_in @login_user
-    end
-
-    after(:each) do
-      sign_out @login_user
+      session[:netid] = OmniAuth.config.mock_auth[:okta].netid
+      session[:authorized_admin] = true
+      login_user
     end
 
 
@@ -49,8 +52,8 @@ describe AdminAuthenticationController do
   describe "not logged in" do
 
     it "redirects when the user is not logged in" do
-      get :identify
-      response.status.should == 302
+      ApplicationController.any_instance.should_receive(:login_user!)
+      get :fake_controller_method
     end
 
 
