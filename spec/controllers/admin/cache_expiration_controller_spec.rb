@@ -8,6 +8,8 @@ describe Admin::CacheExpirationController do
 
   describe "#expire_all_cache" do
     before(:each) do
+      session[:netid] = OmniAuth.config.mock_auth[:okta].netid
+      session[:authorized_admin] = true
       login_user
     end
 
@@ -25,6 +27,8 @@ describe Admin::CacheExpirationController do
 
   describe "#expire_service_cache" do
     before(:each) do
+      session[:netid] = OmniAuth.config.mock_auth[:okta].netid
+      session[:authorized_admin] = true
       login_user
     end
 

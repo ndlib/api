@@ -83,6 +83,7 @@ Spork.prefork do
     config.include Devise::Test::ControllerHelpers, :type => :controller
     config.include ControllerMacros, :type => :controller
     config.include FaradayHelpers
+    config.include Rails.application.routes.url_helpers
 
 
     config.around(:each) do |example|

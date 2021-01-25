@@ -20,6 +20,8 @@ require 'spec_helper'
 
 describe Admin::ConsumersController do
   before(:each) do
+    session[:netid] = OmniAuth.config.mock_auth[:okta].netid
+    session[:authorized_admin] = true
     login_user
   end
 
