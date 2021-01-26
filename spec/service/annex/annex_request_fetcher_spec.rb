@@ -30,7 +30,11 @@ describe "AnnexRequestFetcher" do
 
 	describe "#parse_request" do
 
-		let(:request_record) { request_fetcher.fetch_requests('outbound')[2] }
+		let(:request_record) { 
+			request_array = request_fetcher.fetch_requests('outbound') 
+			index = request_array.find_index { |request| request[:transaction] == 'aleph-000341845' }
+			request_fetcher.fetch_requests('outbound')[index]
+		}
 
 		it "parses the correct transaction id" do
 			expect(request_record[:transaction]).to eq('aleph-000341845')
