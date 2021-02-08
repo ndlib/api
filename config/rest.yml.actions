@@ -1,9 +1,9 @@
 test: &test
-  aleph_rest_url: 
-  aleph_xservices_url: 
-  aleph_xservices_username: ''
-  aleph_xservices_password: ''
-  aleph_xservices_item_path: ''
+  aleph_rest_url: http://alephtest.library.nd.edu:1891/
+  aleph_xservices_url: https://alephtest.library.nd.edu/X
+  aleph_xservices_username: 'TESTUSER'
+  aleph_xservices_password: 'TESTPASSWORD'
+  aleph_xservices_item_path: '?op=read-item&library=ndu50&barcode=<<barcode>>'
 
 
 production: &production

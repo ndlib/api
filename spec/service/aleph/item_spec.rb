@@ -67,8 +67,8 @@ describe Aleph::Item do
       sequence_number: '10',
       admin_document_number: '98765')}
     let(:aleph_item) { Aleph::Item.new(item_record.barcode)}
-    let(:request_body) { 'op=update-item&library=NDU50&user_name=APIANNEX&user_password=AnnexAPI&xml_full_req=<update-item><z30><z30-doc-number>000098765</z30-doc-number><z30-item-sequence>00010</z30-item-sequence><z30-item-process-status>AT</z30-item-process-status></z30></update-item>' }
-    let(:request_body2) { 'op=update-item&library=NDU50&user_name=APIANNEX&user_password=AnnexAPI&xml_full_req=<update-item><z30><z30-doc-number>000098765</z30-doc-number><z30-item-sequence>00010</z30-item-sequence><z30-item-process-status></z30-item-process-status></z30></update-item>' }
+    let(:request_body) { 'op=update-item&library=NDU50&user_name=TESTUSER&user_password=TESTPASSWORD&xml_full_req=<update-item><z30><z30-doc-number>000098765</z30-doc-number><z30-item-sequence>00010</z30-item-sequence><z30-item-process-status>AT</z30-item-process-status></z30></update-item>' }
+    let(:request_body2) { 'op=update-item&library=NDU50&user_name=TESTUSER&user_password=TESTPASSWORD&xml_full_req=<update-item><z30><z30-doc-number>000098765</z30-doc-number><z30-item-sequence>00010</z30-item-sequence><z30-item-process-status></z30-item-process-status></z30></update-item>' }
     let(:rest_connection) { instance_double(ExternalRest) }
 
     before(:each) do
@@ -91,7 +91,6 @@ describe Aleph::Item do
     end
 
     it "should null out the process status when requested" do
-      puts "MOCKED REQUEST BODY" + request_body2.to_s
       expect(rest_connection).to receive(:payload=).with(request_body2)
       aleph_item.update_process_status('')
       expect(aleph_item.send(:process_status_xml)).to eq('<update-item><z30><z30-doc-number>000098765</z30-doc-number><z30-item-sequence>00010</z30-item-sequence><z30-item-process-status></z30-item-process-status></z30></update-item>')
