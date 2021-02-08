@@ -103,13 +103,13 @@ module Aleph
 
   		def process_status_xml
 			  return_string = render_to_string('/aleph/item_update_process_status', { item: self }).chomp
-			  puts "RETURN: " + return_string
   		end
 
       def update_item_call
         rest_connection = rest_connection('item_update')
         rest_connection.verb = 'post'
-        rest_connection.payload = request_body
+		rest_connection.payload = request_body
+		puts "PAYLOAD: " + request_body.to_s
         rest_connection.transact.update_item
       end
 
