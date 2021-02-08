@@ -102,7 +102,8 @@ module Aleph
   		end
 
   		def process_status_xml
-  			render_to_string('/aleph/item_update_process_status', { item: self }).chomp
+			  return_string = render_to_string('/aleph/item_update_process_status', { item: self }).chomp
+			  puts "RETURN: " + return_string
   		end
 
       def update_item_call
