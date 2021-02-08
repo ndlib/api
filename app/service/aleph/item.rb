@@ -108,7 +108,6 @@ module Aleph
       def update_item_call
         rest_connection = rest_connection('item_update')
         rest_connection.verb = 'post'
-		puts "PAYLOAD: " + request_body.to_s
 		rest_connection.payload = request_body
         rest_connection.transact.update_item
       end
