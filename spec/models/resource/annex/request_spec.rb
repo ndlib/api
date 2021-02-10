@@ -23,7 +23,7 @@ describe Resource::Annex::Request do
 			"send_to" => "send_to_value",
 			"rush" => "rush_value",
 			"jtitle" => "jtitle_value",
-			"request_date" => "1/1/2000 12:01PM -05:00",
+			"request_date" => "1/1/2000 12:01-0500",
 			"SystemID" => "SystemID_value",
 			"pickup" => "Hesburgh Library",
 			"institution" => "University of Notre Dame",
