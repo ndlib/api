@@ -23,7 +23,7 @@ describe Resource::Annex::Request do
 			"send_to" => "send_to_value",
 			"rush" => "rush_value",
 			"jtitle" => "jtitle_value",
-			"request_date" => "1/1/2000 12:00AM",
+			"request_date" => "1/1/2000 12:01PM -05:00",
 			"SystemID" => "SystemID_value",
 			"pickup" => "Hesburgh Library",
 			"institution" => "University of Notre Dame",
@@ -128,7 +128,7 @@ describe Resource::Annex::Request do
 		let(:request_description) { aleph_request.formatted_description }
 		let(:request_json) { {
 			transaction: "source_value-transaction_value",
-			request_date_time: "1999-12-31T19:00:00.000-05:00",
+			request_date_time: "2000-01-01T12:01:00.000-05:00",
 			request_type: "request_type_value",
 			delivery_type: "delivery_type_value",
 			source: "source_value",
